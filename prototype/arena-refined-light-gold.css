@@ -1,0 +1,32 @@
+/* New light palettes; Pearl and Jade retain their exact original styles. */
+#spx-refined-light-gold .palette-alabaster {
+ --paper:#f7f8f3;--surface:#e7ece6;--ink:#2b393b;--soft:#5f6b65;--accent:#886621;--onaccent:#fffbee;--rule:#c0c6b7;--positive:#2c6c56;--negative:#a34f43;--investor:#407780;
+ --nav:#e9ede5;--glow:#d9c99108;--grain:#58706a01;--card-edge:#e6ddc5;--card-center:#fffff9;--card-end:#e9eade;--card-inset:#fcfcf4;--card-trim:#c3a56080;--card-shadow:#bfc4b4;--portrait-frame:#bd9d57;--gold-edge:#b69a55;
+ --scroll-top:#f7eed0;--scroll-mid:#e6d5a2;--scroll-bottom:#cbb372;--scroll-border:#b39851;--scroll-ink:#34382b;--market-edge:#dbc588;--market-center:#fffbea;--market-end:#e2d097;--market-glow:#bca35910;
+ --metal-highlight:#a47c29;--metal-low:#745a20;--metal-light:#967435;
+}
+#spx-refined-light-gold .palette-celadon {
+ --paper:#f5f6ed;--surface:#e1eadb;--ink:#234a3d;--soft:#5d6c59;--accent:#896823;--onaccent:#fffbee;--rule:#b8c4a4;--positive:#256b4e;--negative:#a44b43;--investor:#337b62;
+ --nav:#244b3e;--glow:#d8dc9809;--grain:#5a754d01;--card-edge:#dce0bd;--card-center:#fcfdf1;--card-end:#e2eacf;--card-inset:#f5f8e7;--card-trim:#b8a35680;--card-shadow:#aebc9a;--portrait-frame:#b29e51;--gold-edge:#aa9343;
+ --scroll-top:#f7edc9;--scroll-mid:#e2d09b;--scroll-bottom:#c8b16e;--scroll-border:#ab944a;--scroll-ink:#30412c;--market-edge:#ccb772;--market-center:#fff8dc;--market-end:#e2d294;--market-glow:#beaa4f10;
+ --metal-highlight:#a57e29;--metal-low:#715d20;--metal-light:#977937;
+ --nav-ink:#fbf8e7;--nav-soft:#d4dfc9;--nav-gold:#e8d296;
+}
+#spx-refined-light-gold .palette-cashmere {
+ --paper:#f7f2e9;--surface:#e9e0d1;--ink:#3a332b;--soft:#716456;--accent:#8a6525;--onaccent:#fff9eb;--rule:#cabb9e;--positive:#376b50;--negative:#a2473e;--investor:#497a74;
+ --nav:#eee5d5;--glow:#d3b47408;--grain:#80694701;--card-edge:#e4d1a8;--card-center:#fffaf0;--card-end:#eadfcb;--card-inset:#fcf4e3;--card-trim:#c29d5480;--card-shadow:#c6b798;--portrait-frame:#ba964e;--gold-edge:#ac8940;
+ --scroll-top:#fbebc8;--scroll-mid:#e8d0a0;--scroll-bottom:#c9aa67;--scroll-border:#b18f47;--scroll-ink:#44331e;--market-edge:#d4b77b;--market-center:#fff1d8;--market-end:#e0c28b;--market-glow:#bfa05c10;
+ --metal-highlight:#a47a2c;--metal-low:#765623;--metal-light:#9e7b3c;
+}
+#spx-refined-light-gold .palette-refined .name-scroll {
+ background:linear-gradient(110deg,var(--scroll-bottom) 0%,var(--scroll-mid) 16%,var(--scroll-top) 39%,var(--scroll-mid) 66%,var(--scroll-top) 88%,var(--scroll-mid) 100%);
+}
+#spx-refined-light-gold .palette-celadon .home-nav,
+#spx-refined-light-gold .palette-celadon .home-footer {background:var(--nav);color:var(--nav-ink);}
+#spx-refined-light-gold .palette-celadon .home-nav nav,
+#spx-refined-light-gold .palette-celadon .edition-label,
+#spx-refined-light-gold .palette-celadon .home-footer>span {color:var(--nav-soft);}
+#spx-refined-light-gold .palette-celadon .edition-label b {color:var(--nav-ink);}
+#spx-refined-light-gold .palette-celadon .home-logo em {color:var(--nav-gold);}
+#spx-refined-light-gold .palette-celadon .logo-gem {background:linear-gradient(135deg,var(--nav-gold),#b29c63);}
+#spx-refined-light-gold .palette-celadon .intro-action {background:var(--nav);color:var(--nav-gold);}

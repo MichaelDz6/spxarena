@@ -1,0 +1,214 @@
+[
+  {
+    "key": "lynch",
+    "path": "lynch.jpg",
+    "source": "https://csfboston.sosimplecms2.com/uploads/images/board_of_trustees/peter-lynch.jpg?v=1642088861973",
+    "credit": "https://www.csfboston.org/who-we-are/leadership/board-of-trustees",
+    "rights": "Source-hosted editorial portrait; publication rights not verified",
+    "bytes": 60866
+  },
+  {
+    "key": "burry",
+    "path": "burry.jpg",
+    "source": "https://imageio.forbes.com/specials-images/dam/imageserve/38497369/0x0.jpg?format=jpg&width=320",
+    "credit": "https://www.forbes.com/sites/gurufocus/2019/07/31/dr-michael-burry-of-big-short-likes-asian-stocks/",
+    "rights": "Source-hosted editorial portrait; publication rights not verified",
+    "bytes": 18513
+  },
+  {
+    "key": "cramer",
+    "path": "cramer.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Andrew_Aziz_Cramer_%28cropped%29.jpg/250px-Andrew_Aziz_Cramer_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Andrew_Aziz_Cramer_%28cropped%29.jpg/960px-Andrew_Aziz_Cramer_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "credit": "https://commons.wikimedia.org/wiki/File:Andrew_Aziz_Cramer_%28cropped%29.jpg",
+    "bytes": 16988
+  },
+  {
+    "key": "dalio",
+    "path": "dalio.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg/250px-Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credit": "https://commons.wikimedia.org/wiki/File:Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg",
+    "bytes": 17649
+  },
+  {
+    "key": "munger",
+    "path": "munger.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Charlie_Munger_%28cropped%29.jpg/250px-Charlie_Munger_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/Charlie_Munger_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credit": "https://commons.wikimedia.org/wiki/File:Charlie_Munger_%28cropped%29.jpg",
+    "bytes": 20661
+  },
+  {
+    "key": "griffin",
+    "path": "griffin.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Kenneth_C._Griffin.jpg/250px-Kenneth_C._Griffin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Kenneth_C._Griffin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credit": "https://commons.wikimedia.org/wiki/File:Kenneth_C._Griffin.jpg",
+    "bytes": 16026
+  },
+  {
+    "key": "soros",
+    "path": "soros.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/George_Soros%2C_Founder_and_Chairman_of_the_Open_Society_Foundations%2C_visits_the_EC_%283x4_cropped%29.jpg/250px-George_Soros%2C_Founder_and_Chairman_of_the_Open_Society_Foundations%2C_visits_the_EC_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/9/97/George_Soros%2C_Founder_and_Chairman_of_the_Open_Society_Foundations%2C_visits_the_EC_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credit": "https://commons.wikimedia.org/wiki/File:George_Soros%2C_Founder_and_Chairman_of_the_Open_Society_Foundations%2C_visits_the_EC_%283x4_cropped%29.jpg",
+    "bytes": 19883
+  },
+  {
+    "key": "druckenmiller",
+    "path": "druckenmiller.jpg",
+    "source": "https://www.grantspub.com/images/speakers/Druckenmiller.jpg",
+    "credit": "https://www.grantspub.com/includes/cfn_speakerBio.cfm?sid=155",
+    "rights": "Source-hosted editorial portrait; publication rights not verified",
+    "bytes": 1017637
+  },
+  {
+    "key": "oleary",
+    "path": "oleary.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/KevinOLeary2023_%283x4_cropped%29.jpg/250px-KevinOLeary2023_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/KevinOLeary2023_%283x4_cropped%29.jpg/3840px-KevinOLeary2023_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "credit": "https://commons.wikimedia.org/wiki/File:KevinOLeary2023_%283x4_cropped%29.jpg",
+    "bytes": 16435
+  },
+  {
+    "key": "einhorn",
+    "path": "einhorn.jpg",
+    "source": "https://www.skagenfondene.no/globalassets/skagen-funds/new-years-conference/2025/speakers/david.e-web.jpg?format=jpg&quality=75&width=320",
+    "credit": "https://www.skagenfondene.no/tema/nyttarskonferansen/david-einhorn/",
+    "rights": "Source-hosted editorial portrait; publication rights not verified",
+    "bytes": 10939
+  },
+  {
+    "key": "baron",
+    "path": "baron.jpg",
+    "source": "https://www.baroncapitalgroup.com/_next/image?q=75&url=https%3A%2F%2Flive-baron-capital-cms.pantheonsite.io%2Fsites%2Fdefault%2Ffiles%2F2024%2F04%2F24%2F2024-ron-baron.jpg&w=384",
+    "credit": "https://www.baroncapitalgroup.com/article/letter-ron-q1-2025",
+    "rights": "Source-hosted editorial portrait; publication rights not verified",
+    "bytes": 15013
+  },
+  {
+    "key": "simons",
+    "path": "simons.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Jim_Simons_at_MSRI.jpg/250px-Jim_Simons_at_MSRI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jim_Simons_at_MSRI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credit": "https://commons.wikimedia.org/wiki/File:Jim_Simons_at_MSRI.jpg",
+    "bytes": 12627
+  },
+  {
+    "key": "marks",
+    "path": "marks.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Howard_Marks_2.17.12_%28cropped%29.jpg/250px-Howard_Marks_2.17.12_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Howard_Marks_2.17.12_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credit": "https://commons.wikimedia.org/wiki/File:Howard_Marks_2.17.12_%28cropped%29.jpg",
+    "bytes": 25318
+  },
+  {
+    "key": "tudor",
+    "path": "tudor.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Paul_Tudor_Jones_2006.jpg/250px-Paul_Tudor_Jones_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Paul_Tudor_Jones_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credit": "https://commons.wikimedia.org/wiki/File:Paul_Tudor_Jones_2006.jpg",
+    "bytes": 17969
+  },
+  {
+    "key": "gabelli",
+    "path": "gabelli-source.jpg",
+    "source": "https://business.columbia.edu/sites/default/files-efs/person/photos/mario_gabelli.jpeg",
+    "credit": "https://business.columbia.edu/columbia-business-school-board/people/mario-j-gabelli-67",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "loeb",
+    "path": "loeb-source.jpg",
+    "source": "https://static.standard.co.uk/2021/10/22/10/daniel-loeb-large-1.jpg?auto=webp&crop=5%3A3%2Csmart&quality=75&width=1200",
+    "credit": "https://www.standard.co.uk/business/dan-loeb-third-point-asset-value-investors-net-asset-value-share-price-b961931.html",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "pabrai",
+    "path": "pabrai-source.jpg",
+    "source": "https://fundamentalsage.com/wp-content/uploads/2024/01/MohnishPabrai.jpg",
+    "credit": "https://fundamentalsage.com/sage-profiles/mohnish-pabrai-quotes-books/",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "berkowitz",
+    "path": "berkowitz-source.jpg",
+    "source": "https://blogs-images.forbes.com/investor/files/2011/05/0anZcNH9AUgaa_11673.jpg",
+    "credit": "https://www.forbes.com/pictures/gg45eejkg/bruce-berkowitz-fairholme-capital-management/",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "smith",
+    "path": "smith-source.jpg",
+    "source": "https://media-prod.ii.co.uk/s3fs-public/2026-01/TerrySmith26.jpg",
+    "credit": "https://www.ii.co.uk/analysis-commentary/terry-smith-blames-these-three-factors-2025s-underperformance-ii537765",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "asness",
+    "path": "asness.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Cliff-asness-by-bill-cramer.jpg/250px-Cliff-asness-by-bill-cramer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Cliff-asness-by-bill-cramer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credit": "https://commons.wikimedia.org/wiki/File:Cliff-asness-by-bill-cramer.jpg",
+    "bytes": 22090
+  },
+  {
+    "key": "watsa",
+    "path": "watsa.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Prem_Watsa.jpg/250px-Prem_Watsa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Prem_Watsa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credit": "https://commons.wikimedia.org/wiki/File:Prem_Watsa.jpg",
+    "bytes": 10793
+  },
+  {
+    "key": "hussman",
+    "path": "hussman-source.jpg",
+    "source": "https://pbs.twimg.com/profile_images/1546562566415155205/FI1in9u9_400x400.jpg",
+    "credit": "https://x.com/hussmanjp",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "nygren",
+    "path": "nygren-source.jpg",
+    "source": "https://oakmark.com/wp-content/uploads/sites/3/2023/08/Bill-Nygren2-234x300.jpg",
+    "credit": "https://oakmark.com/who-we-are/our-team/bill-nygren/",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "davis",
+    "path": "davis-source.jpg",
+    "source": "https://www.advisorperspectives.com/images/content_image/data/22/22691374768c17ac897b58bab5849596.jpg",
+    "credit": "https://www.advisorperspectives.com/articles/2019/10/28/where-the-davis-funds-is-finding-great-opportunities",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "rogers",
+    "path": "rogers-source.jpg",
+    "source": "https://www.corporateleadership.org/app/uploads/2022/10/John-W.-Rogers-Jr..jpg",
+    "credit": "https://www.corporateleadership.org/board-of-directors/",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "danoff",
+    "path": "danoff-source.jpg",
+    "source": "https://s.wsj.net/public/resources/images/BA-BJ057A_MFQ_Q_KS_20151001170053.jpg",
+    "credit": "https://www.barrons.com/articles/fidelitys-will-danoff-partners-with-buffett-bezos-and-zuckerberg-1443851292",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "herro",
+    "path": "herro-source.jpg",
+    "source": "https://oakmark.com/wp-content/uploads/sites/3/2019/06/David-Herro-234x300.jpg",
+    "credit": "https://oakmark.com/who-we-are/our-team/david-herro/",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  },
+  {
+    "key": "gayner",
+    "path": "gayner-source.jpg",
+    "source": "https://mss-p-053.stylelabs.cloud/api/public/content/thomas-gayner?h=926&la=en&v=0137be8f&w=784",
+    "credit": "https://www.russellreynolds.com/en/insights/podcasts/planting-long-term-investment-seeds-with-markel-group-ceo-tom-gayner",
+    "rights": "Editorial source photo; public reuse rights not verified"
+  }
+]

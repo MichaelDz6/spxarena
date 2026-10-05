@@ -1,0 +1,115 @@
+#spx-legendary-cards {--legend-font:'DM Sans',sans-serif;--legend-mono:'IBM Plex Mono',monospace;--legend-pearl:#fbfaf6;--legend-ink:#283e39;--legend-gold:#c6b078;--legend-silver:#eee5c9;}
+#spx-legendary-cards .legend-stage {min-height:570px;display:flex;align-items:center;justify-content:center;padding:45px 22px;box-sizing:border-box;}
+#spx-legendary-cards #spx-current-legend {width:240px;max-width:100%;}
+#spx-legendary-cards .current-card-scope {background:transparent;}
+#spx-legendary-cards .premium-card {width:280px;max-width:100%;box-sizing:border-box;position:relative;font:400 14px/1.5 var(--legend-font);text-align:center;color:var(--legend-ink);isolation:isolate;}
+#spx-legendary-cards .premium-card * {box-sizing:border-box;}
+#spx-legendary-cards .premium-card strong {font-weight:400;}
+#spx-legendary-cards .legend-rarity {display:flex;justify-content:center;align-items:center;gap:9px;font:400 11px/1.5 var(--legend-mono);letter-spacing:1.5px;position:relative;}
+#spx-legendary-cards .legend-rarity svg {width:15px;height:15px;stroke-width:1.5;}
+#spx-legendary-cards .legend-rarity>span {width:24px;height:1px;background:currentColor;opacity:.5;}
+#spx-legendary-cards .legend-symbol {display:block;font:300 62px/1.1 var(--legend-font);letter-spacing:5px;position:relative;}
+#spx-legendary-cards .legend-market {display:block;font:400 11px/1.5 var(--legend-mono);letter-spacing:2px;position:relative;}
+#spx-legendary-cards .legend-name {position:relative;}
+#spx-legendary-cards .legend-name>strong {display:block;font-size:19px;line-height:1.5;letter-spacing:-.3px;}
+#spx-legendary-cards .legend-name>small {display:block;font:400 11px/1.65 var(--legend-mono);margin-top:5px;}
+#spx-legendary-cards .legend-main {position:relative;padding:16px 0 18px;}
+#spx-legendary-cards .legend-main>strong {display:block;font-size:42px;line-height:1.15;letter-spacing:-1.6px;white-space:nowrap;font-variant-numeric:tabular-nums;}
+#spx-legendary-cards .legend-main>strong>span {font-size:24px;letter-spacing:-.5px;}
+#spx-legendary-cards .legend-main>small {display:block;font:400 11px/1.5 var(--legend-mono);margin-top:7px;}
+#spx-legendary-cards .legend-secondary {position:relative;display:grid;grid-template-columns:1fr 1fr;padding:13px 0 0;border-top:1px solid #c6b07866;}
+#spx-legendary-cards .legend-secondary>div+div {border-left:1px solid #c6b07866;}
+#spx-legendary-cards .legend-secondary small {display:block;font:400 11px/1.5 var(--legend-mono);}
+#spx-legendary-cards .legend-secondary strong {display:block;font-size:24px;line-height:1.5;letter-spacing:-.7px;font-variant-numeric:tabular-nums;}
+#spx-legendary-cards .legend-secondary strong>span {font-size:16px;letter-spacing:-.3px;}
+
+/* Warm platinum foil, engraved corner cuts, and open pearl space. */
+#spx-legendary-cards .sovereign {padding:23px 22px 13px;border:2px solid transparent;border-radius:3px;background:linear-gradient(120deg,#f6f8f3 5%,#fffdf6 37%,#f1ead8 65%,#fffdf5 81%) padding-box,linear-gradient(140deg,#8d927e,#f1e3bd 18%,#b5a374 39%,#f9efd4 62%,#a69a76 84%,#dfd4b2) border-box;box-shadow:0 12px 25px #233a3212,inset 0 0 0 4px #faf8ee,inset 0 0 0 5px #c4b388;}
+#spx-legendary-cards .sovereign::before {content:"";position:absolute;inset:10px;border:1px solid #c1b18480;pointer-events:none;}
+#spx-legendary-cards .sovereign .legend-rarity {color:#62644e;letter-spacing:1.1px;}
+#spx-legendary-cards .sovereign-identity {position:relative;padding:34px 0 25px;overflow:hidden;}
+#spx-legendary-cards .foil-watermark {position:absolute;left:0;right:0;top:13px;font:300 110px/1.2 var(--legend-font);letter-spacing:-10px;color:#b5bca326;}
+#spx-legendary-cards .sovereign .legend-symbol {font-size:64px;letter-spacing:6px;}
+#spx-legendary-cards .sovereign .legend-market {margin-top:6px;color:#657064;}
+#spx-legendary-cards .engraved-rule {position:absolute;bottom:9px;left:21%;right:21%;height:1px;background:linear-gradient(90deg,transparent,#b5a374,transparent);}
+#spx-legendary-cards .sovereign .legend-name>small {color:#626961;}
+#spx-legendary-cards .sovereign .legend-main {padding-top:16px;}
+#spx-legendary-cards .sovereign .legend-main>small,#spx-legendary-cards .sovereign .legend-secondary small {color:#646b60;}
+#spx-legendary-cards .foil-signature {display:flex;align-items:center;justify-content:center;gap:12px;color:#b5a374;padding-top:14px;}
+#spx-legendary-cards .foil-signature span {width:42px;height:1px;background:#c5b58270;}
+#spx-legendary-cards .foil-signature svg {width:11px;height:11px;}
+#spx-legendary-cards .foil-corner {position:absolute;width:18px;height:18px;background:linear-gradient(145deg,#f4e5b9,#a39773 55%,#e8dcbb);z-index:2;clip-path:polygon(0 0,100% 0,0 100%);}
+#spx-legendary-cards .corner-top {top:-2px;left:-2px;}
+#spx-legendary-cards .corner-bottom {bottom:-2px;right:-2px;transform:rotate(180deg);}
+
+/* Matte forest enamel and a restrained gold collector's frame. */
+#spx-legendary-cards .black-label {padding:24px 24px 26px;border:2px solid transparent;border-radius:14px;background:linear-gradient(150deg,#193b34,#132925 54%,#0c201c) padding-box,linear-gradient(135deg,#ab9b6f,#eee2bc 19%,#998966 43%,#e5d7ae 70%,#8d8366) border-box;color:#f5f2e6;box-shadow:0 18px 27px #12312a20,inset 0 0 0 3px #172c24,inset 0 0 0 4px #a99b6a75;overflow:hidden;}
+#spx-legendary-cards .black-label .legend-rarity {justify-content:space-between;color:#e2d4a9;font-size:11px;letter-spacing:1.6px;}
+#spx-legendary-cards .black-label .legend-rarity>span {width:20px;}
+#spx-legendary-cards .black-identity {position:relative;text-align:left;padding:36px 0 21px;}
+#spx-legendary-cards .black-watermark {position:absolute;right:-22px;top:20px;color:#a9c4ac0c;font:300 126px/1 var(--legend-font);letter-spacing:-10px;}
+#spx-legendary-cards .black-label .legend-market {color:#b9c9ba;letter-spacing:1.7px;}
+#spx-legendary-cards .black-label .legend-symbol {font-size:67px;letter-spacing:3px;margin-top:4px;color:#e9dfbe;}
+#spx-legendary-cards .black-gold-bar {width:42px;height:2px;margin-top:18px;background:linear-gradient(90deg,#d4c08c,#eadfbd);}
+#spx-legendary-cards .black-label .legend-name {text-align:left;}
+#spx-legendary-cards .black-label .legend-name>small {color:#bfcabb;}
+#spx-legendary-cards .black-label .legend-main {text-align:left;padding-top:21px;padding-bottom:15px;}
+#spx-legendary-cards .black-label .legend-main>small {color:#bfcabb;margin:0 0 5px;}
+#spx-legendary-cards .black-label .legend-main>strong {color:#ebdfb8;font-size:43px;}
+#spx-legendary-cards .black-label .legend-secondary {text-align:left;border-color:#a69a6860;}
+#spx-legendary-cards .black-label .legend-secondary>div+div {padding-left:17px;border-color:#a69a6860;}
+#spx-legendary-cards .black-label .legend-secondary small {color:#bfcabb;}
+#spx-legendary-cards .black-inlay {position:absolute;inset:9px;border:1px solid #bbac7240;border-radius:6px;pointer-events:none;}
+
+/* Paladin artifact language: carved shoulders, a crown crest, ivory enamel. */
+#spx-legendary-cards .sunforged {padding:33px 22px 31px;color:#2b433b;filter:drop-shadow(0 10px 10px #4d594026);}
+#spx-legendary-cards .sun-shell {position:absolute;inset:0;clip-path:polygon(0 13%,8% 13%,8% 5%,30% 5%,50% 0,70% 5%,92% 5%,92% 13%,100% 13%,100% 89%,91% 96%,65% 96%,50% 100%,35% 96%,9% 96%,0 89%);background:linear-gradient(130deg,#9a997f 0%,#f0dfaa 15%,#c3b076 31%,#fff3cf 48%,#a6a081 62%,#ddc895 81%,#bbb390);}
+#spx-legendary-cards .sun-liner {position:absolute;inset:6px;clip-path:polygon(0 13%,8% 13%,8% 5%,30% 5%,50% 0,70% 5%,92% 5%,92% 13%,100% 13%,100% 89%,91% 96%,65% 96%,50% 100%,35% 96%,9% 96%,0 89%);background:linear-gradient(125deg,#e9ecdc,#fcfbf0 35%,#f1edda);box-shadow:inset 0 0 0 2px #9b9b8070;}
+#spx-legendary-cards .sun-content {position:relative;}
+#spx-legendary-cards .sun-wing {position:absolute;top:31px;width:73px;height:47px;background:linear-gradient(153deg,#fcf0c8 5%,#baac7d 25%,#e8d8a9 48%,#92967d 51%,#e3cf98 75%);clip-path:polygon(0 0,100% 30%,100% 49%,22% 28%,88% 67%,82% 88%,9% 50%);}
+#spx-legendary-cards .sun-wing-left {left:-10px;transform:rotate(-7deg);}
+#spx-legendary-cards .sun-wing-right {right:-10px;transform:scaleX(-1) rotate(-7deg);}
+#spx-legendary-cards .sun-crest {position:absolute;left:calc(50% - 25px);top:-8px;width:50px;height:42px;display:grid;place-items:center;color:#f0e3b7;background:linear-gradient(120deg,#bfd0b8,#527467 23%,#294b40 65%,#abc1aa);clip-path:polygon(50% 0,100% 25%,90% 75%,50% 100%,10% 75%,0 25%);filter:drop-shadow(0 2px 2px #27433540);}
+#spx-legendary-cards .sun-crest svg {width:21px;height:21px;stroke-width:1.4;}
+#spx-legendary-cards .sunforged .legend-rarity {padding-top:11px;color:#606a51;letter-spacing:1.7px;gap:8px;}
+#spx-legendary-cards .sunforged .legend-rarity>span {width:17px;}
+#spx-legendary-cards .sun-identity {position:relative;padding:29px 0 21px;overflow:hidden;}
+#spx-legendary-cards .sun-rays {position:absolute;inset:-16px -28px;background:repeating-conic-gradient(from -24deg at 50% 95%,transparent 0deg 14deg,#c5b77c18 14deg 16deg,transparent 16deg 30deg);mask-image:linear-gradient(#000,transparent 92%);}
+#spx-legendary-cards .sunforged .legend-symbol {font-size:59px;color:#38564a;text-shadow:0 1px #ffffff;letter-spacing:6px;}
+#spx-legendary-cards .sunforged .legend-market {color:#697561;margin-top:5px;}
+#spx-legendary-cards .sunforged .legend-name {padding:10px 0;border-block:1px solid #c2b38270;background:linear-gradient(90deg,transparent,#e1d4ad44,transparent);}
+#spx-legendary-cards .sunforged .legend-name>small {color:#626e59;}
+#spx-legendary-cards .sunforged .legend-main {padding:13px 0 15px;}
+#spx-legendary-cards .sunforged .legend-main>small,#spx-legendary-cards .sunforged .legend-secondary small {color:#626e59;}
+#spx-legendary-cards .sunforged .legend-secondary {padding-top:10px;}
+#spx-legendary-cards .sun-keystone {position:absolute;width:15px;height:21px;left:calc(50% - 7.5px);bottom:0;background:linear-gradient(135deg,#d9e4cd,#436c57 40%,#789884 70%,#c6d6bb);clip-path:polygon(50% 0,100% 36%,50% 100%,0 36%);}
+
+/* Arcane relic language: night enamel, prismatic stones, stepped gold rails. */
+#spx-legendary-cards .astral-relic {padding:35px 25px 29px;color:#f3eee1;filter:drop-shadow(0 12px 12px #25334125);}
+#spx-legendary-cards .astral-frame {position:absolute;inset:0;background:linear-gradient(135deg,#a5b9c5,#e7dbb7 14%,#a9986e 32%,#c5d3d6 50%,#ecdab0 65%,#8d9cab 88%,#d5c69d);clip-path:polygon(0 9%,10% 9%,10% 0,90% 0,90% 9%,100% 9%,100% 91%,90% 91%,90% 100%,10% 100%,10% 91%,0 91%);}
+#spx-legendary-cards .astral-enamel {position:absolute;inset:5px;clip-path:polygon(0 9%,10% 9%,10% 0,90% 0,90% 9%,100% 9%,100% 91%,90% 91%,90% 100%,10% 100%,10% 91%,0 91%);background:radial-gradient(ellipse at 25% 17%,#51779099,transparent 42%),radial-gradient(ellipse at 80% 46%,#51447644,transparent 55%),linear-gradient(155deg,#1d3548,#111d30 75%);box-shadow:inset 0 0 0 2px #aab6b357,inset 0 0 0 6px #101c2b,inset 0 0 0 7px #b8b88a44;}
+#spx-legendary-cards .astral-content {position:relative;}
+#spx-legendary-cards .astral-relic .legend-rarity {color:#ebdcb5;letter-spacing:1.7px;gap:9px;}
+#spx-legendary-cards .astral-relic .legend-rarity>span {width:16px;}
+#spx-legendary-cards .astral-identity {position:relative;padding:32px 0 20px;}
+#spx-legendary-cards .astral-identity::before {content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 14%,#dfedfa 0 1px,transparent 1.7px),radial-gradient(circle at 79% 78%,#b8d8ec 0 1px,transparent 1.5px),radial-gradient(circle at 89% 21%,#aecfe4 0 .8px,transparent 1.4px),radial-gradient(circle at 28% 81%,#a2cbdd 0 .8px,transparent 1.4px);opacity:.65;}
+#spx-legendary-cards .astral-relic .legend-symbol {font-size:62px;letter-spacing:6px;color:#e2ebec;text-shadow:0 1px 1px #ffffff20,0 0 22px #88c1d95c;}
+#spx-legendary-cards .astral-relic .legend-market {color:#bbcdda;margin-top:4px;}
+#spx-legendary-cards .astral-relic .legend-name {border-top:1px solid #b2b39560;padding-top:12px;}
+#spx-legendary-cards .astral-relic .legend-name>small {color:#c0cad2;}
+#spx-legendary-cards .astral-relic .legend-main>strong {color:#eadfbf;}
+#spx-legendary-cards .astral-relic .legend-main>small,#spx-legendary-cards .astral-relic .legend-secondary small {color:#c0cad2;}
+#spx-legendary-cards .astral-relic .legend-secondary {border-color:#b6b58a60;}
+#spx-legendary-cards .astral-relic .legend-secondary>div+div {border-color:#b6b58a60;}
+#spx-legendary-cards .relic-crest {position:absolute;left:calc(50% - 26px);top:-17px;width:52px;height:47px;display:grid;place-items:center;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:linear-gradient(140deg,#d4e5e8,#6797b6 24%,#243e68 49%,#94bcce 76%,#c6d8df);color:#edf7fb;}
+#spx-legendary-cards .relic-crest svg {width:19px;height:19px;stroke-width:1.3;}
+#spx-legendary-cards .relic-corner {position:absolute;width:33px;height:33px;background:linear-gradient(135deg,#e8debf,#a69c7c 47%,#eef0dc 50%,#8ca5b7 80%);clip-path:polygon(0 0,100% 0,100% 24%,25% 25%,24% 100%,0 100%);}
+#spx-legendary-cards .relic-tl {top:14px;left:14px;}
+#spx-legendary-cards .relic-tr {top:14px;right:14px;transform:rotate(90deg);}
+#spx-legendary-cards .relic-bl {bottom:14px;left:14px;transform:rotate(-90deg);}
+#spx-legendary-cards .relic-br {bottom:14px;right:14px;transform:rotate(180deg);}
+#spx-legendary-cards .relic-base {position:absolute;bottom:-8px;left:calc(50% - 11px);width:22px;height:22px;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:linear-gradient(140deg,#cbdee1,#678ba5 45%,#364d74 49%,#b7ccd6);}
+#spx-legendary-cards .relic-light {position:absolute;width:1px;background:linear-gradient(transparent,#d2eaf4aa,transparent);transform:rotate(35deg);}
+#spx-legendary-cards .relic-light-one {height:33px;right:12px;top:11px;}
+#spx-legendary-cards .relic-light-two {height:23px;left:13px;bottom:10px;}
+@media(max-width:400px){#spx-legendary-cards .legend-stage {padding-inline:20px;}#spx-legendary-cards .premium-card {width:280px;}}

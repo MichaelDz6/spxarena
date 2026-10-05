@@ -1,0 +1,160 @@
+#spx-nine-in-ten [hidden]{display:none!important;}
+#spx-nine-in-ten .home-nav nav{gap:20px;}
+#spx-nine-in-ten .home-nav nav a[aria-current=page]{color:var(--brand);text-decoration:underline;text-decoration-color:var(--gold-edge);text-decoration-thickness:2px;text-underline-offset:7px;}
+#spx-nine-in-ten .leaderboard-section{padding:22px 36px;margin-top:4px;background:linear-gradient(120deg,#f3f5ef,#faf8ef);border-block:1px solid var(--rule);}
+#spx-nine-in-ten .leaderboard-section .home-section-head{margin-bottom:10px;}
+#spx-nine-in-ten .section-intro{color:var(--soft);font-size:13px;}
+#spx-nine-in-ten .leaderboard-bars{position:relative;margin-top:12px;}
+#spx-nine-in-ten .bar-row{display:grid;grid-template-columns:235px minmax(0,1fr) 106px;gap:18px;align-items:center;padding:3px 16px;border-bottom:1px solid #d7dfd6;min-height:42px;}
+#spx-nine-in-ten .bar-row.benchmark-row{background:#f0ead7;border-block:1px solid #d9c995;margin-bottom:2px;padding-block:6px;}
+#spx-nine-in-ten .bar-identity{display:flex;align-items:center;gap:11px;min-width:0;}
+#spx-nine-in-ten .bar-rank{font:12px 'IBM Plex Mono',monospace;color:var(--soft);width:20px;flex-shrink:0;}
+#spx-nine-in-ten .bar-identity .portrait{width:37px;height:43px;flex:0 0 37px;border-radius:18px 18px 4px 4px;background:var(--surface);}
+#spx-nine-in-ten .leaderboard-bars .bar-identity .portrait{width:28px;height:32px;flex-basis:28px;border-radius:13px 13px 3px 3px;}
+#spx-nine-in-ten .bar-identity strong{font-size:14px;font-weight:400;display:block;}
+#spx-nine-in-ten .bar-identity small{font:10px/1.5 'IBM Plex Mono',monospace;color:var(--soft);display:block;margin-top:3px;}
+#spx-nine-in-ten .leaderboard-bars .bar-identity strong{line-height:1.2;}
+#spx-nine-in-ten .leaderboard-bars .bar-identity small{line-height:1.4;margin-top:2px;}
+#spx-nine-in-ten .bar-benchmark-icon{width:37px;flex:0 0 37px;color:#947727;display:grid;place-items:center;}
+#spx-nine-in-ten .bar-track{position:relative;height:11px;background:#dce5df;border-radius:2px;}
+#spx-nine-in-ten .bar-fill{display:block;height:100%;background:#55756a;border-radius:2px;}
+#spx-nine-in-ten .benchmark-row .bar-fill{background:linear-gradient(90deg,#a98c38,#cfb466);}
+#spx-nine-in-ten .leaderboard-reference-line{position:absolute;width:1px;background:#aa8e41;pointer-events:none;z-index:1;transform:translateX(-.5px);}
+#spx-nine-in-ten .bar-value{text-align:right;}
+#spx-nine-in-ten .bar-value strong{display:block;font:400 18px/1.2 var(--sans);letter-spacing:-.4px;font-variant-numeric:tabular-nums;}
+#spx-nine-in-ten .bar-value small{display:block;font:10px/1.4 'IBM Plex Mono',monospace;color:var(--soft);}
+#spx-nine-in-ten .bar-value .excess-return.up{color:var(--positive);}
+#spx-nine-in-ten .bar-value .excess-return.down{color:var(--negative);}
+#spx-nine-in-ten .bar-axis{display:grid;grid-template-columns:235px minmax(0,1fr) 106px;gap:18px;padding:8px 16px 0;}
+#spx-nine-in-ten .bar-axis-ticks{display:flex;justify-content:space-between;font:10px 'IBM Plex Mono',monospace;color:var(--soft);}
+#spx-nine-in-ten .leaderboard-bottom{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:12px;}
+#spx-nine-in-ten .leaderboard-bottom p{font-size:11px;line-height:1.8;color:var(--soft);}
+#spx-nine-in-ten .arena-action{display:inline-flex;align-items:center;justify-content:center;gap:22px;padding:13px 17px;background:var(--brand);color:#fff!important;border:1px solid var(--brand);font:400 12px/1.4 var(--sans);text-decoration:none!important;min-height:44px;}
+#spx-nine-in-ten .arena-action:hover{background:#26453f;}
+#spx-nine-in-ten .arena-action.secondary{background:transparent;color:var(--brand)!important;border-color:var(--gold-edge);}
+#spx-nine-in-ten .arena-page{padding:0 36px 40px;}
+#spx-nine-in-ten .page-intro{padding:26px 0 32px;}
+#spx-nine-in-ten .back-link{display:block;color:var(--soft);font-size:12px;margin-bottom:36px;width:fit-content;}
+#spx-nine-in-ten .page-intro .small-label{display:block;}
+#spx-nine-in-ten .page-intro h1{font:300 44px/1.16 var(--sans);letter-spacing:-1.5px;margin:16px 0!important;}
+#spx-nine-in-ten .page-intro h1 em{font-style:normal;color:var(--brand);}
+#spx-nine-in-ten .page-intro>p{font-size:14px;line-height:1.8;color:var(--soft);max-width:575px;}
+#spx-nine-in-ten .ranking-benchmark{display:flex;align-items:center;gap:23px;background:linear-gradient(120deg,#ece7d5,#f9f6e9);border:1px solid #d5c594;padding:22px 24px;}
+#spx-nine-in-ten .benchmark-mark{font:300 35px var(--sans);letter-spacing:2px;color:#a18432;}
+#spx-nine-in-ten .ranking-benchmark h2{font:400 19px var(--sans);margin-top:6px;}
+#spx-nine-in-ten .ranking-benchmark h2 span{font-size:12px;color:var(--soft);}
+#spx-nine-in-ten .ranking-benchmark-return{margin-left:auto;text-align:right;}
+#spx-nine-in-ten .ranking-benchmark-return strong{font:300 35px var(--sans);display:block;}
+#spx-nine-in-ten .ranking-benchmark-return>span{font:10px 'IBM Plex Mono',monospace;color:var(--soft);}
+#spx-nine-in-ten .ranking-table-wrap{margin-top:28px;}
+#spx-nine-in-ten .ranking-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;}
+#spx-nine-in-ten .ranking-table caption{text-align:left;font:11px 'IBM Plex Mono',monospace;color:var(--soft);margin-bottom:20px;}
+#spx-nine-in-ten .ranking-table th{text-align:right;font:11px/1.5 var(--sans);color:var(--soft);padding:12px 10px;border-bottom:1px solid var(--rule);white-space:nowrap;font-weight:400;}
+#spx-nine-in-ten .ranking-table th:first-child{text-align:left;}
+#spx-nine-in-ten .ranking-table td{padding:20px 10px;text-align:right;border-bottom:1px solid var(--rule);font:400 16px var(--sans);}
+#spx-nine-in-ten .ranking-table td:first-child{text-align:left;}
+#spx-nine-in-ten .ranking-table .bar-identity{gap:9px;}
+#spx-nine-in-ten .ranking-table .bar-identity strong{font-size:13px;}
+#spx-nine-in-ten .ranking-table .bar-identity small{font-size:9px;}
+#spx-nine-in-ten .rarity-badge{display:inline-flex;align-items:center;gap:6px;color:var(--tier);font-size:11px;}
+#spx-nine-in-ten .rarity-badge:before{content:'';width:5px;height:5px;transform:rotate(45deg);background:var(--tier);}
+#spx-nine-in-ten .ranking-explainer{font-size:12px;line-height:1.8;color:var(--soft);margin-top:20px!important;max-width:760px;}
+#spx-nine-in-ten .ranking-links{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:26px;}
+#spx-nine-in-ten .calculator-page .page-intro{display:grid;grid-template-columns:1fr 1fr;column-gap:38px;align-items:end;}
+#spx-nine-in-ten .calculator-page .back-link,#spx-nine-in-ten .calculator-page .page-intro>.small-label{grid-column:1/-1;}
+#spx-nine-in-ten .calculator-page .page-intro h1{margin-bottom:0!important;}
+#spx-nine-in-ten .calculator-page .page-intro>p{padding-bottom:4px;}
+#spx-nine-in-ten .calculator-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:28px;margin-top:8px;align-items:start;}
+#spx-nine-in-ten .investment-form{padding:23px;background:var(--surface);border:1px solid var(--rule);}
+#spx-nine-in-ten .form-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:24px;}
+#spx-nine-in-ten .form-heading .small-label{font-size:9px;letter-spacing:.5px;}
+#spx-nine-in-ten .history-tag{font:8px 'IBM Plex Mono',monospace;color:var(--brand);border:1px solid #b5c8bd;padding:4px 5px;}
+#spx-nine-in-ten .investment-form label{display:flex;justify-content:space-between;font:12px var(--sans);margin-bottom:8px;}
+#spx-nine-in-ten .investment-form label>span{font-size:10px;color:var(--soft);}
+#spx-nine-in-ten .investment-form input,#spx-nine-in-ten .investment-form select{width:100%;min-width:0;border:1px solid #c2cec5;background:var(--paper);color:var(--ink);padding:11px 10px;font:400 14px var(--sans);border-radius:0;min-height:44px;}
+#spx-nine-in-ten .money-input{position:relative;margin-bottom:21px;}
+#spx-nine-in-ten .money-input>span{position:absolute;left:12px;top:10px;font:400 21px var(--sans);color:var(--soft);}
+#spx-nine-in-ten .money-input>input{padding-left:32px;font-size:23px;font-weight:300;letter-spacing:-.4px;}
+#spx-nine-in-ten .date-fields{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:21px;}
+#spx-nine-in-ten .investment-form .arena-action{margin-top:23px;width:100%;font-size:12px;}
+#spx-nine-in-ten .form-footnote{font:11px/1.7 var(--sans);color:var(--soft);margin-top:18px!important;}
+#spx-nine-in-ten .calculator-error{font-size:12px;line-height:1.5;color:#963c3b;margin-top:14px!important;}
+#spx-nine-in-ten .calculator-result{min-width:0;padding:5px 0;}
+#spx-nine-in-ten .result-topline{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+#spx-nine-in-ten .result-period{font:10px 'IBM Plex Mono',monospace;color:var(--soft);}
+#spx-nine-in-ten .result-wealth{padding:29px 0 26px;}
+#spx-nine-in-ten .result-wealth>span{font-size:13px;color:var(--soft);}
+#spx-nine-in-ten .result-wealth>strong{display:block;font:300 55px/1.25 var(--sans);letter-spacing:-2px;color:var(--brand);margin:3px 0;}
+#spx-nine-in-ten .result-wealth>small{font-size:11px;color:var(--soft);}
+#spx-nine-in-ten .result-split{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:18px 0;border-block:1px solid var(--rule);}
+#spx-nine-in-ten .result-split span{font-size:11px;color:var(--soft);display:block;}
+#spx-nine-in-ten .result-split strong{font:400 25px var(--sans);letter-spacing:-.7px;display:block;margin-top:6px;}
+#spx-nine-in-ten .calc-chart-wrap{position:relative;min-width:0;margin-top:28px;}
+#spx-nine-in-ten .calculator-chart{width:100%;display:block;overflow:visible;}
+#spx-nine-in-ten .calc-chart-legend{display:flex;gap:20px;flex-wrap:wrap;font-size:11px;color:var(--soft);}
+#spx-nine-in-ten .calc-chart-legend>span{display:flex;gap:8px;align-items:center;}
+#spx-nine-in-ten .calc-chart-legend i{width:17px;height:2px;background:var(--brand);}
+#spx-nine-in-ten .calc-chart-legend>span+span i{height:0;border-top:2px dashed #af954f;background:transparent;}
+#spx-nine-in-ten .calc-tooltip{position:absolute;top:14px;background:var(--paper);border:1px solid var(--rule);padding:9px 11px;color:var(--ink);font:11px/1.8 var(--sans);pointer-events:none;box-shadow:0 4px 15px #263e3512;max-width:200px;}
+#spx-nine-in-ten .calc-tooltip strong{display:block;font-weight:500;}
+#spx-nine-in-ten .calculator-method{margin-top:32px;padding-top:22px;border-top:1px solid var(--rule);color:var(--soft);}
+#spx-nine-in-ten .calculator-method p{font-size:12px;line-height:1.8;margin-top:15px;max-width:850px;}
+#spx-nine-in-ten .calculator-method a{text-decoration:underline;}
+#spx-nine-in-ten .result-wealth>strong.large-amount{font-size:38px;letter-spacing:-1px;}
+#spx-nine-in-ten .result-split strong.large-amount{font-size:19px;letter-spacing:-.6px;}
+@media(max-width:800px){
+ #spx-nine-in-ten .leaderboard-section{padding:24px 25px;}
+ #spx-nine-in-ten .arena-page{padding-inline:25px;}
+ #spx-nine-in-ten .bar-row,#spx-nine-in-ten .bar-axis{grid-template-columns:208px minmax(0,1fr) 95px;gap:12px;padding-inline:10px;}
+ #spx-nine-in-ten .ranking-table-wrap{overflow-x:auto;}
+ #spx-nine-in-ten .ranking-table{min-width:760px;}
+ #spx-nine-in-ten .calculator-layout{grid-template-columns:260px minmax(0,1fr);gap:23px;}
+ #spx-nine-in-ten .investment-form{padding:19px;}
+ #spx-nine-in-ten .result-wealth>strong{font-size:43px;}
+ #spx-nine-in-ten .result-split strong{font-size:22px;}
+ #spx-nine-in-ten .result-split{gap:10px;}
+}
+@media(max-width:600px){
+ #spx-nine-in-ten .bar-row{grid-template-columns:minmax(0,1fr) minmax(64px,.7fr);row-gap:2px;padding:5px 10px;min-height:0;}
+ #spx-nine-in-ten .bar-identity{grid-column:1;grid-row:1;}
+ #spx-nine-in-ten .bar-track{grid-row:1/3;grid-column:2;margin:0;height:9px;}
+ #spx-nine-in-ten .bar-value{grid-row:2;grid-column:1;display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;text-align:left;}
+ #spx-nine-in-ten .bar-gap-context{display:none;}
+ #spx-nine-in-ten .bar-axis{grid-template-columns:minmax(0,1fr) minmax(64px,.7fr);padding-inline:10px;}
+ #spx-nine-in-ten .bar-axis>span:last-child,#spx-nine-in-ten .bar-axis-ticks>span:nth-child(2),#spx-nine-in-ten .bar-axis-ticks>span:nth-child(4){display:none;}
+ #spx-nine-in-ten .bar-identity strong{font-size:13px;}
+ #spx-nine-in-ten .bar-identity small{font-size:9px;}
+ #spx-nine-in-ten .bar-rank{width:15px;}
+ #spx-nine-in-ten .bar-identity{gap:8px;}
+ #spx-nine-in-ten .bar-identity .portrait{width:30px;height:37px;flex-basis:30px;}
+ #spx-nine-in-ten .bar-value strong{font-size:18px;}
+ #spx-nine-in-ten .bar-value small{font-size:9px;}
+ #spx-nine-in-ten .leaderboard-bottom{align-items:start;flex-direction:column;}
+ #spx-nine-in-ten .calculator-layout{grid-template-columns:1fr;gap:30px;}
+ #spx-nine-in-ten .calculator-page .page-intro{display:block;}
+ #spx-nine-in-ten .calculator-page .page-intro>p{margin-top:18px;}
+ #spx-nine-in-ten .date-fields{grid-template-columns:1fr 1fr;}
+ #spx-nine-in-ten .result-wealth>strong{font-size:50px;}
+ #spx-nine-in-ten .ranking-benchmark{gap:14px;padding:18px 15px;flex-wrap:wrap;}
+ #spx-nine-in-ten .benchmark-mark{font-size:25px;}
+ #spx-nine-in-ten .ranking-benchmark-return strong{font-size:27px;}
+ #spx-nine-in-ten .ranking-benchmark h2{font-size:16px;}
+ #spx-nine-in-ten .ranking-benchmark h2 span{display:block;margin-top:4px;}
+ #spx-nine-in-ten .page-intro h1{font-size:37px;}
+ #spx-nine-in-ten .ranking-benchmark .small-label{font-size:9px;}
+}
+@media(max-width:520px){
+ #spx-nine-in-ten .leaderboard-section{padding:22px 20px;}
+ #spx-nine-in-ten .arena-page{padding-inline:20px;}
+ #spx-nine-in-ten .home-nav nav{gap:13px;flex-wrap:wrap;justify-content:flex-start;}
+ #spx-nine-in-ten .home-nav nav a{min-height:32px;display:inline-flex;align-items:center;}
+ #spx-nine-in-ten .home-nav{gap:12px;}
+ #spx-nine-in-ten .bar-identity small{max-width:120px;}
+ #spx-nine-in-ten .bar-identity .portrait{display:none;}
+ #spx-nine-in-ten .benchmark-row .bar-benchmark-icon,#spx-nine-in-ten .benchmark-row .bar-rank{display:none;}
+ #spx-nine-in-ten .investment-form input,#spx-nine-in-ten .investment-form select{font-size:16px;}
+ #spx-nine-in-ten .money-input>input{font-size:24px;}
+ #spx-nine-in-ten .date-fields{grid-template-columns:1fr;}
+ #spx-nine-in-ten .result-wealth>strong.large-amount{font-size:28px;}
+ #spx-nine-in-ten .result-split strong.large-amount{font-size:15px;}
+}

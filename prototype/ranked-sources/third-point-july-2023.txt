@@ -1,0 +1,780 @@
+July 31, 2023
+NET PERFORMANCE1 MTD QTD YTD AUM BREAKDOWN
+Third Point Offshore Fund, Ltd. 2.2% 2.2% -0.9% Third Point Offshore Funds $4.5 B
+Third Point Partners L.P. 2.2% 2.2% -0.8% Third Point Onshore Funds $2.9 B
+Third Point Partners Qualified L.P. 2.2% 2.2% -0.7% Third Point Ultra $2.6 B
+Third Point Ultra Ltd. 2.4% 2.4% -1.1% Third Point Structured Credit Opportunities Fund $0.7 B
+Third Point Ultra Onshore LP2 2.4% 2.4% -1.0% Third Point Venture Funds $0.3 B
+MSCI World Index (TR) 3.4% 3.4% 19.4% SiriusPoint Ltd and Other3 $0.9 B
+S&P 500 (TR) 3.2% 3.2% 20.6% Firm $11.8 B
+⏵MTD PORTFOLIO DETAIL4
+NET MTD P&L6
+LONG SHORT NET LONG SHORT NET NET
+Equity
+Activism/Constructivism7 10.2% -1.8% 8.4% 0.3% -0.1% 0.1% 0.1%
+Fundamental & Event 86.2% -13.1% 73.2% 3.2% -0.7% 2.5% 2.4%
+Portfolio Hedges8 0.0% -11.6% -11.6% 0.0% -0.6% -0.6% -0.6%
+Total Equity 96.4% -26.5% 69.9% 3.4% -1.4% 2.1% 2.0%
+Credit
+PerformingCorporate & Sovereign 15.4% -0.3% 15.1% 0.3% 0.0% 0.3% 0.3%
+DistressedStructured 24.1% 0.0% 24.1% 0.1% 0.1% 0.1% 0.1%
+Total Credit 39.5% -0.3% 39.2% 0.4% 0.1% 0.4% 0.4%
+Privates 8.3% 0.0% 8.3% 0.0% 0.0% 0.0% -0.1%
+Side Pocket Privates 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Other9 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Total Portfolio 144.2% -26.8% 117.5% 3.8% -1.3% 2.4% 2.2%
+⏵MTD EQUITY DETAIL4
+NET MTD P&L6
+EQUITY SECTORS LONG SHORT NET LONG SHORT NET NET
+Consumer Discretionary 20.2% -2.0% 18.1% 0.5% -0.1% 0.4% 0.3%
+Consumer Staples 0.0% -0.4% -0.4% 0.0% -0.1% -0.1% -0.1%
+Utilities 11.4% -2.0% 9.4% 0.3% -0.1% 0.2% 0.2%
+Energy 2.1% -0.2% 1.9% 0.0% 0.0% 0.0% 0.0%
+Financials 13.8% -3.3% 10.5% 0.7% -0.2% 0.5% 0.5%
+Healthcare 8.6% -2.2% 6.4% 0.3% -0.1% 0.3% 0.3%
+Industrials & Materials 13.2% -3.5% 9.8% 0.6% -0.1% 0.5% 0.5%
+Enterprise Technology 19.5% -0.7% 18.8% 0.4% -0.1% 0.3% 0.3%
+Media & Internet 7.7% -0.7% 7.0% 0.6% 0.0% 0.6% 0.6%
+Portfolio Hedges8 0.0% -11.6% -11.6% 0.0% -0.6% -0.6% -0.6%
+Total 96.4% -26.5% 69.9% 3.4% -1.4% 2.1% 2.0%
+⏵MTD POSITION DETAIL4
+MTD WINNERS10 GROSS P&L5 NET P&L6 MTD LOSERS10 GROSS P&L5 NET P&L6
+Alibaba Group Holding Ltd 0.6% 0.6% Hertz Global Holdings Inc -0.2% -0.2%
+Danaher Corp 0.4% 0.4% Short -0.1% -0.1%
+Nvidia Corp 0.3% 0.3% Microsoft Corp -0.1% -0.1%
+DuPont de Nemours Inc 0.3% 0.3% Short -0.1% -0.1%
+Fidelity National Info Services 0.3% 0.3% Short -0.1% -0.1%
+TOP GROSS EQUITY LONGS10 % of NAV TOP GROSS CORPORATE CREDIT LONGS 10,11 % of NAV
+Pacific Gas and Electric Co 10.2% Frontier Communications Holdings 2.7%
+Microsoft Corp 8.8% Radiate Holdco LLC 2.0%
+Amazon.com Inc. 6.7% PNC Financial Services Group I 1.0%
+Danaher Corp 6.2% Comstock Resources Inc 1.0%
+Bath & Body Works Inc 5.1% Diversified Healthcare Trust 0.8%
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+EXPOSURE GROSS MTD P&L5
+EXPOSURE GROSS MTD P&L5
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 1 of 13
+July 31, 2023
+⏵YTD PORTFOLIO DETAIL4
+NET YTD P&L6
+LONG SHORT NET LONG SHORT NET NET
+Equity
+Activism/Constructivism7 10.2% -1.8% 8.4% -0.1% -1.1% -1.2% -1.3%
+Fundamental & Event 86.2% -13.1% 73.2% 6.0% -4.1% 1.8% 1.2%
+Portfolio Hedges8 0.0% -11.6% -11.6% 0.0% -2.5% -2.5% -2.5%
+Total Equity 96.4% -26.5% 69.9% 5.9% -7.7% -1.8% -2.6%
+Credit
+PerformingCorporate & Sovereign 15.4% -0.3% 15.1% 1.8% -0.2% 1.6% 1.5%
+DistressedStructured 24.1% 0.0% 24.1% 0.8% 0.6% 1.4% 1.2%
+Total Credit 39.5% -0.3% 39.2% 2.6% 0.5% 3.0% 2.7%
+Privates 8.3% 0.0% 8.3% -0.5% 0.0% -0.5% -0.6%
+Side Pocket Privates 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Other9 0.0% 0.0% 0.0% 0.0% -0.1% -0.2% -0.2%
+Total Portfolio 144.2% -26.8% 117.5% 7.9% -7.4% 0.5% -0.9%
+⏵YTD EQUITY DETAIL4
+NET YTD P&L6
+EQUITY SECTORS LONG SHORT NET LONG SHORT NET NET
+Consumer Discretionary 20.2% -2.0% 18.1% 1.2% -1.0% 0.3% 0.2%
+Consumer Staples 0.0% -0.4% -0.4% -0.1% -0.2% -0.3% -0.4%
+Utilities 11.4% -2.0% 9.4% 0.9% -0.2% 0.8% 0.7%
+Energy 2.1% -0.2% 1.9% -0.1% 0.0% -0.1% -0.2%
+Financials 13.8% -3.3% 10.5% -0.9% -0.8% -1.6% -1.7%
+Healthcare 8.6% -2.2% 6.4% -0.3% -0.5% -0.8% -0.9%
+Industrials & Materials 13.2% -3.5% 9.8% 0.4% -0.7% -0.3% -0.4%
+Enterprise Technology 19.5% -0.7% 18.8% 3.5% -1.2% 2.3% 2.2%
+Media & Internet 7.7% -0.7% 7.0% 1.1% -0.6% 0.5% 0.5%
+Portfolio Hedges8 0.0% -11.6% -11.6% 0.0% -2.5% -2.5% -2.5%
+Total 96.4% -26.5% 69.9% 5.9% -7.7% -1.8% -2.6%
+⏵YTD POSITION DETAIL4
+YTD WINNERS10 GROSS P&L5 NET P&L6 YTD LOSERS10 GROSS P&L5 NET P&L6
+Microsoft Corp 0.9% 0.8% Fidelity National Info Services -0.8% -0.8%
+Salesforce Inc 0.8% 0.8% Bath & Body Works Inc -0.6% -0.6%
+Pacific Gas and Electric Co 0.8% 0.7% Glencore International PLC -0.5% -0.5%
+Amazon.com Inc. 0.7% 0.7% International Flavors & Fragrances Inc -0.4% -0.4%
+ABS Interest Rate Hedges 0.6% 0.6% Short -0.4% -0.4%
+⏵EQUITY EXPOSURE DETAIL4
+GEOGRAPHIC EXPOSURE LONG SHORT NET MARKET CAP12 LONG SHORT NET
+Americas 78.8% -24.5% 54.3% > $50 billion 56.1% 55.2%
+EMEA 10.4% -2.0% 8.4% $25-50 billion 22.1% 21.5%
+Asia ex-Japan 7.2% 0.0% 7.2% $10-25 billion 7.8% 6.2%
+Japan 0.0% 0.0% 0.0% < $10 billion 10.4% 8.8%
+Total 96.4% -26.5% 69.9% Indices & Other 0.0% -21.6%
+Total 96.4% 69.9%
+EQUITY EXPOSURE13 LONG SHORT NET POSITION14 LONG SHORT TOTAL
+Delta-Adjusted 96.4% -26.5% 69.9% Equity Positions 42 44 86
+Beta-Adjusted 103.5% -26.4% 77.1% Top 10 Positions 54% -23%
+Dollar-Adjusted 96.0% -14.8% 81.2% Top 20 Positions 79% -25%
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+EXPOSURE GROSS YTD P&L5
+-0.9%
+-0.6%
+-26.5%
+EXPOSURE GROSS YTD P&L5
+-1.7%
+-1.7%
+-21.6%
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 2 of 13
+July 31, 2023
+⏵MTD CREDIT DETAIL4
+NET MTD P&L6
+LONG SHORT NET LONG SHORT NET NET
+Credit
+Sovereign 0.2% 0.0% 0.2% 0.0% 0.0% 0.0% 0.0%
+Investment Grade 1.3% 0.0% 1.3% 0.0% 0.0% 0.0% 0.0%
+High Yield 12.6% -0.3% 12.3% 0.2% 0.0% 0.2% 0.2%
+Distressed 1.4% 0.0% 1.4% 0.0% 0.0% 0.0% 0.0%
+Hedges15 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Total Credit 15.4% -0.3% 15.1% 0.3% 0.0% 0.3% 0.3%
+ABS
+PerformingResidential Mortgages 15.1% 0.0% 15.1% 0.0% 0.0% 0.0% 0.0%
+DistressedConsumer ABS 6.9% 0.0% 6.9% 0.0% 0.0% 0.0% 0.0%
+Commercial Mortgages 2.0% 0.0% 2.0% 0.0% 0.0% 0.0% 0.0%
+CLO 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Hedges15 0.0% 0.0% 0.0% 0.0% 0.1% 0.1% 0.1%
+Total ABS 24.1% 0.0% 24.1% 0.1% 0.1% 0.1% 0.1%
+⏵MTD CORPORATE CREDIT DETAIL4
+NET MTD P&L6
+SECTORS LONG SHORT NET LONG SHORT NET NET
+Consumer Discretionary 1.0% 0.0% 1.0% 0.0% 0.0% 0.0% 0.0%
+Consumer Staples 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Utilities 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Energy 1.8% 0.0% 1.8% 0.0% 0.0% 0.0% 0.0%
+Financials 3.1% -0.1% 3.0% 0.1% 0.0% 0.0% 0.0%
+Healthcare 3.1% 0.0% 3.1% 0.1% 0.0% 0.1% 0.1%
+Industrials & Materials 0.7% 0.0% 0.7% 0.0% 0.0% 0.0% 0.0%
+Enterprise Technology 0.3% 0.0% 0.3% 0.0% 0.0% 0.0% 0.0%
+Media & Internet 5.2% -0.2% 5.0% 0.0% 0.0% 0.0% 0.0%
+Government 0.2% 0.0% 0.2% 0.0% 0.0% 0.0% 0.0%
+Portfolio Hedges16 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Total 15.4% -0.3% 15.1% 0.3% 0.0% 0.3% 0.3%
+⏵CREDIT INTEREST RATE SENSITIVITY17 ⏵STRUCTURED CREDIT TRANCHES18
+CORP
+CREDIT
+TO
+CALL
+TO
+MATURITY
+Investments
+DV01 (bps of NAV) 0.39 1.14 0.47
+Implied Duration 1.6 4.7 3.2
+Hedges
+DV01 (bps of NAV) -0.77 -0.77 0.00
+Total
+DV01 (bps of NAV) -0.38 0.37 0.47
+Implied DurationHedge Ratio 196% 68% 0%
+STRUCTURED
+CREDIT
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+EXPOSURE GROSS MTD P&L5
+EXPOSURE GROSS MTD P&L5
+7.3%
+11.9%
+3.8%
+1.0%
+Senior Mezz Junior Other
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 3 of 13
+July 31, 2023
+⏵YTD CREDIT DETAIL4
+NET YTD P&L6
+LONG SHORT NET LONG SHORT NET NET
+Credit
+Sovereign 0.2% 0.0% 0.2% 0.1% 0.0% 0.1% 0.1%
+Investment Grade 1.3% 0.0% 1.3% 0.2% 0.0% 0.2% 0.2%
+High Yield 12.6% -0.3% 12.3% 1.1% -0.1% 1.0% 0.9%
+Distressed 1.4% 0.0% 1.4% 0.3% 0.0% 0.3% 0.3%
+Hedges15 0.0% 0.0% 0.0% 0.0% -0.1% -0.1% -0.1%
+Total Credit 15.4% -0.3% 15.1% 1.8% -0.2% 1.6% 1.5%
+ABS
+PerformingResidential Mortgages 15.1% 0.0% 15.1% 0.6% 0.0% 0.6% 0.5%
+DistressedConsumer ABS 6.9% 0.0% 6.9% 0.1% 0.0% 0.1% 0.0%
+Commercial Mortgages 2.0% 0.0% 2.0% 0.1% 0.0% 0.1% 0.1%
+CLO 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Hedges15 0.0% 0.0% 0.0% 0.0% 0.6% 0.6% 0.6%
+Total ABS 24.1% 0.0% 24.1% 0.8% 0.6% 1.4% 1.2%
+⏵YTD CORPORATE CREDIT DETAIL4
+NET YTD P&L6
+SECTORS LONG SHORT NET LONG SHORT NET NET
+Consumer Discretionary 1.0% 0.0% 1.0% 0.5% -0.1% 0.4% 0.4%
+Consumer Staples 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Utilities 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Energy 1.8% 0.0% 1.8% 0.2% 0.0% 0.2% 0.2%
+Financials 3.1% -0.1% 3.0% 0.4% 0.0% 0.4% 0.3%
+Healthcare 3.1% 0.0% 3.1% 0.2% 0.0% 0.2% 0.2%
+Industrials & Materials 0.7% 0.0% 0.7% 0.3% 0.0% 0.3% 0.3%
+Enterprise Technology 0.3% 0.0% 0.3% 0.0% 0.0% 0.0% 0.0%
+Media & Internet 5.2% -0.2% 5.0% 0.1% 0.0% 0.1% 0.0%
+Government 0.2% 0.0% 0.2% 0.1% 0.0% 0.1% 0.1%
+Portfolio Hedges16 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Total 15.4% -0.3% 15.1% 1.8% -0.2% 1.6% 1.5%
+⏵PERFORMANCE DETAIL
+INCEPTION
+TO DATE19
+MSCI 
+WORLD20
+S&P
+50020
+MASTER
+FUND
+TP Offshore Fund, Ltd. 13.0% 7.4% 9.0% Level I 59%
+TP Partners L.P. 15.6% 8.0% 10.0% Level II 32%
+TP Partners Qualified L.P. 8.6% 8.0% 9.6% Level III 9%
+TP Ultra Ltd. 18.8% 7.5% 8.9%
+TP Ultra Onshore LP 7.1% 13.7% 16.1%
+HISTORICAL PERFORMANCE ASC TOPIC 820
+ASSETS21
+PROFORMA
+OPT-OUT22
+9%
+EXPOSURE GROSS YTD P&L5
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+EXPOSURE GROSS YTD P&L5
+59%
+32%
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 4 of 13
+July 31, 2023
+⏵THIRD POINT PARTNERS L.P. HISTORICAL PERFORMANCE (NET) 19
+YEAR JAN FEB MAR APR MAY JUN AUG SEPT OCT YTD
+0.6% -3.4% -1.3% 0.6% -0.6% 1.1% 2.2% -0.8%
+-7.8% -2.8% -1.7% -1.5% -1.7% -6.3% -0.4% -0.3% -2.5% 2.2% -0.7% -21.8%
+1.9% 2.3% 6.6% 1.9% 1.4% 0.4% -0.3% 8.9% 3.6% 4.2% -6.8% 22.9%
+1.0% -6.4% -11.0% 7.0% 1.6% 2.0% 3.8% 7.9% -0.4% -0.7% 8.6% 20.4%
+3.0% 2.8% 3.0% 1.8% -1.7% 3.7% 2.3% -0.2% -2.3% -0.4% 3.2% 18.5%
+3.7% -2.8% -1.2% 0.7% 1.2% -0.5% -0.2% 0.2% 0.0% -6.8% 1.3% -10.8%
+2.4% 2.4% 1.0% 1.7% 2.1% 1.3% 0.8% 0.7% 1.3% 3.3% 0.4% 18.2%
+-4.4% -0.5% 3.1% 1.7% 1.8% 1.0% 3.1% 1.5% 1.2% -1.0% -0.2% 8.4%
+-2.8% 5.3% 1.0% 0.4% 2.3% -0.5% 1.0% -5.2% -4.9% 4.5% -2.1% -2.6%
+-1.8% 4.4% 1.0% -1.1% 2.0% 1.9% -1.0% 2.3% -0.5% -1.2% 2.9% 8.0%
+4.7% 1.3% 3.0% 1.6% 3.8% -1.8% 2.9% -0.7% 2.7% 1.1% 2.6% 26.0%
+4.2% 1.1% 1.5% -0.1% -2.5% 0.3% 1.5% 1.7% 3.2% 2.3% 2.7% 20.8%
+4.2% 3.8% 0.8% 0.8% -0.5% -3.1% 0.7% -3.0% -3.8% 1.1% -0.4% -0.4%
+3.7% 3.4% 8.9% 5.2% -6.2% -2.1% 3.5% 0.2% 5.9% 5.4% 1.1% 41.7%
+0.4% 1.0% -3.5% 0.2% 6.7% 1.0% 6.1% 6.8% 6.1% -0.5% 4.2% 38.4%
+-3.7% 1.1% -1.4% 1.8% 4.4% 1.6% -9.2% -0.7% -12.2% -9.2% -3.4% -32.8%
+4.1% -0.7% 4.4% 2.1% 6.2% -1.1% 1.4% -7.9% 1.9% 4.9% 0.4% 16.6%
+5.7% 2.4% 2.4% 3.7% -6.1% -1.4% -0.8% 0.9% -0.7% 2.2% 5.2% 15.0%
+2.0% 7.4% -0.7% -4.6% 0.8% 3.8% 8.1% 2.6% 3.7% -9.6% 2.9% 19.9%
+3.5% 4.0% 0.0% -0.3% -2.8% 6.3% -0.1% 1.5% 3.1% 0.7% 9.7% 30.2%
+2.6% 0.2% -2.3% 0.8% 8.0% 5.1% 5.6% 3.8% 1.5% 6.0% 3.5% 51.5%
+1.7% 1.8% 0.7% 1.7% 1.1% -0.4% -7.5% -1.9% 2.4% -7.1% 0.2% -7.0%
+2.2% 3.3% 2.1% -3.9% 3.2% -0.6% 1.0% 1.7% -1.9% 0.3% 1.3% 14.9%
+1.7% 8.7% 1.5% -4.0% -0.6% 0.6% 2.1% 2.0% 1.2% 1.9% 1.9% 17.1%
+5.7% -4.2% -1.6% 6.1% 4.7% 6.6% 2.8% -2.2% 2.3% 2.2% 7.4% 42.2%
+1.3% 5.8% 5.2% 0.0% -3.5% -3.2% -4.1% 0.7% -2.9% 1.6% 2.9% 6.6%
+2.2% 6.5% 0.2% 1.0% 4.0% 10.5% 10.1% -2.3% 12.6% -6.0% 1.4% 52.1%
+1.3% 0.9% 2.3% 9.4% 5.9% 4.2% 3.6% 3.3% 4.3% -0.2% 2.0% 44.3%
+7.8% 5.5% 6.6% 0.8% -2.3% 5.7% 37.0%
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+JUL NOV DEC
+2023
+2022 -0.5%
+2021 -2.4%
+2020 7.3%
+2019 2.2%
+2018 -6.4%
+2017 -0.5%
+2016 0.9%
+2015 -1.0%
+2014 -1.0%
+2013 2.3%
+2012 3.3%
+2011 -0.8%
+2010 7.4%
+2009 5.2%
+2008 -6.7%
+2007 0.5%
+2006 1.2%
+2005 3.3%
+2004 1.7%
+2003 8.0%
+2002 0.7%
+2001 5.8%
+2000 -0.7%
+1999 6.9%
+1998 3.4%
+1997 4.1%
+1996 0.6%
+1995 8.5%
+PLEASE CLICK HERE TO VIEW THE MONTHLY NET RETURNS SINCE INCEPTION FOR EACH FUND IMPLEMENTING A SIMILAR STRATEGY
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 5 of 13
+NEW SERIES (Excludes Legacy Private Investments)
+July 31, 2023
+NET PERFORMANCE1 MTD QTD YTD AUM BREAKDOWN
+Third Point Offshore Fund, Ltd. 2.0% 2.0% 3.0% Third Point Offshore Funds $4.5 B
+Third Point Partners L.P. 1.9% 1.9% 3.0% Third Point Onshore Funds $2.9 B
+Third Point Partners Qualified L.P. 2.0% 2.0% 3.0% Third Point Ultra $2.6 B
+Third Point Ultra Ltd. 2.1% 2.1% 3.2% Third Point Structured Credit Opportunities Fund $0.7 B
+Third Point Ultra Onshore LP2 2.1% 2.1% 3.2% Third Point Venture Funds $0.3 B
+MSCI World Index (TR) 3.4% 3.4% 9.7% SiriusPoint Ltd and Other3 $0.9 B
+S&P 500 (TR) 3.2% 3.2% 10.0% Firm $11.8 B
+⏵MTD PORTFOLIO DETAIL4
+NET MTD P&L6
+LONG SHORT NET LONG SHORT NET NET
+Equity
+Activism/Constructivism7 11.0% -1.9% 9.1% 0.3% -0.1% 0.1% 0.1%
+Fundamental & Event 93.4% -14.2% 79.2% 3.5% -0.7% 2.7% 2.3%
+Portfolio Hedges8 0.0% -12.6% -12.6% 0.0% -0.6% -0.6% -0.7%
+Total Equity 104.4% -28.7% 75.7% 3.7% -1.5% 2.3% 1.7%
+Credit
+PerformingCorporate & Sovereign 16.7% -0.3% 16.4% 0.3% 0.0% 0.3% 0.3%
+DistressedStructured 26.1% -0.1% 26.0% 0.1% 0.1% 0.2% 0.1%
+Total Credit 42.8% -0.3% 42.4% 0.4% 0.1% 0.5% 0.3%
+Privates 0.7% 0.0% 0.7% 0.0% 0.0% 0.0% 0.0%
+Side Pocket Privates 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Other9 0.0% 0.0% 0.0% 0.0% -0.1% -0.1% -0.1%
+Total Portfolio 147.9% -29.0% 118.8% 4.1% -1.5% 2.7% 2.0%
+⏵MTD EQUITY DETAIL4
+NET MTD P&L6
+EQUITY SECTORS LONG SHORT NET LONG SHORT NET NET
+Consumer Discretionary 21.8% -2.2% 19.6% 0.5% -0.1% 0.4% 0.3%
+Consumer Staples 0.0% -0.4% -0.4% 0.0% -0.1% -0.1% -0.1%
+Utilities 12.4% -2.2% 10.2% 0.3% -0.1% 0.2% 0.2%
+Energy 2.3% -0.2% 2.1% 0.0% 0.0% 0.0% 0.0%
+Financials 14.9% -3.5% 11.4% 0.8% -0.2% 0.5% 0.5%
+Healthcare 9.3% -2.3% 6.9% 0.4% -0.1% 0.3% 0.2%
+Industrials & Materials 14.3% -3.7% 10.6% 0.7% -0.1% 0.5% 0.5%
+Enterprise Technology 21.1% -0.7% 20.4% 0.4% -0.1% 0.3% 0.2%
+Media & Internet 8.3% -0.8% 7.6% 0.7% 0.0% 0.7% 0.6%
+Portfolio Hedges8 0.0% -12.6% -12.6% 0.0% -0.6% -0.6% -0.7%
+Total 104.4% -28.7% 75.7% 3.7% -1.5% 2.3% 1.7%
+⏵MTD POSITION DETAIL4
+MTD WINNERS10 GROSS P&L5 NET P&L6 MTD LOSERS10 GROSS P&L5 NET P&L6
+Alibaba Group Holding Ltd 0.6% 0.6% Hertz Global Holdings Inc -0.2% -0.2%
+Danaher Corp 0.4% 0.4% Short -0.1% -0.1%
+Nvidia Corp 0.3% 0.3% Microsoft Corp -0.1% -0.1%
+DuPont de Nemours Inc 0.3% 0.3% Short -0.1% -0.1%
+Fidelity National Info Services 0.3% 0.3% Short -0.1% -0.1%
+TOP GROSS EQUITY LONGS10 % of NAV TOP GROSS CORPORATE CREDIT LONGS 10,11 % of NAV
+Pacific Gas and Electric Co 11.1% Frontier Communications Holdings 2.9%
+Microsoft Corp 9.6% Radiate Holdco LLC 2.1%
+Amazon.com Inc. 7.3% PNC Financial Services Group I 1.1%
+Danaher Corp 6.7% Comstock Resources Inc 1.0%
+Bath & Body Works Inc 5.5% Diversified Healthcare Trust 0.8%
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+EXPOSURE GROSS MTD P&L5
+EXPOSURE GROSS MTD P&L5
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 6 of 13
+NEW SERIES (Excludes Legacy Private Investments)
+July 31, 2023
+⏵YTD PORTFOLIO DETAIL4
+NET YTD P&L6
+LONG SHORT NET LONG SHORT NET NET
+Equity
+Activism/Constructivism7 11.0% -1.9% 9.1% 0.5% -0.4% 0.1% 0.1%
+Fundamental & Event 93.4% -14.2% 79.2% 6.8% -2.0% 4.7% 4.2%
+Portfolio Hedges8 0.0% -12.6% -12.6% 0.0% -1.8% -1.8% -1.8%
+Total Equity 104.4% -28.7% 75.7% 7.3% -4.2% 3.1% 2.4%
+Credit
+PerformingCorporate & Sovereign 16.7% -0.3% 16.4% 0.9% 0.0% 0.9% 0.8%
+DistressedStructured 26.1% -0.1% 26.0% -0.2% 0.5% 0.4% 0.3%
+Total Credit 42.8% -0.3% 42.4% 0.8% 0.5% 1.3% 1.1%
+Privates 0.7% 0.0% 0.7% 0.1% 0.0% 0.1% 0.0%
+Side Pocket Privates 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Other9 0.0% 0.0% 0.0% -0.2% -0.2% -0.4% -0.5%
+Total Portfolio 147.9% -29.0% 118.8% 7.9% -3.9% 4.0% 3.0%
+⏵YTD EQUITY DETAIL4
+NET YTD P&L6
+EQUITY SECTORS LONG SHORT NET LONG SHORT NET NET
+Consumer Discretionary 21.8% -2.2% 19.6% 1.7% -0.4% 1.3% 1.2%
+Consumer Staples 0.0% -0.4% -0.4% 0.0% -0.1% -0.1% -0.1%
+Utilities 12.4% -2.2% 10.2% 0.6% -0.1% 0.4% 0.4%
+Energy 2.3% -0.2% 2.1% 0.0% -0.1% -0.1% -0.1%
+Financials 14.9% -3.5% 11.4% 1.2% -0.7% 0.5% 0.4%
+Healthcare 9.3% -2.3% 6.9% 1.0% -0.3% 0.7% 0.7%
+Industrials & Materials 14.3% -3.7% 10.6% 1.5% -0.5% 1.0% 1.0%
+Enterprise Technology 21.1% -0.7% 20.4% 0.6% -0.2% 0.4% 0.3%
+Media & Internet 8.3% -0.8% 7.6% 0.6% -0.1% 0.6% 0.5%
+Portfolio Hedges8 0.0% -12.6% -12.6% 0.0% -1.8% -1.8% -1.8%
+Total 104.4% -28.7% 75.7% 7.3% -4.2% 3.1% 2.4%
+⏵YTD POSITION DETAIL4
+YTD WINNERS10 GROSS P&L5 NET P&L6 YTD LOSERS10 GROSS P&L5 NET P&L6
+Alibaba Group Holding Ltd 0.7% 0.7% Short -0.3% -0.3%
+Danaher Corp 0.7% 0.6% Short -0.2% -0.2%
+Amazon.com Inc. 0.6% 0.5% Short -0.2% -0.2%
+Nvidia Corp 0.5% 0.5% Short -0.2% -0.2%
+DuPont de Nemours Inc 0.5% 0.5% Short -0.2% -0.2%
+⏵EQUITY EXPOSURE DETAIL4
+GEOGRAPHIC EXPOSURE LONG SHORT NET MARKET CAP12 LONG SHORT NET
+Americas 85.4% -26.5% 58.8% > $50 billion 60.7% 59.7%
+EMEA 11.3% -2.1% 9.1% $25-50 billion 23.9% 23.3%
+Asia ex-Japan 7.8% 0.0% 7.8% $10-25 billion 8.5% 6.7%
+Japan 0.0% 0.0% 0.0% < $10 billion 11.3% 9.5%
+Total 104.4% -28.7% 75.7% Indices & Other 0.0% -23.4%
+Total 104.4% 75.7%
+EQUITY EXPOSURE13 LONG SHORT NET POSITION14 LONG SHORT TOTAL
+Delta-Adjusted 104.4% -28.7% 75.7% Equity Positions 42 44 86
+Beta-Adjusted 112.1% -28.6% 83.5% Top 10 Positions 58% -24%
+Dollar-Adjusted 104.0% -16.1% 87.9% Top 20 Positions 85% -27%
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+EXPOSURE GROSS YTD P&L5
+-23.4%
+-28.7%
+EXPOSURE GROSS YTD P&L5
+-1.0%
+-0.6%
+-1.8%
+-1.8%
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 7 of 13
+NEW SERIES (Excludes Legacy Private Investments)
+July 31, 2023
+⏵MTD CREDIT DETAIL4
+NET MTD P&L6
+LONG SHORT NET LONG SHORT NET NET
+Credit
+Sovereign 0.2% 0.0% 0.2% 0.0% 0.0% 0.0% 0.0%
+Investment Grade 1.4% 0.0% 1.4% 0.0% 0.0% 0.0% 0.0%
+High Yield 13.6% -0.3% 13.3% 0.2% 0.0% 0.2% 0.2%
+Distressed 1.5% 0.0% 1.5% 0.0% 0.0% 0.0% 0.0%
+Hedges15 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Total Credit 16.7% -0.3% 16.4% 0.3% 0.0% 0.3% 0.3%
+ABS
+PerformingResidential Mortgages 16.4% -0.1% 16.3% 0.0% 0.0% 0.0% 0.0%
+DistressedConsumer ABS 7.5% 0.0% 7.5% 0.0% 0.0% 0.0% 0.0%
+Commercial Mortgages 2.2% 0.0% 2.2% 0.0% 0.0% 0.0% 0.0%
+CLO 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Hedges15 0.0% 0.0% 0.0% 0.0% 0.1% 0.1% 0.1%
+Total ABS 26.1% -0.1% 26.0% 0.1% 0.1% 0.2% 0.1%
+⏵MTD CORPORATE CREDIT DETAIL4
+NET MTD P&L6
+SECTORS LONG SHORT NET LONG SHORT NET NET
+Consumer Discretionary 1.1% 0.0% 1.1% 0.0% 0.0% 0.0% 0.0%
+Consumer Staples 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Utilities 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Energy 2.0% 0.0% 2.0% 0.0% 0.0% 0.0% 0.0%
+Financials 3.4% -0.1% 3.3% 0.1% 0.0% 0.1% 0.0%
+Healthcare 3.4% 0.0% 3.4% 0.1% 0.0% 0.1% 0.0%
+Industrials & Materials 0.8% 0.0% 0.8% 0.0% 0.0% 0.0% 0.0%
+Enterprise Technology 0.3% 0.0% 0.3% 0.0% 0.0% 0.0% 0.0%
+Media & Internet 5.6% -0.2% 5.4% 0.1% 0.0% 0.0% 0.0%
+Government 0.2% 0.0% 0.2% 0.0% 0.0% 0.0% 0.0%
+Portfolio Hedges16 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Total 16.7% -0.3% 16.4% 0.3% 0.0% 0.3% 0.3%
+⏵CREDIT INTEREST RATE SENSITIVITY17 ⏵STRUCTURED CREDIT TRANCHES18
+CORP
+CREDIT
+TO
+CALL
+TO
+MATURITY
+Investments
+DV01 (bps of NAV) 0.43 1.24 0.51
+Implied Duration 1.6 4.7 3.2
+Hedges
+DV01 (bps of NAV) -0.84 -0.84 0.00
+Total
+DV01 (bps of NAV) -0.41 0.40 0.51
+Implied DurationHedge Ratio 196% 68% 0%
+EXPOSURE GROSS MTD P&L5
+STRUCTURED
+CREDIT
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+EXPOSURE GROSS MTD P&L5
+7.9%
+12.9%
+4.1%
+1.1%
+Senior Mezz Junior Other
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 8 of 13
+NEW SERIES (Excludes Legacy Private Investments)
+July 31, 2023
+⏵YTD CREDIT DETAIL4
+NET YTD P&L6
+LONG SHORT NET LONG SHORT NET NET
+Credit
+Sovereign 0.2% 0.0% 0.2% 0.1% 0.0% 0.1% 0.1%
+Investment Grade 1.4% 0.0% 1.4% 0.1% 0.0% 0.1% 0.0%
+High Yield 13.6% -0.3% 13.3% 0.6% 0.0% 0.6% 0.5%
+Distressed 1.5% 0.0% 1.5% 0.2% 0.0% 0.2% 0.2%
+Hedges15 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Total Credit 16.7% -0.3% 16.4% 0.9% 0.0% 0.9% 0.8%
+ABS
+PerformingResidential Mortgages 16.4% -0.1% 16.3% -0.1% 0.0% -0.1% -0.2%
+DistressedConsumer ABS 7.5% 0.0% 7.5% 0.0% 0.0% 0.0% -0.1%
+Commercial Mortgages 2.2% 0.0% 2.2% 0.0% 0.0% 0.0% 0.0%
+CLO 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Hedges15 0.0% 0.0% 0.0% 0.0% 0.5% 0.5% 0.5%
+Total ABS 26.1% -0.1% 26.0% -0.2% 0.5% 0.4% 0.3%
+⏵YTD CORPORATE CREDIT DETAIL4
+NET YTD P&L6
+SECTORS LONG SHORT NET LONG SHORT NET NET
+Consumer Discretionary 1.1% 0.0% 1.1% 0.1% 0.0% 0.1% 0.1%
+Consumer Staples 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Utilities 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Energy 2.0% 0.0% 2.0% 0.1% 0.0% 0.1% 0.1%
+Financials 3.4% -0.1% 3.3% 0.2% 0.0% 0.1% 0.1%
+Healthcare 3.4% 0.0% 3.4% 0.1% 0.0% 0.1% 0.1%
+Industrials & Materials 0.8% 0.0% 0.8% 0.1% 0.0% 0.1% 0.1%
+Enterprise Technology 0.3% 0.0% 0.3% 0.0% 0.0% 0.0% 0.0%
+Media & Internet 5.6% -0.2% 5.4% 0.2% 0.0% 0.2% 0.2%
+Government 0.2% 0.0% 0.2% 0.1% 0.0% 0.1% 0.1%
+Portfolio Hedges16 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0%
+Total 16.7% -0.3% 16.4% 0.9% 0.0% 0.9% 0.8%
+⏵PERFORMANCE DETAIL
+INCEPTION
+TO DATE19
+MSCI 
+WORLD20
+S&P
+50020
+MASTER
+FUND
+TP Offshore Fund, Ltd. 12.9% 7.4% 9.0% Level I 59%
+TP Partners L.P. 15.6% 8.0% 10.0% Level II 32%
+TP Partners Qualified L.P. 8.6% 8.0% 9.6% Level III 9%
+TP Ultra Ltd. 18.8% 7.5% 8.9%
+TP Ultra Onshore LP 7.0% 13.7% 16.1%
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+EXPOSURE GROSS YTD P&L5
+32%
+9%
+EXPOSURE GROSS YTD P&L5
+HISTORICAL PERFORMANCE ASC TOPIC 820
+ASSETS21
+PROFORMA
+OPT-OUT22
+59%
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 9 of 13
+NEW SERIES (Excludes Legacy Private Investments)
+July 31, 2023
+⏵THIRD POINT PARTNERS L.P. HISTORICAL PERFORMANCE (NET)19
+YEAR JAN FEB MAR APR MAY JUN AUG SEPT OCT YTD
+0.6% -3.4% -1.3% 0.6% -0.6% 1.0% 1.9% 3.0%
+-7.8% -2.8% -1.7% -1.5% -1.7% -6.3% -0.4% -0.3% -2.5% 2.2% -0.7% -21.8%
+1.9% 2.3% 6.6% 1.9% 1.4% 0.4% -0.3% 8.9% 3.6% 4.2% -6.8% 22.9%
+1.0% -6.4% -11.0% 7.0% 1.6% 2.0% 3.8% 7.9% -0.4% -0.7% 8.6% 20.4%
+3.0% 2.8% 3.0% 1.8% -1.7% 3.7% 2.3% -0.2% -2.3% -0.4% 3.2% 18.5%
+3.7% -2.8% -1.2% 0.7% 1.2% -0.5% -0.2% 0.2% 0.0% -6.8% 1.3% -10.8%
+2.4% 2.4% 1.0% 1.7% 2.1% 1.3% 0.8% 0.7% 1.3% 3.3% 0.4% 18.2%
+-4.4% -0.5% 3.1% 1.7% 1.8% 1.0% 3.1% 1.5% 1.2% -1.0% -0.2% 8.4%
+-2.8% 5.3% 1.0% 0.4% 2.3% -0.5% 1.0% -5.2% -4.9% 4.5% -2.1% -2.6%
+-1.8% 4.4% 1.0% -1.1% 2.0% 1.9% -1.0% 2.3% -0.5% -1.2% 2.9% 8.0%
+4.7% 1.3% 3.0% 1.6% 3.8% -1.8% 2.9% -0.7% 2.7% 1.1% 2.6% 26.0%
+4.2% 1.1% 1.5% -0.1% -2.5% 0.3% 1.5% 1.7% 3.2% 2.3% 2.7% 20.8%
+4.2% 3.8% 0.8% 0.8% -0.5% -3.1% 0.7% -3.0% -3.8% 1.1% -0.4% -0.4%
+3.7% 3.4% 8.9% 5.2% -6.2% -2.1% 3.5% 0.2% 5.9% 5.4% 1.1% 41.7%
+0.4% 1.0% -3.5% 0.2% 6.7% 1.0% 6.1% 6.8% 6.1% -0.5% 4.2% 38.4%
+-3.7% 1.1% -1.4% 1.8% 4.4% 1.6% -9.2% -0.7% -12.2% -9.2% -3.4% -32.8%
+4.1% -0.7% 4.4% 2.1% 6.2% -1.1% 1.4% -7.9% 1.9% 4.9% 0.4% 16.6%
+5.7% 2.4% 2.4% 3.7% -6.1% -1.4% -0.8% 0.9% -0.7% 2.2% 5.2% 15.0%
+2.0% 7.4% -0.7% -4.6% 0.8% 3.8% 8.1% 2.6% 3.7% -9.6% 2.9% 19.9%
+3.5% 4.0% 0.0% -0.3% -2.8% 6.3% -0.1% 1.5% 3.1% 0.7% 9.7% 30.2%
+2.6% 0.2% -2.3% 0.8% 8.0% 5.1% 5.6% 3.8% 1.5% 6.0% 3.5% 51.5%
+1.7% 1.8% 0.7% 1.7% 1.1% -0.4% -7.5% -1.9% 2.4% -7.1% 0.2% -7.0%
+2.2% 3.3% 2.1% -3.9% 3.2% -0.6% 1.0% 1.7% -1.9% 0.3% 1.3% 14.9%
+1.7% 8.7% 1.5% -4.0% -0.6% 0.6% 2.1% 2.0% 1.2% 1.9% 1.9% 17.1%
+5.7% -4.2% -1.6% 6.1% 4.7% 6.6% 2.8% -2.2% 2.3% 2.2% 7.4% 42.2%
+1.3% 5.8% 5.2% 0.0% -3.5% -3.2% -4.1% 0.7% -2.9% 1.6% 2.9% 6.6%
+2.2% 6.5% 0.2% 1.0% 4.0% 10.5% 10.1% -2.3% 12.6% -6.0% 1.4% 52.1%
+1.3% 0.9% 2.3% 9.4% 5.9% 4.2% 3.6% 3.3% 4.3% -0.2% 2.0% 44.3%
+Inception 7.8% 5.5% 6.6% 0.8% -2.3% 5.7% 37.0%
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+JUL NOV DEC
+2023
+2022 -0.5%
+2021 -2.4%
+2020 7.3%
+2019 2.2%
+2018 -6.4%
+2017 -0.5%
+2016 0.9%
+2015 -1.0%
+2014 -1.0%
+2013 2.3%
+2012 3.3%
+2011 -0.8%
+2010 7.4%
+2009 5.2%
+2008 -6.7%
+2007 0.5%
+2006 1.2%
+2005 3.3%
+2004 1.7%
+2003 8.0%
+2002 0.7%
+2001 5.8%
+2000 -0.7%
+1999 6.9%
+1998 3.4%
+1997 4.1%
+1996 0.6%
+1995 8.5%
+PLEASE CLICK HERE TO VIEW THE MONTHLY NET RETURNS SINCE INCEPTION FOR EACH FUND IMPLEMENTING A SIMILAR STRATEGY
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 10 of 13
+July 31, 2023
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+Includes broad-based market and equity-based hedges.
+Includes currency hedges, digital assets, and macro investments. Interest rate swaptions, rates and FX related investments are excluded from exposure figures. MTD
+and YTD P&L of Other includes net attribution of macro investments, digital assets, as well as residual gains and losses attributable to unhedged currency movements
+relative to USD, and interest, income and expense on cash balances.
+Excludes any confidential positions, portfolio level equity hedges and EU MAR related positions.
+Does not include private debt.
+Portfolio and position level MTD and YTD details reflect the Third Point Offshore Master Fund L.P. inclusive of legacy private investments (unless otherwise noted).
+New Series YTD performance reflects performance for the period since the issuance of the New Series on June 1, 2023. The sum of long and short exposure
+percentages and the sum of gross long and short MTD and YTD P&L percentages may not visually add to the corresponding net figure due to rounding. Subtotals of
+long, short, and/or net exposure percentages and MTD and YTD P&L percentages may not visually match the corresponding subtotal in another section of the report
+due to rounding.
+Includes capital managed for SiriusPoint Ltd. in Third Point Enhanced LP and a managed account, as well as capital managed by Third Point Private CRE Credit LLC.
+Certain of Third Point Ultra Onshore LP's expenses are subject to a cap of 15bps of the fund’s AUM for the first five years since inception. During this period, the
+Investment Manager (and not the fund) has paid the applicable expenses exceeding this cap. If such expenses were borne by the fund, its MTD/ITD returns would
+have been lower. Please see the fund's offering memorandum for a description of expenses borne by the fund within the first five years since inception.
+Net MTD, QTD and YTD performance shows indicative performance for a new issues eligible investor in the highest management fee (2% per annum), in addition to
+leverage factor multiple, if applicable, and incentive allocation rate (20%) class of each Fund, who has participated in all side pocket private investments (as
+applicable). Net performance reflects the deduction of operating expenses paid by the Fund during the period, and, unless otherwise noted, is inclusive of legacy
+private investments. New Series YTD performance reflects performance for the period since issuance of the New Series on June 1, 2023. An individual investor’s
+performance may vary based on timing of capital transactions.  
+Implied Duration represents the modified duration given the DV01 and notional exposure of underlying positions.
+Other includes non-tranched ABS, CDS, and direct asset investments.
+Includes constructivism, activism and post-activism positions. “Constructivism” is defined as communications with an issuer regarding Third Point ideas to increase
+shareholder value that conclude without activism.  “Activism” is defined as an active campaign currently ongoing.
+The net P&L figures are included because of the SEC’s new marketing rule and guidance. Third Point does not believe that this metric accurately reflects net P&L for
+the referenced investment or sub-portfolio group of investments as explained more fully below. Specifically, net P&L attribution reflects the allocation of the highest
+management fee (2% per annum), in addition to leverage factor multiple, if applicable, and incentive allocation rate (20%), and an assumed operating expense ratio
+(0.3%), to the aggregate underlying positions in the referenced sub-portfolio group’s gross P&L, or referenced individual position level gross P&L, as applicable. The
+management fees and operating expenses are allocated for the period proportionately based on the average gross exposures of the aggregate underlying positions
+of the referenced sub-portfolio group, or referenced individual position, as applicable. The implied incentive allocation is based on the deduction of the
+management fee and expense ratio from the Fund level gross P&L attribution for the period. The incentive allocation is accrued for each period to only those
+positions within the referenced sub-portfolio group, or referenced individual position, as applicable, with i) positive P&L and, ii) if during the current MTD period
+there is an incentive allocation. In MTD periods where there is a reversal of previously accrued incentive allocation, the impact of the reversal will be based on the
+previous month’s YTD accrued incentive allocation. The assumed operating expense ratio noted herein is applied uniformly across all underlying positions in the
+referenced sub-portfolio group or referenced individual investment, as applicable, given the inherent difficulty in determining and allocating the expenses on an
+investment or sub-portfolio group basis. If expenses were to be allocated on an investment or sub-portfolio group basis, the net P&L would likely be different for
+each referenced investment or sub-portfolio group, as applicable.
+Gross P&L attribution does not reflect the deduction of management fees, incentive allocations and any expenses which may be incurred in the management of the
+fund. An investor’s actual return will be reduced by such fees and expenses. See Part 2A of the Adviser's Form ADV for a description of the management fees and
+incentive allocations customarily charged by Adviser.
+Beta-adjusted exposures are calculated relative to the S&P based on one-year of historical daily returns for USD denominated assets and weekly returns for foreign
+denominated assets. Dollar-adjusted exposures are calculated with option positions shown at current market value in lieu of delta-adjusted exposure.
+Equity positions do not include SPAC holdings and related transactions that have not yet announced a business combination agreement.
+Includes broad-based market hedges and interest rate/spread hedges. Interest rate/spread hedges are excluded from exposure figures.
+Includes broad-based market hedges.
+Market capitalization reflects only those holdings that are exchange-listed equity or any synthetic equity with an underlying reference instrument market
+capitalization.
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 11 of 13
+July 31, 2023
+19
+20
+21
+22
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+From Fund inception through December 31, 2019, each Fund's historical performance has been calculated using the actual management fees, incentive allocations,
+and expenses paid by the Fund. The actual management fees and incentive allocations paid by the Fund reflect a blended rate of management fees and incentive
+allocations based on the weighted average of amounts invested in different share classes subject to different management fee and/or incentive allocation terms. Such
+management fee rates have ranged over time from 1% to 3% (in addition to leverage factor multiple, if applicable) per annum. The amount of incentive allocations
+applicable to any one investor in the Fund will vary materially depending on numerous factors, including without limitation: the specific terms, the date of initial
+investment, the duration of investment, the date of withdrawal, and market conditions. As such, the net performance shown for the Fund from inception through
+December 31, 2019 is not an estimate of any specific investor’s actual performance. During this period, had the highest management fee and incentive allocation been
+applied solely, performance results would likely be lower. For the period beginning January 1, 2020, each Fund’s historical performance shows indicative performance
+for a new issues eligible investor in the highest management fee (2% per annum), in addition to leverage factor multiple, if applicable, and incentive allocation rate
+(20%) class of the Fund, who has participated in all side pocket private investments (as applicable) from March 1, 2021 onward. Net performance reflects the
+deduction of operating expenses paid by the Fund during the period, and, unless otherwise noted, is inclusive of legacy private investments. New Series ITD fund
+performance reflects performance of the applicable fund since inception through May 31, 2023, inclusive of legacy private investments. For the period beginning June
+1, 2023, performance of the fund reflects performance of the New Series. An individual investor’s performance may vary based on timing of capital transactions. The
+inception date for Third Point Offshore Fund, Ltd. is December 1, 1996, Third Point Partners L.P. is June 1, 1995, Third Point Partners Qualified L.P. is January 1, 2005,
+Third Point Ultra Ltd. is May 1, 1997, and Third Point Ultra Onshore LP is January 2019.
+All references to the S&P 500 and the MSCI World Index reflect performance calculated from the applicable Fund's inception date through July 31, 2023.
+ASC levels provided are inclusive of legacy private investments and are as of June 30, 2023.
+Proforma Opt-Out ASC Levels show the percentage breakdown of the total absolute value of all levelled investments held by the fund as of June 30, 2023 excluding the
+absolute value of private investments held only by side pocket classes.
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 12 of 13
+July 31, 2023
+⏵IMPORTANT NOTES AND DISCLAIMERS
+Third Point Offshore Fund, Ltd.
+Third Point Partners L.P.
+Third Point Partners Qualified L.P.
+Third Point Ultra Ltd.
+Third Point Ultra Onshore LP
+The information contained herein is being provided to the investors in Third Point Offshore Fund, Ltd., Third Point Partners L.P., Third Point Partners Qualified L.P., Third
+Point Ultra Ltd., and Third Point Ultra Onshore LP (each a "Fund" and collectively the "Funds"). Third Point LLC (“Third Point”), an SEC registered investment adviser, is
+the Investment Manager to the Funds.
+Unless otherwise stated, information relates to the Third Point Offshore Master Fund L.P. inclusive of Legacy Private investments. Exposures are categorized in a
+manner consistent with the Investment Manager's classifications for portfolio and risk management purposes in its sole discretion. Fund AUM figures are rounded to
+the nearest tenth of a billion so the sum of the AUM breakdown may not always add to the reported firm AUM due to rounding.
+All fund level net profit and loss or performance results are based on the net asset value of fee paying investors only and are presented net of management fees,
+brokerage commissions, administrative expenses, any other expenses of the Funds, and accrued incentive allocation, if any, and include the reinvestment of all
+dividends, interest, and capital gains. While incentive allocations are accrued monthly, they are deducted from investor balances annually or upon withdrawal. The
+Funds’ performance information shown within includes net gains and losses from “new issues.” The market price for new issues is often subject to significant
+fluctuation, and investors who are eligible to participate in new issues may experience significant gains or losses. An investor who invests in a class of Interests that does
+not participate in new issues may experience performance that is different, perhaps materially, from the performance reflected above. All performance results are
+estimates and should not be regarded as final until audited financial statements are issued. 
+While the performance of the Funds has been compared here with the performance of well-known and widely recognized indices, the indices have not been selected to
+represent an appropriate benchmark for the Funds whose holdings, performance and volatility may differ significantly from the securities that comprise the indices. Past
+performance is not necessarily indicative of future results. All information provided herein is for informational purposes only and should not be deemed as a
+recommendation to buy or sell securities. All investments involve risk including the loss of principal. This transmission is confidential and may not be redistributed
+without the express written consent of Third Point LLC and does not constitute an offer to sell or the solicitation of an offer to purchase any security or investment
+product. Any such offer or solicitation may only be made by means of delivery of an approved confidential offering memorandum. 
+This document has been prepared in order to enable Third Point to provide investors in the Funds with information about their investments and is provided to such
+investors on that basis. Information provided herein, or otherwise provided with respect to a potential investment in the Funds, may constitute inside information
+and/or non-public information regarding Third Point Investors Limited, a feeder fund listed on the London Stock Exchange. Accordingly, dealing or trading in the shares
+of the listed entity on the basis of such information and/or the onward disclosure of such information may violate securities laws in the United Kingdom, United States
+and elsewhere. Recipients of this document should seek advice from legal counsel in the relevant jurisdictions before attempting to deal in the shares of the listed
+entity.
+The representative in Switzerland is FundRock Switzerland SA, Route de Cité-Ouest 2, 1196 Gland, Switzerland. The paying agent in Switzerland is BCGE. The
+Prospectus/Offering Memorandum, the Articles of Association and audited financial statements of those funds available in Switzerland can be obtained free of charge
+from the representative in Switzerland. The place of performance and jurisdiction is the registered office of the representative in Switzerland with regards to the Shares
+distributed in and from Switzerland.
+Third Point LLC  |  55 Hudson Yards |  New York, NY 10001  |  ir@thirdpoint.com | Page 13 of 13

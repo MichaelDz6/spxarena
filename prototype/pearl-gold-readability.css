@@ -1,0 +1,166 @@
+/* Pearl & Gold: stronger reading contrast and a visible rarity hierarchy. */
+#spx-pearl-gold .palette-pearl {
+ --paper:#f8f8f3;--surface:#eeefe8;--nav:#f1f2ec;
+ --ink:#252a2e;--soft:#4d555c;--accent:#252a2e;--onaccent:#fffef7;
+ --rule:#c6cbc8;--positive:#24593e;--negative:#99444c;--investor:#286773;
+ --scroll-ink:#252a2e;--metal-low:#c7b55d;--metal-light:#eddd94;--metal-highlight:#fff1af;
+ --glow:#e4d57b09;--grain:#73807802;--gold:#e4ce77;--gold-edge:#c7b55d;
+}
+#spx-pearl-gold .arena-home {font-size:15px;}
+#spx-pearl-gold .home-nav nav {font-size:13px;font-weight:500;color:var(--ink);}
+#spx-pearl-gold .home-intro p {font-size:15px;line-height:1.8;color:var(--soft);}
+#spx-pearl-gold .gilded .home-intro h1 em {background:none;color:var(--accent);font-weight:500;}
+#spx-pearl-gold .gilded .intro-action {background:var(--gold);border-color:var(--gold-edge);color:var(--ink);}
+#spx-pearl-gold .horizon-controls button[aria-pressed=true] {background:var(--gold);border-color:var(--gold-edge);color:var(--ink);}
+#spx-pearl-gold .small-label,
+#spx-pearl-gold .intro-eyebrow,
+#spx-pearl-gold .edition-label,
+#spx-pearl-gold .evidence-stat small,
+#spx-pearl-gold .evidence-source,
+#spx-pearl-gold .benchmark-growth small,
+#spx-pearl-gold .benchmark-ticker,
+#spx-pearl-gold .ranking-stamp,
+#spx-pearl-gold .ranking-stamp b,
+#spx-pearl-gold .deck-caption,
+#spx-pearl-gold [data-chart-period],
+#spx-pearl-gold .chart-readout,
+#spx-pearl-gold .record-tier,
+#spx-pearl-gold .record-identity small,
+#spx-pearl-gold .score-gap>span,
+#spx-pearl-gold .record-consistency span,
+#spx-pearl-gold .rolling-windows span>*,
+#spx-pearl-gold .rarity-scale small,
+#spx-pearl-gold .home-footer>span,
+#spx-pearl-gold .home-footer small {font-size:11px;line-height:1.65;}
+#spx-pearl-gold .intro-eyebrow {letter-spacing:1px;}
+#spx-pearl-gold .small-label {font-weight:500;letter-spacing:1px;}
+#spx-pearl-gold .intro-action,
+#spx-pearl-gold .benchmark-story a,
+#spx-pearl-gold .horizon-controls button {font-size:12px;font-weight:500;}
+#spx-pearl-gold .evidence-heading p,
+#spx-pearl-gold .benchmark-growth>span,
+#spx-pearl-gold .benchmark-facts>p {font-size:13px;line-height:1.75;}
+#spx-pearl-gold .benchmark-story p,
+#spx-pearl-gold .rules-grid p,
+#spx-pearl-gold .scoring-details p,
+#spx-pearl-gold [data-record-detail],
+#spx-pearl-gold .source-details,
+#spx-pearl-gold .source-details p {font-size:14px;line-height:1.8;}
+#spx-pearl-gold .arena-home summary {font-size:14px;font-weight:500;color:var(--ink);}
+#spx-pearl-gold .score-line {font-size:13px;}
+#spx-pearl-gold .chart-legend {font-size:12px;}
+#spx-pearl-gold .chart-heading select {font-size:13px;max-width:165px;}
+#spx-pearl-gold .benchmark-role {font-size:14px;}
+#spx-pearl-gold .rarity-scale b {font-size:13px;font-weight:600;}
+
+/* Text colors are darker than the decorative metal in the frames. */
+#spx-pearl-gold .arena-home [data-tier=legendary] {--tier:#3b4447;--tier-shadow:#a89948;}
+#spx-pearl-gold .arena-home [data-tier=epic] {--tier:#663483;--tier-shadow:#4c285f;}
+#spx-pearl-gold .arena-home [data-tier=rare] {--tier:#235a83;--tier-shadow:#234a65;}
+#spx-pearl-gold .arena-home [data-tier=common],
+#spx-pearl-gold .arena-home [data-tier=unrated] {--tier:#485258;--tier-shadow:#50575b;}
+
+/* Common: a quiet, solid steel frame and a clean pearl interior. */
+#spx-pearl-gold .gilded .arena-card {
+ --frame-width:2px;--frame-dark:#677075;--frame-mid:#899397;--frame-light:#899397;
+ --frame-foil:#c5cac8;--frame-liner:#f1f3ed;--frame-rule:#afb7b3;
+ --card-wash:#e6e9e6;--card-body:#fafaf5;--card-end:#eef0e9;
+ --plate-top:#f7f8ef;--plate-mid:#e7eae4;--plate-low:#d8ded9;--plate-ink:#252a2e;
+ --frame-depth:#878f8c;--frame-shade:#252a2e0c;
+ border:var(--frame-width) solid transparent;
+ background:linear-gradient(142deg,var(--card-wash),var(--card-body) 34%,var(--card-end)) padding-box,
+ linear-gradient(135deg,var(--frame-dark),var(--frame-light) 23%,var(--frame-mid) 42%,var(--frame-dark) 65%,var(--frame-light) 87%,var(--frame-mid)) border-box;
+ box-shadow:inset 0 0 0 1px var(--frame-liner),0 3px 0 var(--frame-depth),0 7px 14px var(--frame-shade);
+ padding:13px 12px 12px;
+}
+#spx-pearl-gold .gilded .arena-card .hero-window {border-color:var(--frame-mid);}
+#spx-pearl-gold .gilded .arena-card .name-scroll {
+ background:linear-gradient(110deg,var(--plate-low),var(--plate-top) 35%,var(--plate-mid) 66%,var(--plate-top));
+ border-color:var(--frame-mid);color:var(--plate-ink);
+}
+#spx-pearl-gold .gilded .arena-card .card-gem {background:var(--tier);border-color:var(--frame-foil);}
+#spx-pearl-gold .rarity-word {font-size:11px;letter-spacing:.8px;font-weight:600;}
+#spx-pearl-gold .name-scroll small {font-size:11px;line-height:1.5;font-weight:500;}
+#spx-pearl-gold .card-stats {margin-top:15px;}
+#spx-pearl-gold .card-stats b {font-size:34px;}
+#spx-pearl-gold .card-stats small,
+#spx-pearl-gold .period-caption,
+#spx-pearl-gold .period-numbers small,
+#spx-pearl-gold .card-foot {font-size:11px;line-height:1.55;}
+#spx-pearl-gold .card-stats small {font-family:var(--sans);font-weight:500;letter-spacing:.05px;}
+#spx-pearl-gold .period-caption em {font-size:12px;font-weight:600;}
+#spx-pearl-gold .period-numbers b {font-size:26px;font-weight:600;}
+#spx-pearl-gold .card-foot {font-family:var(--sans);font-weight:500;padding-top:10px;}
+
+/* Rare: sapphire edging with a slim inner rail, restrained silver highlights. */
+#spx-pearl-gold .gilded .arena-card[data-tier=rare] {
+ --frame-width:3px;--frame-dark:#2f5e7a;--frame-mid:#4f83a2;--frame-light:#a9c3ce;
+ --frame-foil:#d7e6e8;--frame-liner:#edf4f2;--frame-rule:#88a6b4;
+ --card-wash:#dce7e7;--card-body:#fafbf6;--card-end:#eaf0ed;
+ --plate-top:#f5f8ef;--plate-mid:#dde8e3;--plate-low:#c5d9da;--plate-ink:#253c47;
+ --frame-depth:#345770;--frame-shade:#27495f16;
+ box-shadow:inset 0 0 0 1px var(--frame-liner),inset 0 0 0 2px var(--frame-rule),0 3px 0 var(--frame-depth),0 8px 16px var(--frame-shade);
+}
+
+/* Epic: polished amethyst, a gold pinstripe and faceted gems. */
+#spx-pearl-gold .gilded .arena-card[data-tier=epic] {
+ --frame-width:5px;--frame-dark:#542b70;--frame-mid:#9875af;--frame-light:#d8c4e1;
+ --frame-foil:#d6c16b;--frame-liner:#faf2cf;--frame-rule:#a982b8;
+ --card-wash:#e8def0;--card-body:#fcfaf8;--card-end:#eee6ef;
+ --plate-top:#f8efc8;--plate-mid:#ece0a2;--plate-low:#d7c56f;--plate-ink:#292c32;
+ --frame-depth:#604574;--frame-shade:#643a801f;
+ box-shadow:inset 0 0 0 1px var(--frame-liner),inset 0 0 0 3px var(--frame-foil),inset 0 0 0 4px var(--frame-liner),0 4px 0 var(--frame-depth),0 10px 20px var(--frame-shade);
+}
+#spx-pearl-gold .gilded .arena-card[data-tier=epic] .hero-window {border-color:#cbbb6c;}
+#spx-pearl-gold .gilded .arena-card[data-tier=epic] .name-scroll {border-color:#c6b25d;}
+
+/* Legendary: the broadest gold frame, triple engraving and a crowned seal. */
+#spx-pearl-gold .gilded .arena-card[data-tier=legendary] {
+ --frame-width:6px;--frame-dark:#baab4f;--frame-mid:#d5bf5b;--frame-light:#fff4b7;
+ --frame-foil:#cbbb57;--frame-liner:#fff8cc;--frame-rule:#c6b45a;
+ --card-wash:#eee2a8;--card-body:#fffcE9;--card-end:#f0e7bb;
+ --plate-top:#fff5c5;--plate-mid:#eddb89;--plate-low:#d3bd5c;--plate-ink:#252a2e;
+ --frame-depth:#aea159;--frame-shade:#8f894326;
+ box-shadow:inset 0 0 0 1px var(--frame-liner),inset 0 0 0 3px var(--frame-foil),inset 0 0 0 4px var(--frame-liner),0 5px 0 var(--frame-depth),0 12px 24px var(--frame-shade);
+}
+#spx-pearl-gold .gilded .arena-card:is([data-tier=legendary],[data-tier=epic]) .card-gem {
+ width:12px;height:12px;
+ background:linear-gradient(135deg,var(--frame-light),var(--frame-dark) 50%,var(--frame-mid));
+ box-shadow:inset 0 0 0 1px var(--frame-foil),1px 1px 2px var(--frame-shade);
+}
+#spx-pearl-gold .gilded .arena-card:is([data-tier=legendary],[data-tier=epic])::after {
+ content:"";position:absolute;bottom:-7px;left:calc(50% - 6px);width:12px;height:12px;transform:rotate(45deg);
+ background:linear-gradient(135deg,var(--frame-light),var(--frame-mid) 48%,var(--frame-dark));
+ border:1px solid var(--frame-foil);box-shadow:0 0 0 2px var(--frame-liner);pointer-events:none;
+}
+#spx-pearl-gold .gilded .arena-card[aria-pressed=true] {outline-color:var(--tier);outline-offset:5px;}
+#spx-pearl-gold .gilded .benchmark-pedestal {filter:none;}
+#spx-pearl-gold .market-card .card-crown {padding-bottom:13px;}
+#spx-pearl-gold .market-window {background:radial-gradient(ellipse,#ebe0a166,transparent 72%),#fbf7dd!important;}
+#spx-pearl-gold .market-window>small,
+#spx-pearl-gold .market-main-stat small,
+#spx-pearl-gold .market-secondary small {font-size:11px;line-height:1.5;}
+#spx-pearl-gold .market-card .card-foot {font-size:11px!important;}
+#spx-pearl-gold .market-main-stat strong {color:var(--ink);}
+#spx-pearl-gold .market-card .name-scroll small {font-size:11px;}
+#spx-pearl-gold .market-window>svg {color:var(--ink);}
+#spx-pearl-gold .market-orbit {border-color:#d0bc69;}
+#spx-pearl-gold .market-five {opacity:.07;}
+#spx-pearl-gold .home-section-head {flex-wrap:wrap;}
+
+@media(max-width:800px){
+ #spx-pearl-gold .rolling-windows {grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media(max-width:520px){
+ #spx-pearl-gold .home-intro {padding-inline:20px;}
+ #spx-pearl-gold .home-intro p {font-size:14px;}
+ #spx-pearl-gold .intro-eyebrow {font-size:11px;letter-spacing:.3px;gap:7px;}
+ #spx-pearl-gold .intro-eyebrow span {width:10px;}
+ #spx-pearl-gold .evidence-stat small {font-family:var(--sans);font-size:11px;}
+ #spx-pearl-gold .benchmark-stage {row-gap:30px;}
+ #spx-pearl-gold .ranking-stamp {text-align:left;}
+ #spx-pearl-gold .deck-caption {font-size:11px;}
+ #spx-pearl-gold .chart-heading {flex-wrap:wrap;}
+ #spx-pearl-gold .chart-heading select {font-size:16px;max-width:100%;}
+ #spx-pearl-gold .home-nav nav {font-size:12px;}
+}
