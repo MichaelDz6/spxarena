@@ -1,0 +1,23 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Hero from '../components/Hero.astro';
+import Benchmark from '../components/Benchmark.astro';
+import Contenders from '../components/Contenders.astro';
+import PerformanceRecord from '../components/PerformanceRecord.astro';
+import LeaderboardBars from '../components/LeaderboardBars.astro';
+import Rulebook from '../components/Rulebook.astro';
+---
+
+<SiteLayout>
+  <main id="nine-arena-top">
+    <Hero />
+    <Benchmark />
+    <Contenders />
+    <PerformanceRecord />
+    <LeaderboardBars />
+    <Rulebook />
+  </main>
+</SiteLayout>
+<script>
+  import '../scripts/home.js';
+</script>

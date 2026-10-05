@@ -1,0 +1,131 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Portrait from '../components/Portrait.astro';
+import {
+  investors,
+  rankedInvestors,
+  rankedById,
+  benchmarkStats,
+  fmt,
+  titleCase,
+} from '../lib/performance.js';
+---
+
+<SiteLayout
+  title="Investor Leaderboard"
+  description="Twenty fund and company records ranked by ten-year annualized returns versus SPY, plus fourteen unranked famous investor profiles."
+>
+  <main class="arena-page ranking-page" aria-labelledby="ranking-page-title">
+    <div class="page-intro">
+      <a href="/" class="back-link">← Back to the arena</a><span
+        class="small-label">THE COMPLETE ARENA · 34 INVESTORS</span
+      ><h1 id="ranking-page-title">Fame meets <em>the record.</em></h1><p>
+        Thirty-four familiar names. Twenty fund and company records ranked over
+        2016–2025. Explore the other fourteen profiles below as their records
+        are reviewed.
+      </p>
+    </div>
+    <div class="ranking-benchmark">
+      <div class="benchmark-mark">SPX</div><div>
+        <span class="small-label">THE BENCHMARK</span><h2>
+          S&amp;P 500 <span>· SPY ETF</span>
+        </h2>
+      </div><div class="ranking-benchmark-return">
+        <strong>{fmt(benchmarkStats[10])}%</strong><span>10Y ANNUALIZED</span>
+      </div>
+    </div>
+    <div class="ranking-table-wrap">
+      <table class="ranking-table">
+        <caption
+          >20 ranked vehicles · Jan 2016 – Dec 2025 · approximate USD returns</caption
+        ><thead
+          ><tr
+            ><th scope="col">Rank / Contender</th><th scope="col">10Y / year</th
+            ><th scope="col">vs SPX / year</th><th scope="col">5Y / year</th><th
+              scope="col">1Y return</th
+            ><th scope="col">10Y rarity</th></tr
+          ></thead
+        ><tbody>
+          {
+            rankedInvestors.map((d) => (
+              <tr>
+                <>
+                  <td>
+                    <a class="ranking-person" href={`/investors/${d.key}/`}>
+                      <div class="bar-identity">
+                        <>
+                          <span class="bar-rank">
+                            {String(d.rank).padStart(2, '0')}
+                          </span>
+                          <Portrait person={d.key} />
+                          <div>
+                            <>
+                              <strong>{d.name}</strong>
+                              <small>{d.vehicle}</small>
+                            </>
+                          </div>
+                        </>
+                      </div>
+                    </a>
+                  </td>
+                  <td>{fmt(d.value)}%</td>
+                  <td class={d.gap >= 0 ? 'up' : 'down'}>{fmt(d.gap, 2)} pp</td>
+                  <td>{fmt(d.stats[5].value)}%</td>
+                  <td>{fmt(d.stats[1].value)}%</td>
+                  <td>
+                    <span class="rarity-badge" data-tier={d.tier}>
+                      {titleCase(d.tier)}
+                    </span>
+                  </td>
+                </>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <p class="ranking-explainer">
+      The main rank always uses ten years. Shorter periods show recent form. A
+      vehicle’s return is not the investor’s personal return; fund NAV, market
+      value and composite figures are identified below each name.
+    </p>
+    <section class="unranked-section" aria-labelledby="unranked-title">
+      <span class="small-label">14 MORE FAMILIAR FACES</span><h2
+        id="unranked-title"
+      >
+        In the arena. Awaiting a rank.
+      </h2><p>
+        Historical careers and records still under review. Unranked means no
+        comparable score has been assigned; it does not mean the investor lost
+        to the market.
+      </p><div class="unranked-list">
+        {
+          investors
+            .filter((d) => !rankedById[d.key])
+            .map((d) => (
+              <a class="unranked-entry" href={`/investors/${d.key}/`}>
+                <>
+                  <Portrait person={d.key} />
+                  <span>
+                    <>
+                      <strong>{d.name}</strong>
+                      <small>
+                        {d.status} · {d.vehicle}
+                      </small>
+                    </>
+                  </span>
+                  <span aria-hidden="true">↗</span>
+                </>
+              </a>
+            ))
+        }
+      </div>
+    </section>
+    <div class="ranking-links">
+      <a class="arena-action secondary" href="/#nine-arena-rules"
+        >Read the ranking rules <span aria-hidden="true">→</span></a
+      ><a class="arena-action" href="/calculator/"
+        >Calculate your own journey <span aria-hidden="true">→</span></a>
+    </div>
+  </main>
+</SiteLayout>

@@ -1,0 +1,75 @@
+---
+import { rankedInvestors, fmt, benchmarkReturns } from '../lib/performance.js';
+interface Props {
+  investor: (typeof rankedInvestors)[number];
+}
+const { investor: d } = Astro.props;
+---
+
+<div data-record-detail>
+  <p>
+    <b
+      >{d.windows.filter((w) => w.gap > 0).length} of six rolling five-year windows
+      ahead of SPY.</b
+    > Annualized gaps, with windows ending each December:
+  </p>
+  <div class="rolling-windows">
+    {
+      d.windows.map((w) => (
+        <span>
+          <>
+            <small>
+              {w.start}–{w.end}
+            </small>
+            <b class={w.gap >= 0 ? 'up' : 'down'}>{fmt(w.gap, 2)} pp/yr</b>
+          </>
+        </span>
+      ))
+    }
+  </div>
+  <p>
+    These windows overlap; they are not independent tests of skill. Figures are
+    approximate. The frame always uses the full ten-year result.
+  </p>
+  <p>
+    <b>Maximum drawdown: not yet verified.</b> Annual observations miss intra-year
+    losses; a daily total-return series is required.
+  </p>
+  <p>{d.detail}</p>
+  <p><b>Data basis.</b> {d.method}</p>
+  <p>
+    <a href={d.source} target="_blank" rel="noopener noreferrer"
+      >{d.sourceLabel} ↗</a
+    >{
+      d.dataSources.map((source) => (
+        <>
+          {' '}
+          ·{' '}
+          <a href={source.url} target="_blank" rel="noopener noreferrer">
+            {source.label} ↗
+          </a>
+        </>
+      ))
+    }
+  </p>
+  <table class="annual-record">
+    <caption>Calendar-year returns · USD</caption><thead
+      ><tr
+        ><th scope="col">Year</th><th scope="col">{d.vehicle}</th><th
+          scope="col">SPY ETF</th
+        ></tr
+      ></thead
+    ><tbody
+      >{
+        d.returns.map((value, i) => (
+          <tr>
+            <>
+              <th scope="row">{2016 + i}</th>
+              <td>{fmt(value, 2)}%</td>
+              <td>{fmt(benchmarkReturns[i], 2)}%</td>
+            </>
+          </tr>
+        ))
+      }</tbody>
+  </table>
+</div>

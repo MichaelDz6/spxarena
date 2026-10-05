@@ -1,0 +1,46 @@
+---
+import InvestorCard from './InvestorCard.astro';
+import { rosterOrder } from '../lib/performance.js';
+---
+
+<section
+  class="contender-section"
+  id="nine-arena-contenders"
+  aria-labelledby="nine-contender-heading"
+>
+  <div class="home-section-head">
+    <div>
+      <span class="small-label">THE CONTENDERS</span><h2
+        id="nine-contender-heading"
+      >
+        Great names. <em>Earned ranks.</em>
+      </h2>
+    </div><span class="ranking-stamp"
+      >34 INVESTOR PROFILES<br /><b>20 RANKED · 14 UNRANKED</b></span>
+  </div>
+  <p class="roster-intro">
+    The faces you know. The records behind them. Explore 34 investors, with 20
+    ten-year records in the ranking.
+  </p>
+  <div class="contender-deck" data-card-deck="arena">
+    {rosterOrder.map((person) => <InvestorCard person={person} />)}
+  </div>
+  <div class="roster-pagination" hidden>
+    <p data-roster-range aria-live="polite"></p><div>
+      <button
+        type="button"
+        class="cursor-interaction"
+        data-roster-prev
+        aria-label="Previous investor cards">← Previous</button
+      ><button
+        type="button"
+        class="cursor-interaction"
+        data-roster-next
+        aria-label="Next investor cards">Next →</button>
+    </div>
+  </div>
+  <div class="deck-caption">
+    <span>Select a card to explore its record or profile.</span><span
+      >10Y frame <b>◆</b> 5Y form <b>◆</b> 1Y season</span>
+  </div>
+</section>

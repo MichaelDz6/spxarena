@@ -1,0 +1,124 @@
+---
+import { rankedInvestors, investors } from '../lib/performance.js';
+---
+
+<div class="home-sources">
+  <details class="source-details">
+    <summary>Sources &amp; comparison notes · as of Dec 31, 2025</summary><p>
+      The arena features 34 investor profiles. Twenty selected vehicles are
+      ranked by 10-year annualized outperformance versus SPY, the S&amp;P 500
+      ETF. This is a dated research snapshot, not a live ranking of all
+      investors. Figures are estimates from published annual returns or adjusted
+      year-end NAVs and share prices. The record details identify the method and
+      sources. Fundsmith and Fairfax are converted to USD. This is a return
+      ranking, not a risk-adjusted assessment; the vehicles have different
+      mandates and exposures. Charts use annual observations only. SPY is
+      market-price total return; ARKK, GINDX, EPIVX and PSH are NAV returns
+      after fund expenses. Berkshire is per-share market value. NAV and
+      shareholder returns are different measures; these labels stay visible.
+    </p><p>
+      Annual data: <a
+        href="https://assets.ark-funds.com/media-12243148-2a3e-4996-9763-260f93905eb9/43f4ba54-a65f-44d9-b18c-c911a1d6e3e4/ARK%20Innovation%20ETF%20Summary%20Prospectus.pdf"
+        target="_blank"
+        rel="noopener noreferrer">ARK prospectus, 2016–2024</a
+      > · <a
+        href="https://www.ark-funds.com/funds/arkk"
+        target="_blank"
+        rel="noopener noreferrer">ARK, 2025</a
+      > · <a
+        href="https://www.berkshirehathaway.com/letters/2025ltr.pdf"
+        target="_blank"
+        rel="noopener noreferrer">Berkshire</a
+      > · <a
+        href="https://www.gothamfunds.com/Download.aspx?ID=457bfb70-a1f5-4692-858e-35a279efb3a3&Inline=1"
+        target="_blank"
+        rel="noopener noreferrer">Gotham</a
+      > · <a
+        href="https://assets.pershingsquareholdings.com/wp-content/uploads/2026/02/11144917/2026-Annual-Investor-Presentation.pdf"
+        target="_blank"
+        rel="noopener noreferrer">Pershing Square</a
+      > · <a
+        href="https://www.financecharts.com/etfs/SPY/performance"
+        target="_blank"
+        rel="noopener noreferrer">SPY annual returns</a
+      > · <a
+        href="https://media.fidelity.com/assets/Fidelity.com_VMS/791/211/031926_ITM_Show-Notes.pdf"
+        target="_blank"
+        rel="noopener noreferrer">Fidelity: SPY 1Y / 5Y / 10Y cross-check</a
+      > · <a
+        href="https://www.spglobal.com/spdji/en/documents/spiva/spiva-us-year-end-2025.pdf"
+        target="_blank"
+        rel="noopener noreferrer">SPIVA</a
+      >.
+    </p><p>
+      GINDX is co-managed by Joel Greenblatt and Robert Goldstein. Berkshire is
+      a conglomerate. PSH NAV includes the effects of its structure and
+      buybacks; it is not its listed-share return. EPIVX is EuroPac
+      International Value Class A at NAV, excluding its initial sales charge (up
+      to 4.5%); including that charge reduces its published 10Y return to
+      10.84%. Peter Schiff is associated with the adviser and investment
+      philosophy; James Nelson and Luke Allen manage the fund. It invests
+      internationally, so SPY is an opportunity-cost comparison, not its mandate
+      benchmark. Icahn’s figures are the published investment-fund composite,
+      net of expenses, not IEP shareholder returns or his personal return.
+      Annual observations cannot measure intra-year maximum drawdown. No risk
+      score is fabricated. Historical performance does not establish future
+      returns.
+    </p><p>
+      New annual records: <a
+        href="https://www.sec.gov/Archives/edgar/data/1318342/000121390026023914/ea0277787-03_497k.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+        >EuroPac 2026 prospectus, Class A calendar-year chart</a
+      > · <a
+        href="https://epcadvisorsgroup.com/wp-content/uploads/2026/02/EPIVX-Fund-Fact-Sheet-12.31.2025.pdf"
+        target="_blank"
+        rel="noopener noreferrer">EuroPac December 2025 factsheet</a
+      > · Icahn annual reports: <a
+        href="https://www.ielp.com/static-files/f81df15f-0a43-4229-bef9-0b858d10dd79"
+        target="_blank"
+        rel="noopener noreferrer">2018 (2016–18)</a
+      >, <a
+        href="https://www.ielp.com/static-files/04bff682-1623-4b57-9e6b-f5addf735797"
+        target="_blank"
+        rel="noopener noreferrer">2019</a
+      >, <a
+        href="https://www.ielp.com/static-files/f988d18e-724f-429d-b35c-5a0908660e6f"
+        target="_blank"
+        rel="noopener noreferrer">2022 (2020–22)</a
+      >, <a
+        href="https://www.ielp.com/static-files/a5d6dde9-3909-48db-bf35-28c21e788151"
+        target="_blank"
+        rel="noopener noreferrer">2025 (2023–25)</a
+      >.
+    </p>
+  </details><details class="profile-photo-credits">
+    <summary>Added records &amp; portrait sources</summary><p>
+      The fourteen newly ranked records use the full 2016–2025 period.
+      Adjusted-NAV estimates can differ slightly from published fund returns.
+      Pabrai Fund 3’s conflicting headline ten-year figure is disclosed in its
+      profile. Each record links to its data sources.
+    </p><p>
+      {
+        rankedInvestors.map((d) => (
+          <a href={d.source} target="_blank" rel="noopener noreferrer">
+            {d.name} ·{' '}
+          </a>
+        ))
+      }
+    </p><p>
+      Fourteen other profiles remain unranked while comparable records are
+      reviewed. Fame does not establish performance.
+    </p><p>
+      Portrait sources: {
+        investors
+          .filter((d) => d.photoCredit)
+          .map((d) => (
+            <a href={d.photoCredit!} target="_blank" rel="noopener noreferrer">
+              {d.name} ·{' '}
+            </a>
+          ))
+      }
+    </p>
+  </details>
+</div>

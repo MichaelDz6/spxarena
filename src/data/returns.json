@@ -1,0 +1,388 @@
+{
+  "loeb": {
+    "name": "Dan Loeb",
+    "vehicle": "Third Point Offshore · net",
+    "detail": "Founder of Third Point. This record follows the Offshore Fund, including legacy private investments, after reported fund fees and expenses. Its mix of equities, credit and hedges differs from SPY. Reported fee conventions changed in 2020; it is a fund record, not Loeb’s personal return.",
+    "source": "https://assets-malibu-life.s3.us-west-2.amazonaws.com/system/uploads/fae/file/asset/1683/Third_Point_Master_Fund_December_2025_Monthly_Report.pdf",
+    "sourceLabel": "Third Point · December 2025 performance",
+    "returns": [6.1, 17.9, -11.3, 17.0, 19.2, 22.5, -21.9, 3.4, 24.2, 8.9],
+    "precision": 0.05,
+    "method": "Compounded from published calendar-year net returns. Values are approximate because the annual figures are rounded.",
+    "dataSources": [
+      {
+        "label": "2016–2022 · Offshore annual history",
+        "url": "https://assets.thirdpoint.com/f/160155/x/68fe31b218/2023-07-third-point-performance.pdf?cv=1691020826437"
+      },
+      {
+        "label": "2023 · Offshore investor letter",
+        "url": "https://assets.thirdpointlimited.com/f/166217/x/4c01ad22d8/fourth-quarter-2023-investor-letter-tpil.pdf"
+      },
+      {
+        "label": "2024 · issuer performance release",
+        "url": "https://www.prnewswire.co.uk/news-releases/regulatory-news/third-point-investors-ltd-third-point-publishes-q4-2024-investor-letter-864113313.html"
+      },
+      {
+        "label": "2025 · Offshore December report",
+        "url": "https://assets-malibu-life.s3.us-west-2.amazonaws.com/system/uploads/fae/file/asset/1683/Third_Point_Master_Fund_December_2025_Monthly_Report.pdf"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "pabrai": {
+    "name": "Mohnish Pabrai",
+    "vehicle": "Pabrai Fund 3 · net",
+    "detail": "The comparison uses Pabrai Investment Fund 3 consistently, not a blend of the best-performing Pabrai funds. Annual net returns in Appendix B are checked against year-end NAVs in Appendix D of the 2025 annual report. The ten-year result is calculated from those observations because the report’s headline summary table is inconsistent with its appendices.",
+    "source": "https://pabraifunds.com/annual-reports-and-meetings/",
+    "sourceLabel": "Pabrai · annual reports and NAV history",
+    "returns": [2.3, 109.2, -41.9, 12.5, 18.4, -15.2, 16.8, 38.9, 61.9, -20.0],
+    "precision": 0.05,
+    "method": "Compounded from published calendar-year net returns. Values are approximate because the annual figures are rounded. The calculated 10Y CAGR is about 11.4%, consistent with the NAV appendix ($41.33 to $122.07); the report’s headline table instead states 8.9%. This conflict is disclosed rather than silently using that headline.",
+    "dataSources": [
+      {
+        "label": "2025 annual report · Appendices B & D",
+        "url": "https://pabraifunds.com/pdf/web/AR_2025.pdf"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "smith": {
+    "name": "Terry Smith",
+    "vehicle": "Fundsmith T Acc · USD",
+    "detail": "Fundsmith Equity T Accumulation total returns, after fund expenses, translated from GBP into USD at each year-end. Currency movements are included. This global-equity strategy has a different investment universe from the S&P 500; SPY measures the alternative of buying the U.S. index.",
+    "source": "https://www.fundsmith.co.uk/factsheet/",
+    "sourceLabel": "Fundsmith · performance history",
+    "returns": [
+      6.269805, 33.412874, -3.482097, 29.781421, 22.959429, 20.924882,
+      -23.008842, 18.68607, 7.289292, 8.16385
+    ],
+    "precision": 0.05,
+    "method": "Published T Acc GBP returns translated to USD using year-end exchange rates. FX valuation times can differ from the fund’s valuation time; values are approximate.",
+    "dataSources": [
+      {
+        "label": "GBP annual return history · Morningstar report hosted by Fundsmith",
+        "url": "https://www.fundsmith.co.uk/media/jbsni1u0/morningstar-fundsmith-report-2025.pdf"
+      },
+      {
+        "label": "GBP/USD year-end conversion",
+        "url": "https://finance.yahoo.com/quote/GBPUSD=X/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "gabelli": {
+    "name": "Mario Gabelli",
+    "vehicle": "GABAX · Class AAA NAV",
+    "detail": "Gabelli Asset Fund Class AAA (GABAX) total returns, with distributions reinvested and fund expenses included. Class AAA has no sales load. Gabelli leads a management team; these are the fund’s results rather than his personal portfolio or GAMCO’s share price.",
+    "source": "https://www.sec.gov/Archives/edgar/data/783898/000182912626004254/gaf_485bpos.htm",
+    "sourceLabel": "Gabelli · 2026 prospectus",
+    "returns": [
+      11.58, 20.16, -7.69, 22.43, 11.23, 18.93, -10.63, 10.29, 8.16, 16.74
+    ],
+    "precision": 0.005,
+    "method": "Compounded from published calendar-year net returns. Values are approximate because the annual figures are rounded.",
+    "dataSources": [],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "danoff": {
+    "name": "Will Danoff",
+    "vehicle": "FCNTX · fund NAV",
+    "detail": "Fidelity Contrafund (FCNTX) NAV total returns, after fund expenses, with distributions reinvested. Danoff managed the fund throughout this comparison period. Asher Anolic and Jason Weiner joined him as co-managers in April 2025, so the final year includes a shared management team.",
+    "source": "https://fundresearch.fidelity.com/mutual-funds/view-all/316071109",
+    "sourceLabel": "Fidelity · Contrafund performance",
+    "returns": [
+      3.333538, 32.291076, -2.325017, 29.997907, 32.484904, 24.518917,
+      -28.309523, 39.36532, 36.000971, 21.760907
+    ],
+    "precision": 0.1,
+    "method": "Estimated from dividend- and split-adjusted year-end NAVs. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision.",
+    "dataSources": [
+      {
+        "label": "FCNTX · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/FCNTX/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "asness": {
+    "name": "Cliff Asness",
+    "vehicle": "QLEIX · co-managed NAV",
+    "detail": "AQR Long-Short Equity Fund Class I (QLEIX), co-managed by Asness and the AQR team. Published NAV returns include fund expenses and reinvested distributions. The strategy targets moderate equity exposure and uses short positions; beating SPY is an opportunity-cost comparison, not its stated mandate.",
+    "source": "https://funds.aqr.com/funds/aqr-long-short-equity-fund",
+    "sourceLabel": "AQR · Long-Short Equity Fund",
+    "returns": [
+      11.096561, 15.750189, -16.32827, 1.187219, -13.92783, 31.096909, 19.17313,
+      23.945157, 30.499973, 34.433031
+    ],
+    "precision": 0.1,
+    "method": "Estimated from dividend- and split-adjusted year-end NAVs. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision.",
+    "dataSources": [
+      {
+        "label": "QLEIX · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/QLEIX/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "berkowitz": {
+    "name": "Bruce Berkowitz",
+    "vehicle": "FAIRX · fund NAV",
+    "detail": "The Fairholme Fund (FAIRX), led by Bruce Berkowitz, measured at NAV after expenses with distributions reinvested. Its concentrated holdings can produce large differences from the broad S&P 500. The record covers calendar years 2016–2025, rather than the fund’s November fiscal-year endpoints.",
+    "source": "https://www.sec.gov/Archives/edgar/data/1096344/000119312526123095/d19988d485bpos.htm",
+    "sourceLabel": "Fairholme · 2026 prospectus",
+    "returns": [
+      25.636175, -5.939939, -23.181491, 32.06054, 46.898626, 6.865777,
+      -20.494701, 46.716709, -17.441392, 29.494562
+    ],
+    "precision": 0.1,
+    "method": "Estimated from dividend- and split-adjusted year-end NAVs. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision.",
+    "dataSources": [
+      {
+        "label": "FAIRX · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/FAIRX/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "watsa": {
+    "name": "Prem Watsa",
+    "vehicle": "Fairfax · shareholders USD",
+    "detail": "Fairfax Financial shareholder total returns, including dividends, translated into USD. This measures an investment in the listed company, including its insurance operations and valuation changes. It is not the return on Fairfax’s investment portfolio or Watsa’s personal wealth.",
+    "source": "https://www.fairfax.ca/wp-content/uploads/2026/03/FFH_Fairfax-Financials-Shareholders-Letter-2025-with-attachments-092704.pdf",
+    "sourceLabel": "Fairfax · 2025 shareholder letter",
+    "returns": [
+      3.729271, 13.113342, -15.604994, 8.088454, -25.542782, 47.362582,
+      23.671114, 58.731711, 53.277674, 38.546958
+    ],
+    "precision": 0.05,
+    "method": "Estimated from dividend- and split-adjusted year-end share prices. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision. Converted to USD using year-end exchange rates; fund and FX valuation times can differ.",
+    "dataSources": [
+      {
+        "label": "CAD/USD year-end conversion",
+        "url": "https://finance.yahoo.com/quote/CADUSD=X/history/"
+      },
+      {
+        "label": "FFH.TO · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/FFH.TO/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "gayner": {
+    "name": "Tom Gayner",
+    "vehicle": "MKL · shareholder return",
+    "detail": "Markel Group (MKL) shareholder return in USD. Gayner was co-CEO during 2016–2022 and CEO from 2023. The share return includes insurance and operating businesses, investment results, and market valuation; it is not the return of the equity portfolio he manages.",
+    "source": "https://www.mklgroup.com/who-we-are/shareholder-letters",
+    "sourceLabel": "Markel · shareholder letters",
+    "returns": [
+      2.394297, 25.940299, -8.873435, 10.126679, -9.610993, 19.423202, 6.765801,
+      7.773117, 21.574051, 24.528593
+    ],
+    "precision": 0.1,
+    "method": "Estimated from dividend- and split-adjusted year-end share prices. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision.",
+    "dataSources": [
+      {
+        "label": "MKL · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/MKL/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "hussman": {
+    "name": "John Hussman",
+    "vehicle": "HSGFX · fund NAV",
+    "detail": "Hussman Strategic Market Cycle Fund (HSGFX), formerly Strategic Growth, at NAV with distributions reinvested. Its mandate emphasizes capital protection and varying market exposure. Hedging can cause it to lag a rising equity market; the comparison with SPY measures opportunity cost, not whether it met its risk-management objective.",
+    "source": "https://www.hussmanfunds.com/strategic-market-cycle-fund/",
+    "sourceLabel": "Hussman · strategy and fund reports",
+    "returns": [
+      -11.491116, -12.729142, 8.784255, -18.860567, 14.523635, -0.227594,
+      17.329126, -11.602274, -6.98417, 6.237494
+    ],
+    "precision": 0.1,
+    "method": "Estimated from dividend- and split-adjusted year-end NAVs. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision.",
+    "dataSources": [
+      {
+        "label": "HSGFX · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/HSGFX/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "nygren": {
+    "name": "Bill Nygren",
+    "vehicle": "OAKMX · co-managed NAV",
+    "detail": "Oakmark Fund Investor Class (OAKMX), after fund expenses with distributions reinvested. Bill Nygren was a manager throughout 2016–2025; the fund is co-managed. Its value-oriented portfolio can differ substantially from the S&P 500’s sector and style exposures.",
+    "source": "https://oakmark.com/news-insights/what-goes-up-u-s-equity-market-commentary-4q-2025/",
+    "sourceLabel": "Oakmark · year-end 2025 performance",
+    "returns": [
+      18.321325, 21.117954, -12.763076, 27.13868, 12.89719, 34.205889, -13.381,
+      30.921604, 16.016452, 14.125242
+    ],
+    "precision": 0.1,
+    "method": "Estimated from dividend- and split-adjusted year-end NAVs. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision.",
+    "dataSources": [
+      {
+        "label": "OAKMX · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/OAKMX/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "davis": {
+    "name": "Chris Davis",
+    "vehicle": "NYVTX · Class A NAV",
+    "detail": "Davis New York Venture Fund Class A (NYVTX), co-managed by Chris Davis and Danton Goei. NAV total returns include operating expenses and reinvested distributions but exclude the maximum 4.75% initial sales charge. An investor paying that charge would receive lower returns.",
+    "source": "https://davisfunds.com/funds/nyventure-fund",
+    "sourceLabel": "Davis · New York Venture performance",
+    "returns": [
+      12.31, 22.182307, -12.992719, 30.993466, 11.420954, 12.463605, -17.539675,
+      30.142478, 17.374313, 26.831432
+    ],
+    "precision": 0.1,
+    "method": "Estimated from dividend- and split-adjusted year-end NAVs. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision.",
+    "dataSources": [
+      {
+        "label": "NYVTX · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/NYVTX/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "rogers": {
+    "name": "John Rogers Jr.",
+    "vehicle": "ARGFX · Investor NAV",
+    "detail": "Ariel Fund Investor Class (ARGFX) NAV total returns with distributions reinvested and expenses included. Rogers leads the management team. The fund focuses on small and mid-sized value stocks; SPY is an alternative investment comparison rather than its primary strategy benchmark.",
+    "source": "https://www.arielinvestments.com/wp-content/uploads/2026/01/Ariel-Fund-FactSheet_4Q25-2.pdf",
+    "sourceLabel": "Ariel · December 2025 factsheet",
+    "returns": [
+      15.619443, 15.992728, -13.585481, 24.637892, 10.050189, 30.289374,
+      -18.681236, 15.778, 11.556437, 14.078361
+    ],
+    "precision": 0.1,
+    "method": "Estimated from dividend- and split-adjusted year-end NAVs. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision.",
+    "dataSources": [
+      {
+        "label": "ARGFX · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/ARGFX/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "herro": {
+    "name": "David Herro",
+    "vehicle": "OAKIX · co-managed NAV",
+    "detail": "Oakmark International Fund Investor Class (OAKIX), co-managed by David Herro, with expenses included and distributions reinvested. USD returns include the currency exposure of its international holdings. Its investment universe differs from U.S.-focused SPY.",
+    "source": "https://oakmark.com/wp-content/uploads/sites/3/2026/01/Oakmark-International-Fund-Commentary-12-31-2025.pdf",
+    "sourceLabel": "Oakmark International · 2025 report",
+    "returns": [
+      7.900648, 29.735023, -23.410833, 24.235388, 4.91587, 9.037152, -15.719183,
+      18.858428, -4.605723, 32.396474
+    ],
+    "precision": 0.1,
+    "method": "Estimated from dividend- and split-adjusted year-end NAVs. Small differences from published fund total returns can arise from distribution-reinvestment conventions and source precision.",
+    "dataSources": [
+      {
+        "label": "OAKIX · adjusted daily history",
+        "url": "https://finance.yahoo.com/quote/OAKIX/history/"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "bill": {
+    "name": "Bill Ackman",
+    "vehicle": "PSH · NAV",
+    "returns": [-13.5, -4.0, -0.7, 58.1, 70.2, 26.9, -8.8, 26.7, 10.2, 20.9],
+    "precision": 0.05,
+    "detail": "PSH NAV returns include leverage and the effects of its structure and buybacks. They differ from the returns of its traded shares. The five-year rarity is Unrated because rounded source data cannot establish which side of zero the gap falls on.",
+    "source": "https://assets.pershingsquareholdings.com/wp-content/uploads/2026/02/11144917/2026-Annual-Investor-Presentation.pdf",
+    "sourceLabel": "Published performance record",
+    "method": "Compounded from published calendar-year returns. Figures are approximate because the source observations are rounded.",
+    "dataSources": [],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "joel": {
+    "name": "Joel Greenblatt",
+    "vehicle": "GINDX · co-managed",
+    "returns": [
+      17.98, 26.05, -3.5, 19.37, 6.8, 32.75, -11.61, 26.42, 26.05, 22.29
+    ],
+    "precision": 0.005,
+    "detail": "Gotham Index Plus is co-managed by Joel Greenblatt and Robert Goldstein. It uses a leveraged long/short overlay. This record follows fund NAV after expenses.",
+    "source": "https://www.gothamfunds.com/Download.aspx?ID=457bfb70-a1f5-4692-858e-35a279efb3a3&Inline=1",
+    "sourceLabel": "Published performance record",
+    "method": "Compounded from published calendar-year returns. Figures are approximate because the source observations are rounded.",
+    "dataSources": [],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "cathie": {
+    "name": "Cathie Wood",
+    "vehicle": "ARKK · NAV",
+    "returns": [
+      -1.97, 87.41, 3.58, 35.23, 152.51, -23.36, -66.99, 67.82, 8.36, 35.58
+    ],
+    "precision": 0.005,
+    "detail": "This record follows ARK Innovation ETF at NAV after fund expenses. ARKK is a concentrated thematic fund; its exposures differ from the S&P 500.",
+    "source": "https://www.ark-funds.com/funds/arkk",
+    "sourceLabel": "Published performance record",
+    "method": "Compounded from published calendar-year returns. Figures are approximate because the source observations are rounded.",
+    "dataSources": [],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "peter": {
+    "name": "Peter Schiff",
+    "vehicle": "EPIVX · affiliated fund",
+    "returns": [
+      17.99, 15.09, -14.49, 16.72, 18.37, 7.11, 0.47, 9.8, 5.08, 47.15
+    ],
+    "precision": 0.005,
+    "detail": "EuroPac International Value Class A NAV excludes its initial sales charge of up to 4.5%. Peter Schiff is associated with the adviser and investment philosophy; James Nelson and Luke Allen manage the fund. Its international mandate differs from SPY.",
+    "source": "https://epcadvisorsgroup.com/wp-content/uploads/2026/02/EPIVX-Fund-Fact-Sheet-12.31.2025.pdf",
+    "sourceLabel": "Published performance record",
+    "method": "Compounded from published calendar-year returns. Figures are approximate because the source observations are rounded.",
+    "dataSources": [],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "carl": {
+    "name": "Carl Icahn",
+    "vehicle": "Icahn funds · composite",
+    "returns": [-20.3, 2.1, 7.9, -15.4, -14.3, -0.3, -2.4, -16.9, -3.5, 0.4],
+    "precision": 0.05,
+    "detail": "These are the published Icahn investment-fund composite returns, net of expenses. They are not IEP shareholder returns or Carl Icahn’s personal returns.",
+    "source": "https://www.ielp.com/static-files/a5d6dde9-3909-48db-bf35-28c21e788151",
+    "sourceLabel": "Published performance record",
+    "method": "Compounded from published calendar-year returns. Figures are approximate because the source observations are rounded.",
+    "dataSources": [],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  },
+  "warren": {
+    "name": "Warren Buffett",
+    "vehicle": "Berkshire · market value",
+    "returns": [23.4, 21.9, 2.8, 11.0, 2.4, 29.6, 4.0, 15.8, 25.5, 10.9],
+    "precision": 0.05,
+    "detail": "Berkshire Hathaway is a conglomerate, not a fund. This record uses its per-share market value, not Buffett’s personal investment return.",
+    "source": "https://www.berkshirehathaway.com/letters/2025ltr.pdf",
+    "sourceLabel": "Published performance record",
+    "method": "Compounded from published calendar-year returns. Figures are approximate because the source observations are rounded.",
+    "dataSources": [],
+    "asOf": "2025-12-31",
+    "currency": "USD"
+  }
+}

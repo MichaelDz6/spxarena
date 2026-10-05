@@ -1,0 +1,103 @@
+---
+import Portrait from './Portrait.astro';
+import {
+  investorById,
+  rankedById,
+  rankedInvestors,
+  fmt,
+  delta,
+  titleCase,
+} from '../lib/performance.js';
+interface Props {
+  person: string;
+}
+const { person } = Astro.props;
+const profile = investorById[person];
+const record = rankedById[person];
+---
+
+<a
+  href={`/investors/${person}/`}
+  class:list={['arena-card', 'cursor-interaction', { 'profile-card': !record }]}
+  data-tier={record?.tier || 'unrated'}
+  aria-label={`View ${profile.name}, ${record ? titleCase(record.tier) + ' over 10 years' : 'unranked'}`}
+>
+  <span class="card-crown"
+    ><span class="card-gem" aria-hidden="true"></span><span class="rarity-word"
+      >{record ? `10Y · ${record.tier.toUpperCase()}` : 'UNRANKED'}</span
+    ><span class="card-gem" aria-hidden="true"></span></span
+  >
+  <span class="hero-window"><Portrait person={person} /></span>
+  <span class="name-scroll"
+    ><strong>{profile.name}</strong><small
+      >{record?.vehicle.toUpperCase() || profile.vehicle}</small
+    ></span
+  >
+  {
+    record ? (
+      <>
+        <span class="card-stats">
+          <>
+            <span>
+              <>
+                <b class="card-value">{fmt(record.value)}%</b>
+                <small>10Y ANNUALIZED</small>
+              </>
+            </span>
+            <span>
+              <>
+                <b class="card-gap" data-delta={delta(record.gap)}>
+                  {fmt(record.gap, 2)}
+                </b>
+                <small>PP / YR VS SPY</small>
+              </>
+            </span>
+          </>
+        </span>
+        <span class="period-stats">
+          {[5, 1].map((years) => (
+            <span class="period-stat" data-tier={record.stats[years].tier}>
+              <span class="period-caption">
+                {years}Y {years === 1 ? 'SEASON' : 'FORM'}{' '}
+                <em>{titleCase(record.stats[years].tier)}</em>
+              </span>
+              <span class="period-numbers">
+                <b>{fmt(record.stats[years].value)}%</b>
+                <small data-delta={delta(record.stats[years].gap)}>
+                  {fmt(record.stats[years].gap, 2)} pp{years === 1 ? '' : '/yr'}
+                </small>
+              </span>
+            </span>
+          ))}
+        </span>
+        <span class="card-foot">
+          2016–2025 · RANK {String(record.rank).padStart(2, '0')} /{' '}
+          {rankedInvestors.length}
+        </span>
+      </>
+    ) : (
+      <>
+        <span class="profile-tagline">{profile.knownFor}</span>
+        <span class="profile-card-meta">
+          <>
+            <span>
+              <>
+                <small>STRATEGY</small>
+                <b>{profile.category}</b>
+              </>
+            </span>
+            <span>
+              <>
+                <small>RECORD</small>
+                <b>{profile.status}</b>
+              </>
+            </span>
+          </>
+        </span>
+        <span class="card-foot">
+          VIEW PROFILE <span aria-hidden="true">↗</span>
+        </span>
+      </>
+    )
+  }
+</a>

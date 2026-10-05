@@ -1,0 +1,104 @@
+---
+import Portrait from './Portrait.astro';
+import { rankedInvestors, benchmarkStats, fmt } from '../lib/performance.js';
+const top = rankedInvestors.slice(0, 5);
+const benchmark = benchmarkStats[10];
+const maximum =
+  Math.ceil(Math.max(benchmark, ...top.map((d) => d.value)) / 5) * 5;
+const position = (benchmark / maximum) * 100;
+---
+
+<section
+  class="leaderboard-section"
+  id="nine-arena-leaderboard"
+  aria-labelledby="nine-leaderboard-title"
+>
+  <div class="home-section-head">
+    <div>
+      <span class="small-label">THE LONG GAME · TOP FIVE</span><h2
+        id="nine-leaderboard-title"
+      >
+        The arena, <em>ranked.</em>
+      </h2>
+    </div><span class="ranking-stamp"
+      >10-YEAR ANNUALIZED RETURN<br /><b>JAN 2016 – DEC 2025</b></span>
+  </div>
+  <p class="section-intro">
+    One decade. The same benchmark. See who finished ahead.
+  </p>
+  <div
+    class="leaderboard-bars"
+    data-top-leaderboard
+    data-benchmark-position={position}
+  >
+    <div class="bar-row benchmark-row">
+      <div class="bar-identity">
+        <span class="bar-rank">—</span><span
+          class="bar-benchmark-icon"
+          aria-hidden="true">◆</span
+        ><div>
+          <strong>SPX · S&amp;P 500</strong><small
+            >SPY ETF · THE BENCHMARK</small>
+        </div>
+      </div><div class="bar-track">
+        <span class="bar-fill" style={`width:${position}%`}></span>
+      </div><div class="bar-value">
+        <strong>{fmt(benchmark)}%</strong><small>BENCHMARK</small>
+      </div>
+    </div>
+    {
+      top.map((d) => (
+        <div class="bar-row">
+          <>
+            <div class="bar-identity">
+              <>
+                <span class="bar-rank">{String(d.rank).padStart(2, '0')}</span>
+                <Portrait person={d.key} />
+                <div>
+                  <>
+                    <strong>{d.name}</strong>
+                    <small>{d.vehicle}</small>
+                  </>
+                </div>
+              </>
+            </div>
+            <div class="bar-track">
+              <span
+                class="bar-fill"
+                style={`width:${(d.value / maximum) * 100}%`}
+              />
+            </div>
+            <div class="bar-value">
+              <>
+                <strong>{fmt(d.value)}%</strong>
+                <small>
+                  <>
+                    <span
+                      class:list={['excess-return', d.gap >= 0 ? 'up' : 'down']}
+                    >
+                      {fmt(d.gap, 2)} pp
+                    </span>
+                    <span class="bar-gap-context"> vs SPX</span>
+                  </>
+                </small>
+              </>
+            </div>
+          </>
+        </div>
+      ))
+    }
+    <div class="bar-axis" aria-hidden="true">
+      <span></span><div class="bar-axis-ticks">
+        {[0, 1, 2, 3, 4].map((i) => <span>{(i * maximum) / 4}%</span>)}
+      </div><span></span>
+    </div>
+    <span class="leaderboard-reference-line" aria-hidden="true"></span>
+  </div>
+  <div class="leaderboard-bottom">
+    <p>
+      The gold line shows SPX, measured using SPY total returns.<br /><span
+        >Top five of 20 ranked vehicles. Figures are approximate.</span>
+    </p><a class="arena-action" href="/leaderboard/"
+      >View full leaderboard <span aria-hidden="true">↗</span></a>
+  </div>
+</section>

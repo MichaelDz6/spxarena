@@ -1,0 +1,116 @@
+---
+import {
+  rankedInvestors,
+  rankedById,
+  dollars,
+  accumulate,
+  benchmarkReturns,
+} from '../lib/performance.js';
+import Portrait from './Portrait.astro';
+import RecordDetail from './RecordDetail.astro';
+---
+
+<section
+  class="record-section"
+  id="nine-arena-record"
+  aria-labelledby="nine-record-heading"
+>
+  <div class="home-section-head">
+    <div>
+      <span class="small-label">THE BATTLE RECORD</span><h2
+        id="nine-record-heading"
+      >
+        Let the numbers <em>settle it.</em>
+      </h2>
+    </div><div
+      class="horizon-controls"
+      role="group"
+      aria-label="Performance period"
+    >
+      <button
+        type="button"
+        class="cursor-interaction"
+        data-horizon="10"
+        aria-pressed="true">10Y · Main</button
+      ><button
+        type="button"
+        class="cursor-interaction"
+        data-horizon="5"
+        aria-pressed="false">5Y · Form</button
+      ><button
+        type="button"
+        class="cursor-interaction"
+        data-horizon="1"
+        aria-pressed="false">1Y · Season</button>
+    </div>
+  </div>
+  <div class="record-grid">
+    <div class="record-chart">
+      <div class="chart-heading">
+        <div>
+          <strong>Growth of $10,000</strong><span data-chart-period
+            >2016–2025 · Annual observations</span>
+        </div><label
+          ><span class="rating-sr">Choose investor</span><select
+            data-investor-select
+            aria-label="Choose investor for performance chart"
+            >{
+              rankedInvestors.map((d) => (
+                <option value={d.key} selected={d.key === 'bill'}>
+                  {d.name}
+                </option>
+              ))
+            }</select
+          ></label>
+      </div><svg
+        class="performance-chart"
+        role="img"
+        aria-label="Investor and benchmark investment growth"></svg><div
+        class="chart-legend"
+      >
+        <span><b></b>SPY ETF</span><span
+          ><b class="investor-line"></b><span data-chart-legend>PSH · NAV</span
+          ></span>
+      </div><div class="chart-readout" aria-live="polite">
+        2016–2025 · SPY {dollars(accumulate(benchmarkReturns).at(-1))} · PSH {
+          dollars(accumulate(rankedById.bill.returns).at(-1))
+        }
+      </div><noscript
+        ><p>
+          Enable JavaScript to change the comparison and explore the chart. The
+          full annual record is below.
+        </p></noscript>
+    </div>
+    <aside class="record-score" aria-live="polite">
+      <div class="record-identity">
+        <Portrait person="bill" record /><div>
+          <span class="record-tier" data-record-tier data-tier="epic"
+            >10Y · EPIC</span
+          ><h3 data-record-name>Bill Ackman</h3><small data-record-vehicle
+            >PSH · NAV</small>
+        </div>
+      </div><div class="score-line">
+        <span data-return-label>10Y annualized return</span><b
+          data-record-return>+15.8%</b>
+      </div><div class="score-line benchmark-score-line">
+        <span data-spy-label>SPY · 10Y annualized</span><b data-record-benchmark
+          >+14.7%</b>
+      </div><div class="score-gap">
+        <span data-gap-label>10Y ADVANTAGE VS SPY</span><strong data-record-gap
+          >+1.08 <small>pp / year</small></strong
+        ><span data-result>AHEAD OF THE BENCHMARK</span>
+      </div><div class="record-consistency">
+        <strong data-consistency
+          >{rankedById.bill.windows.filter((w) => w.gap > 0).length} / 6</strong
+        ><span
+          >rolling 5Y windows ahead of SPY<br /> Six overlapping windows, observed
+          annually.</span>
+      </div>
+    </aside>
+  </div>
+  <details class="record-details">
+    <summary>Consistency, risk &amp; the full record</summary><RecordDetail
+      investor={rankedById.bill}
+    />
+  </details>
+</section>

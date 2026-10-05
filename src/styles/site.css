@@ -1,0 +1,127 @@
+html {
+  background: #f7f7f2;
+  color-scheme: light;
+}
+body {
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+.cursor-interaction {
+  cursor: pointer;
+}
+#spx-nine-in-ten {
+  --content-width: 1280px;
+  width: 100%;
+}
+#spx-nine-in-ten .portrait-window {
+  width: 100%;
+  aspect-ratio: 1;
+}
+#spx-nine-in-ten .arena-home a.arena-card {
+  text-decoration: none;
+}
+#spx-nine-in-ten .arena-home a.ranking-person,
+#spx-nine-in-ten .arena-home a.unranked-entry {
+  text-decoration: none;
+  color: inherit;
+}
+#spx-nine-in-ten .record-score [data-record-gap].up {
+  color: #237a52;
+}
+#spx-nine-in-ten .record-score [data-record-gap].down {
+  color: #b24c58;
+}
+#spx-nine-in-ten .annual-record {
+  width: 100%;
+  border-collapse: collapse;
+  font: 12px/1.8 var(--mono);
+  margin-top: 20px;
+}
+#spx-nine-in-ten .annual-record th,
+#spx-nine-in-ten .annual-record td {
+  padding: 5px 8px;
+  border-bottom: 1px solid var(--rule);
+  text-align: right;
+}
+#spx-nine-in-ten .annual-record th:first-child,
+#spx-nine-in-ten .annual-record td:first-child {
+  text-align: left;
+}
+#spx-nine-in-ten .profile-record {
+  margin: 35px 0;
+}
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -80px;
+  padding: 12px;
+  z-index: 100;
+  background: white;
+  color: #172a29;
+}
+.skip-link:focus {
+  top: 10px;
+}
+:focus-visible {
+  outline: 2px solid #8a6d29;
+  outline-offset: 4px;
+}
+
+/* Keep the content aligned and bounded while section backgrounds span the screen. */
+@media (min-width: 1200px) {
+  #spx-nine-in-ten {
+    --content-gutter: max(36px, calc((100% - var(--content-width)) / 2));
+  }
+
+  #spx-nine-in-ten
+    :is(
+      .home-nav,
+      .intro-hero,
+      .contender-section,
+      .record-section,
+      .leaderboard-section,
+      .arena-page,
+      .home-footer
+    ) {
+    padding-inline: var(--content-gutter);
+  }
+
+  #spx-nine-in-ten :is(.benchmark-stage, .rules-section, .home-sources) {
+    margin-inline: var(--content-gutter);
+  }
+
+  #spx-nine-in-ten .hero-copy {
+    max-width: 56ch;
+  }
+
+  #spx-nine-in-ten
+    :is(
+      .record-details,
+      .scoring-details,
+      .source-details,
+      .profile-photo-credits,
+      .calculator-method,
+      .profile-record
+    )
+    p,
+  #spx-nine-in-ten .famous-profile-story > p {
+    max-width: 80ch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}

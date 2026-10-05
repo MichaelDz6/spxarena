@@ -1,0 +1,28 @@
+---
+import assets from '../data/portraits.json';
+import { investorById } from '../lib/performance.js';
+interface Props {
+  person: string;
+  record?: boolean;
+}
+const { person, record = false } = Astro.props;
+const images = assets as Record<string, string>;
+const photo = !['warren', 'cathie', 'bill', 'joel', 'peter', 'carl'].includes(
+  person,
+);
+---
+
+<span
+  class:list={['portrait', { 'is-photo': photo }]}
+  data-person={person}
+  data-record-portrait={record || undefined}
+>
+  <span class="portrait-window"
+    ><img
+      src={images[person] || images.src}
+      alt={investorById[person].name}
+      loading="lazy"
+      decoding="async"
+    /></span
+  >
+</span>
