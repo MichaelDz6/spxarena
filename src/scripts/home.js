@@ -1,3 +1,4 @@
+import './contenders.js';
 import {
   rankedById,
   benchmarkReturns,
@@ -149,31 +150,6 @@ root.querySelectorAll('[data-horizon]').forEach((button) =>
   }),
 );
 new ResizeObserver(drawChart).observe($('.record-chart'));
-const cards = Array.from($('[data-card-deck]').children),
-  pageSize = 6,
-  pageCount = Math.ceil(cards.length / pageSize);
-let rosterPage = 0;
-function updateRosterPage() {
-  cards.forEach(
-    (card, i) => (card.hidden = Math.floor(i / pageSize) !== rosterPage),
-  );
-  $('[data-roster-range]').textContent =
-    `${rosterPage * pageSize + 1}–${Math.min(cards.length, (rosterPage + 1) * pageSize)} of ${cards.length} investors`;
-  $('[data-roster-prev]').disabled = rosterPage === 0;
-  $('[data-roster-next]').disabled = rosterPage === pageCount - 1;
-}
-$('[data-roster-prev]').addEventListener('click', () => {
-  rosterPage = Math.max(0, rosterPage - 1);
-  updateRosterPage();
-  $('#nine-arena-contenders').scrollIntoView();
-});
-$('[data-roster-next]').addEventListener('click', () => {
-  rosterPage = Math.min(pageCount - 1, rosterPage + 1);
-  updateRosterPage();
-  $('#nine-arena-contenders').scrollIntoView();
-});
-$('.roster-pagination').hidden = false;
-updateRosterPage();
 const leaderboard = $('[data-top-leaderboard]'),
   benchmarkLine = $('.leaderboard-reference-line');
 function positionBenchmarkLine() {

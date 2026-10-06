@@ -1,183 +1,421 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
-import { calculateHistory, defaultCalculator } from '../lib/calculator.js';
-import monthlyData from '../data/spy-monthly-prices.json';
-import { dollars } from '../lib/performance.js';
-const result = calculateHistory(monthlyData.prices, defaultCalculator);
+import {
+  calculateProjection,
+  defaultCalculator,
+  defaultGoal,
+  formatMoney,
+  formatDuration,
+} from '../lib/calculator.js';
+import { createProjectionChart } from '../lib/projection-chart.js';
+import { formatAmountInput } from '../lib/amount-input.js';
+import '../styles/calculator.css';
+const result = calculateProjection(defaultCalculator);
+const chart = createProjectionChart(result);
 ---
 
 <SiteLayout
-  title="SPY Investment Calculator"
-  description="Replay historical S&P 500 investing with a starting amount and monthly contributions."
-  ><main
+  title="Investment Calculator"
+  description="Explore how your investment could grow with monthly contributions and an adjustable average annual return."
+>
+  <main
     class="arena-page calculator-page"
     data-page="calculator"
     aria-labelledby="calculator-page-title"
   >
     <div class="page-intro">
-      <a href="/" class="back-link cursor-interaction">← Back to the arena</a
-      ><span class="small-label"
-        >THE QUIET CONTENDER · INVESTMENT CALCULATOR</span
-      ><h1 id="calculator-page-title">
-        Small steps.<br /><em>A longer story.</em>
-      </h1><p>
-        What could your money have become? Pick a start date, add a monthly
-        contribution, and follow the S&amp;P 500 through SPY.
+      <a href="/" class="back-link">← Back to the arena</a>
+      <span class="small-label">YOUR MONEY · THE LONG GAME</span>
+      <h1 id="calculator-page-title">Investment <br /><em>Calculator.</em></h1>
+      <p data-calc-intro>
+        See what steady investing could build. Set your contributions and time
+        horizon to project future growth using an <strong
+          >average annual return</strong
+        >.
       </p>
     </div>
+    <div class="calculator-modes" role="group" aria-label="Choose calculator">
+      <button type="button" data-calculator-mode="growth" aria-pressed="true">
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path
+            d="M3 3v14h14M6 13l4-4 3 2 4-6M13 5h4v4"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        Investment growth
+      </button>
+      <button type="button" data-calculator-mode="goal" aria-pressed="false">
+        <svg viewBox="0 0 20 20" aria-hidden="true"
+          ><circle cx="10" cy="10" r="7.5"></circle><circle
+            cx="10"
+            cy="10"
+            r="4"></circle><circle cx="10" cy="10" r="0.75"></circle></svg
+        >
+        Plan a goal
+      </button>
+    </div>
     <div class="calculator-layout">
-      <form class="investment-form" data-calculator-form>
+      <form class="investment-form" data-calculator-form novalidate>
         <noscript
           ><p>
-            This calculator needs JavaScript. The default historical result is
-            shown alongside.
+            Enable JavaScript to adjust this calculator. The default 20-year
+            projection is shown alongside.
           </p></noscript
         >
         <div class="form-heading">
-          <span class="small-label">BUILD YOUR SCENARIO</span><span
-            class="history-tag">HISTORICAL</span>
+          <span class="small-label" data-form-heading>YOUR INVESTMENT PLAN</span
+          ><span class="history-tag">PROJECTION</span>
         </div>
-        <label for="arena-initial">Starting investment <span>USD</span></label
-        ><div class="money-input">
-          <span aria-hidden="true">$</span><input
-            class="cursor-interaction"
-            id="arena-initial"
-            name="initial"
-            type="number"
-            inputmode="decimal"
-            min="0"
-            max="100000000"
-            step="any"
-            value="10000"
-            required
-          />
-        </div>
-        <label for="arena-monthly">Monthly contribution <span>USD</span></label
-        ><div class="money-input">
-          <span aria-hidden="true">$</span><input
-            class="cursor-interaction"
-            id="arena-monthly"
-            name="monthly"
-            type="number"
-            inputmode="decimal"
-            min="0"
-            max="10000000"
-            step="any"
-            value="250"
-            required
-          />
-        </div>
-        <div class="date-fields">
-          <div>
-            <label for="arena-start">Start month</label><input
-              class="cursor-interaction"
-              id="arena-start"
-              name="start"
-              type="month"
-              min="2016-01"
-              max="2025-12"
-              value="2016-01"
+        <div class="amount-control">
+          <label for="arena-initial">Starting investment <span>USD</span></label
+          >
+          <div class="money-input stepped-money-input">
+            <span aria-hidden="true">$</span><input
+              id="arena-initial"
+              name="initial"
+              type="text"
+              inputmode="decimal"
+              role="spinbutton"
+              aria-valuemin="0"
+              aria-valuemax="100000000"
+              aria-valuenow={defaultCalculator.initial}
+              aria-valuetext={`${formatMoney(defaultCalculator.initial)} US dollars`}
+              autocomplete="off"
+              value={formatAmountInput(String(defaultCalculator.initial))}
               required
             />
-          </div><div>
-            <label for="arena-end">End month</label><input
-              class="cursor-interaction"
-              id="arena-end"
-              name="end"
-              type="month"
-              min="2016-01"
-              max="2025-12"
-              value="2025-12"
-              required
-            />
+            <div class="amount-stepper">
+              <button
+                type="button"
+                data-amount="initial"
+                data-amount-step="1"
+                aria-label="Increase starting investment"
+                aria-controls="arena-initial"
+                title="Increase by $1,000"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true"
+                  ><path d="m4 10 4-4 4 4"></path></svg
+                >
+              </button>
+              <button
+                type="button"
+                data-amount="initial"
+                data-amount-step="-1"
+                aria-label="Decrease starting investment"
+                aria-controls="arena-initial"
+                title="Decrease by $1,000"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true"
+                  ><path d="m4 6 4 4 4-4"></path></svg
+                >
+              </button>
+            </div>
           </div>
         </div>
-        <label for="arena-timing">Add money at the</label><select
-          class="cursor-interaction"
-          name="timing"
-          id="arena-timing"
-          ><option value="end">End of each month</option><option
-            value="beginning">Beginning of each month</option
-          ></select
-        >
-        <button
-          class="arena-action cursor-interaction"
-          type="submit"
-          data-calculate
-          >Calculate my journey <span aria-hidden="true">→</span></button
-        >
+        <div class="amount-control" data-growth-control>
+          <label for="arena-monthly"
+            >Monthly contribution <span>USD</span></label
+          >
+          <div class="money-input stepped-money-input">
+            <span aria-hidden="true">$</span><input
+              id="arena-monthly"
+              name="monthly"
+              type="text"
+              inputmode="decimal"
+              role="spinbutton"
+              aria-valuemin="0"
+              aria-valuemax="10000000"
+              aria-valuenow={defaultCalculator.monthly}
+              aria-valuetext={`${formatMoney(defaultCalculator.monthly)} US dollars`}
+              autocomplete="off"
+              value={formatAmountInput(String(defaultCalculator.monthly))}
+              required
+            />
+            <div class="amount-stepper">
+              <button
+                type="button"
+                data-amount="monthly"
+                data-amount-step="1"
+                aria-label="Increase monthly contribution"
+                aria-controls="arena-monthly"
+                title="Increase by $50"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true"
+                  ><path d="m4 10 4-4 4 4"></path></svg
+                >
+              </button>
+              <button
+                type="button"
+                data-amount="monthly"
+                data-amount-step="-1"
+                aria-label="Decrease monthly contribution"
+                aria-controls="arena-monthly"
+                title="Decrease by $50"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true"
+                  ><path d="m4 6 4 4 4-4"></path></svg
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="amount-control" data-goal-control hidden>
+          <label for="arena-target">Target value <span>USD</span></label>
+          <div class="money-input stepped-money-input">
+            <span aria-hidden="true">$</span><input
+              id="arena-target"
+              name="target"
+              type="text"
+              inputmode="decimal"
+              role="spinbutton"
+              aria-valuemin="1"
+              aria-valuemax="100000000"
+              aria-valuenow={defaultGoal}
+              aria-valuetext={`${formatMoney(defaultGoal)} US dollars`}
+              autocomplete="off"
+              value={formatAmountInput(String(defaultGoal))}
+              required
+              disabled
+            />
+            <div class="amount-stepper">
+              <button
+                type="button"
+                data-amount="target"
+                data-amount-step="1"
+                aria-label="Increase target value"
+                aria-controls="arena-target"
+                title="Increase by $1,000"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true"
+                  ><path d="m4 10 4-4 4 4"></path></svg
+                >
+              </button>
+              <button
+                type="button"
+                data-amount="target"
+                data-amount-step="-1"
+                aria-label="Decrease target value"
+                aria-controls="arena-target"
+                title="Decrease by $1,000"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true"
+                  ><path d="m4 6 4 4 4-4"></path></svg
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <fieldset class="duration-controls" aria-label="Investment duration">
+          <legend>How long will you invest?</legend>
+          <div class="duration-fields">
+            <div>
+              <label for="arena-years">Years</label><input
+                id="arena-years"
+                name="years"
+                type="number"
+                inputmode="numeric"
+                min="0"
+                max="50"
+                step="1"
+                value={defaultCalculator.years}
+                required
+              />
+            </div>
+            <div>
+              <label for="arena-months">Months</label><input
+                id="arena-months"
+                name="months"
+                type="number"
+                inputmode="numeric"
+                min="0"
+                max="11"
+                step="1"
+                value={defaultCalculator.months}
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+        <input
+          class="duration-slider"
+          type="range"
+          min="0"
+          max="50"
+          step="1"
+          value={defaultCalculator.years}
+          data-years-slider
+          aria-label="Adjust investment years"
+        />
+        <div class="duration-presets" aria-label="Quick investment durations">
+          {
+            [5, 10, 20, 30].map((years) => (
+              <button
+                type="button"
+                data-duration={years}
+                aria-pressed={years === defaultCalculator.years}
+              >
+                {years} years
+              </button>
+            ))
+          }
+        </div>
+        <div class="return-control">
+          <label for="arena-rate"
+            ><span class="desktop-calc-label">Average annual return</span><span
+              class="mobile-calc-label">Avg. return</span
+            >
+            <span class="rate-assumption-label">ASSUMPTION</span></label
+          >
+          <div class="rate-input">
+            <input
+              id="arena-rate"
+              name="annualRate"
+              type="number"
+              inputmode="decimal"
+              min="-50"
+              max="50"
+              step="any"
+              value={defaultCalculator.annualRate}
+              aria-describedby="return-assumption"
+              required
+            /><span aria-hidden="true">%</span>
+          </div>
+        </div>
+        <p class="input-hint" id="return-assumption">
+          10% is a rounded long-run S&amp;P 500 average with dividends
+          reinvested. Adjust it to explore other outcomes.
+        </p>
         <p class="calculator-error" data-calculator-error role="alert" hidden>
         </p>
         <p class="form-footnote">
-          Available history: Jan 2016 – Dec 2025.<br />Dividends reinvested. All
-          amounts in USD.
+          Contributions are added at the <strong>end of each month</strong>.
+          Results update automatically.
+        </p>
+        <p class="mobile-calc-note">
+          Month-end deposits · average-return estimate
         </p>
       </form>
       <section class="calculator-result" aria-labelledby="calculation-heading">
-        <div class="result-topline">
-          <span class="small-label" id="calculation-heading"
-            >YOUR HISTORICAL RESULT</span
-          ><span class="result-period" data-calc-period
-            >Jan 2016 – Dec 2025</span>
-        </div>
-        <div class="result-wealth" aria-live="polite">
-          <span>Portfolio value</span><strong data-calc-value
-            >{dollars(result.value)}</strong
-          ><small data-calc-summary
-            >120 monthly additions of $250 · dividends reinvested</small>
-        </div>
-        <div class="result-split" aria-live="polite">
-          <div>
-            <span>You invested</span><strong data-calc-invested
-              >{dollars(result.invested)}</strong>
-          </div><div>
-            <span>Investment gain / loss</span><strong data-calc-gain class="up"
-              >+{dollars(result.gain)}</strong>
+        <div data-calc-content>
+          <div class="result-summary">
+            <div class="result-topline">
+              <span class="small-label" id="calculation-heading"
+                >YOUR FUTURE, IN NUMBERS</span
+              ><span class="result-period" data-calc-period
+                >{formatDuration(result.months)}</span
+              >
+            </div>
+            <div class="result-wealth">
+              <span data-calc-value-label>Projected portfolio value</span
+              ><strong data-calc-value>{formatMoney(result.value)}</strong>
+              <small data-calc-summary
+                >{result.months} monthly contributions of {
+                  formatMoney(defaultCalculator.monthly)
+                }</small
+              >
+            </div>
+            <div class="result-split">
+              <div>
+                <span>You contribute</span><strong data-calc-invested
+                  >{formatMoney(result.invested)}</strong
+                >
+              </div>
+              <div>
+                <span data-calc-secondary-label
+                  ><span class="desktop-calc-label"
+                    >Estimated investment growth</span
+                  ><span class="mobile-calc-label">Growth</span></span
+                ><strong data-calc-gain class="up"
+                  >+{formatMoney(result.gain)}</strong
+                >
+              </div>
+            </div>
+            <p
+              class="calc-announcement"
+              data-calc-announcement
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+            </p>
+            <div class="projection-assumption">
+              <span class="assumption-dot" aria-hidden="true"></span><span
+                ><strong data-calc-rate>{defaultCalculator.annualRate}%</strong> average
+                annual return used</span
+              >
+            </div>
           </div>
+          <p class="goal-status" data-goal-status hidden></p>
+          <div class="calc-chart-wrap">
+            <svg
+              class="calculator-chart"
+              data-calc-chart
+              viewBox={`0 0 ${chart.width} ${chart.height}`}
+              role="img"
+              tabindex="0"
+              aria-label="Projected portfolio value and total contributions over time"
+              aria-describedby="chart-instructions"
+              set:html={chart.markup}
+            />
+            <div class="calc-tooltip" data-calc-tooltip hidden></div>
+          </div>
+          <div class="calc-chart-legend">
+            <span><i></i>Projected portfolio</span><span
+              ><i></i>Your contributions</span
+            >
+          </div>
+          <p class="chart-instructions" id="chart-instructions">
+            Hover or tap to explore. With the chart focused, use the arrow keys.
+          </p>
+          <p class="projection-note">
+            Illustrative projection using a constant average return. Real
+            markets rise and fall; future returns are not guaranteed. Before
+            taxes, fees and inflation.
+          </p>
         </div>
-        <div class="calc-chart-wrap">
-          <svg
-            class="calculator-chart"
-            data-calc-chart
-            role="img"
-            aria-label="Portfolio value and total contributions over time"
-          ></svg><div class="calc-tooltip" data-calc-tooltip hidden></div>
-        </div>
-        <div class="calc-chart-legend">
-          <span><i></i>Portfolio value</span><span
-            ><i></i>Your contributions</span>
+        <div class="calculation-empty" data-calc-empty hidden>
+          Complete your investment plan to see the projection.
         </div>
       </section>
     </div>
     <details class="calculator-method">
-      <summary>How this calculation works &amp; data sources</summary><p>
-        Uses SPY’s dividend- and split-adjusted closing price on the last
-        trading day of each month. The starting investment is valued at the
-        close immediately before your start month. Monthly additions use
-        month-end prices; “beginning” uses the previous month’s closing price.
-        Fractional shares and reinvested distributions are assumed.
-      </p><p>
-        Values are historical estimates before personal taxes, trading costs and
-        inflation. ETF expenses are reflected in its prices. This is a
-        historical replay, not a forecast or a guaranteed return. Monthly
-        endpoints do not show fluctuations within each month.
-      </p><p>
-        Price source: <a
-          href="https://finance.yahoo.com/quote/SPY/history/"
+      <summary>About the average return &amp; calculation</summary>
+
+      <p data-goal-method hidden>
+        Goal mode works backwards from your target value to find the monthly
+        contribution needed, after allowing for growth on your starting
+        investment. Contributions are added at the end of each month and rounded
+        up to the next whole dollar. The chart uses this rounded monthly amount,
+        so the final projection may be slightly above your target. If the
+        starting investment alone is projected to cover your goal, the monthly
+        amount is $0.
+      </p>
+      <p>
+        The default 10% is a rounded historical reference, not a forecast. <a
+          href="https://www.schwabassetmanagement.com/products/separately-managed-accounts/thomaspartners-strategies/dividends"
           target="_blank"
-          rel="noopener noreferrer"
-          >Yahoo Finance · SPY adjusted daily closes ↗</a
-        >, sampled at month-end. Snapshot retrieved Oct 4, 2026; calculator ends
-        Dec 31, 2025 to match this arena’s research period. <a
-          href="https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy"
-          target="_blank"
-          rel="noopener noreferrer">About the SPY ETF ↗</a
-        >. Small differences from the leaderboard reflect price-source precision
-        and published rounded annual returns.
+          rel="noopener noreferrer">Schwab Asset Management ↗</a
+        > reports an annualized S&amp;P 500 total return of about 10% since 1926,
+        with data through 2025. This includes reinvested dividends. An index cannot
+        be invested in directly; an ETF such as SPY tracks it with costs and tracking
+        differences.
+      </p>
+      <p>
+        We treat your selected average as an effective annual compound return,
+        convert it to a monthly rate using (1 + annual return)^(1/12) − 1, and
+        apply that same rate every month. Your starting investment grows from
+        today; each monthly contribution is added after that month’s growth.
+      </p>
+      <p>
+        “You contribute” includes your starting investment and all monthly
+        deposits. “Estimated investment growth” is the projected value minus
+        those contributions. Dollar amounts are rounded for display. This model
+        assumes reinvested dividends and excludes taxes, fees and inflation;
+        actual returns and their sequence will change the outcome.
       </p>
     </details>
-  </main></SiteLayout
->
+  </main>
+</SiteLayout>
 <script>
   import '../scripts/calculator.js';
 </script>

@@ -2,7 +2,20 @@
   <a class="home-logo" href="/#nine-arena-top"
     ><span class="logo-gem" aria-hidden="true"></span>SPX <em>ARENA</em></a
   >
-  <nav aria-label="Main navigation">
+  <button
+    class="nav-toggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="main-navigation"
+    aria-label="Open navigation"
+    hidden
+  >
+    <span>Menu</span>
+    <svg viewBox="0 0 20 20" aria-hidden="true"
+      ><path d="M3 6h14M3 14h14"></path></svg
+    >
+  </button>
+  <nav id="main-navigation" aria-label="Main navigation">
     <a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}
       >The arena</a
     ><a
@@ -12,8 +25,11 @@
     ><a
       href="/calculator/"
       aria-current={Astro.url.pathname === '/calculator/' ? 'page' : undefined}
-      >Calculator</a
+      >Investment Calculator</a
     ><a href="/#nine-arena-rules">The rulebook</a>
   </nav>
   <span class="edition-label">THE LONG GAME<br /> <b>2016 — 2025</b></span>
 </header>
+<script>
+  import '../scripts/navigation.js';
+</script>

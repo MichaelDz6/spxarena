@@ -34,7 +34,7 @@ src/
   styles/        Approved Pearl & Gold styling and site-wide rules
   scripts/       Browser chart, calculator, portrait and pagination interactions
   lib/           Shared performance and calculator functions
-  data/          Investor metadata, annual returns, monthly SPY prices, image paths
+  data/          Investor metadata, annual returns and image paths
 public/
   portraits/     Local investor images
 research/
@@ -51,7 +51,8 @@ The previous `prototype/` and `design-backups/` folders have been removed. The c
 
 - `/` — the arena, 34 investor cards, interactive comparisons and top-five ranking
 - `/leaderboard/` — all 20 ranked records and 14 unranked profiles
-- `/calculator/` — historical SPY investing with monthly contributions
+- `/calculator/` — Investment Calculator: future growth using an adjustable average annual return and monthly contributions
+- `/calculator/?mode=goal` — Goal Calculator: find the monthly contribution needed to reach a target portfolio value
 - `/investors/<slug>/` — an individual profile, return record and sources
 - `/?investor=watsa#nine-arena-record` — a shareable selected comparison
 
@@ -74,4 +75,8 @@ Returns belong to the named fund, composite, or listed company, rather than an i
 
 Pabrai Fund 3 uses the annual-return and NAV appendices of its 2025 report; the conflicting headline ten-year figure is disclosed in the profile. Fourteen other profiles remain unranked because a comparable record has not been established. Missing comparable data does not imply underperformance.
 
-Update `src/data/returns.json` and the corresponding profile in `src/data/investors.json` together. Each ranked record must retain ten matched annual returns, source links, vehicle description, rounding precision, method, currency and as-of date. Source reports and price snapshots live in `research/sources/`. Monthly calculator observations and their provenance live in `src/data/spy-monthly-prices.json`. Portrait provenance is recorded in the profile data and `research/portrait-sources.json`.
+Update `src/data/returns.json` and the corresponding profile in `src/data/investors.json` together. Each ranked record must retain ten matched annual returns, source links, vehicle description, rounding precision, method, currency and as-of date. Source reports and price snapshots live in `research/sources/`. The earlier historical calculator's monthly observations are retained there as `spy-monthly-prices.json`. Portrait provenance is recorded in the profile data and `research/portrait-sources.json`.
+
+The Investment Calculator projects future growth rather than replaying historical prices. Its editable 10% annual return default is a rounded long-run S&P 500 total-return reference, sourced on the page to Schwab Asset Management. It uses an effective monthly rate `(1 + annualRate / 100) ** (1 / 12) - 1`, with deposits at each month's end. Duration is entered in years and additional months. Every input change smoothly animates the totals and chart from their currently displayed values; reduced-motion preferences disable these transitions. The default chart is also rendered into the static HTML. Both dollar inputs use comma formatting and adaptive step buttons. Projections assume a constant average and reinvested dividends, exclude taxes, fees and inflation, and are not guaranteed outcomes.
+
+The calculator’s **Plan a goal** button switches to a target-based calculation while preserving the starting investment, duration, average return and the original monthly contribution. Goal mode solves the month-end annuity formula, rounds the required deposit up to a whole dollar, and charts that funded projection. It also handles zero or negative average returns and goals already covered by starting capital.

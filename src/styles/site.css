@@ -17,7 +17,7 @@ body {
   cursor: pointer;
 }
 #spx-nine-in-ten {
-  --content-width: 1280px;
+  --content-width: 1080px;
   width: 100%;
 }
 #spx-nine-in-ten .portrait-window {
@@ -57,6 +57,242 @@ body {
 #spx-nine-in-ten .profile-record {
   margin: 35px 0;
 }
+
+#spx-nine-in-ten .home-nav .nav-toggle {
+  display: none;
+}
+@media (max-width: 700px) {
+  #spx-nine-in-ten .home-nav[data-menu-ready] {
+    position: relative;
+    z-index: 20;
+    flex-wrap: nowrap;
+    min-height: 64px;
+    padding: 10px 20px;
+    gap: 16px;
+  }
+  #spx-nine-in-ten .home-nav .home-logo {
+    font-size: 20px;
+  }
+  #spx-nine-in-ten .home-nav .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 0 10px;
+    border: 1px solid #d6cfb8;
+    background: #fafbf6;
+    color: var(--brand);
+    font: 12px var(--sans);
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  #spx-nine-in-ten .nav-toggle svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+  }
+  #spx-nine-in-ten .home-nav[data-menu-ready] nav {
+    display: none;
+    position: absolute;
+    inset: 100% 0 auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 20px 16px;
+    background: #f7f8f2;
+    border-bottom: 1px solid #d6cfb8;
+    box-shadow: 0 12px 20px rgb(32 60 49 / 8%);
+  }
+  #spx-nine-in-ten .home-nav[data-menu-ready].menu-open nav {
+    display: flex;
+    animation: mobile-menu-in 160ms ease-out;
+  }
+  #spx-nine-in-ten .home-nav[data-menu-ready] nav a {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 10px 8px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+  #spx-nine-in-ten .home-nav[data-menu-ready] nav a[aria-current='page'] {
+    color: var(--brand);
+    background: #edf1e7;
+    box-shadow: inset 2px 0 #b89b55;
+  }
+  #spx-nine-in-ten .leaderboard-section .bar-identity small {
+    display: none;
+  }
+}
+@keyframes mobile-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Give the collector cards a fixed scale instead of stretching them to fill a monitor. */
+#spx-nine-in-ten .contender-section > * {
+  max-width: 884px;
+  margin-inline: auto;
+}
+#spx-nine-in-ten .contender-section > .roster-intro {
+  margin: -9px auto 20px;
+}
+#spx-nine-in-ten .contender-deck {
+  grid-template-columns: repeat(3, minmax(0, 280px));
+  justify-content: center;
+  gap: 22px;
+}
+#spx-nine-in-ten .gilded .contender-deck .arena-card {
+  max-width: 280px;
+  padding: 10px;
+}
+#spx-nine-in-ten .contender-deck .card-crown {
+  min-height: 26px;
+  padding: 2px 0 8px;
+}
+#spx-nine-in-ten .contender-deck .hero-window {
+  aspect-ratio: 1.55;
+}
+#spx-nine-in-ten .gilded .contender-deck .name-scroll {
+  padding: 10px 0 9px;
+}
+#spx-nine-in-ten .contender-deck .name-scroll strong {
+  font-size: 17px;
+}
+#spx-nine-in-ten .contender-deck .card-stats b {
+  font-size: 24px;
+}
+#spx-nine-in-ten .contender-deck .period-numbers b {
+  font-size: 19px;
+}
+#spx-nine-in-ten .contender-deck .period-stats {
+  margin-top: 10px;
+  padding-top: 8px;
+}
+#spx-nine-in-ten .contender-deck .profile-card .name-scroll strong {
+  min-height: 32px;
+}
+#spx-nine-in-ten .contender-deck .profile-tagline {
+  min-height: 46px;
+  padding: 9px 4px 7px;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  #spx-nine-in-ten .contender-deck {
+    grid-template-columns: repeat(2, minmax(0, 280px));
+  }
+}
+@media (max-width: 520px) {
+  #spx-nine-in-ten .contender-deck {
+    grid-template-columns: minmax(0, 280px);
+  }
+}
+
+#spx-nine-in-ten .roster-carousel-controls {
+  display: none;
+}
+@media (max-width: 700px) {
+  #spx-nine-in-ten .contender-deck {
+    --carousel-card-width: min(280px, calc(100% - 32px));
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 4px;
+    scrollbar-width: none;
+    padding: 6px 4px 16px;
+  }
+  #spx-nine-in-ten .contender-deck::-webkit-scrollbar {
+    display: none;
+  }
+  #spx-nine-in-ten .gilded .contender-deck .arena-card {
+    flex: 0 0 var(--carousel-card-width);
+    max-width: none;
+    min-width: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  #spx-nine-in-ten .gilded .contender-deck .arena-card:last-child {
+    margin-right: calc(100% - var(--carousel-card-width) - 8px);
+  }
+  #spx-nine-in-ten .gilded .contender-deck .arena-card:hover {
+    transform: none;
+  }
+  #spx-nine-in-ten .roster-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 2px 0 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+  #spx-nine-in-ten .carousel-position {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  #spx-nine-in-ten .carousel-position > span {
+    color: var(--brand);
+    font: 11px var(--mono);
+    font-variant-numeric: tabular-nums;
+  }
+  #spx-nine-in-ten .carousel-position small {
+    color: var(--soft);
+    font: 11px var(--sans);
+  }
+  #spx-nine-in-ten .carousel-actions {
+    display: flex;
+    gap: 6px;
+  }
+  #spx-nine-in-ten .carousel-actions button {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: #f8faf5;
+    border: 1px solid #d6cfb8;
+    color: var(--brand);
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  #spx-nine-in-ten .carousel-actions button:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+  #spx-nine-in-ten .carousel-actions button[data-carousel-play] {
+    margin-right: 4px;
+    border-color: #bfa76c;
+    color: #967735;
+  }
+  #spx-nine-in-ten .carousel-actions svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  #spx-nine-in-ten .contender-section .deck-caption {
+    margin-top: 12px;
+  }
+}
+
 .skip-link {
   position: absolute;
   left: 16px;
@@ -75,7 +311,7 @@ body {
 }
 
 /* Keep the content aligned and bounded while section backgrounds span the screen. */
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   #spx-nine-in-ten {
     --content-gutter: max(36px, calc((100% - var(--content-width)) / 2));
   }
