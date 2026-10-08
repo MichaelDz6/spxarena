@@ -61,7 +61,7 @@ body {
 #spx-nine-in-ten .home-nav .nav-toggle {
   display: none;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   #spx-nine-in-ten .home-nav[data-menu-ready] {
     position: relative;
     z-index: 20;
@@ -125,6 +125,11 @@ body {
     background: #edf1e7;
     box-shadow: inset 2px 0 #b89b55;
   }
+  #spx-nine-in-ten .home-nav .edition-label {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
   #spx-nine-in-ten .leaderboard-section .bar-identity small {
     display: none;
   }

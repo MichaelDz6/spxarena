@@ -7,9 +7,11 @@ import '../styles/site.css';
 interface Props {
   title?: string;
   description?: string;
+  showSources?: boolean;
 }
 const {
   title,
+  showSources = true,
   description = 'Fame is not a benchmark. Compare 34 famous investors and 20 ten-year records with the S&P 500, measured through SPY.',
 } = Astro.props;
 const pageTitle = title
@@ -42,7 +44,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       >
         <Header />
         <div id="main-content" tabindex="-1"><slot /></div>
-        <Sources />
+        {showSources && <Sources />}
         <Footer />
       </div>
     </div>

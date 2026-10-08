@@ -51,6 +51,7 @@ The previous `prototype/` and `design-backups/` folders have been removed. The c
 
 - `/` — the arena, 34 investor cards, interactive comparisons and top-five ranking
 - `/leaderboard/` — all 20 ranked records and 14 unranked profiles
+- `/what-is-spx/` — A visual beginner’s guide to SPX, the S&P 500, ETFs, diversification and compounding
 - `/calculator/` — Investment Calculator: future growth using an adjustable average annual return and monthly contributions
 - `/calculator/?mode=goal` — Goal Calculator: find the monthly contribution needed to reach a target portfolio value
 - `/investors/<slug>/` — an individual profile, return record and sources

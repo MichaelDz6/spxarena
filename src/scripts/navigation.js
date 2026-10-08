@@ -1,7 +1,7 @@
 const header = document.querySelector('.home-nav');
 const toggle = header.querySelector('.nav-toggle');
 const navigation = header.querySelector('nav');
-const mobile = window.matchMedia('(max-width: 700px)');
+const mobile = window.matchMedia('(max-width: 900px)');
 
 function setMenu(open, restoreFocus = false) {
   header.classList.toggle('menu-open', open);

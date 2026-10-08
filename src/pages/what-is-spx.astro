@@ -1,0 +1,438 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import LearnIcon from '../components/LearnIcon.astro';
+import '../styles/learn.css';
+const sources = {
+  index: 'https://www.spglobal.com/spdji/en/indices/equity/sp-500/',
+  etf: 'https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-24',
+  spy: 'https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy',
+  risk: 'https://www.investor.gov/introduction-investing/getting-started/asset-allocation',
+};
+const businesses = [
+  { name: 'Technology', icon: 'technology' },
+  { name: 'Healthcare', icon: 'health' },
+  { name: 'Finance', icon: 'finance' },
+  { name: 'Energy', icon: 'energy' },
+  { name: 'Everyday goods', icon: 'consumer' },
+  { name: 'Industry', icon: 'industry' },
+] as const;
+---
+
+<SiteLayout
+  title="What is SPX?"
+  description="A simple visual guide to the S&P 500, SPX, and ETFs. Learn how one fund can hold many companies, and what diversification can and cannot do."
+  showSources={false}
+>
+  <main class="learn-page" aria-labelledby="learn-title">
+    <section class="learn-hero" id="the-index">
+      <div class="learn-hero-copy">
+        <a href="/" class="back-link">← Back to the arena</a>
+        <span class="learn-eyebrow">THE MARKET, EXPLAINED SIMPLY</span>
+        <h1 id="learn-title">What is <em>SPX?</em></h1>
+        <p class="learn-lead">
+          Think of it as a scorecard for <strong
+            >500 leading U.S. companies.</strong
+          >
+        </p>
+        <p>
+          SPX is a commonly used symbol for the <strong>S&amp;P 500</strong>.
+          It’s an index: a number that tracks how a group of companies’ stocks
+          is doing. When people talk about “the market,” this is often the
+          number they mean.
+        </p>
+        <a
+          href={sources.index}
+          class="learn-source"
+          target="_blank"
+          rel="noopener noreferrer">S&amp;P Dow Jones Indices ↗</a
+        >
+        <nav class="learn-jumps" aria-label="On this page">
+          <a href="#the-etf"
+            ><span>01</span> Understand ETFs <span aria-hidden="true">↓</span
+            ></a
+          >
+          <a href="#spread-the-risk"
+            ><span>02</span> Try an example <span aria-hidden="true">↓</span></a
+          >
+        </nav>
+      </div>
+      <figure class="index-illustration">
+        <div class="index-illustration-top">
+          <span>THE MARKET SCORECARD</span><span
+            class="learn-diamond"
+            aria-hidden="true">◆</span
+          >
+        </div>
+        <div class="index-mark">
+          <strong>SPX</strong><span
+            >S&amp;P 500<br /><small>THE INDEX</small></span
+          >
+        </div>
+        <svg
+          class="company-mosaic"
+          viewBox="0 0 149 119"
+          role="img"
+          aria-label="500 small squares, each representing one company in the S&P 500. This illustration does not show company weights."
+        >
+          {
+            Array.from({ length: 500 }, (_, i) => (
+              <rect
+                x={(i % 25) * 6}
+                y={Math.floor(i / 25) * 6}
+                width="4"
+                height="4"
+                rx="0.5"
+                class={
+                  i % 17 === 0
+                    ? 'mosaic-gold'
+                    : i % 5 === 0
+                      ? 'mosaic-light'
+                      : ''
+                }
+              />
+            ))
+          }
+        </svg>
+        <figcaption>
+          <strong>500 companies. One index.</strong><span
+            >One square per company. Actual weights differ.</span
+          >
+        </figcaption>
+      </figure>
+    </section>
+
+    <div
+      class="index-fund-bridge"
+      aria-label="SPX is an index; SPY is an ETF that tracks it"
+    >
+      <div>
+        <span class="bridge-symbol">SPX</span><p>
+          <strong>The scorecard</strong><span
+            >An index measures performance.</span
+          >
+        </p>
+      </div>
+      <span class="bridge-arrow" aria-hidden="true">→</span>
+      <div>
+        <span class="bridge-symbol fund-symbol">SPY</span><p>
+          <strong>A way to invest</strong><span
+            >An ETF aims to follow that index.</span
+          >
+        </p>
+      </div>
+      <p class="bridge-note">
+        You can buy shares in the fund.<br />You can’t buy the index itself.
+      </p>
+    </div>
+
+    <section
+      class="learn-chapter etf-chapter"
+      id="the-etf"
+      aria-labelledby="etf-title"
+    >
+      <div class="chapter-copy">
+        <span class="learn-eyebrow">01 / THE FUND</span>
+        <h2 id="etf-title">One purchase.<br /><em>Many businesses.</em></h2>
+        <p>
+          An <strong>ETF</strong>—short for <strong>exchange-traded fund</strong
+          >—holds a collection of investments. You buy or sell shares in it on a
+          stock exchange, much like a company’s stock.
+        </p>
+        <p>
+          A share in a broad stock ETF gives you a small interest in the whole
+          basket. You don’t need to buy each company separately.
+        </p>
+        <a
+          href={sources.etf}
+          class="learn-source"
+          target="_blank"
+          rel="noopener noreferrer">Investor.gov · ETF basics ↗</a
+        >
+        <div class="spy-example">
+          <span class="learn-diamond" aria-hidden="true">◆</span><p>
+            <strong>SPY is one example.</strong> It aims to track the S&amp;P 500.
+            Fees and tracking differences mean its return won’t match the index exactly.{
+              ' '
+            }
+            <a
+              href={sources.spy}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Read about SPY at State Street">Read about SPY ↗</a
+            >
+          </p>
+        </div>
+      </div>
+      <figure class="etf-illustration">
+        <div class="fund-entry">
+          <span class="investor-token"><LearnIcon name="person" /></span><span
+            >You buy an ETF share</span
+          ><span aria-hidden="true">↓</span>
+        </div>
+        <div class="fund-basket">
+          <div class="fund-basket-heading">
+            <strong>One fund</strong><span>A BASKET OF STOCKS</span>
+          </div>
+          <div class="business-grid">
+            {
+              businesses.map((business) => (
+                <div>
+                  <>
+                    <LearnIcon name={business.icon} />
+                    <span>{business.name}</span>
+                  </>
+                </div>
+              ))
+            }
+          </div>
+          <div class="basket-foot">
+            <span aria-hidden="true">◆</span> A small interest in many businesses
+          </div>
+        </div>
+        <figcaption>
+          Illustration of different industries, not a holdings list. In the
+          S&amp;P 500, larger companies generally have a bigger weight.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section
+      class="learn-chapter risk-chapter"
+      id="spread-the-risk"
+      aria-labelledby="risk-title"
+    >
+      <div class="risk-intro">
+        <div>
+          <span class="learn-eyebrow">02 / THE TRADE-OFF</span><h2
+            id="risk-title"
+          >
+            Spread the money.<br /><em>Spread the risk.</em>
+          </h2>
+        </div><p>
+          Holding many companies makes you less dependent on one. That’s called <strong
+            >diversification</strong
+          >. It helps spread risk, but your investment can still fall. <a
+            href={sources.risk}
+            class="learn-source"
+            target="_blank"
+            rel="noopener noreferrer">Investor.gov · Diversification ↗</a
+          >
+        </p>
+      </div>
+      <div class="risk-lab" data-risk-lab>
+        <div class="risk-lab-header">
+          <span class="learn-eyebrow">TRY A SIMPLE EXAMPLE</span><span
+            >Both start with <strong>$1,000</strong></span
+          >
+        </div>
+        <div
+          class="risk-scenarios"
+          role="group"
+          aria-label="Choose a market scenario"
+          hidden
+        >
+          <button type="button" data-scenario="start" aria-pressed="false"
+            >Starting point</button
+          >
+          <button type="button" data-scenario="company" aria-pressed="true"
+            >One company falls</button
+          >
+          <button type="button" data-scenario="market" aria-pressed="false"
+            >Whole market falls</button
+          >
+        </div>
+        <p class="scenario-description" data-scenario-description>
+          Company A falls 50%. The other nine companies stay flat.
+        </p>
+        <div class="risk-comparisons">
+          <div class="risk-investment">
+            <div class="risk-investment-label">
+              <span>All in one company</span><small>100% in Company A</small>
+            </div><div class="holding-tiles single-holding" aria-hidden="true">
+              <span class="holding-falls" data-single-holding>A</span>
+            </div><div class="risk-bar" aria-hidden="true">
+              <span data-single-bar style="width:50%"></span>
+            </div><div class="risk-result">
+              <strong data-single-value>$500</strong><span data-single-change
+                >−50%</span
+              >
+            </div>
+          </div>
+          <div class="risk-investment basket-investment">
+            <div class="risk-investment-label">
+              <span>Spread across 10 companies</span><small
+                >10% in each company</small
+              >
+            </div><div class="holding-tiles" aria-hidden="true">
+              {
+                Array.from({ length: 10 }, (_, i) => (
+                  <span
+                    data-basket-holding
+                    class:list={{ 'holding-falls': i === 0 }}
+                  >
+                    {String.fromCharCode(65 + i)}
+                  </span>
+                ))
+              }
+            </div><div class="risk-bar" aria-hidden="true">
+              <span data-basket-bar style="width:95%"></span>
+            </div><div class="risk-result">
+              <strong data-basket-value>$950</strong><span data-basket-change
+                >−5%</span
+              >
+            </div>
+          </div>
+        </div>
+        <p
+          class="risk-takeaway"
+          data-risk-takeaway
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          One company’s loss has a smaller effect when it’s only part of your
+          investment.
+        </p>
+        <p class="learn-caption">
+          Made-up example, before fees and taxes. This basket has 10 equally
+          weighted companies; the S&amp;P 500 has 500 companies with unequal
+          weights. These are not real returns or a forecast.
+        </p>
+        <noscript
+          ><p class="learn-caption">
+            Enable JavaScript to try the other scenarios.
+          </p></noscript
+        >
+      </div>
+    </section>
+
+    <section
+      class="learn-chapter growth-chapter"
+      aria-labelledby="growth-title"
+    >
+      <div class="chapter-copy">
+        <span class="learn-eyebrow">03 / THE LONG GAME</span><h2
+          id="growth-title"
+        >
+          Growth can build<br /><em>on growth.</em>
+        </h2><p>
+          Your return can come from rising share prices and <strong
+            >dividends</strong
+          >—cash paid out by companies. Reinvesting dividends puts that money
+          back to work.
+        </p><p>
+          When returns stay invested, future growth can build on earlier gains.
+          That’s <strong>compounding</strong>.
+        </p><a href="/calculator/" class="learn-text-link"
+          >Explore the Investment Calculator <span aria-hidden="true">↗</span
+          ></a
+        >
+      </div>
+      <figure class="compound-illustration">
+        <div class="compound-heading">
+          <span class="learn-eyebrow">A LITTLE MATH, MADE VISIBLE</span><span
+            >Imagine a 10% return in each of two years.</span
+          >
+        </div><div class="compound-steps">
+          <div>
+            <span>START</span><strong>$100</strong><div
+              class="compound-column"
+              style="--column-height:100px"
+            >
+              <span>$100 invested</span>
+            </div>
+          </div><div>
+            <span>YEAR 1</span><strong>$110</strong><div
+              class="compound-column"
+              style="--column-height:110px"
+            >
+              <span>+$10</span>
+            </div>
+          </div><div>
+            <span>YEAR 2</span><strong>$121</strong><div
+              class="compound-column"
+              style="--column-height:121px"
+            >
+              <span>+$11</span>
+            </div>
+          </div>
+        </div><figcaption>
+          The second year earns a return on $110, including the first year’s
+          gain. A hypothetical example, before fees and taxes. Actual returns
+          vary and can be negative.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="learn-questions" aria-labelledby="questions-title">
+      <div>
+        <span class="learn-eyebrow">A FEW USEFUL DETAILS</span><h2
+          id="questions-title"
+        >
+          Good to know.
+        </h2>
+      </div><div class="learn-answers">
+        <details>
+          <summary>Does every ETF track the S&amp;P 500?</summary><p>
+            No. ETFs can hold other stocks, bonds or different investments. Some
+            follow an index; others have managers choosing investments. The
+            letters “ETF” describe the type of fund, not what’s inside it. <a
+              href={sources.etf}
+              target="_blank"
+              rel="noopener noreferrer">ETF basics ↗</a
+            >
+          </p>
+        </details>
+        <details>
+          <summary>Do all 500 companies count equally?</summary><p>
+            No. The S&amp;P 500 weights companies by the market value of their
+            publicly available shares. Bigger weights have a bigger effect on
+            the index. Its members and their weights change over time. <a
+              href={sources.spy}
+              target="_blank"
+              rel="noopener noreferrer">About the benchmark ↗</a
+            >
+          </p>
+        </details>
+        <details>
+          <summary>Is an S&amp;P 500 ETF a savings account?</summary><p>
+            No. Its value moves with the stocks it holds, so you can lose money.
+            Owning many companies doesn’t protect you from a market-wide fall. <a
+              href={sources.spy}
+              target="_blank"
+              rel="noopener noreferrer">SPY investment risks ↗</a
+            >
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="learn-arena-bridge" aria-labelledby="arena-bridge-title">
+      <span class="learn-diamond" aria-hidden="true">◆</span><div>
+        <span class="learn-eyebrow">NOW YOU KNOW YOUR OPPONENT</span><h2
+          id="arena-bridge-title"
+        >
+          The benchmark behind<br /><em>every matchup.</em>
+        </h2><p>
+          SPX Arena compares investor records with SPY total returns over the
+          same dates, including reinvested dividends. That measures more than
+          the index price you see in the headlines.
+        </p><div class="learn-next-actions">
+          <a class="arena-action" href="/leaderboard/"
+            >See the leaderboard <span aria-hidden="true">↗</span></a
+          ><a href="/calculator/?mode=goal"
+            >Plan your own goal <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </div>
+    </section>
+    <p class="learn-footnote">
+      A beginner’s guide, with links to S&amp;P Dow Jones Indices, Investor.gov
+      and State Street. SPY is an example, not a product recommendation.
+      Reviewed October 5, 2026.
+    </p>
+  </main>
+</SiteLayout>
+<script>
+  import '../scripts/learn.js';
+</script>
