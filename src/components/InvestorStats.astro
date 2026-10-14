@@ -1,0 +1,160 @@
+---
+import { rankedById, investorById } from '../lib/performance.js';
+import { investorStatistics } from '../lib/investor-stats.js';
+interface Props {
+  person: string;
+}
+const { person } = Astro.props;
+const record = rankedById[person];
+const profile = investorById[person];
+const stats = investorStatistics(record);
+---
+
+<section
+  class="profile-stats"
+  aria-labelledby="profile-stats-title"
+  data-profile-stats
+>
+  <div class="profile-stats-heading">
+    <div>
+      <span class="small-label">RISK &amp; CONSISTENCY</span><h3
+        id="profile-stats-title"
+      >
+        The ride behind the return.
+      </h3>
+    </div>
+    <span class="profile-stats-period" data-stats-period>{stats.period}</span>
+  </div>
+  <article class="profile-drawdown" aria-labelledby="profile-drawdown-title">
+    <div class="profile-drawdown-intro">
+      <span class="profile-drawdown-basis">{stats.basis}</span>
+      <h4 id="profile-drawdown-title">{stats.title}</h4>
+      <p>{stats.note}</p>
+    </div>
+    <div class="profile-drawdown-comparison">
+      {
+        (
+          [
+            ['investor', profile.name, stats.investorDrawdown],
+            ['benchmark', 'SPX · via SPY', stats.benchmarkDrawdown],
+          ] as const
+        ).map(([key, name, drawdown]) => (
+          <div class="profile-drawdown-result" data-drawdown={key}>
+            <div class="profile-drawdown-value">
+              <>
+                <span>{name}</span>
+                <strong data-drawdown-value>{drawdown.value}</strong>
+              </>
+            </div>
+            <div class="profile-drawdown-track" aria-hidden="true">
+              <span data-drawdown-bar style={`width:${drawdown.magnitude}%`} />
+            </div>
+            <p data-drawdown-dates>{drawdown.dates}</p>
+            <small data-drawdown-recovery>{drawdown.recovery}</small>
+          </div>
+        ))
+      }
+      <span class="profile-drawdown-scale"
+        >Bar length shows loss on a 0–100% scale.</span
+      >
+    </div>
+  </article>
+  <div class="profile-stat-grid">
+    {
+      stats.rows.map((row) => (
+        <article class="profile-stat" data-stat={row.key}>
+          <h4>{row.label}</h4>
+          <dl>
+            <div data-stat-investor>
+              <dt>{profile.name}</dt>
+              <dd>
+                <>
+                  <strong data-stat-value data-tone={row.investor.tone}>
+                    {row.investor.value}
+                  </strong>
+                  <small data-stat-detail>{row.investor.detail}</small>
+                </>
+              </dd>
+            </div>
+            <div data-stat-benchmark>
+              <dt>
+                SPX <span>via SPY</span>
+              </dt>
+              <dd>
+                <>
+                  <strong data-stat-value data-tone={row.benchmark.tone}>
+                    {row.benchmark.value}
+                  </strong>
+                  <small data-stat-detail>{row.benchmark.detail}</small>
+                </>
+              </dd>
+            </div>
+          </dl>
+        </article>
+      ))
+    }
+  </div>
+  <p class="profile-stats-footnote">
+    All statistics use the selected period through December 2025. Annual figures
+    are approximate; rounded returns can affect close comparisons. A positive
+    year can still include a large drawdown.
+  </p>
+  <details class="profile-stats-method">
+    <summary>How these stats are calculated</summary>
+    <p>
+      Drawdown measures a fall from an earlier peak to a later low, including
+      the starting value. Recovery is the first later observation that reaches
+      that peak again. All peaks are reset at the start of the selected period;
+      these are not lifetime drawdowns. The return chart above uses annual
+      observations even when daily drawdown data is available.
+    </p>
+    <p>
+      {
+        stats.frequency === 'daily'
+          ? stats.benchmarkSource.method
+          : 'The drawdowns for this record and SPX both use compounded calendar-year returns. Year-end sampling misses intra-year peaks and lows and understates the full drawdown. Recovery is also observed only at year-end.'
+      }
+    </p>
+    {
+      stats.frequency === 'daily' && (
+        <p>
+          {stats.dailySource && (
+            <>
+              <a
+                href={stats.dailySource.source}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {stats.dailySource.sourceLabel} ↗
+              </a>{' '}
+              ·{' '}
+            </>
+          )}
+          <a
+            href={stats.benchmarkSource.source}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SPY · adjusted daily history ↗
+          </a>
+        </p>
+      )
+    }
+    <ul>
+      {
+        stats.rows.map((row) => (
+          <li>
+            <strong>{row.label}.</strong> {row.description}
+          </li>
+        ))
+      }
+    </ul>
+    <p>
+      <a
+        href="https://admainnew.morningstar.com/directhelp/Glossary/Custom_Statistics/Maximum_Drawdown.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Maximum drawdown definition · Morningstar ↗</a>
+    </p>
+  </details>
+</section>

@@ -1,0 +1,206 @@
+{
+  "burry": {
+    "fame": "The investor behind The Big Short",
+    "description": "Michael Burry left medicine to found Scion Capital. He became widely known through Michael Lewis’s The Big Short, which chronicled his bet against risky U.S. mortgages before the financial crisis.",
+    "source": "https://news.vanderbilt.edu/2011/04/13/video-burry-cls/",
+    "sourceLabel": "Vanderbilt · Michael Burry’s story"
+  },
+  "dalio": {
+    "fame": "Bridgewater and Principles",
+    "description": "Ray Dalio founded Bridgewater and built his reputation around understanding economies, debt and market cycles. Beyond investing, his book Principles introduced a broad audience to his approach to decision-making and running a business.",
+    "source": "https://www.bridgewater.com/our-founder",
+    "sourceLabel": "Bridgewater · founder biography"
+  },
+  "cramer": {
+    "fame": "CNBC’s Mad Money",
+    "description": "Jim Cramer is the television investing personality behind CNBC’s Mad Money. His energetic stock discussions made him a familiar face to individual investors; his Charitable Trust is a separate portfolio with its own investment record.",
+    "source": "https://www.cnbc.com/video/2020/03/06/cnbcs-jim-cramer-reflects-on-15-years-of-mad-money.html",
+    "sourceLabel": "CNBC · 15 years of Mad Money"
+  },
+  "lynch": {
+    "fame": "Fidelity Magellan and everyday stock picking",
+    "description": "Peter Lynch ran Fidelity Magellan from 1977 to 1990. He became one of the best-known stock pickers of his generation, encouraging investors to look for business ideas in the products and companies they already understand.",
+    "source": "https://magazine.wharton.upenn.edu/issues/anniversary-issue/stock-superstar-who-beat-the-street-peter-s-lynch-wg68/",
+    "sourceLabel": "Wharton · Peter Lynch’s career"
+  },
+  "munger": {
+    "fame": "Warren Buffett’s longtime partner",
+    "description": "Charlie Munger helped shape Berkshire Hathaway alongside Warren Buffett. He is remembered for his blunt advice and his influence on Berkshire’s shift toward buying excellent businesses, rather than simply searching for the cheapest stocks.",
+    "source": "https://berkshirehathaway.com/letters/2023ltr.pdf",
+    "sourceLabel": "Berkshire · Buffett’s tribute to Munger"
+  },
+  "soros": {
+    "fame": "Quantum Fund and the British pound trade",
+    "description": "George Soros built his investing reputation with the Quantum Fund. His most famous trade was betting against the British pound in 1992, a defining example of his approach to investing around large economic and currency shifts.",
+    "source": "https://www.georgesoros.com/1995/08/18/soros_on_soros_staying_ahead_of_the_curve/",
+    "sourceLabel": "Soros · his investing career"
+  },
+  "oleary": {
+    "fame": "Shark Tank’s Mr. Wonderful",
+    "description": "Kevin O’Leary became a household name as an investor on Shark Tank, where he is known as Mr. Wonderful. His public investing activities also include an association with O’Shares, separate from the private businesses featured on television.",
+    "source": "https://abc.com/cast/683912da-1a73-47d9-9e0d-abed4028030a",
+    "sourceLabel": "ABC · Kevin O’Leary biography"
+  },
+  "griffin": {
+    "fame": "The founder of Citadel",
+    "description": "Ken Griffin started investing while at Harvard and founded Citadel in 1990. He is known for building a major investment firm around specialist teams, research and technology; Citadel Securities is a separate market-making business.",
+    "source": "https://www.citadel.com/who-we-are/leadership/kenneth-c-griffin/",
+    "sourceLabel": "Citadel · Ken Griffin biography"
+  },
+  "druckenmiller": {
+    "fame": "Duquesne and the Quantum Fund",
+    "description": "Stanley Druckenmiller founded Duquesne Capital and also led the Quantum Fund’s portfolio at Soros Fund Management. His reputation comes from global macro investing: positioning across markets as economic conditions change.",
+    "source": "https://gspp.berkeley.edu/archived/files/page/Druckenmiller_Bio.pdf",
+    "sourceLabel": "Berkeley · Druckenmiller biography"
+  },
+  "simons": {
+    "fame": "Renaissance’s mathematical approach to markets",
+    "description": "Jim Simons was a mathematician who founded Renaissance Technologies. He became a central figure in quantitative investing, using mathematical models and data to find patterns in financial markets instead of relying on traditional stock-picking narratives.",
+    "source": "https://www.simonsfoundation.org/about/our-history/remembering-jim-simons/",
+    "sourceLabel": "Simons Foundation · Jim Simons’s life"
+  },
+  "marks": {
+    "fame": "Oaktree and the investment memos",
+    "description": "Howard Marks co-founded Oaktree, a firm associated with credit and distressed investing. His investment memos made him widely known for explaining market cycles, investor psychology and the importance of understanding risk.",
+    "source": "https://www.oaktreecapital.com/about/leadership/bio/howard-marks",
+    "sourceLabel": "Oaktree · Howard Marks biography"
+  },
+  "tudor": {
+    "fame": "A pioneer of global macro trading",
+    "description": "Paul Tudor Jones founded the Tudor Group in 1980. He is known for global macro trading, taking positions in markets such as currencies, bonds, commodities and equities as economic conditions and prices change.",
+    "source": "https://www.tudor.com/about/",
+    "sourceLabel": "Tudor · firm history and approach"
+  },
+  "einhorn": {
+    "fame": "Greenlight Capital and public short-selling debates",
+    "description": "David Einhorn co-founded Greenlight Capital in 1996. He is known for investing in companies he considers undervalued and challenging businesses he believes are overpriced, and for his book Fooling Some of the People All of the Time.",
+    "source": "https://www.sohnconference.org/davideinhorn",
+    "sourceLabel": "Sohn Conference · David Einhorn biography"
+  },
+  "baron": {
+    "fame": "Long-term bets on Tesla and SpaceX",
+    "description": "Ron Baron founded Baron Capital and became known for holding growth companies for many years. His investments in Tesla and SpaceX, and his public explanations of those bets, brought his concentrated investing style to a wider audience.",
+    "source": "https://www.baroncapitalgroup.com/article/letter-ron-q4-2024",
+    "sourceLabel": "Baron · Ron Baron’s shareholder letter"
+  },
+  "loeb": {
+    "fame": "Third Point’s activist campaigns",
+    "description": "Dan Loeb founded Third Point in 1995. He is known for activist investing: buying stakes in companies and pressing for changes to their leadership, operations or structure, alongside investments in credit and special situations.",
+    "source": "https://www.thirdpoint.com/investment-strategy/",
+    "sourceLabel": "Third Point · investment approach"
+  },
+  "pabrai": {
+    "fame": "A well-known follower of Buffett’s approach",
+    "description": "Mohnish Pabrai built Pabrai Investment Funds around principles inspired by Warren Buffett’s original partnerships. He is known for patient value investing and concentrating on a small number of businesses he believes are attractively priced.",
+    "source": "https://pabraifunds.com/about/",
+    "sourceLabel": "Pabrai · the funds’ origins"
+  },
+  "smith": {
+    "fame": "Fundsmith’s patient approach to quality",
+    "description": "Terry Smith founded Fundsmith in 2010. He is known for a straightforward approach: find high-quality businesses, avoid paying too much and hold them for the long term, with limited trading along the way.",
+    "source": "https://www.fundsmith.co.uk/news/2015/2072-financial-times-terry-smith-what-i-have-learnt-at-fundsmith-in-the-past-five-years/",
+    "sourceLabel": "Fundsmith · Smith on his approach"
+  },
+  "gabelli": {
+    "fame": "A veteran of value investing",
+    "description": "Mario Gabelli founded the investment firm bearing his name. He is known for valuing companies as a private buyer might, then looking for a catalyst—such as a sale or restructuring—that could help the market recognize that value.",
+    "source": "https://business.columbia.edu/columbia-business-school-board/people/mario-j-gabelli-67",
+    "sourceLabel": "Columbia · Mario Gabelli biography"
+  },
+  "danoff": {
+    "fame": "The longtime stock picker behind Contrafund",
+    "description": "Will Danoff began managing Fidelity Contrafund in 1990. His reputation is closely tied to the fund and to finding businesses with strong growth prospects through company research and meetings with management teams.",
+    "source": "https://fundresearch.fidelity.com/mutual-funds/view-all/316071109",
+    "sourceLabel": "Fidelity · Contrafund and its managers"
+  },
+  "asness": {
+    "fame": "AQR and research-driven investing",
+    "description": "Cliff Asness co-founded AQR and is a prominent voice in quantitative investing. He is known for research on investment styles such as value and momentum, and for applying systematic, data-driven methods across portfolios.",
+    "source": "https://www.aqr.com/our-firm/leadership/cliff-asness",
+    "sourceLabel": "AQR · Cliff Asness biography"
+  },
+  "berkowitz": {
+    "fame": "The concentrated bets of Fairholme",
+    "description": "Bruce Berkowitz founded Fairholme Capital Management and the Fairholme Fund. He is known for a concentrated value-investing style, backing a relatively small number of companies rather than spreading investments evenly across the market.",
+    "source": "https://www.fairholmefunds.com/bruce",
+    "sourceLabel": "Fairholme · Bruce Berkowitz biography"
+  },
+  "watsa": {
+    "fame": "The investor who built Fairfax",
+    "description": "Prem Watsa built his reputation at Fairfax Financial, which he has led since 1985. Fairfax combines insurance businesses with investing, making him a recognizable figure in long-term capital allocation and value investing.",
+    "source": "https://www.fairfax.ca/corporate/watsa-v-prem/",
+    "sourceLabel": "Fairfax · Prem Watsa biography"
+  },
+  "gayner": {
+    "fame": "The investing name behind Markel",
+    "description": "Tom Gayner is known for his long career at Markel, combining patient investing with the allocation of capital across a group of businesses. His approach emphasizes durable companies and the value that can build over long holding periods.",
+    "source": "https://ir.mklgroup.com/investor-relations/governance/board-of-directors/person-details/default.aspx?ItemId=8d182144-912b-4754-8328-744dd68649df",
+    "sourceLabel": "Markel · Tom Gayner biography"
+  },
+  "hussman": {
+    "fame": "Market valuations and outspoken caution",
+    "description": "John Hussman is a fund manager and market commentator known for his research on valuations and market risk. His regularly published essays explain why he believes investors should pay attention to both prices and the potential for losses.",
+    "source": "https://www.hussmanfunds.com/comment/mc250814/",
+    "sourceLabel": "Hussman · market commentary"
+  },
+  "nygren": {
+    "fame": "Oakmark’s value-investing voice",
+    "description": "Bill Nygren has managed the Oakmark Fund since 2000. He is known for seeking businesses priced below his estimate of their long-term value and for explaining that approach in Oakmark’s investor commentaries.",
+    "source": "https://oakmark.com/who-we-are/our-team/bill-nygren/",
+    "sourceLabel": "Oakmark · Bill Nygren biography"
+  },
+  "davis": {
+    "fame": "Three generations of value investing",
+    "description": "Chris Davis comes from a family of investors and is associated with Davis Advisors and the Davis New York Venture Fund. He is known for continuing a research-led, long-term approach to buying businesses at attractive prices.",
+    "source": "https://davisfunds.com/insights/video/bloomberg-wealth-825",
+    "sourceLabel": "Davis · Chris Davis interview"
+  },
+  "rogers": {
+    "fame": "Ariel’s patient value-investing founder",
+    "description": "John Rogers Jr. founded Ariel Investments in 1983 at age 24. He built his reputation around patient value investing in small and medium-sized companies, looking for businesses whose prospects the market may have overlooked.",
+    "source": "https://www.arielinvestments.com/person/john-w-rogers-jr/",
+    "sourceLabel": "Ariel · John Rogers biography"
+  },
+  "herro": {
+    "fame": "Oakmark International’s global stock picker",
+    "description": "David Herro has managed Oakmark International since its 1992 launch. He is known for searching outside the U.S. for undervalued businesses and for a long career in international value investing.",
+    "source": "https://oakmark.com/who-we-are/our-team/david-herro/",
+    "sourceLabel": "Oakmark · David Herro biography"
+  },
+  "bill": {
+    "fame": "Pershing Square and activist investing",
+    "description": "Bill Ackman founded Pershing Square and became known for large, concentrated investments and activist campaigns. His approach often involves a small number of businesses and, in some cases, pushing for changes that he believes can increase their value.",
+    "source": "https://pershingsquareholdings.com/about-us/",
+    "sourceLabel": "Pershing Square · investment approach"
+  },
+  "joel": {
+    "fame": "The Little Book That Beats the Market",
+    "description": "Joel Greenblatt founded Gotham Capital and taught value investing at Columbia Business School. Many individual investors know him as the author of The Little Book That Beats the Market, which introduced his formula-based approach to finding good businesses at attractive prices.",
+    "source": "https://www.gothamfunds.com/principals",
+    "sourceLabel": "Gotham · Joel Greenblatt biography"
+  },
+  "cathie": {
+    "fame": "ARK Invest and disruptive innovation",
+    "description": "Cathie Wood founded ARK Invest to focus on disruptive innovation. She is best known for ARK’s actively managed ETFs, including ARK Innovation, and a growth-focused approach to companies seeking to change established industries.",
+    "source": "https://www.ark-invest.com/our-team?show_author=2048",
+    "sourceLabel": "ARK · Cathie Wood biography"
+  },
+  "peter": {
+    "fame": "Economic commentary and the case for gold",
+    "description": "Peter Schiff is an investment commentator associated with Euro Pacific. He became widely known for warnings before the financial crisis and for outspoken views on gold, the U.S. dollar and investing outside the United States.",
+    "source": "https://schiffradio.com/about-peter/",
+    "sourceLabel": "Schiff · biography and commentary"
+  },
+  "carl": {
+    "fame": "One of Wall Street’s best-known activists",
+    "description": "Carl Icahn became famous for buying stakes in companies and campaigning for changes to their management or strategy. His public battles with corporate boards made him one of the most recognizable figures in shareholder activism.",
+    "source": "https://carlicahn.com/about/",
+    "sourceLabel": "Icahn · investing career"
+  },
+  "warren": {
+    "fame": "Berkshire Hathaway and patient value investing",
+    "description": "Warren Buffett built Berkshire Hathaway into a group of businesses and investments over decades. His shareholder letters, annual meetings and emphasis on understanding businesses made him one of the world’s most recognizable investors.",
+    "source": "https://berkshirehathaway.com/letters/2023ltr.pdf",
+    "sourceLabel": "Berkshire · Buffett’s shareholder letter"
+  }
+}

@@ -2,6 +2,24 @@
   color: var(--ink);
   font-weight: 500;
 }
+#spx-nine-in-ten .calculator-page .calculator-load-error {
+  padding: 16px 18px;
+  margin: 0 0 20px;
+  background: #fbf0ed;
+  border: 1px solid #ddb6ad;
+  color: #873f38;
+  font-size: 13px;
+  line-height: 1.6;
+}
+#spx-nine-in-ten .calculator-page .calculator-load-error a {
+  color: inherit;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+#spx-nine-in-ten .calculator-page .calculator-modes button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
 #spx-nine-in-ten .calculator-page .calculator-modes {
   display: inline-flex;
   gap: 4px;

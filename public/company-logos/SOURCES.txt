@@ -1,0 +1,8 @@
+Company marks identify the companies discussed on the educational page.
+NVIDIA, Apple, Microsoft, Amazon, Google (Alphabet), Broadcom, Meta, Tesla, AMD:
+Simple Icons v11.15.0, https://github.com/simple-icons/simple-icons/tree/11.15.0/icons
+SVG collection released under CC0-1.0; company trademarks remain their owners' property.
+Google's mark is used to identify Alphabet, Google's parent company.
+
+Micron: https://www.micron.com/content/dam/micron/global/favicon/apple-icon-180x180.png
+Retrieved October 10, 2026. All marks used for identification; no affiliation implied.

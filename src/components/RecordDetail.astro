@@ -32,8 +32,9 @@ const { investor: d } = Astro.props;
     approximate. The frame always uses the full ten-year result.
   </p>
   <p>
-    <b>Maximum drawdown: not yet verified.</b> Annual observations miss intra-year
-    losses; a daily total-return series is required.
+    <b>Drawdown data.</b> The investor profile shows daily maximum drawdown where
+    a matching adjusted history is available. Otherwise, it labels the year-end estimate
+    explicitly; annual observations miss losses within a year.
   </p>
   <p>{d.detail}</p>
   <p><b>Data basis.</b> {d.method}</p>
@@ -70,6 +71,7 @@ const { investor: d } = Astro.props;
             </>
           </tr>
         ))
-      }</tbody>
+      }</tbody
+    >
   </table>
 </div>

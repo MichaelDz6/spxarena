@@ -1,0 +1,145 @@
+---
+import {
+  compoundExample,
+  compoundBalance,
+  uncompoundedBalance,
+  compoundPoint,
+  compoundMoney,
+} from '../lib/compound-example.js';
+const { initial, years } = compoundExample;
+const points = Array.from({ length: years * 4 + 1 }, (_, i) =>
+  compoundPoint(i / 4),
+);
+const curve = points
+  .map(
+    (point, i) => `${i ? 'L' : 'M'}${point.x.toFixed(2)},${point.y.toFixed(2)}`,
+  )
+  .join(' ');
+const area = `${curve} L524,248 L44,248 Z`;
+const end = compoundPoint(years);
+const simpleEndY = 248 - (uncompoundedBalance(years) / 80000) * 210;
+---
+
+<figure class="compound-illustration" data-compound-example>
+  <div class="compound-heading">
+    <span class="learn-eyebrow">SAME 7%. A BIGGER AMOUNT TO GROW.</span>
+    <span>$10,000 invested once · no extra deposits</span>
+  </div>
+  <div class="compound-balance">
+    <div>
+      <span>After <span data-compound-year>30 years</span></span><strong
+        data-compound-balance
+        >{compoundMoney.format(compoundBalance(years))}</strong>
+    </div>
+    <span class="compound-rate"
+      >7%<small>each year<br />hypothetically</small></span
+    >
+  </div>
+  <svg
+    class="compound-chart"
+    viewBox="0 0 554 290"
+    role="img"
+    aria-labelledby="compound-chart-title compound-chart-description"
+  >
+    <title id="compound-chart-title">
+      How compounding grows $10,000 over 30 years
+    </title>
+    <desc id="compound-chart-description"
+      >At a hypothetical 7% every year, $10,000 grows to $76,123 when all
+      returns stay invested. If gains earn no further return, the investment
+      plus gains total $31,000. No added deposits, fees, taxes or inflation.</desc
+    >
+    <defs>
+      <linearGradient id="compound-area-fill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#b39850" stop-opacity="0.24"></stop>
+        <stop offset="100%" stop-color="#b39850" stop-opacity="0.02"></stop>
+      </linearGradient>
+      <clipPath id="compound-reveal"
+        ><rect data-compound-clip x="42" y="0" width="486" height="250"
+        ></rect></clipPath
+      >
+    </defs>
+    {
+      [0, 20000, 40000, 60000, 80000].map((value) => {
+        const y = 248 - (value / 80000) * 210;
+        return (
+          <g class="compound-grid">
+            <>
+              <line x1="44" x2="524" y1={y} y2={y} />
+              <text x="33" y={y + 4} text-anchor="end">
+                {value === 0 ? '$0' : `$${value / 1000}k`}
+              </text>
+            </>
+          </g>
+        );
+      })
+    }
+    <path
+      class="compound-simple-line"
+      d={`M44,${points[0].y} L524,${simpleEndY}`}></path>
+    <path class="compound-ghost-line" d={curve}></path>
+    <g clip-path="url(#compound-reveal)">
+      <path d={area} fill="url(#compound-area-fill)"></path>
+      <path class="compound-growth-line" d={curve}></path>
+    </g>
+    <line
+      class="compound-marker-line"
+      data-compound-guide
+      x1={end.x}
+      x2={end.x}
+      y1={end.y}
+      y2="248"></line>
+    <circle
+      class="compound-marker"
+      data-compound-marker
+      cx={end.x}
+      cy={end.y}
+      r="5"></circle>
+    {
+      [0, 10, 20, 30].map((year) => (
+        <text
+          class="compound-axis-label"
+          x={compoundPoint(year).x}
+          y="272"
+          text-anchor={year === 0 ? 'start' : year === 30 ? 'end' : 'middle'}
+        >
+          {year === 0 ? 'Start' : `${year} years`}
+        </text>
+      ))
+    }
+  </svg>
+  <div class="compound-legend">
+    <span><i></i> Returns stay invested</span>
+    <span><i></i> No growth on gains</span>
+  </div>
+  <div class="compound-scrubber" hidden>
+    <label for="compound-years"
+      >Move through time <output for="compound-years" data-compound-years-output
+        >30 years</output
+      ></label
+    >
+    <input
+      id="compound-years"
+      type="range"
+      min="0"
+      max="30"
+      value="30"
+      step="1"
+      aria-valuetext="30 years: $76,123"
+    />
+  </div>
+  <div class="compound-breakdown" aria-live="off">
+    <div>
+      <span>You invested</span><strong>{compoundMoney.format(initial)}</strong>
+    </div>
+    <div>
+      <span>Growth on top</span><strong data-compound-gain
+        >+{compoundMoney.format(compoundBalance(years) - initial)}</strong>
+    </div>
+  </div>
+  <figcaption>
+    A steady 7% is an illustration, not a forecast. The dashed line assumes
+    gains are kept as cash earning no return. Before fees, taxes and inflation.
+    Real returns vary and can be negative.
+  </figcaption>
+</figure>

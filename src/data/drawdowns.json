@@ -1,0 +1,409 @@
+{
+  "benchmark": {
+    "symbol": "SPY",
+    "sourceFile": "research/sources/SPY.json",
+    "source": "https://finance.yahoo.com/quote/SPY/history/",
+    "sourceLabel": "SPY · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 0.0054120035873772565,
+    "periods": {
+      "1": {
+        "value": -18.75522908467665,
+        "peakDate": "2025-02-19",
+        "troughDate": "2025-04-08",
+        "recoveryDate": "2025-06-26",
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -24.496385382097785,
+        "peakDate": "2022-01-03",
+        "troughDate": "2022-10-12",
+        "recoveryDate": "2023-12-13",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -33.71725225085363,
+        "peakDate": "2020-02-19",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-08-10",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "warren": {
+    "symbol": "BRK-A",
+    "sourceFile": "research/sources/BRK-A.json",
+    "source": "https://finance.yahoo.com/quote/BRK-A/history/",
+    "sourceLabel": "BRK-A · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 0.04997356517653273,
+    "periods": {
+      "1": {
+        "value": -14.425155989374193,
+        "peakDate": "2025-05-02",
+        "troughDate": "2025-08-04",
+        "recoveryDate": null,
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -25.974999072665906,
+        "peakDate": "2022-03-28",
+        "troughDate": "2022-09-26",
+        "recoveryDate": "2023-08-03",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -30.42873293329855,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-16",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "danoff": {
+    "symbol": "FCNTX",
+    "sourceFile": "research/sources/FCNTX.json",
+    "source": "https://finance.yahoo.com/quote/FCNTX/history/",
+    "sourceLabel": "FCNTX · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 3.387208096228278e-7,
+    "periods": {
+      "1": {
+        "value": -19.751993368606037,
+        "peakDate": "2025-02-14",
+        "troughDate": "2025-04-08",
+        "recoveryDate": "2025-06-24",
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -32.59377845309616,
+        "peakDate": "2021-11-19",
+        "troughDate": "2022-09-30",
+        "recoveryDate": "2024-01-19",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -32.59377845309616,
+        "peakDate": "2021-11-19",
+        "troughDate": "2022-09-30",
+        "recoveryDate": "2024-01-19",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "asness": {
+    "symbol": "QLEIX",
+    "sourceFile": "research/sources/QLEIX.json",
+    "source": "https://finance.yahoo.com/quote/QLEIX/history/",
+    "sourceLabel": "QLEIX · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 4.655035503731142e-7,
+    "periods": {
+      "1": {
+        "value": -7.070137665614828,
+        "peakDate": "2025-03-25",
+        "troughDate": "2025-04-07",
+        "recoveryDate": "2025-04-30",
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -17.07155927344567,
+        "peakDate": "2022-06-07",
+        "troughDate": "2022-09-26",
+        "recoveryDate": "2023-02-09",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -39.197697881462304,
+        "peakDate": "2018-01-26",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2022-01-14",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "berkowitz": {
+    "symbol": "FAIRX",
+    "sourceFile": "research/sources/FAIRX.json",
+    "source": "https://finance.yahoo.com/quote/FAIRX/history/",
+    "sourceLabel": "FAIRX · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 3.9189287548424545e-7,
+    "periods": {
+      "1": {
+        "value": -13.946953775854798,
+        "peakDate": "2025-01-27",
+        "troughDate": "2025-04-08",
+        "recoveryDate": "2025-06-26",
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -41.499448347106096,
+        "peakDate": "2022-04-01",
+        "troughDate": "2022-09-26",
+        "recoveryDate": "2023-07-27",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -41.499448347106096,
+        "peakDate": "2022-04-01",
+        "troughDate": "2022-09-26",
+        "recoveryDate": "2023-07-27",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "gayner": {
+    "symbol": "MKL",
+    "sourceFile": "research/sources/MKL.json",
+    "source": "https://finance.yahoo.com/quote/MKL/history/",
+    "sourceLabel": "MKL · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 4.776641020498573e-7,
+    "periods": {
+      "1": {
+        "value": -18.512695885677765,
+        "peakDate": "2025-02-06",
+        "troughDate": "2025-04-07",
+        "recoveryDate": "2025-11-10",
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -28.873625196470066,
+        "peakDate": "2022-03-24",
+        "troughDate": "2022-09-26",
+        "recoveryDate": "2023-08-10",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -44.65579635116179,
+        "peakDate": "2020-02-20",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2022-03-14",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "hussman": {
+    "symbol": "HSGFX",
+    "sourceFile": "research/sources/HSGFX.json",
+    "source": "https://finance.yahoo.com/quote/HSGFX/history/",
+    "sourceLabel": "HSGFX · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 4.920972944688629e-7,
+    "periods": {
+      "1": {
+        "value": -17.391310496327506,
+        "peakDate": "2025-04-21",
+        "troughDate": "2025-10-29",
+        "recoveryDate": null,
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -22.419237795465396,
+        "peakDate": "2023-01-05",
+        "troughDate": "2024-11-11",
+        "recoveryDate": "2025-04-10",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -38.35010543364565,
+        "peakDate": "2016-02-11",
+        "troughDate": "2020-02-10",
+        "recoveryDate": null,
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "nygren": {
+    "symbol": "OAKMX",
+    "sourceFile": "research/sources/OAKMX.json",
+    "source": "https://finance.yahoo.com/quote/OAKMX/history/",
+    "sourceLabel": "OAKMX · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 4.844997008035534e-7,
+    "periods": {
+      "1": {
+        "value": -17.05100497462989,
+        "peakDate": "2025-01-27",
+        "troughDate": "2025-04-08",
+        "recoveryDate": "2025-07-01",
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -23.677132278524205,
+        "peakDate": "2022-01-14",
+        "troughDate": "2022-09-30",
+        "recoveryDate": "2023-07-11",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -41.42630833834458,
+        "peakDate": "2020-02-12",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-10",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "davis": {
+    "symbol": "NYVTX",
+    "sourceFile": "research/sources/NYVTX.json",
+    "source": "https://finance.yahoo.com/quote/NYVTX/history/",
+    "sourceLabel": "NYVTX · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 4.7368757805088535e-7,
+    "periods": {
+      "1": {
+        "value": -16.785977751569405,
+        "peakDate": "2025-02-19",
+        "troughDate": "2025-04-08",
+        "recoveryDate": "2025-06-24",
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -32.61646562294217,
+        "peakDate": "2021-06-01",
+        "troughDate": "2022-09-30",
+        "recoveryDate": "2024-01-26",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -36.97696351808221,
+        "peakDate": "2020-02-19",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-09",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "rogers": {
+    "symbol": "ARGFX",
+    "sourceFile": "research/sources/ARGFX.json",
+    "source": "https://finance.yahoo.com/quote/ARGFX/history/",
+    "sourceLabel": "ARGFX · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 4.84009238022054e-7,
+    "periods": {
+      "1": {
+        "value": -24.776552768138927,
+        "peakDate": "2025-01-30",
+        "troughDate": "2025-04-08",
+        "recoveryDate": "2025-08-13",
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -30.54854384802166,
+        "peakDate": "2021-11-09",
+        "troughDate": "2022-09-30",
+        "recoveryDate": "2024-07-26",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -45.28783736117086,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-24",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  },
+  "herro": {
+    "symbol": "OAKIX",
+    "sourceFile": "research/sources/OAKIX.json",
+    "source": "https://finance.yahoo.com/quote/OAKIX/history/",
+    "sourceLabel": "OAKIX · adjusted daily history",
+    "method": "Estimated from daily dividend- and split-adjusted closing values in USD. Daily closes do not capture intraday losses. Adjustment and reinvestment conventions can differ from published fund returns.",
+    "maxAnnualDifference": 3.523361691293303e-7,
+    "periods": {
+      "1": {
+        "value": -16.995497346495657,
+        "peakDate": "2025-03-07",
+        "troughDate": "2025-04-08",
+        "recoveryDate": "2025-05-13",
+        "startDate": "2024-12-31",
+        "endDate": "2025-12-31",
+        "observations": 251
+      },
+      "5": {
+        "value": -38.00094240469883,
+        "peakDate": "2021-06-07",
+        "troughDate": "2022-09-29",
+        "recoveryDate": "2025-03-07",
+        "startDate": "2020-12-31",
+        "endDate": "2025-12-31",
+        "observations": 1256
+      },
+      "10": {
+        "value": -53.05364501046537,
+        "peakDate": "2018-01-26",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2021-02-24",
+        "startDate": "2015-12-31",
+        "endDate": "2025-12-31",
+        "observations": 2515
+      }
+    }
+  }
+}

@@ -185,6 +185,60 @@ body {
   margin-top: 10px;
   padding-top: 8px;
 }
+
+/* Each historical badge uses its own period's rarity, independent of the card frame. */
+#spx-nine-in-ten .arena-card .period-stat {
+  --period-rarity-ink: #4b5a57;
+  --period-rarity-wash: #eef1ee;
+  --period-rarity-edge: #c5cfca;
+}
+#spx-nine-in-ten .arena-card .period-stat[data-tier='legendary'] {
+  --period-rarity-ink: #9d5508;
+  --period-rarity-wash: #fff2d9;
+  --period-rarity-edge: #cfb16d;
+}
+#spx-nine-in-ten .arena-card .period-stat[data-tier='epic'] {
+  --period-rarity-ink: #743c94;
+  --period-rarity-wash: #f4ecfa;
+  --period-rarity-edge: #c4aad7;
+}
+#spx-nine-in-ten .arena-card .period-stat[data-tier='rare'] {
+  --period-rarity-ink: #245f87;
+  --period-rarity-wash: #eaf3fb;
+  --period-rarity-edge: #a4c3d7;
+}
+#spx-nine-in-ten .arena-card .period-stat[data-tier='unrated'] {
+  --period-rarity-ink: #62686d;
+  --period-rarity-wash: #f1f2f2;
+  --period-rarity-edge: #cdd1d3;
+}
+#spx-nine-in-ten .arena-card .period-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+#spx-nine-in-ten .arena-card .period-caption em {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 7px;
+  padding: 3px 6px;
+  border: 1px solid var(--period-rarity-edge);
+  border-radius: 3px;
+  background: var(--period-rarity-wash);
+  color: var(--period-rarity-ink);
+  font: 500 12px/1.35 var(--sans);
+  white-space: nowrap;
+}
+#spx-nine-in-ten .arena-card .period-caption em::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  flex: 0 0 5px;
+  background: currentColor;
+  transform: rotate(45deg);
+}
 #spx-nine-in-ten .contender-deck .profile-card .name-scroll strong {
   min-height: 32px;
 }

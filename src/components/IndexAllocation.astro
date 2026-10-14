@@ -1,0 +1,177 @@
+---
+import snapshot from '../data/index-companies.json';
+const remainingCompanies = 500 - snapshot.companies.length;
+const topWeight = snapshot.companies.reduce(
+  (sum, company) => sum + company.weight,
+  0,
+);
+const allocations = [
+  ...snapshot.companies,
+  {
+    name: `The other ${remainingCompanies} companies`,
+    weight: Number((100 - topWeight).toFixed(2)),
+    color: '#e1e6dc',
+    logo: '',
+  },
+];
+let allocationOffset = 0;
+const slices = allocations.map((company) => {
+  const offset = allocationOffset;
+  allocationOffset += company.weight;
+  return { ...company, offset };
+});
+---
+
+<section
+  class="learn-chapter index-chapter"
+  id="inside-the-index"
+  aria-labelledby="index-mix-title"
+>
+  <div class="chapter-copy">
+    <span class="learn-eyebrow">01 / INSIDE THE INDEX</span>
+    <h2 id="index-mix-title">One index.<br /><em>Different influence.</em></h2>
+    <p>
+      The squares count companies, but <strong
+        >not every square has equal weight.</strong
+      > Some companies have a much bigger influence on the index than others.
+    </p>
+    <p>
+      The S&amp;P 500 gives more weight to companies whose publicly available
+      shares have a larger market value. So a move in NVIDIA has more influence
+      than the same percentage move in a smaller company.
+    </p>
+    <div class="index-definition">
+      <span aria-hidden="true">↗</span>
+      <p>
+        <strong>SPX measures. It doesn’t hold your money.</strong> The index is a
+        calculated number that follows stock prices. You can’t buy it directly. To
+        invest, you buy a fund that aims to follow it.
+      </p>
+    </div>
+    <a
+      href="https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+      class="learn-source"
+      target="_blank"
+      rel="noopener noreferrer">How S&amp;P builds the index ↗</a
+    >
+  </div>
+  <figure
+    class="index-allocation"
+    data-index-allocation
+    data-top-weight={topWeight.toFixed(2)}
+  >
+    <div class="allocation-heading">
+      <div>
+        <span class="learn-eyebrow">THE WEIGHT BEHIND THE SCORE</span><h3>
+          A closer look at the mix.
+        </h3>
+      </div>
+      <span class="allocation-symbol">SPX</span>
+    </div>
+    <p class="allocation-date">
+      Approximate index weights · SPY holdings · <time datetime={snapshot.asOf}
+        >Oct 8, 2026</time
+      >
+    </p>
+    <div class="allocation-visual">
+      <div class="allocation-donut">
+        <svg
+          viewBox="0 0 220 220"
+          role="img"
+          aria-label={`The ten largest companies account for approximately ${topWeight.toFixed(2)}% of the index, based on SPY holdings. Individual weights are listed alongside the chart.`}
+        >
+          <circle
+            cx="110"
+            cy="110"
+            r="103"
+            fill="none"
+            stroke="#e7e6d9"
+            stroke-width="0.6"></circle>
+          <g transform="rotate(-90 110 110)">
+            {
+              slices.map((slice, i) => (
+                <circle
+                  data-allocation-slice={i}
+                  cx="110"
+                  cy="110"
+                  r="82"
+                  fill="none"
+                  stroke={slice.color}
+                  stroke-width="27"
+                  pathLength="100"
+                  stroke-dasharray={`${slice.weight} ${100 - slice.weight}`}
+                  stroke-dashoffset={-slice.offset}
+                >
+                  <title>
+                    {slice.name}: {slice.weight.toFixed(2)}%
+                  </title>
+                </circle>
+              ))
+            }
+          </g>
+        </svg>
+        <div class="allocation-center" aria-hidden="true">
+          <span data-allocation-label>TOP 10 COMPANIES</span>
+          <strong data-allocation-value
+            >{topWeight.toFixed(2)}<small>%</small></strong
+          >
+          <span data-allocation-detail>of the total mix</span>
+        </div>
+        <button
+          type="button"
+          class="allocation-reset"
+          data-allocation-reset
+          hidden>Show the whole mix ↺</button
+        >
+      </div>
+      <ol class="allocation-list" aria-label="Company weights">
+        {
+          allocations.map((company, i) => (
+            <li style={`--company-color:${company.color}`}>
+              <button
+                type="button"
+                data-allocation-select={i}
+                data-name={company.name}
+                data-weight={company.weight.toFixed(2)}
+                aria-pressed="false"
+                disabled
+              >
+                <span class="allocation-key" aria-hidden="true" />
+                {company.logo ? (
+                  <img
+                    src={`/company-logos/${company.logo}`}
+                    width="16"
+                    height="16"
+                    alt=""
+                  />
+                ) : (
+                  <span class="allocation-rest-icon" aria-hidden="true">
+                    ···
+                  </span>
+                )}
+                <>
+                  <span class="allocation-company-name">{company.name}</span>
+                  <strong>
+                    {company.weight.toFixed(2)}
+                    <small>%</small>
+                  </strong>
+                </>
+              </button>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+    <figcaption>
+      <span class="allocation-instruction" hidden
+        >Select a company to explore its share.</span
+      >
+      A snapshot, not live data. SPY holdings approximate the index; fund and index
+      weights can differ. Alphabet combines Google’s two share classes. The gray slice
+      represents the other {remainingCompanies} companies, plus the fund’s small cash
+      balance.
+      <a href={snapshot.source}>State Street holdings, {snapshot.dateLabel} ↗</a
+      >
+    </figcaption>
+  </figure>
+</section>

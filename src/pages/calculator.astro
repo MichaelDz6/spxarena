@@ -54,6 +54,15 @@ const chart = createProjectionChart(result);
         Plan a goal
       </button>
     </div>
+    <p
+      class="calculator-load-error"
+      data-calculator-load-error
+      role="alert"
+      hidden
+    >
+      The calculator couldn’t load. Please reload the page to try again.
+      <a href="/calculator/" data-calculator-retry>Reload calculator ↻</a>
+    </p>
     <div class="calculator-layout">
       <form class="investment-form" data-calculator-form novalidate>
         <noscript
@@ -417,5 +426,5 @@ const chart = createProjectionChart(result);
   </main>
 </SiteLayout>
 <script>
-  import '../scripts/calculator.js';
+  import '../scripts/calculator-loader.js';
 </script>

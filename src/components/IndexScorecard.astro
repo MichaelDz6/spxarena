@@ -1,0 +1,132 @@
+---
+import { companies } from '../data/index-companies.json';
+---
+
+<figure class="index-illustration" data-company-scorecard>
+  <div class="index-illustration-top">
+    <span>THE MARKET SCORECARD</span><span
+      class="learn-diamond"
+      aria-hidden="true">◆</span
+    >
+  </div>
+  <div class="index-mark">
+    <strong>SPX</strong><span>S&amp;P 500<br /><small>THE INDEX</small></span>
+  </div>
+  <svg
+    class="company-mosaic"
+    viewBox="0 -35 149 155"
+    role="img"
+    aria-label="500 small squares, each representing one company in the S&P 500. The highlighted square identifies one company; square size does not show company weight."
+  >
+    {
+      Array.from({ length: 500 }, (_, i) => (
+        <rect
+          data-company-square={i}
+          x={(i % 25) * 6}
+          y={Math.floor(i / 25) * 6}
+          width="4"
+          height="4"
+          rx="0.5"
+          class={
+            i % 17 === 0 ? 'mosaic-gold' : i % 5 === 0 ? 'mosaic-light' : ''
+          }
+        />
+      ))
+    }
+    {
+      companies.map((company, i) => {
+        const x = (company.square % 25) * 6 + 2;
+        const y = Math.floor(company.square / 25) * 6 + 2;
+        const connector = `M14.5,-9 V-3 H${x} V${y}`;
+        return (
+          <g
+            class="mosaic-spotlight"
+            data-company-spotlight={i}
+            data-active={i === 0}
+            aria-hidden="true"
+          >
+            <path d={connector} class="mosaic-connector-shadow" />
+            <path d={connector} class="mosaic-connector" pathLength="1" />
+            <rect
+              class="mosaic-target"
+              x={x - 3.5}
+              y={y - 3.5}
+              width="7"
+              height="7"
+              rx="1"
+            />
+            <g class="mosaic-company-label">
+              <rect
+                class="mosaic-label-bg"
+                x="1"
+                y="-34"
+                width="147"
+                height="25"
+                rx="3"
+              />
+              <rect
+                class="mosaic-logo-bg"
+                x="6"
+                y="-30"
+                width="17"
+                height="17"
+                rx="3"
+              />
+              <image
+                href={`/company-logos/${company.logo}`}
+                x="9"
+                y="-27"
+                width="11"
+                height="11"
+              />
+              <text x="29" y="-23" class="mosaic-company-name">
+                {company.name}
+              </text>
+              <text x="29" y="-16" class="mosaic-company-hint">
+                One company. One square.
+              </text>
+              <text
+                x="141"
+                y="-21"
+                class="mosaic-company-number"
+                text-anchor="end"
+              >
+                {String(i + 1).padStart(2, '0')} / 500
+              </text>
+            </g>
+          </g>
+        );
+      })
+    }
+  </svg>
+  <div class="scorecard-controls" hidden>
+    <div
+      class="scorecard-companies"
+      role="group"
+      aria-label="Highlight a company in the scorecard"
+    >
+      {
+        companies.map((company, i) => (
+          <button
+            type="button"
+            data-company-select={i}
+            aria-label={`Show ${company.name} square`}
+            aria-pressed={i === 0}
+            title={company.name}
+          >
+            <img
+              src={`/company-logos/${company.logo}`}
+              width="16"
+              height="16"
+              alt=""
+            />
+          </button>
+        ))
+      }
+    </div>
+  </div>
+  <figcaption>
+    <strong>500 companies. One index.</strong>
+    <span>One square per company. Actual weights differ.</span>
+  </figcaption>
+</figure>

@@ -1,0 +1,176 @@
+---
+import { rankedById, investorById, fmt, dollars } from '../lib/performance.js';
+import InvestorStats from './InvestorStats.astro';
+import {
+  investorComparison,
+  createInvestorChart,
+  comparisonDescription,
+} from '../lib/investor-chart.js';
+interface Props {
+  person: string;
+}
+const { person } = Astro.props;
+const profile = investorById[person];
+const record = rankedById[person];
+const comparison = investorComparison(record);
+const chart = createInvestorChart(comparison);
+---
+
+<section
+  class="profile-comparison"
+  id="performance"
+  data-profile-comparison
+  data-person={person}
+  aria-labelledby="profile-performance-title"
+>
+  <div class="profile-comparison-heading">
+    <div>
+      <span class="small-label">THE PERFORMANCE TEST</span>
+      <h2 id="profile-performance-title">
+        {record ? 'One investment. Two outcomes.' : 'The benchmark to beat.'}
+      </h2>
+    </div>
+    <div
+      class="profile-periods"
+      role="group"
+      aria-label="Comparison period"
+      hidden
+      data-profile-periods
+    >
+      {
+        [10, 5, 1].map((years) => (
+          <button
+            type="button"
+            data-profile-years={years}
+            aria-pressed={years === 10}
+          >
+            {years}Y{years === 10 && <span> · Main</span>}
+          </button>
+        ))
+      }
+    </div>
+  </div>
+  <p class="profile-comparison-intro">
+    <strong>$10,000</strong> invested at the start of <span data-profile-start
+      >2016</span
+    >, held through December 2025. No extra deposits.
+    {
+      record ? (
+        <>
+          {' '}
+          Comparing <strong>{record.vehicle}</strong> with the S&amp;P 500.
+        </>
+      ) : (
+        <> The line below shows the S&amp;P 500 only.</>
+      )
+    }
+  </p>
+  {
+    !record && (
+      <div class="profile-missing-record">
+        <>
+          <span aria-hidden="true">◇</span>
+          <div>
+            <>
+              <strong>{profile.name}’s comparison is not available yet.</strong>
+              <p>{profile.detail}</p>
+            </>
+          </div>
+        </>
+      </div>
+    )
+  }
+  <div class="profile-comparison-panel">
+    <div class="profile-result-grid">
+      <div class="profile-result profile-investor-result">
+        <span><i aria-hidden="true"></i>{profile.name}</span>
+        <strong data-profile-value
+          >{
+            comparison.investor
+              ? dollars(comparison.investor.at(-1))
+              : 'Not available'
+          }</strong
+        >
+        <small data-profile-return
+          >{
+            record
+              ? `${fmt(comparison.annualized)}% per year`
+              : 'A verified return series is required'
+          }</small
+        >
+      </div>
+      <div class="profile-result profile-benchmark-result">
+        <span><i aria-hidden="true"></i>SPX <small>via SPY ETF</small></span>
+        <strong data-profile-benchmark
+          >{dollars(comparison.benchmark.at(-1))}</strong
+        >
+        <small data-profile-benchmark-return
+          >{fmt(comparison.benchmarkAnnualized)}% per year</small
+        >
+      </div>
+      <div class="profile-result profile-difference">
+        <span>Difference vs SPX</span>
+        <strong
+          data-profile-difference
+          class={record ? (comparison.difference! >= 0 ? 'up' : 'down') : ''}
+          >{
+            record
+              ? `${comparison.difference! < 0 ? '−' : '+'}${dollars(Math.abs(comparison.difference!))}`
+              : '—'
+          }</strong
+        >
+        <small data-profile-gap
+          >{
+            record
+              ? `${fmt(comparison.gap!, 2)} percentage points / year`
+              : 'Unranked · insufficient data'
+          }</small
+        >
+      </div>
+    </div>
+    <svg
+      class="profile-performance-chart"
+      data-profile-chart
+      viewBox={`0 0 ${chart.width} ${chart.height}`}
+      role="img"
+      aria-label={comparisonDescription(comparison, record?.vehicle)}
+      aria-describedby="profile-chart-help"
+      set:html={chart.markup}
+    />
+    <div
+      class="profile-chart-readout"
+      data-profile-readout
+      aria-live="polite"
+      aria-atomic="true"
+    >
+      December 2025 · SPX {dollars(comparison.benchmark.at(-1))}{
+        record && ` · ${profile.name} ${dollars(comparison.investor!.at(-1))}`
+      }
+    </div>
+    <p
+      id="profile-chart-help"
+      class="profile-chart-help"
+      data-profile-chart-help
+      hidden
+    >
+      Hover or tap a year to compare. Keyboard: arrow keys, Home and End.
+    </p>
+  </div>
+  <p class="profile-chart-note">
+    SPX is the S&amp;P 500 index; this comparison uses SPY ETF total returns as
+    the investable benchmark. Values are in USD, with distributions reinvested
+    where applicable. Each point is a year-end observation, not a daily price.
+    Past returns do not predict future results.
+  </p>
+  <InvestorStats person={person} />
+  {
+    record && (
+      <p class="profile-vehicle-note">
+        <strong>What this record measures.</strong> {record.detail}
+      </p>
+    )
+  }
+</section>
+<script>
+  import '../scripts/investor-profile.js';
+</script>

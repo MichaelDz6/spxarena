@@ -2,7 +2,15 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import Portrait from '../../components/Portrait.astro';
 import RecordDetail from '../../components/RecordDetail.astro';
-import { investors, rankedById, fmt } from '../../lib/performance.js';
+import InvestorPerformance from '../../components/InvestorPerformance.astro';
+import biographies from '../../data/investor-biographies.json';
+import {
+  investors,
+  rankedById,
+  rankedInvestors,
+  titleCase,
+} from '../../lib/performance.js';
+import '../../styles/investor-profile.css';
 export function getStaticPaths() {
   return investors.map((profile) => ({
     params: { slug: profile.key },
@@ -11,23 +19,51 @@ export function getStaticPaths() {
 }
 const { profile } = Astro.props;
 const record = rankedById[profile.key];
+const biography = biographies[profile.key as keyof typeof biographies];
 ---
 
-<SiteLayout title={profile.name} description={profile.detail}>
+<SiteLayout title={profile.name} description={biography.description}>
   <main
     class="arena-page investor-profile-page"
     aria-labelledby="investor-profile-title"
   >
-    <div class="page-intro">
-      <a href="/#nine-arena-contenders" class="back-link"
-        >← Back to the investors</a
+    <div class="profile-breadcrumb">
+      <a href="/#nine-arena-contenders" class="back-link">← All investors</a
       ><span class="small-label">THE ARENA · INVESTOR PROFILE</span>
     </div>
-    <div class="famous-profile-layout">
-      <div class="famous-profile-photo">
-        <Portrait person={profile.key} />{
+    <section class="profile-hero" aria-labelledby="investor-profile-title">
+      <figure class="profile-portrait" data-tier={record?.tier || 'unrated'}>
+        <div class="profile-portrait-frame">
+          <Portrait person={profile.key} />
+        </div>
+        <figcaption class="profile-rarity">
+          <span>{record ? '10-YEAR RARITY' : 'RECORD STATUS'}</span>
+          <strong
+            ><i aria-hidden="true">◆</i>{
+              record ? titleCase(record.tier) : 'Unranked'
+            }<i aria-hidden="true">◆</i></strong
+          >
+          <small
+            >{
+              record ? (
+                <>
+                  <>
+                    <span>
+                      Rank {record.rank} of {rankedInvestors.length}
+                    </span>
+                    <span>2016–2025</span>
+                  </>
+                </>
+              ) : (
+                'Comparable data needed'
+              )
+            }</small
+          >
+        </figcaption>
+        {
           profile.photoCredit && (
             <a
+              class="profile-portrait-source"
               href={profile.photoCredit}
               target="_blank"
               rel="noopener noreferrer"
@@ -36,66 +72,64 @@ const record = rankedById[profile.key];
             </a>
           )
         }
+      </figure>
+      <div class="profile-heading">
+        <span class="small-label">{profile.category}</span>
+        <h1 id="investor-profile-title">{profile.name}</h1>
+        <p class="profile-fame">{biography.fame}</p>
       </div>
-      <div class="famous-profile-story">
-        <span class="profile-status-label" data-tier={record?.tier || 'unrated'}
-          >{
-            record
-              ? `RANK ${record.rank} OF 20 · ${record.tier.toUpperCase()}`
-              : 'UNRANKED'
-          }</span
+      <div class="profile-biography">
+        <p>{biography.description}</p>
+        <a
+          class="profile-biography-source"
+          href={biography.source}
+          target="_blank"
+          rel="noopener noreferrer">{biography.sourceLabel} ↗</a
         >
-        <h1 id="investor-profile-title">{profile.name}</h1><p
-          class="famous-profile-tagline"
-        >
-          {profile.knownFor}
-        </p><p class="famous-profile-vehicle">{profile.vehicle}</p>
-        <div class="famous-profile-facts">
-          <div>
-            <span>STRATEGY</span><strong>{profile.category}</strong>
-          </div><div>
-            <span>RECORD STATUS</span><strong>{profile.status}</strong>
-          </div>
+        <div class="profile-fund">
+          <span class="small-label"
+            >{record ? 'THE RECORD WE COMPARE' : 'ASSOCIATED WITH'}</span
+          ><strong>{record?.vehicle || profile.vehicle}</strong>
         </div>
-        <h2>The record behind the name.</h2><p class="famous-profile-detail">
-          {profile.detail}
-        </p>
-        <p class="profile-ranking-note">
+        <p class="profile-rating-explanation">
           {
             record
-              ? `2016–2025 · ${fmt(record.value)}% per year · ${fmt(record.gap, 2)} percentage points per year versus SPY. ${record.method}`
-              : 'No ten-year rank or rarity has been assigned. A complete return record over matching dates is required before a profile joins the scored leaderboard.'
+              ? 'Rarity reflects this vehicle’s 10-year return versus SPX, measured through SPY. It rates this period, not the investor’s entire career.'
+              : 'No rarity or leaderboard position is assigned until a comparable return record is verified.'
           }
         </p>
-        <a
-          class="profile-source"
-          href={profile.source}
-          target="_blank"
-          rel="noopener noreferrer">{profile.sourceLabel} ↗</a
-        >
-        <div class="profile-actions">
-          {
-            record && (
-              <a
-                class="arena-action"
-                href={`/?investor=${profile.key}#nine-arena-record`}
-              >
-                Compare with SPX <span aria-hidden="true">→</span>
-              </a>
-            )
-          }<a class="arena-action secondary" href="/leaderboard/"
-            >Explore the leaderboard <span aria-hidden="true">↗</span></a>
+        <div class="profile-hero-actions">
+          <a href="#performance" class="arena-action"
+            >{record ? 'See the comparison' : 'View the available record'}
+            <span aria-hidden="true">↓</span></a
+          ><a href="/leaderboard/" class="profile-leaderboard-link"
+            >Full leaderboard ↗</a
+          >
         </div>
       </div>
-    </div>
+    </section>
+    <InvestorPerformance person={profile.key} />
     {
-      record && (
-        <section class="profile-record">
+      record ? (
+        <details class="profile-data record-details">
           <>
-            <h2>Ten years. An open record.</h2>
+            <summary>Sources, annual returns &amp; consistency</summary>
             <RecordDetail investor={record} />
           </>
-        </section>
+        </details>
+      ) : (
+        <div class="profile-unranked-source">
+          <>
+            <span class="small-label">FURTHER READING</span>
+            <a href={profile.source} target="_blank" rel="noopener noreferrer">
+              {profile.sourceLabel} ↗
+            </a>
+            <p>
+              Public holdings, media appearances and estimated wealth do not
+              establish a complete investment return.
+            </p>
+          </>
+        </div>
       )
     }
   </main>

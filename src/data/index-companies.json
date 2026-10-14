@@ -1,0 +1,88 @@
+{
+  "asOf": "2026-10-08",
+  "dateLabel": "October 8, 2026",
+  "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
+  "method": "Approximate S&P 500 company weights using SPY holdings. Alphabet share classes are combined. Rounded to two decimals; the remainder includes other holdings and cash.",
+  "companies": [
+    {
+      "name": "NVIDIA",
+      "ticker": "NVDA",
+      "logo": "nvidia.svg",
+      "weight": 8.34,
+      "color": "#456750",
+      "square": 54
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "logo": "apple.svg",
+      "weight": 7.43,
+      "color": "#638473",
+      "square": 116
+    },
+    {
+      "name": "Microsoft",
+      "ticker": "MSFT",
+      "logo": "microsoft.svg",
+      "weight": 5.8,
+      "color": "#7296a0",
+      "square": 182
+    },
+    {
+      "name": "Alphabet",
+      "ticker": "GOOGL + GOOG",
+      "logo": "google.svg",
+      "weight": 5.5,
+      "color": "#a78b45",
+      "square": 223
+    },
+    {
+      "name": "Amazon",
+      "ticker": "AMZN",
+      "logo": "amazon.svg",
+      "weight": 3.73,
+      "color": "#c3ac68",
+      "square": 287
+    },
+    {
+      "name": "Broadcom",
+      "ticker": "AVGO",
+      "logo": "broadcom.svg",
+      "weight": 2.56,
+      "color": "#927d9f",
+      "square": 309
+    },
+    {
+      "name": "Meta",
+      "ticker": "META",
+      "logo": "meta.svg",
+      "weight": 2.38,
+      "color": "#738baa",
+      "square": 367
+    },
+    {
+      "name": "Micron",
+      "ticker": "MU",
+      "logo": "micron.png",
+      "weight": 1.75,
+      "color": "#9ca879",
+      "square": 396
+    },
+    {
+      "name": "Tesla",
+      "ticker": "TSLA",
+      "logo": "tesla.svg",
+      "weight": 1.58,
+      "color": "#b78683",
+      "square": 432
+    },
+    {
+      "name": "AMD",
+      "ticker": "AMD",
+      "logo": "amd.svg",
+      "weight": 1.51,
+      "color": "#83a9a4",
+      "square": 471
+    }
+  ]
+}

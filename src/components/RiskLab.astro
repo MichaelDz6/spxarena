@@ -1,0 +1,207 @@
+---
+import {
+  riskScenarios,
+  riskOutcome,
+  riskMoney,
+  riskPercent,
+  startingValue,
+} from '../lib/risk-scenarios.js';
+const initial = riskScenarios.find((scenario) => scenario.id === 'company')!;
+const outcome = riskOutcome(initial.returns);
+const investments = [
+  {
+    id: 'single',
+    title: 'All in Company A',
+    shortTitle: 'Company A',
+    subtitle: '$1,000 in one company',
+    holdings: [0],
+  },
+  {
+    id: 'basket',
+    title: 'Spread across 10 companies',
+    shortTitle: '10 companies',
+    subtitle: '$100 in each company',
+    holdings: Array.from({ length: 10 }, (_, i) => i),
+  },
+] as const;
+---
+
+<div
+  id="risk-demo"
+  class="risk-lab"
+  data-risk-lab
+  data-current-scenario={initial.id}
+  data-playing="false"
+>
+  <div class="risk-lab-header">
+    <span class="learn-eyebrow">SAME $1,000. DIFFERENT OUTCOMES.</span>
+    <span>Each scenario starts fresh with <strong>$1,000</strong></span>
+  </div>
+  <div class="risk-interaction-header" hidden>
+    <div>
+      <strong>Choose a scenario</strong>
+      <span>Tap a card to see what happens to your money.</span>
+    </div>
+    <button
+      type="button"
+      class="risk-playback"
+      data-risk-playback
+      aria-pressed="false"
+      aria-label="Play scenario tour"
+    >
+      <svg viewBox="0 0 20 20" aria-hidden="true"
+        ><path data-tour-icon d="m7 4 9 6-9 6Z"></path></svg
+      >
+      <span data-tour-label>Play tour</span>
+    </button>
+  </div>
+  <div
+    class="risk-scenarios"
+    role="group"
+    aria-label="Choose a market scenario"
+    hidden
+  >
+    {
+      riskScenarios.map((scenario, i) => (
+        <button
+          type="button"
+          data-scenario={scenario.id}
+          aria-label={`${scenario.label} ${scenario.change}`}
+          aria-pressed={scenario.id === initial.id}
+          aria-controls="risk-scenario-results"
+        >
+          <span class="risk-choice-top">
+            <>
+              <span>{String(i + 1).padStart(2, '0')}</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11m-4-4 4 4-4 4" />
+              </svg>
+            </>
+          </span>
+          <span class="risk-choice-label risk-choice-full">
+            {scenario.label}
+          </span>
+          <span class="risk-choice-label risk-choice-short">
+            {scenario.shortLabel}
+          </span>
+          <strong class="risk-choice-change">{scenario.change}</strong>
+        </button>
+      ))
+    }
+  </div>
+  <div id="risk-scenario-results">
+    <div class="risk-event" data-risk-event>
+      <div>
+        <span class="risk-event-eyebrow">WHAT HAPPENS</span>
+        <h3 data-scenario-title>{initial.title}</h3>
+        <p class="scenario-description" data-scenario-description>
+          {initial.description}
+        </p>
+      </div>
+      <div class="risk-event-metric">
+        <strong data-scenario-change>{initial.change}</strong>
+        <span data-scenario-metric-label>{initial.metricLabel}</span>
+      </div>
+    </div>
+    <div class="risk-comparisons">
+      {
+        investments.map((investment) => {
+          const result = outcome[investment.id];
+          return (
+            <div
+              class:list={[
+                'risk-investment',
+                { 'basket-investment': investment.id === 'basket' },
+              ]}
+            >
+              <div class="risk-investment-label">
+                <>
+                  <span class="risk-title-full">{investment.title}</span>
+                  <span class="risk-title-short">{investment.shortTitle}</span>
+                  <small>{investment.subtitle}</small>
+                </>
+              </div>
+              <div
+                class:list={[
+                  'holding-tiles',
+                  { 'single-holding': investment.id === 'single' },
+                ]}
+                aria-hidden="true"
+              >
+                {investment.holdings.map((i) => (
+                  <span
+                    data-risk-holding={investment.id}
+                    data-company-index={i}
+                    class:list={{ 'holding-falls': initial.returns[i] < 0 }}
+                  >
+                    <b>{String.fromCharCode(65 + i)}</b>
+                    <small>{riskPercent(initial.returns[i])}</small>
+                  </span>
+                ))}
+              </div>
+              <div class="risk-bar" aria-hidden="true">
+                <span
+                  data-risk-bar={investment.id}
+                  style={`width:${(result.value / startingValue) * 100}%`}
+                />
+              </div>
+              <span class="risk-value-label">VALUE AFTER THE EVENT</span>
+              <div class="risk-result">
+                <>
+                  <strong data-risk-value={investment.id}>
+                    {riskMoney.format(result.value)}
+                  </strong>
+                  <span data-risk-change={investment.id}>
+                    {riskPercent(result.change)}
+                  </span>
+                </>
+              </div>
+              <span class="risk-loss" data-risk-loss={investment.id}>
+                {riskMoney.format(startingValue - result.value)} lost
+              </span>
+            </div>
+          );
+        })
+      }
+    </div>
+    <p
+      class="risk-takeaway"
+      data-risk-takeaway
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >
+      {initial.takeaway}
+    </p>
+  </div>
+  <p class="learn-caption risk-caption-full">
+    Made-up, independent scenarios, before fees and taxes. This basket has 10
+    equally weighted companies; the S&amp;P 500 has 500 with unequal weights.
+    The bankruptcy example assumes shareholders lose their entire investment.
+    These are not real returns or a forecast.
+    <a
+      href="https://www.investor.gov/introduction-investing/investing-basics/glossary/bankruptcy-public-company"
+      target="_blank"
+      rel="noopener noreferrer">About bankruptcy ↗</a
+    >
+  </p>
+  <details class="risk-caption-mobile">
+    <summary>Illustrative example · assumptions</summary>
+    <p class="learn-caption">
+      Each scenario starts with $1,000, before fees and taxes. The basket holds
+      10 equally weighted companies; the S&amp;P 500 has 500 with unequal
+      weights. Bankruptcy assumes a total loss in Company A. These are made-up
+      examples, not real returns or a forecast.
+      <a
+        href="https://www.investor.gov/introduction-investing/investing-basics/glossary/bankruptcy-public-company"
+        target="_blank"
+        rel="noopener noreferrer">About bankruptcy ↗</a
+      >
+    </p>
+  </details>
+  <noscript
+    ><p class="learn-caption">
+      Enable JavaScript to try the other scenarios.
+    </p></noscript
+  >
+</div>

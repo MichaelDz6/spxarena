@@ -1,0 +1,215 @@
+---
+import snapshot from '../data/index-companies.json';
+const exampleCompanies = snapshot.companies.slice(0, 3);
+const dollars = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+});
+---
+
+<section
+  class="learn-chapter buy-index-chapter"
+  id="how-to-buy-spx"
+  aria-labelledby="buy-index-title"
+>
+  <div class="buy-index-intro">
+    <div>
+      <span class="learn-eyebrow">02 / FROM INDEX TO INVESTMENT</span>
+      <h2 id="buy-index-title">How to buy <em>SPX?</em></h2>
+    </div>
+    <p>
+      You can’t buy the index itself. But you can own the investments behind it.
+      Here’s where an ETF makes life simpler.
+    </p>
+  </div>
+
+  <div class="buy-index-routes">
+    <article class="index-diy" aria-labelledby="index-diy-title">
+      <span class="learn-eyebrow">THE DO-IT-YOURSELF ROUTE</span>
+      <h3 id="index-diy-title">Build the basket yourself.</h3>
+      <p>
+        You could buy all 500 companies and divide your money according to their
+        index weights. Setting up 500 holdings is a lot of work—and keeping the
+        basket accurate over time is harder still.
+      </p>
+      <figure class="diy-allocation-example">
+        <figcaption>
+          For example, with <strong>$1,000</strong> to invest…
+        </figcaption>
+        <div class="diy-company-amounts">
+          {
+            exampleCompanies.map((company) => (
+              <div>
+                <img
+                  src={`/company-logos/${company.logo}`}
+                  width="22"
+                  height="22"
+                  alt=""
+                />
+                <span>{company.name}</span>
+                <strong>{dollars.format((1000 * company.weight) / 100)}</strong>
+                <small>{company.weight.toFixed(2)}% weight</small>
+              </div>
+            ))
+          }
+        </div>
+        <span class="diy-more-companies"
+          >…and work out the amounts for the other 497 companies.</span
+        >
+        <small class="diy-data-note"
+          >Illustration using the SPY holdings snapshot above, {
+            snapshot.dateLabel
+          }.</small
+        >
+      </figure>
+      <ol class="diy-maintenance">
+        <li>
+          <span aria-hidden="true">01</span><p>
+            <strong>Buy small pieces of shares.</strong> With a smaller budget, closely
+            matching every weight generally requires fractional shares—buying part
+            of a share. Your broker must support the stocks and amounts you need.
+          </p>
+        </li>
+        <li>
+          <span aria-hidden="true">02</span><p>
+            <strong>Keep up with changing weights.</strong> Tracking 500 holdings
+            and matching their weights is difficult. Price changes move your holdings’
+            weights naturally, but companies joining or leaving the index, share-count
+            changes, dividends and new deposits still need your attention.
+          </p>
+        </li>
+        <li>
+          <span aria-hidden="true">03</span><p>
+            <strong>Watch the trading costs.</strong> If your broker charges per trade,
+            hundreds of commissions could eat up all your profit. Some brokers offer
+            $0 trades; spreads and other costs can still apply.
+          </p>
+        </li>
+      </ol>
+      <div class="diy-cost-example">
+        <span>AN EXAMPLE AT $1 PER TRADE</span>
+        <strong>500 purchases = $500 in commissions</strong>
+        <span>Before you’ve even started maintaining the portfolio.</span>
+      </div>
+      <a
+        class="learn-source"
+        href="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/fractional-share-investing-buying-slice-instead-whole-share"
+        target="_blank"
+        rel="noopener noreferrer">Investor.gov · Fractional shares ↗</a
+      >
+    </article>
+
+    <article class="index-etf-route" aria-labelledby="index-etf-route-title">
+      <span class="learn-eyebrow">THE SIMPLER ROUTE</span>
+      <h3 id="index-etf-route-title">Let an ETF do the work.</h3>
+      <div class="etf-route-visual" aria-hidden="true">
+        <div class="etf-route-stocks">
+          {
+            snapshot.companies.slice(0, 5).map((company) => (
+              <span>
+                <img
+                  src={`/company-logos/${company.logo}`}
+                  width="21"
+                  height="21"
+                  alt=""
+                />
+              </span>
+            ))
+          }
+          <span class="etf-route-more">+495</span>
+        </div>
+        <svg
+          class="etf-route-connections"
+          viewBox="0 0 300 38"
+          preserveAspectRatio="none"
+          ><path
+            d="M25 0V14H150V38M75 0V14M125 0V14M175 0V14M225 0V14H150M275 0V14H225"
+          ></path></svg
+        >
+        <div class="etf-route-token">
+          <span class="learn-diamond">◆</span><strong>ETF</strong><span
+            >ONE FUND.<br />THE WHOLE BASKET.</span
+          >
+        </div>
+      </div>
+      <p>
+        With <strong>one S&amp;P 500 ETF in your portfolio</strong>, you have a
+        stake in around <strong>500 companies through the fund</strong>. You buy
+        the ETF through a broker; the fund handles the underlying stocks.
+      </p>
+      <ul class="etf-route-benefits">
+        <li>
+          <span aria-hidden="true">✓</span> One ETF holding, around 500 companies
+        </li>
+        <li>
+          <span aria-hidden="true">✓</span> Portfolio weights managed for you
+        </li>
+        <li>
+          <span aria-hidden="true">✓</span> Index membership changes handled by the
+          fund
+        </li>
+      </ul>
+      <div class="index-fees" aria-labelledby="index-fees-title">
+        <span class="learn-eyebrow">WHAT ABOUT MANAGEMENT FEES?</span>
+        <h4 id="index-fees-title">Doesn’t a fund take a big cut?</h4>
+        <p>
+          An index fund follows the index’s rules instead of paying managers to
+          pick winning stocks. That generally costs less. The annual{' '}
+          <strong>expense ratio</strong> includes management and other operating costs,
+          and is deducted inside the fund.
+        </p>
+        <div class="fee-comparison" aria-label="Annual fund costs compared">
+          <div class="fee-row fee-row-spy">
+            <div>
+              <span>SPY · S&amp;P 500 ETF</span><strong>0.0945%</strong>
+            </div>
+            <div class="fee-bar" aria-hidden="true">
+              <span style="width:23.625%"></span>
+            </div>
+            <small>About <b>$9.45</b> a year per $10,000</small>
+          </div>
+          <div class="fee-row">
+            <div>
+              <span>U.S. stock mutual funds · average</span><strong
+                >0.40%</strong
+              >
+            </div>
+            <div class="fee-bar" aria-hidden="true">
+              <span style="width:100%"></span>
+            </div>
+            <small>About <b>$40</b> a year per $10,000</small>
+          </div>
+        </div>
+        <p class="fee-method">
+          SPY fee checked October 11, 2026. Mutual fund average: 2025, weighted
+          by assets, including active and index funds. Dollar examples assume a
+          constant $10,000 balance. Trading commissions and spreads are
+          separate. Index mutual funds can also be inexpensive.
+        </p>
+        <div class="fee-sources">
+          <a
+            class="learn-source"
+            href="https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy"
+            target="_blank"
+            rel="noopener noreferrer">State Street · SPY ↗</a
+          >
+          <a
+            class="learn-source"
+            href="https://www.iciglobal.org/news-release/mutual-fund-and-etf-fees-remained-near-historic-lows-in-2025"
+            target="_blank"
+            rel="noopener noreferrer">ICI · 2025 averages ↗</a
+          >
+        </div>
+      </div>
+      <a class="etf-route-next" href="#the-etf"
+        >See how an ETF works <span aria-hidden="true">↓</span></a
+      >
+      <a
+        class="learn-source"
+        href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4"
+        target="_blank"
+        rel="noopener noreferrer">Investor.gov · Index funds ↗</a
+      >
+    </article>
+  </div>
+</section>
