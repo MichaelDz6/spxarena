@@ -1,0 +1,14 @@
+---
+import credits from '../data/portrait-credits.json';
+interface Props { person: string }
+const { person } = Astro.props;
+const credit = credits[person as keyof typeof credits];
+const changes = credit?.modifications.replace(/Encoded as WebP(?: for web delivery)?[.;]?\s*/g, '');
+---
+{credit && <span class="portrait-credit">
+  <a href={credit.source} target={credit.source.startsWith('https:') ? '_blank' : undefined} rel="noopener noreferrer">{credit.title}</a>
+  {' · '}{credit.creator}{credit.attribution && credit.attribution !== credit.creator && <span> · {credit.attribution}</span>}{' · '}
+  <a href={credit.licenseUrl} target={credit.licenseUrl.startsWith('https:') ? '_blank' : undefined} rel="noopener noreferrer">{credit.license}</a>
+  {' · '}{changes}{' · '}<a href={credit.path}>Portrait file</a>
+  {credit.license.includes('BY-SA') && <span> The displayed adaptation is available under the same license.</span>}
+</span>}

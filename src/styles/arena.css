@@ -616,29 +616,6 @@
   object-fit: fill;
   display: block;
 }
-#spx-nine-in-ten .portrait[data-person='cathie'] img {
-  left: 0;
-  top: 0;
-}
-#spx-nine-in-ten .portrait[data-person='warren'] img {
-  left: -100%;
-  top: 0;
-}
-#spx-nine-in-ten .portrait[data-person='bill'] img {
-  left: 0;
-  top: -100%;
-}
-#spx-nine-in-ten .portrait[data-person='joel'] img {
-  left: -100%;
-  top: -100%;
-}
-#spx-nine-in-ten .portrait[data-person='peter'] img,
-#spx-nine-in-ten .portrait[data-person='carl'] img {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
 #spx-nine-in-ten .record-section {
   padding: 36px;
 }

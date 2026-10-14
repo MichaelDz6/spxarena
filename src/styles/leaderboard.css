@@ -1,0 +1,343 @@
+#spx-nine-in-ten .ranking-key {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding-bottom: 16px;
+  color: var(--soft);
+  font-size: 11px;
+}
+
+#spx-nine-in-ten .ranking-key > span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#spx-nine-in-ten .ranking-key i {
+  width: 2px;
+  height: 14px;
+  background: #aa8e41;
+}
+
+#spx-nine-in-ten .ranking-page .ranking-row {
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr) 155px;
+  grid-template-areas: 'identity plot value';
+  align-items: center;
+  gap: 12px 24px;
+  padding: 12px 18px;
+}
+
+#spx-nine-in-ten .ranking-page .ranking-spx {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #f0ead7;
+  border-block: 1px solid #caba88;
+  box-shadow: 0 5px 12px rgb(65 57 33 / 8%);
+  min-height: 78px;
+}
+
+#spx-nine-in-ten .ranking-page .bar-identity {
+  grid-area: identity;
+  gap: 10px;
+}
+
+#spx-nine-in-ten .ranking-page .bar-identity > div {
+  min-width: 0;
+}
+
+#spx-nine-in-ten .ranking-page .bar-identity strong {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#spx-nine-in-ten .ranking-page .bar-identity small {
+  display: block;
+  max-width: none;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+#spx-nine-in-ten .ranking-page .ranking-tier {
+  gap: 7px;
+  margin-top: 4px;
+  padding: 3px 9px;
+  border: 1px solid var(--badge-border);
+  border-radius: 4px;
+  background: var(--badge-background);
+  color: var(--badge-ink);
+  font: 600 12px/1.25 var(--sans);
+  letter-spacing: 0.2px;
+}
+
+#spx-nine-in-ten .ranking-tier::before {
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+}
+
+#spx-nine-in-ten .ranking-entry[data-tier='legendary'] {
+  --badge-ink: #78540d;
+  --badge-background: #f4e7bb;
+  --badge-border: #c2a052;
+}
+
+#spx-nine-in-ten .ranking-entry[data-tier='epic'] {
+  --badge-ink: #663483;
+  --badge-background: #eee1f5;
+  --badge-border: #be9ace;
+}
+
+#spx-nine-in-ten .ranking-entry[data-tier='rare'] {
+  --badge-ink: #235a83;
+  --badge-background: #dfedf7;
+  --badge-border: #91b4ce;
+}
+
+#spx-nine-in-ten
+  .ranking-entry:is([data-tier='common'], [data-tier='unrated']) {
+  --badge-ink: #485258;
+  --badge-background: #e8eceb;
+  --badge-border: #a9b5b3;
+}
+
+#spx-nine-in-ten .ranking-page .bar-identity .portrait {
+  display: block;
+  width: 34px;
+  height: 40px;
+  flex-basis: 34px;
+  outline: 1px solid var(--badge-border);
+  outline-offset: 1px;
+}
+
+#spx-nine-in-ten .ranking-page .bar-benchmark-icon {
+  width: 34px;
+  flex-basis: 34px;
+}
+
+#spx-nine-in-ten .ranking-page .bar-rank {
+  width: 20px;
+}
+
+#spx-nine-in-ten .ranking-plot {
+  grid-area: plot;
+  min-width: 0;
+  position: relative;
+}
+
+#spx-nine-in-ten .ranking-spx .ranking-plot {
+  margin-bottom: 12px;
+}
+
+#spx-nine-in-ten .ranking-page .bar-track {
+  height: 12px;
+  margin: 0;
+  background: #e2e8e0;
+}
+
+#spx-nine-in-ten .ranking-page .bar-fill {
+  position: absolute;
+  top: 0;
+}
+
+#spx-nine-in-ten .ranking-page .bar-fill.is-negative {
+  background: #b66d70;
+}
+
+#spx-nine-in-ten .ranking-page .bar-track::before,
+#spx-nine-in-ten .ranking-page .bar-track::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  bottom: -5px;
+  width: 1px;
+  pointer-events: none;
+}
+
+#spx-nine-in-ten .ranking-page .bar-track::before {
+  left: var(--ranking-zero);
+  background: #7b8b81;
+}
+
+#spx-nine-in-ten .ranking-page .bar-track::after {
+  left: var(--ranking-spx);
+  background: #aa8e41;
+  width: 2px;
+}
+
+#spx-nine-in-ten .ranking-axis {
+  position: absolute;
+  inset: 19px 0 auto;
+  color: var(--soft);
+  font:
+    9px 'IBM Plex Mono',
+    monospace;
+}
+
+#spx-nine-in-ten .ranking-axis span {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+#spx-nine-in-ten .ranking-axis span:first-child {
+  transform: none;
+}
+
+#spx-nine-in-ten .ranking-axis span:last-child {
+  transform: translateX(-100%);
+}
+
+#spx-nine-in-ten .ranking-page .bar-value {
+  grid-area: value;
+  display: block;
+  text-align: right;
+}
+
+#spx-nine-in-ten .ranking-page .bar-value strong {
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+#spx-nine-in-ten .ranking-page .bar-value small {
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+#spx-nine-in-ten .ranking-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#spx-nine-in-ten .ranking-loss-divider {
+  margin: 0;
+  border: 0;
+  border-top: 2px solid #b85d68;
+}
+
+#spx-nine-in-ten .ranking-entry {
+  border-bottom: 1px solid var(--rule);
+  transition: background-color 150ms ease;
+}
+
+#spx-nine-in-ten .ranking-page a {
+  scroll-margin-top: 140px;
+}
+
+#spx-nine-in-ten .ranking-list > li:nth-child(even) {
+  background: #f3f5ef;
+}
+
+#spx-nine-in-ten .ranking-page a.ranking-entry:hover,
+#spx-nine-in-ten .ranking-page a.ranking-entry:focus-visible {
+  background: #eaf0e8;
+  text-decoration: none;
+}
+
+#spx-nine-in-ten .ranking-entry:focus-visible {
+  outline-offset: -2px;
+}
+
+#spx-nine-in-ten .ranking-profile-arrow {
+  color: #7e8f83;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+@media (max-width: 1000px) {
+  #spx-nine-in-ten .ranking-page .ranking-row {
+    grid-template-columns: 235px minmax(0, 1fr) 142px;
+    column-gap: 16px;
+    padding-inline: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  #spx-nine-in-ten .ranking-page .ranking-row {
+    grid-template-columns: minmax(0, 1fr) 135px;
+    grid-template-areas:
+      'identity value'
+      'plot plot';
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-identity strong {
+    font-size: 13px;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-identity small {
+    font-size: 9px;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-value strong {
+    font-size: 23px;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-track {
+    height: 10px;
+  }
+
+  #spx-nine-in-ten .ranking-page .ranking-spx {
+    row-gap: 12px;
+  }
+
+  #spx-nine-in-ten .ranking-spx .ranking-plot {
+    margin-bottom: 17px;
+  }
+
+  #spx-nine-in-ten .ranking-axis {
+    top: 15px;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-rank {
+    width: 17px;
+    font-size: 11px;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-identity .portrait {
+    width: 27px;
+    height: 33px;
+    flex-basis: 27px;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-benchmark-icon {
+    display: grid;
+    width: 27px;
+    flex-basis: 27px;
+  }
+
+  #spx-nine-in-ten .ranking-spx .bar-rank {
+    display: block;
+  }
+}
+
+@media (max-width: 420px) {
+  #spx-nine-in-ten .ranking-page .ranking-row {
+    grid-template-columns: minmax(0, 1fr) 119px;
+    padding-inline: 10px;
+    column-gap: 8px;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-identity {
+    gap: 7px;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-identity .portrait,
+  #spx-nine-in-ten .ranking-page .bar-benchmark-icon {
+    display: none;
+  }
+
+  #spx-nine-in-ten .ranking-page .bar-value small {
+    font-size: 8px;
+  }
+
+  #spx-nine-in-ten .ranking-profile-arrow {
+    display: none;
+  }
+}

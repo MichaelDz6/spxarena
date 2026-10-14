@@ -1,0 +1,2438 @@
+{
+  "verifiedOn": "2026-10-13",
+  "authority": "Wikimedia Commons imageinfo.extmetadata; see each source URL",
+  "assets": {
+    "burry": {
+      "path": "/portraits/burry-illustrated.webp",
+      "title": "Michael Burry — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#burry",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 296902,
+      "sha256": "317475dafe9d22a717e3a4b8ec2cce71c4816c60e7420e36fcb18952d351a734"
+    },
+    "dalio": {
+      "path": "/portraits/dalio-licensed.webp",
+      "title": "Web Summit 2018 - Forum - Day 2, November 7 HM1 7481 (44858045925).jpg",
+      "creator": "Harry Murphy / Web Summit via Sportsfile",
+      "source": "https://commons.wikimedia.org/wiki/File:Web_Summit_2018_-_Forum_-_Day_2,_November_7_HM1_7481_(44858045925).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg/960px-Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "4f4c5dfbd8997a05285f068df5576b15668ac064e19aff2dbfaf415fb77ee57a",
+      "attribution": "",
+      "referenceInputs": [],
+      "width": 960,
+      "height": 975,
+      "bytes": 219920
+    },
+    "cramer": {
+      "path": "/portraits/cramer-licensed.webp",
+      "title": "Andrew Aziz Cramer (cropped).jpg",
+      "creator": "Bear Bull Traders",
+      "source": "https://commons.wikimedia.org/wiki/File:Andrew_Aziz_Cramer_(cropped).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Andrew_Aziz_Cramer_%28cropped%29.jpg/960px-Andrew_Aziz_Cramer_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "8499981e11cd3a74ee614d3c5edabe59ac4ac6a6f2184783c88443b5a0ab4367",
+      "attribution": "",
+      "referenceInputs": [],
+      "width": 960,
+      "height": 1154,
+      "bytes": 132664
+    },
+    "lynch": {
+      "path": "/portraits/lynch-illustrated.webp",
+      "title": "Peter Lynch — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#lynch",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 271064,
+      "sha256": "d33b308173e367465a9e4a7a5cab98cf9d616656183187040386e041a263f64d"
+    },
+    "munger": {
+      "path": "/portraits/munger-enhanced.webp",
+      "title": "Charlie Munger (cropped).jpg — AI-enhanced adaptation",
+      "creator": "Nick",
+      "source": "https://commons.wikimedia.org/wiki/File:Charlie_Munger_(cropped).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Charlie_Munger_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "AI-enhanced resolution and clarity; profile crop as recorded in the edit prompt. Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "enhanced",
+      "sha256": "fc7557a49a4711ee3a520096c9284e38df9d0c19f308bf1c97acff71206cc296",
+      "attribution": "",
+      "referenceInputs": [
+        "https://commons.wikimedia.org/wiki/File:Charlie_Munger_(cropped).jpg"
+      ],
+      "promptRecord": "research/portrait-generation-prompts.json#munger",
+      "originalSha256": "ec22fc3b8274adaacd7beb540c6e005b8b4ed93c42114ad5376b2cc8ce860b8b",
+      "inputPath": "research/portrait-inputs/munger-licensed.jpg",
+      "width": 1063,
+      "height": 1479,
+      "bytes": 249350
+    },
+    "soros": {
+      "path": "/portraits/soros-licensed.webp",
+      "title": "George Soros, Founder and Chairman of the Open Society Foundations, visits the EC (3x4 cropped).jpg",
+      "creator": "Aris Oikonomou / European Commission",
+      "source": "https://commons.wikimedia.org/wiki/File:George_Soros,_Founder_and_Chairman_of_the_Open_Society_Foundations,_visits_the_EC_(3x4_cropped).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/George_Soros%2C_Founder_and_Chairman_of_the_Open_Society_Foundations%2C_visits_the_EC_%283x4_cropped%29.jpg/960px-George_Soros%2C_Founder_and_Chairman_of_the_Open_Society_Foundations%2C_visits_the_EC_%283x4_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "modifications": "Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "bd2b551e05aaf2df8d524815b117ae3d04056330fe9283c821d07be0fbfee7c9",
+      "attribution": "© European Union, 2026",
+      "referenceInputs": [],
+      "width": 960,
+      "height": 1280,
+      "bytes": 232140
+    },
+    "oleary": {
+      "path": "/portraits/oleary-licensed.webp",
+      "title": "KevinOLeary2023 (3x4 cropped).jpg",
+      "creator": "Philip Romano",
+      "source": "https://commons.wikimedia.org/wiki/File:KevinOLeary2023_(3x4_cropped).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/KevinOLeary2023_%283x4_cropped%29.jpg/960px-KevinOLeary2023_%283x4_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "c1ebb9e858ccf321c52d934c30c0e131057444715081573ca59f65793568cc79",
+      "attribution": "",
+      "referenceInputs": [],
+      "width": 960,
+      "height": 1279,
+      "bytes": 234274
+    },
+    "griffin": {
+      "path": "/portraits/griffin-enhanced.webp",
+      "title": "Kenneth C. Griffin.jpg — AI-enhanced adaptation",
+      "creator": "Paul Elledge",
+      "source": "https://commons.wikimedia.org/wiki/File:Kenneth_C._Griffin.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Kenneth_C._Griffin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "AI-enhanced resolution and clarity; profile crop as recorded in the edit prompt. Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "enhanced",
+      "sha256": "ceea16ce4134da879986caa67c1b1ce24ef5810e995770dd649c95bb35b2a6d8",
+      "attribution": "",
+      "referenceInputs": [
+        "https://commons.wikimedia.org/wiki/File:Kenneth_C._Griffin.jpg"
+      ],
+      "promptRecord": "research/portrait-generation-prompts.json#griffin",
+      "originalSha256": "a8bf645e1b90b358d34549bc141bc3fbb2b73c0f49c8f207d74af9ad52a82e49",
+      "inputPath": "research/portrait-inputs/griffin-licensed.jpg",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 151562
+    },
+    "druckenmiller": {
+      "path": "/portraits/druckenmiller-illustrated.webp",
+      "title": "Stanley Druckenmiller — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#druckenmiller",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 294888,
+      "sha256": "d88b40f72db63758e1ccb677b8ee9392e7f54fc0cde395ca5e53efa946480174"
+    },
+    "simons": {
+      "path": "/portraits/simons-enhanced.webp",
+      "title": "Jim Simons at MSRI.jpg — AI-enhanced adaptation",
+      "creator": "Gleuschk",
+      "source": "https://commons.wikimedia.org/wiki/File:Jim_Simons_at_MSRI.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Jim_Simons_at_MSRI.jpg/960px-Jim_Simons_at_MSRI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "modifications": "AI-enhanced resolution and clarity; profile crop as recorded in the edit prompt. Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "enhanced",
+      "sha256": "eec7f867cd5bde143ab82b8113285e74c060f6e5ddddeab2785d4fa81adb6bcb",
+      "attribution": "",
+      "referenceInputs": [
+        "https://commons.wikimedia.org/wiki/File:Jim_Simons_at_MSRI.jpg"
+      ],
+      "promptRecord": "research/portrait-generation-prompts.json#simons",
+      "originalSha256": "bc4bb2eb977a10ddbceea6e5787d64c9799ddfcf9d7798f28b9e17038bab5dbf",
+      "inputPath": "research/portrait-inputs/simons-licensed.jpg",
+      "width": 1083,
+      "height": 1453,
+      "bytes": 395010
+    },
+    "marks": {
+      "path": "/portraits/marks-enhanced.webp",
+      "title": "Howard Marks 2.17.12 (cropped).jpg — AI-enhanced adaptation",
+      "creator": "kellywritershouse",
+      "source": "https://commons.wikimedia.org/wiki/File:Howard_Marks_2.17.12_(cropped).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Howard_Marks_2.17.12_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "AI-enhanced resolution and clarity; profile crop as recorded in the edit prompt. Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "enhanced",
+      "sha256": "e53e7345a08fd03e06ec892598a5ac54cb2255c702c9b3fc59ab228f74f00606",
+      "attribution": "",
+      "referenceInputs": [
+        "https://commons.wikimedia.org/wiki/File:Howard_Marks_2.17.12_(cropped).jpg"
+      ],
+      "promptRecord": "research/portrait-generation-prompts.json#marks",
+      "originalSha256": "617918a4b9d190e33adb4213f6e9babe66d5292cc5f3a5f00b8d3328f4da0652",
+      "inputPath": "research/portrait-inputs/marks-licensed.jpg",
+      "width": 1049,
+      "height": 1500,
+      "bytes": 234272
+    },
+    "tudor": {
+      "path": "/portraits/tudor-licensed.webp",
+      "title": "Paul Tudor Jones 2006.jpg",
+      "creator": "Tami Heilemann / U.S. Department of the Interior",
+      "source": "https://commons.wikimedia.org/wiki/File:Paul_Tudor_Jones_2006.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Paul_Tudor_Jones_2006.jpg/960px-Paul_Tudor_Jones_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_States#Works_by_the_US_government",
+      "modifications": "Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "020d07f3a0fe1893ab8d965021562d9da2539ba41a7ea1d5820e0399f782c52d",
+      "attribution": "",
+      "referenceInputs": [],
+      "width": 960,
+      "height": 1147,
+      "bytes": 185032
+    },
+    "einhorn": {
+      "path": "/portraits/einhorn-illustrated.webp",
+      "title": "David Einhorn — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#einhorn",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 276692,
+      "sha256": "1b4705d30fabc5afa487576a8bafc37d5f80b976f18df84f332efdda4db1b65e"
+    },
+    "baron": {
+      "path": "/portraits/baron-illustrated.webp",
+      "title": "Ron Baron — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#baron",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 243488,
+      "sha256": "bbde6ca663413c894675b7bf2a6dadf1fa70a4c7cb3eed1d0174a6a70e4e9c6c"
+    },
+    "loeb": {
+      "path": "/portraits/loeb-illustrated.webp",
+      "title": "Dan Loeb — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#loeb",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 244870,
+      "sha256": "21fd2a061b1644c6c3884b9834a2637f50d0a38318771741ea5c55efd719620e"
+    },
+    "pabrai": {
+      "path": "/portraits/pabrai-illustrated.webp",
+      "title": "Mohnish Pabrai — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#pabrai",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 307780,
+      "sha256": "7b03a477038589bcc10beef9926d3b3930d21f03f50b58907f1b1152fbae1dfe"
+    },
+    "smith": {
+      "path": "/portraits/smith-illustrated.webp",
+      "title": "Terry Smith — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#smith",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 343888,
+      "sha256": "b58d852d92b87e802784687623dee9a0868654f02d50b67c43ec503b3f396ecf"
+    },
+    "gabelli": {
+      "path": "/portraits/gabelli-illustrated.webp",
+      "title": "Mario Gabelli — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#gabelli",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 368862,
+      "sha256": "fb652a0306810a4d62eab8f771b3cc4355807242f71d4233b1ad20a0e74d1286"
+    },
+    "danoff": {
+      "path": "/portraits/danoff-illustrated.webp",
+      "title": "Will Danoff — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#danoff",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 275438,
+      "sha256": "cab976441362b6aa3769c231fa23b53f6766bda7cc0bc1d10dcfd1187769d79b"
+    },
+    "asness": {
+      "path": "/portraits/asness-enhanced.webp",
+      "title": "Cliff-asness-by-bill-cramer.jpg — AI-enhanced adaptation",
+      "creator": "Bill Cramer / Wonderful Machine",
+      "source": "https://commons.wikimedia.org/wiki/File:Cliff-asness-by-bill-cramer.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Cliff-asness-by-bill-cramer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "AI-enhanced resolution and clarity; profile crop as recorded in the edit prompt. Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "enhanced",
+      "sha256": "88832b8d2a5daa6c74bc10e547c9f9ef5f97678028c7c995505d37b5f7af6bef",
+      "attribution": "",
+      "referenceInputs": [
+        "https://commons.wikimedia.org/wiki/File:Cliff-asness-by-bill-cramer.jpg"
+      ],
+      "promptRecord": "research/portrait-generation-prompts.json#asness",
+      "originalSha256": "315bf871a90e894f1ac7f93faf6ba6a8dced3106fc9fc695352ae7282a376833",
+      "inputPath": "research/portrait-inputs/asness-licensed.jpg",
+      "width": 1060,
+      "height": 1484,
+      "bytes": 226204
+    },
+    "berkowitz": {
+      "path": "/portraits/berkowitz-illustrated.webp",
+      "title": "Bruce Berkowitz — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#berkowitz",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 305130,
+      "sha256": "a084e9d93a78e5c7ed91285e9335db73d67c4742ab8412b3f65b7cc717b402c3"
+    },
+    "watsa": {
+      "path": "/portraits/watsa-enhanced.webp",
+      "title": "Prem Watsa.jpg — AI-enhanced adaptation",
+      "creator": "செல்வா at Tamil Wikipedia",
+      "source": "https://commons.wikimedia.org/wiki/File:Prem_Watsa.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Prem_Watsa.jpg/960px-Prem_Watsa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "modifications": "AI-enhanced resolution and clarity; profile crop as recorded in the edit prompt. Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "enhanced",
+      "sha256": "a2060b13a8e099f9a91a7f9f85927d14dc81464e530262fdc0de7bc66fcb47a5",
+      "attribution": "",
+      "referenceInputs": [
+        "https://commons.wikimedia.org/wiki/File:Prem_Watsa.jpg"
+      ],
+      "promptRecord": "research/portrait-generation-prompts.json#watsa",
+      "originalSha256": "86d038f8a01aec45c6a0a52418c8f73e1d20881a903dfbbb0eb35299f28133a9",
+      "inputPath": "research/portrait-inputs/watsa-licensed.jpg",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 318634
+    },
+    "gayner": {
+      "path": "/portraits/gayner-illustrated.webp",
+      "title": "Tom Gayner — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#gayner",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 357450,
+      "sha256": "8a37c32643497d85d1d86774bdf19f37f91c00bb557d0f14b64228b4a5098bcd"
+    },
+    "hussman": {
+      "path": "/portraits/hussman-illustrated.webp",
+      "title": "John Hussman — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#hussman",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 271730,
+      "sha256": "8af5d6ef46e56d0be8a62a2ebe69fa9b66a7f8734921c3332c9fefb73d51cb9b"
+    },
+    "nygren": {
+      "path": "/portraits/nygren-illustrated.webp",
+      "title": "Bill Nygren — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#nygren",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 262768,
+      "sha256": "12c473ebfceacb2762550c6f3b2b1b4881ddefdbfe9a27983d9787c4f4355308"
+    },
+    "davis": {
+      "path": "/portraits/davis-illustrated.webp",
+      "title": "Chris Davis — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#davis",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 331786,
+      "sha256": "34a227bde21c71f3a398bbac2483ea266879b05b0536202ced59f675aed12978"
+    },
+    "rogers": {
+      "path": "/portraits/rogers-enhanced.webp",
+      "title": "20120721 John W. Rogers, Jr.JPG — AI-enhanced adaptation",
+      "creator": "TonyTheTiger",
+      "source": "https://commons.wikimedia.org/wiki/File:20120721_John_W._Rogers,_Jr.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/20120721_John_W._Rogers%2C_Jr.JPG/960px-20120721_John_W._Rogers%2C_Jr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "modifications": "AI-enhanced resolution and clarity; profile crop as recorded in the edit prompt. Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "enhanced",
+      "sha256": "f1283ba3fd1cd829ee5dfefd2816e2e94ed0e7ca9007b7bd5ded816d31e19c61",
+      "attribution": "",
+      "referenceInputs": [
+        "https://commons.wikimedia.org/wiki/File:20120721_John_W._Rogers,_Jr.JPG"
+      ],
+      "promptRecord": "research/portrait-generation-prompts.json#rogers",
+      "originalSha256": "d5871c388cedf0b5985a6990057e31a94f3681afffe6f8e0df95b6d9c07fc414",
+      "inputPath": "research/portrait-inputs/rogers-licensed.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 234194
+    },
+    "herro": {
+      "path": "/portraits/herro-illustrated.webp",
+      "title": "David Herro — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#herro",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 293826,
+      "sha256": "c472d51d814f571702688969a553b031bbd77cdabfd623534340b1a4e0898879"
+    },
+    "bill": {
+      "path": "/portraits/bill-enhanced.webp",
+      "title": "Valeant Pharmaceuticals' Business Model (headshot).jpg — AI-enhanced adaptation",
+      "creator": "Senate Democrats",
+      "source": "https://commons.wikimedia.org/wiki/File:Valeant_Pharmaceuticals%27_Business_Model_(headshot).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Valeant_Pharmaceuticals%27_Business_Model_%28headshot%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "AI-enhanced resolution and clarity; profile crop as recorded in the edit prompt. Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "enhanced",
+      "sha256": "727df878adf68841ff47b4d097e70fe6bb7fa0ace2caa1d368402da68d1e31b9",
+      "attribution": "",
+      "referenceInputs": [
+        "https://commons.wikimedia.org/wiki/File:Valeant_Pharmaceuticals%27_Business_Model_(headshot).jpg"
+      ],
+      "promptRecord": "research/portrait-generation-prompts.json#bill",
+      "originalSha256": "614bbdd96eda16406166e75bf1ed1a7f7d4cdfab957bafe1e43bed79e7c48166",
+      "inputPath": "research/portrait-inputs/bill-licensed.jpg",
+      "width": 1082,
+      "height": 1454,
+      "bytes": 237758
+    },
+    "joel": {
+      "path": "/portraits/joel-illustrated.webp",
+      "title": "Joel Greenblatt — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#joel",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 286660,
+      "sha256": "15749741ad72c8b3625725829734e0f4c801db852dbddd8ca58399062a7fa94b"
+    },
+    "cathie": {
+      "path": "/portraits/cathie-enhanced.webp",
+      "title": "Cathie Wood ARK Invest Photo.jpg — AI-enhanced adaptation",
+      "creator": "Caroline Wood",
+      "source": "https://commons.wikimedia.org/wiki/File:Cathie_Wood_ARK_Invest_Photo.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Cathie_Wood_ARK_Invest_Photo.jpg/960px-Cathie_Wood_ARK_Invest_Photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "AI-enhanced resolution and clarity; profile crop as recorded in the edit prompt. Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "enhanced",
+      "sha256": "fda24f0b3c3c1a28060a6c7a1a1a75e6c84b365977b755d8b174c0a86aef7d60",
+      "attribution": "",
+      "referenceInputs": [
+        "https://commons.wikimedia.org/wiki/File:Cathie_Wood_ARK_Invest_Photo.jpg"
+      ],
+      "promptRecord": "research/portrait-generation-prompts.json#cathie",
+      "originalSha256": "1d86fee9cadcdcf638b8b630bc107ca20ec0a05208ebad6848884a1415d3a4c6",
+      "inputPath": "research/portrait-inputs/cathie-licensed.webp",
+      "width": 1127,
+      "height": 1396,
+      "bytes": 363984
+    },
+    "peter": {
+      "path": "/portraits/peter-licensed.webp",
+      "title": "Peter Schiff by Gage Skidmore 3.jpg",
+      "creator": "Gage Skidmore",
+      "source": "https://commons.wikimedia.org/wiki/File:Peter_Schiff_by_Gage_Skidmore_3.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Peter_Schiff_by_Gage_Skidmore_3.jpg/960px-Peter_Schiff_by_Gage_Skidmore_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "modifications": "Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "2041451345b3a2c76f8dd1d68f58b36c0a98195ca5cd30ec11f7dd2a696e4d04",
+      "attribution": "Gage Skidmore",
+      "referenceInputs": [],
+      "width": 960,
+      "height": 1030,
+      "bytes": 121874
+    },
+    "carl": {
+      "path": "/portraits/carl-illustrated.webp",
+      "title": "Carl Icahn — original AI editorial illustration",
+      "creator": "Created with AI for SPX Arena",
+      "source": "/credits/#ai-portraits",
+      "license": "AI-generated usage notice",
+      "licenseUrl": "/credits/#ai-portraits",
+      "modifications": "Generated from a text prompt without third-party image inputs; interpretive likeness. Encoded as WebP for web delivery.",
+      "verifiedOn": "2026-10-13",
+      "type": "generated",
+      "attribution": "",
+      "referenceInputs": [],
+      "promptRecord": "research/portrait-generation-prompts.json#carl",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 282402,
+      "sha256": "81d21d653941b6f48615a747f7b2b76246abe400e0250dd5316448d61375b278"
+    },
+    "warren": {
+      "path": "/portraits/warren-licensed.webp",
+      "title": "Warren Buffett at the 2015 SelectUSA Investment Summit (cropped).jpg",
+      "creator": "USA International Trade Administration",
+      "source": "https://commons.wikimedia.org/wiki/File:Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_(cropped).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_States#Works_by_the_US_government",
+      "modifications": "Encoded as WebP; displayed in grayscale with a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "b642579a4efee7cb74c2ed1a17279b7d37d6d23dac221d8ad9236e48ce2e3d6f",
+      "attribution": "",
+      "referenceInputs": [],
+      "width": 818,
+      "height": 1090,
+      "bytes": 77182
+    }
+  },
+  "sourceMetadata": {
+    "cramer": {
+      "DateTime": {
+        "value": "2025-07-21 16:49:32",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Andrew Aziz Cramer (cropped)",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Extracted images|New York Stock Exchange trading floor|Jim Cramer|Andrew Aziz",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Andrew Aziz and Jim Cramer in the floor of NYSE, 2021",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2021-11-05 09:19:28",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/196666210@N08/52389299250/\">https://www.flickr.com/photos/196666210@N08/52389299250/</a>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "Bear Bull Traders",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution 2.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-2.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "dalio": {
+      "DateTime": {
+        "value": "2022-05-10 04:34:52",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Web Summit 2018 - Forum - Day 2, November 7 HM1 7481 (44858045925)",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Ray Dalio|Flickr images reviewed by FlickreviewR 2|Web Summit flickr stream|Web Summit 2018 - Day 2 - November 7|Flickr images missing SDC published in",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "7 November 2018; Ray Dalio, Founder, Co-Chief Investment Officer &amp; Co-Chairman, Bridgewater Associates on the Forum Stage during day two of Web Summit 2018 at the Altice Arena in Lisbon, Portugal. Photo by Harry Murphy/Web Summit via Sportsfile",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2018-11-07 13:08",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/websummit/44858045925/\">HM1_7481</a>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/74711243@N06\">Web Summit</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution 2.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-2.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "munger": {
+      "DateTime": {
+        "value": "2024-12-01 05:00:52",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Charlie Munger (cropped)",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Charlie Munger|Images with extracted images|Extracted images",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Charlie Munger",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2010-05-05 20:57",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/11540081@N05/4588662554/\">Charlie Munger</a>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/11540081@N05\">Nick</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution 2.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-2.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "griffin": {
+      "DateTime": {
+        "value": "2026-07-27 16:26:37",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Kenneth C. Griffin",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Items with VRTS permission confirmed|Files with PermissionTicket template but without P6305 SDC statement|All media needing categories as of 2026|Media needing categories as of 27 July 2026",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "This is a picture of Kenneth C. Griffin",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2026-02-26",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.citadel.com/who-we-are/leadership/\">https://www.citadel.com/who-we-are/leadership/</a>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "Paul Elledge",
+        "source": "commons-desc-page"
+      },
+      "Permission": {
+        "value": "<p><span class=\"layouttemplateargs\" style=\"display:none;speak:none;\" title=\"template=PermissionTicket 1%3Dhttps%3A%2F%2Fticket.wikimedia.org%2Fotrs%2Findex.pl%3FAction%3DAgentTicketZoom%26TicketNumber%3D2026072710010298 2%3D2026072710010298\"> </span>\n</p>\n<style data-mw-deduplicate=\"TemplateStyles:r1254222110\">.mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);background-color:var(--background-color-neutral-subtle,#fbfcff);color:var(--color-base,#202122);box-sizing:border-box;border-inline-start-width:8px}.mw-parser-output .messagebox.mbox-small{font-size:88%;line-height:1.25em}.mw-parser-output .mbox-warning,.mw-parser-output .mbox-speedy{border:2px solid var(--border-color-error,#b22222);background:var(--background-color-error-subtle,#ffdbdb);border-inline-start-width:8px}.mw-parser-output .mbox-serious,.mw-parser-output .mbox-delete,.mw-parser-output .mbox-stop{border:2px solid var(--border-color-error,#b22222);border-inline-start-width:8px}.mw-parser-output .mbox-issue,.mw-parser-output .mbox-content{border:2px solid #f28500;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-query,.mw-parser-output .mbox-style{border:2px solid #f4c430;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-shit{border:2px solid #960;border-inline-start-width:8px}.mw-parser-output .mbox-license{border:2px solid #88a;border-inline-start-width:initial}.mw-parser-output .mbox-legal{border:2px solid var(--border-color-notice,#666);background:var(--background-color-base,#fff);border-inline-start-width:8px}.mw-parser-output .mbox-honor{border:2px solid #ca3;background:var(--background-color-warning-subtle,#fcf4db);border-inline-start-width:8px}.mw-parser-output .mbox-growth{border:2px solid #8d4;background:var(--background-color-success-subtle,#d5fdf4);border-inline-start-width:8px}.mw-parser-output .mbox-move{border:2px solid #93c;border-inline-start-width:8px}.mw-parser-output .mbox-protection,.mw-parser-output .mbox-message{border:2px solid var(--border-color-base,#aaa);border-inline-start-width:8px}.mw-parser-output .messagebox .mbox-text{border:none;padding:0.25em 0.9em;width:100%}.mw-parser-output .messagebox .mbox-image{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0.9em;padding-inline-end:0;text-align:center}.mw-parser-output .messagebox .mbox-imageright{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0;padding-inline-end:0.9em;text-align:center}.mw-parser-output .messagebox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .messagebox .mbox-invalid-type{text-align:center}@media(min-width:720px){.mw-parser-output .messagebox{margin:4px 10%}.mw-parser-output .messagebox.mbox-small{clear:right;float:right;margin:4px 0 4px 1em;width:238px}}body.skin--responsive .mw-parser-output table.messagebox img{max-width:none!important}</style><table class=\"plainlinks messagebox mbox-notice layouttemplate\" role=\"presentation\" style=\"margin:0.3em 0;width:100%;\"><tbody><tr><td class=\"mbox-image\"><span typeof=\"mw:File\"><span title=\"VRT Wikimedia\"><img alt=\"VRT Wikimedia\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/120px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"75\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/250px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"935\" data-file-height=\"600\"></span></span></td><td class=\"mbox-text\">This work is <a href=\"https://freedomdefined.org/Definition\" class=\"extiw\" title=\"freedomdefined:Definition\">free</a> and may be used by anyone for any purpose. If you wish to <b><a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">use this content</a></b>, you do not need to request permission as long as you follow any licensing requirements mentioned on this page.\n<p>The Wikimedia Foundation has received an e-mail confirming that the copyright holder has approved publication under the terms mentioned on this page. This correspondence has been <b><span style=\"background:transparent;color:#0f7f1f;font-weight:400;\" title=\"transparent\">reviewed</span></b> by a <a href=\"//commons.wikimedia.org/wiki/Template:PermissionTicket/Users\" title=\"Template:PermissionTicket/Users\">Volunteer Response Team (VRT) member</a> and stored in our <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team\" title=\"Commons:Volunteer Response Team\">permission archive</a>. The correspondence is available to trusted volunteers as <b><a href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2026072710010298\" class=\"extiw\" title=\"ticket:2026072710010298\">ticket #2026072710010298</a></b>.\n</p><p><small>If you have questions about the archived correspondence, please use the <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team/Noticeboard\" title=\"Commons:Volunteer Response Team/Noticeboard\">VRT noticeboard</a>.</small>\n<small>Ticket link: <a class=\"external free\" href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2026072710010298\">https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2026072710010298</a></small>\n<br><small>Find other files from the same ticket:</small> <span typeof=\"mw:File\"><a href=\"https://wcqs-beta.wmflabs.org/#%23defaultView%3AImageGrid%09%0ASELECT%20%3Fimage%20%20%20%7B%0A%20%20%3Ffile%20wdt%3AP6305%20%222026072710010298%22%20.%0A%20%20%3Ffile%20schema%3Aurl%20%3Fimage.%0A%7D%20%0A\" title=\"SDC query (SPARQL)\" rel=\"nofollow\"><img alt=\"SDC query (SPARQL)\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/20px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"15\" height=\"20\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/40px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"688\"></a></span>\n</p>\n<span id=\"field-otrs\" title=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2026072710010298\"></span></td></tr></tbody></table>",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 4.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-sa-4.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "soros": {
+      "DateTime": {
+        "value": "2025-10-19 17:58:07",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "George Soros, Founder and Chairman of the Open Society Foundations, visits the EC (3x4 cropped)",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Open Society Foundations|George Soros|European Commission|Extracted images|Admin reviewed EC-Audiovisual Center images|Media from the European Commission",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/George_Soros\" class=\"extiw\" title=\"w:George Soros\">George Soros</a>, the founder and chairman of the <a href=\"https://en.wikipedia.org/wiki/Open_Society_Foundations\" class=\"extiw\" title=\"w:Open Society Foundations\">Open Society Foundations</a>, on 31 May 2017",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2017-05-31",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://audiovisual.ec.europa.eu/en/photo/P-034504~2F00-02\">https://audiovisual.ec.europa.eu/en/photo/P-034504~2F00-02</a>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "Aris Oikonomou / <a href=\"https://en.wikipedia.org/wiki/European_Commission\" class=\"extiw\" title=\"w:European Commission\">European Commission</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution 4.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Attribution": {
+        "value": "© European Union, 2026",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/4.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-4.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "oleary": {
+      "DateTime": {
+        "value": "2026-06-23 11:56:37",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "KevinOLeary2023 (3x4 cropped)",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Kevin O'Leary|Self-published work|Extracted images",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Kevin O'Leary at PaleyFest 2023",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2023-10-16 17:16:20",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:PhilipRomanoPhoto\" class=\"mw-redirect\" title=\"User:PhilipRomanoPhoto\">Philip Romano</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 4.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-sa-4.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "simons": {
+      "DateTime": {
+        "value": "2008-01-20 14:25:58",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Jim Simons at MSRI",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Taken with Canon PowerShot S3 IS|James Harris Simons|Self-published work|Images with extracted images",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "James Harris Simons giving a lecture at MSRI in May 2007",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2007-05-04",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Gleuschk&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Gleuschk (page does not exist)\">Gleuschk</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 3.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-sa-3.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "marks": {
+      "DateTime": {
+        "value": "2024-08-20 05:37:07",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Howard Marks 2.17.12 (cropped)",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Extracted images|All media needing categories as of 2024|Media needing categories as of 20 August 2024",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "February 17, 2012\nKWH Calendar: writing.upenn.edu/wh/calendar/0212.php#17",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2012-02-17 14:25:58",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/kellywritershouse/6778017996/\">https://www.flickr.com/photos/kellywritershouse/6778017996/</a>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "kellywritershouse",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution 2.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-2.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "tudor": {
+      "DateTime": {
+        "value": "2022-01-29 16:04:17",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "<div class=\"fn\">\nAssignment: 48-DPA-SOI_K_Trandahl] Secretary Dirk Kempthorne [meeting at Main Interior with delegation from the] National Fish and Wildlife Foundation, including [Ececutive Director], Jeff Trandahl, and [Chairman of the Board], Paul Tudor Jones [48-DPA-SOI_K_Trandahl_DOI_4927.JPG</div>",
+        "source": "commons-desc-page"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "PD US Government|Media contributed by the National Archives and Records Administration|Media contributed by the Digital Public Library of America|Artworks without Wikidata item|Hedge fund managers from the United States|Media contributed by National Archives at College Park - Still Pictures|Extracted images|CC-PD-Mark|Photographs by Tami Heilemann|US National Archives series: Photographs Relating to the Secretary's Trips, Speeches, and Other Functions, and Agency Officials, Events, and Managed Sites, 2005 - 2013",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Artist": {
+        "value": "Department of the Interior. National Business Center. Administrative Operations Directorate. Division of Employee and Public Services. Creative Communications Branch. Photographic Services. 2000",
+        "source": "commons-desc-page"
+      },
+      "ImageDescription": {
+        "value": "<div class=\"description\">\nComplete assignment is listed as: Subject: Secretary Dirk Kempthorne [meeting at Main Interior with delegation from the] National Fish and Wildlife Foundation, including [Ececutive Director], Jeff Trandahl, and [Chairman of the Board], Paul Tudor Jones Photographer: Tami Heilemann--Interior Staff</div>",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "11 September 2006",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "This file was contributed to Wikimedia Commons by <a href=\"https://www.wikidata.org/wiki/Q59661040\" class=\"extiw\" title=\"d:Q59661040\"><span title=\"reference unit of the National Archives and Records Administration\">National Archives at College Park - Still Pictures</span></a> as part of a cooperation project. The donation was facilitated by the <a href=\"https://en.wikipedia.org/wiki/Digital_Public_Library_of_America\" class=\"extiw\" title=\"w:Digital Public Library of America\">Digital Public Library of America</a>, via its partner <a href=\"https://en.wikipedia.org/wiki/en:Digital_Public_Library_of_America\" class=\"extiw\" title=\"w:en:Digital Public Library of America\"><span title=\"American aggregation platform providing open access to digital collections from libraries, archives, and museums.\">Digital Public Library of America</span></a>.<span style=\"text-align:left\">\n<ul><li><a rel=\"nofollow\" class=\"external text\" data-mw-original-href=\"http://catalog.archives.gov/id/7957223\" href=\"https://catalog.archives.gov/id/7957223\">Record in source catalog</a></li>\n<li>DPLA identifier: <a rel=\"nofollow\" class=\"external text\" href=\"https://dp.la/item/5e0336164138320f3867ce1b05e7b8be\">5e0336164138320f3867ce1b05e7b8be</a></li>\n<li>National Archives Identifier: 7957223</li></ul>\n</span>",
+        "source": "commons-desc-page"
+      },
+      "Permission": {
+        "value": "This work is in the <b><a href=\"https://en.wikipedia.org/wiki/en:Public_domain\" class=\"extiw\" title=\"w:en:Public domain\">public domain</a></b> in the United States because it is a <a href=\"https://en.wikipedia.org/wiki/en:Copyright_status_of_work_by_the_U.S._government\" class=\"extiw\" title=\"w:en:Copyright status of work by the U.S. government\">work prepared by an officer or employee of the United States Federal Government as part of that person’s official duties</a> under the terms of <i><a href=\"https://en.wikisource.org/wiki/en:United_States_Code/Title_17/Chapter_1/Sections_105_and_106\" class=\"extiw\" title=\"s:en:United States Code/Title 17/Chapter 1/Sections 105 and 106\">Title 17, Chapter 1, Section 105</a> of the <a href=\"https://en.wikipedia.org/wiki/United_States_Code\" class=\"extiw\" title=\"w:United States Code\">US Code</a></i>.\n<small style=\"font-weight:bold\"><u>Note</u>:  This only applies to original works of the Federal Government and not to the work of any individual <a href=\"https://en.wikipedia.org/wiki/U.S._state\" class=\"extiw\" title=\"en:U.S. state\">U.S. state</a>, <a href=\"https://en.wikipedia.org/wiki/United_States_Territory\" class=\"extiw\" title=\"w:United States Territory\">territory</a>, commonwealth, county, municipality, or any other subdivision. This template also does not apply to postage stamp designs published by the <a href=\"https://en.wikipedia.org/wiki/United_States_Postal_Service\" class=\"extiw\" title=\"w:United States Postal Service\">United States Postal Service</a> <a href=\"//commons.wikimedia.org/wiki/Stamps_of_the_United_States#Copyright-Note_up_to_1978\" title=\"Stamps of the United States\">since 1978</a>. (See § <a rel=\"nofollow\" class=\"external text\" href=\"https://copyright.gov/comp3/chap300/ch300-copyrightable-authorship.pdf\">313.6(C)(1)</a> of Compendium of U.S. Copyright Office Practices). It also does not apply to certain US coins; see <a rel=\"nofollow\" class=\"external text\" href=\"https://www.usmint.gov/policies/terms-of-use\">The US Mint Terms of Use</a>.</small>",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "asness": {
+      "DateTime": {
+        "value": "2026-06-08 13:39:56",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Cliff-asness-by-bill-cramer",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Self-published work|Files with coordinates missing SDC location of creation|All media needing categories as of 2026|Media needing categories as of 8 June 2026",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "GPSLatitude": {
+        "value": "41.021054",
+        "source": "commons-desc-page"
+      },
+      "GPSLongitude": {
+        "value": "-73.624984",
+        "source": "commons-desc-page"
+      },
+      "GPSMapDatum": {
+        "value": "WGS-84",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Cliff Asness, AQR Capital Management\n<p>Location: 2 Greenwich Plaza, Greenwich, CT 06830\n</p><p>Link to Photo: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.commonhistory.org/?photo=4819\">Common History</a>\n</p><p>Original File Name: bc2010055_090\n</p><p>Credit: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.billcramer.com/\">Bill Cramer</a>/<a rel=\"nofollow\" class=\"external text\" href=\"https://wonderfulmachine.com/\">Wonderful Machine</a>\n</p><p>Contact: connect@wonderfulmachine.com\n</p>\nCommissioned by: Bloomberg Markets",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2010-09-20 10:40:43",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:BillCramer\" title=\"User:BillCramer\">BillCramer</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 4.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-sa-4.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "watsa": {
+      "DateTime": {
+        "value": "2015-10-08 05:03:16",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Prem Watsa",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Western University|June 2014 in Toronto|Chancellors of the University of Waterloo",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Prem Watsa giving keynote speech during Pan-IIT-Meet in Toronto on June 7, 2014",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "9 June 2014 (original upload date)",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"\">Own work by the original uploader</span>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/ta:User:%E0%AE%9A%E0%AF%86%E0%AE%B2%E0%AF%8D%E0%AE%B5%E0%AE%BE\" class=\"extiw\" title=\"w:ta:User:செல்வா\">செல்வா</a> at <a href=\"https://en.wikipedia.org/wiki/ta:\" class=\"extiw\" title=\"w:ta:\">Tamil Wikipedia</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution 3.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/3.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-3.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "warren": {
+      "DateTime": {
+        "value": "2025-02-20 23:50:49",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Warren Buffett at the 2015 SelectUSA Investment Summit (cropped)",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Media from YouTube|PD US Government|Warren Buffett|SelectUSA|CC-PD-Mark",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Warren Buffett at the 2015 SelectUSA Investment Summit",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2015-04-17",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<bdi lang=\"en\" dir=\"ltr\"><a href=\"//commons.wikimedia.org/wiki/Commons:YouTube_files\" title=\"Commons:YouTube files\">YouTube</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/watch?v=GLKDFhCjaY4\"><bdi lang=\"\">https://www.youtube.com/watch?v=GLKDFhCjaY4</bdi></a> – View/save archived versions on <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/*/https://www.youtube.com/watch?v=GLKDFhCjaY4\">archive.org</a></bdi>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "USA International Trade Administration",
+        "source": "commons-desc-page"
+      },
+      "Permission": {
+        "value": "This work is in the <b><a href=\"https://en.wikipedia.org/wiki/en:Public_domain\" class=\"extiw\" title=\"w:en:Public domain\">public domain</a></b> in the United States because it is a <a href=\"https://en.wikipedia.org/wiki/en:Copyright_status_of_work_by_the_U.S._government\" class=\"extiw\" title=\"w:en:Copyright status of work by the U.S. government\">work prepared by an officer or employee of the United States Federal Government as part of that person’s official duties</a> under the terms of <i><a href=\"https://en.wikisource.org/wiki/en:United_States_Code/Title_17/Chapter_1/Sections_105_and_106\" class=\"extiw\" title=\"s:en:United States Code/Title 17/Chapter 1/Sections 105 and 106\">Title 17, Chapter 1, Section 105</a> of the <a href=\"https://en.wikipedia.org/wiki/United_States_Code\" class=\"extiw\" title=\"w:United States Code\">US Code</a></i>.\n<small style=\"font-weight:bold\"><u>Note</u>:  This only applies to original works of the Federal Government and not to the work of any individual <a href=\"https://en.wikipedia.org/wiki/U.S._state\" class=\"extiw\" title=\"en:U.S. state\">U.S. state</a>, <a href=\"https://en.wikipedia.org/wiki/United_States_Territory\" class=\"extiw\" title=\"w:United States Territory\">territory</a>, commonwealth, county, municipality, or any other subdivision. This template also does not apply to postage stamp designs published by the <a href=\"https://en.wikipedia.org/wiki/United_States_Postal_Service\" class=\"extiw\" title=\"w:United States Postal Service\">United States Postal Service</a> <a href=\"//commons.wikimedia.org/wiki/Stamps_of_the_United_States#Copyright-Note_up_to_1978\" title=\"Stamps of the United States\">since 1978</a>. (See § <a rel=\"nofollow\" class=\"external text\" href=\"https://copyright.gov/comp3/chap300/ch300-copyrightable-authorship.pdf\">313.6(C)(1)</a> of Compendium of U.S. Copyright Office Practices). It also does not apply to certain US coins; see <a rel=\"nofollow\" class=\"external text\" href=\"https://www.usmint.gov/policies/terms-of-use\">The US Mint Terms of Use</a>.</small>",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "cathie": {
+      "DateTime": {
+        "value": "2023-07-17 23:45:54",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Cathie Wood ARK Invest Photo",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Self-published work|Cathie Wood",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Wood in 2020",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2020-02-12",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:3948wmc&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:3948wmc (page does not exist)\">Caroline Wood</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 4.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-sa-4.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "bill": {
+      "DateTime": {
+        "value": "2024-11-13 01:14:52",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Valeant Pharmaceuticals' Business Model (headshot)",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "April 2016 in Washington, D.C.|Extracted images|People of the United States in 2016|United States photographs taken on 2016-04-27|Bill Ackman|Raised hands during oaths",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "J. Michael Pearson, Howard Schiller and William Ackman. Valeant Pharmaceuticals' Business Model: the Repercussions for Patients and the Health Care System",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2016-04-27 16:48:37",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/sdmc/26410186710/\">https://www.flickr.com/photos/sdmc/26410186710/</a>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "Senate Democrats",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution 2.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-2.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "peter": {
+      "DateTime": {
+        "value": "2017-02-03 17:26:11",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Peter Schiff by Gage Skidmore 3",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Peter Schiff|Photographs by Gage Skidmore",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/Peter_Schiff\" class=\"extiw\" title=\"w:Peter Schiff\">Peter Schiff</a> speaking at an event in Las Vegas, Nevada.",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2016-07-14",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "Gage Skidmore",
+        "source": "commons-desc-page"
+      },
+      "Permission": {
+        "value": "Must attribute to <b>Gage Skidmore</b> if used elsewhere, other than on Wikimedia and its projects.",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 3.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Attribution": {
+        "value": "Gage Skidmore",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-sa-3.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "rogers": {
+      "DateTime": {
+        "value": "2012-07-22 00:45:43",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "20120721 John W. Rogers, Jr",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Taken with Canon EOS 600D|John W. Rogers, Jr.|Self-published work",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/John_W._Rogers,_Jr.\" class=\"extiw\" title=\"w:John W. Rogers, Jr.\">w:John W. Rogers, Jr.</a>",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2012-07-21",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:TonyTheTiger\" title=\"User:TonyTheTiger\">TonyTheTiger</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 3.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-sa-3.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    },
+    "pabrai": {
+      "DateTime": {
+        "value": "2012-02-13 12:05:41",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Mohnish Pabrai",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Philanthropists from the United States|Philanthropists from India|Investors from the United States|Businessmen from the United States|Self-published work|Businessmen from India|20th-century portrait drawings of men at bust length",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://www.hedgefundletters.com/category/pabrai-funds/\">http://www.hedgefundletters.com/category/pabrai-funds/</a>",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2011-12-21",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Fabarsi&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Fabarsi (page does not exist)\">Fabarsi</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 3.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-sa-3.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    }
+  },
+  "priorAssets": {
+    "cramer": {
+      "path": "/portraits/cramer-licensed.jpg",
+      "title": "Andrew Aziz Cramer (cropped).jpg",
+      "creator": "Bear Bull Traders",
+      "source": "https://commons.wikimedia.org/wiki/File:Andrew_Aziz_Cramer_(cropped).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Andrew_Aziz_Cramer_%28cropped%29.jpg/960px-Andrew_Aziz_Cramer_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "fc9201cffa6bba8bf2d14c219dfb195a281cd87240a6e9a9f43bf797ee71fec8",
+      "attribution": ""
+    },
+    "dalio": {
+      "path": "/portraits/dalio-licensed.jpg",
+      "title": "Web Summit 2018 - Forum - Day 2, November 7 HM1 7481 (44858045925).jpg",
+      "creator": "Harry Murphy / Web Summit via Sportsfile",
+      "source": "https://commons.wikimedia.org/wiki/File:Web_Summit_2018_-_Forum_-_Day_2,_November_7_HM1_7481_(44858045925).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg/960px-Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "fa723553a882a6edbfc216c219c9d417b452d720a8fba1b6bdf0ee322f7b59ed",
+      "attribution": ""
+    },
+    "munger": {
+      "path": "/portraits/munger-licensed.jpg",
+      "title": "Charlie Munger (cropped).jpg",
+      "creator": "Nick",
+      "source": "https://commons.wikimedia.org/wiki/File:Charlie_Munger_(cropped).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Charlie_Munger_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "ec22fc3b8274adaacd7beb540c6e005b8b4ed93c42114ad5376b2cc8ce860b8b",
+      "attribution": ""
+    },
+    "griffin": {
+      "path": "/portraits/griffin-licensed.jpg",
+      "title": "Kenneth C. Griffin.jpg",
+      "creator": "Paul Elledge",
+      "source": "https://commons.wikimedia.org/wiki/File:Kenneth_C._Griffin.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Kenneth_C._Griffin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "a8bf645e1b90b358d34549bc141bc3fbb2b73c0f49c8f207d74af9ad52a82e49",
+      "attribution": ""
+    },
+    "soros": {
+      "path": "/portraits/soros-licensed.jpg",
+      "title": "George Soros, Founder and Chairman of the Open Society Foundations, visits the EC (3x4 cropped).jpg",
+      "creator": "Aris Oikonomou / European Commission",
+      "source": "https://commons.wikimedia.org/wiki/File:George_Soros,_Founder_and_Chairman_of_the_Open_Society_Foundations,_visits_the_EC_(3x4_cropped).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/George_Soros%2C_Founder_and_Chairman_of_the_Open_Society_Foundations%2C_visits_the_EC_%283x4_cropped%29.jpg/960px-George_Soros%2C_Founder_and_Chairman_of_the_Open_Society_Foundations%2C_visits_the_EC_%283x4_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "800ae367065c47b0b685a5faf226aaee7476677314f0db1d43530ccc4dfa0d0f",
+      "attribution": "© European Union, 2026"
+    },
+    "oleary": {
+      "path": "/portraits/oleary-licensed.jpg",
+      "title": "KevinOLeary2023 (3x4 cropped).jpg",
+      "creator": "Philip Romano",
+      "source": "https://commons.wikimedia.org/wiki/File:KevinOLeary2023_(3x4_cropped).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/KevinOLeary2023_%283x4_cropped%29.jpg/960px-KevinOLeary2023_%283x4_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "3ca26ebc21611950c252378e91eca4eb68e0686b0493471937049062cd3e8cd2",
+      "attribution": ""
+    },
+    "simons": {
+      "path": "/portraits/simons-licensed.jpg",
+      "title": "Jim Simons at MSRI.jpg",
+      "creator": "Gleuschk",
+      "source": "https://commons.wikimedia.org/wiki/File:Jim_Simons_at_MSRI.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Jim_Simons_at_MSRI.jpg/960px-Jim_Simons_at_MSRI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "bc4bb2eb977a10ddbceea6e5787d64c9799ddfcf9d7798f28b9e17038bab5dbf",
+      "attribution": ""
+    },
+    "marks": {
+      "path": "/portraits/marks-licensed.jpg",
+      "title": "Howard Marks 2.17.12 (cropped).jpg",
+      "creator": "kellywritershouse",
+      "source": "https://commons.wikimedia.org/wiki/File:Howard_Marks_2.17.12_(cropped).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Howard_Marks_2.17.12_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "617918a4b9d190e33adb4213f6e9babe66d5292cc5f3a5f00b8d3328f4da0652",
+      "attribution": ""
+    },
+    "tudor": {
+      "path": "/portraits/tudor-licensed.jpg",
+      "title": "Paul Tudor Jones 2006.jpg",
+      "creator": "Tami Heilemann / U.S. Department of the Interior",
+      "source": "https://commons.wikimedia.org/wiki/File:Paul_Tudor_Jones_2006.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Paul_Tudor_Jones_2006.jpg/960px-Paul_Tudor_Jones_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_States#Works_by_the_US_government",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "36364849b57e5b3fa423effaa98a3734eb7f85efc591d2cf8d0e243350dc9aa8",
+      "attribution": ""
+    },
+    "asness": {
+      "path": "/portraits/asness-licensed.jpg",
+      "title": "Cliff-asness-by-bill-cramer.jpg",
+      "creator": "Bill Cramer / Wonderful Machine",
+      "source": "https://commons.wikimedia.org/wiki/File:Cliff-asness-by-bill-cramer.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Cliff-asness-by-bill-cramer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "315bf871a90e894f1ac7f93faf6ba6a8dced3106fc9fc695352ae7282a376833",
+      "attribution": ""
+    },
+    "watsa": {
+      "path": "/portraits/watsa-licensed.jpg",
+      "title": "Prem Watsa.jpg",
+      "creator": "செல்வா at Tamil Wikipedia",
+      "source": "https://commons.wikimedia.org/wiki/File:Prem_Watsa.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Prem_Watsa.jpg/960px-Prem_Watsa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "86d038f8a01aec45c6a0a52418c8f73e1d20881a903dfbbb0eb35299f28133a9",
+      "attribution": ""
+    },
+    "warren": {
+      "path": "/portraits/warren-licensed.jpg",
+      "title": "Warren Buffett at the 2015 SelectUSA Investment Summit (cropped).jpg",
+      "creator": "USA International Trade Administration",
+      "source": "https://commons.wikimedia.org/wiki/File:Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_(cropped).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_States#Works_by_the_US_government",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "2edd02e365a029beb53b898e21014884dceb91e68ac2a202463e18c936892777",
+      "attribution": ""
+    },
+    "cathie": {
+      "path": "/portraits/cathie-licensed.jpg",
+      "title": "Cathie Wood ARK Invest Photo.jpg",
+      "creator": "Caroline Wood",
+      "source": "https://commons.wikimedia.org/wiki/File:Cathie_Wood_ARK_Invest_Photo.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Cathie_Wood_ARK_Invest_Photo.jpg/960px-Cathie_Wood_ARK_Invest_Photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "6fb54cb8ef23849a77517264a03f35c8e4e8916e99ec65d08ee59ff10e89e485",
+      "attribution": ""
+    },
+    "bill": {
+      "path": "/portraits/bill-licensed.jpg",
+      "title": "Valeant Pharmaceuticals' Business Model (headshot).jpg",
+      "creator": "Senate Democrats",
+      "source": "https://commons.wikimedia.org/wiki/File:Valeant_Pharmaceuticals%27_Business_Model_(headshot).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Valeant_Pharmaceuticals%27_Business_Model_%28headshot%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "614bbdd96eda16406166e75bf1ed1a7f7d4cdfab957bafe1e43bed79e7c48166",
+      "attribution": ""
+    },
+    "peter": {
+      "path": "/portraits/peter-licensed.jpg",
+      "title": "Peter Schiff by Gage Skidmore 3.jpg",
+      "creator": "Gage Skidmore",
+      "source": "https://commons.wikimedia.org/wiki/File:Peter_Schiff_by_Gage_Skidmore_3.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Peter_Schiff_by_Gage_Skidmore_3.jpg/960px-Peter_Schiff_by_Gage_Skidmore_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "ef5808036021a4f42234fe92ac749c420b7e19825d09a1254cd672293f5a82d2",
+      "attribution": "Gage Skidmore"
+    },
+    "rogers": {
+      "path": "/portraits/rogers-licensed.jpg",
+      "title": "20120721 John W. Rogers, Jr.JPG",
+      "creator": "TonyTheTiger",
+      "source": "https://commons.wikimedia.org/wiki/File:20120721_John_W._Rogers,_Jr.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/20120721_John_W._Rogers%2C_Jr.JPG/960px-20120721_John_W._Rogers%2C_Jr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "modifications": "Resized by Wikimedia; displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "photo",
+      "sha256": "786109dd728df7b60f9f27a5deb5a6182988d2a0789d9536791c5862b4cf4c61",
+      "attribution": ""
+    },
+    "pabrai": {
+      "path": "/portraits/pabrai-licensed.jpg",
+      "title": "Mohnish Pabrai.jpg",
+      "creator": "Fabarsi",
+      "source": "https://commons.wikimedia.org/wiki/File:Mohnish_Pabrai.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Mohnish_Pabrai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "modifications": "Displayed with grayscale and a CSS crop.",
+      "verifiedOn": "2026-10-13",
+      "type": "illustration",
+      "sha256": "6c132e33e18898439927eeab2f2567b1a69018b7c761e816b890aa91fa9732d3",
+      "attribution": ""
+    },
+    "burry": {
+      "path": "/portraits/burry-placeholder.svg",
+      "title": "Michael Burry initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "9869e470584c879cab4bb54e64e9fd42a3595fc95e856bc73e774f54d28d86ae",
+      "attribution": ""
+    },
+    "lynch": {
+      "path": "/portraits/lynch-placeholder.svg",
+      "title": "Peter Lynch initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "faea88d7e3504dbf9b47784d338e9c25f324fe311c19f5d20b9f9413771df75d",
+      "attribution": ""
+    },
+    "druckenmiller": {
+      "path": "/portraits/druckenmiller-placeholder.svg",
+      "title": "Stanley Druckenmiller initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "a078134e0d1b1823c0778e21049ee38224e97b50283c2f3e53c3526eed41d644",
+      "attribution": ""
+    },
+    "einhorn": {
+      "path": "/portraits/einhorn-placeholder.svg",
+      "title": "David Einhorn initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "6e753f6b75969efa7f8e2e0c38ee2a3080f08c1c22c2ffa1dbe456175f2588dc",
+      "attribution": ""
+    },
+    "baron": {
+      "path": "/portraits/baron-placeholder.svg",
+      "title": "Ron Baron initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "c2f57e7f0175aca7b0707806e8a75a8e86275048e3b7df1e045f375174efbf3f",
+      "attribution": ""
+    },
+    "loeb": {
+      "path": "/portraits/loeb-placeholder.svg",
+      "title": "Dan Loeb initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "5cb1bae1e970ad119b042cba278724eebe661825326e0b69dd4271b67eaa87f0",
+      "attribution": ""
+    },
+    "smith": {
+      "path": "/portraits/smith-placeholder.svg",
+      "title": "Terry Smith initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "28aa6f8300604896f69fef1f9b893a9a1360119be293503c5128a73c0ddbae0d",
+      "attribution": ""
+    },
+    "gabelli": {
+      "path": "/portraits/gabelli-placeholder.svg",
+      "title": "Mario Gabelli initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "70c18745bdd62ba28a7ae12de12f83ebc0d86e1cdf70e9ec224e07ca52895f69",
+      "attribution": ""
+    },
+    "danoff": {
+      "path": "/portraits/danoff-placeholder.svg",
+      "title": "Will Danoff initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "90a9780cf2fbeecee2eb39d56228b284c77820243a32dfe07f75de641c69e277",
+      "attribution": ""
+    },
+    "berkowitz": {
+      "path": "/portraits/berkowitz-placeholder.svg",
+      "title": "Bruce Berkowitz initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "7ae812fecba1a4eaf1a8888dbb0ed990a510f76cc041cde5a7a713abedade042",
+      "attribution": ""
+    },
+    "gayner": {
+      "path": "/portraits/gayner-placeholder.svg",
+      "title": "Tom Gayner initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "4f6a4e81930b7a673a7da87ca7a87c15d84f4e7960227d056721edd4e298bfe5",
+      "attribution": ""
+    },
+    "hussman": {
+      "path": "/portraits/hussman-placeholder.svg",
+      "title": "John Hussman initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "06d723d48158a5130e0561dd39d54a43f9108aefe317c3c9a1660810ca5f296e",
+      "attribution": ""
+    },
+    "nygren": {
+      "path": "/portraits/nygren-placeholder.svg",
+      "title": "Bill Nygren initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "5b00bad059d940abe625e24589b1b85d46ce695de36f93fa865e621fff0bce27",
+      "attribution": ""
+    },
+    "davis": {
+      "path": "/portraits/davis-placeholder.svg",
+      "title": "Chris Davis initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "12f913e1d64cf282f28fa4606a96016a06f23c9e1834e78a686b27c115603050",
+      "attribution": ""
+    },
+    "herro": {
+      "path": "/portraits/herro-placeholder.svg",
+      "title": "David Herro initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "730107b89cbd48a45460b7d108da0223a80988369b2ae573d23800d17856d654",
+      "attribution": ""
+    },
+    "joel": {
+      "path": "/portraits/joel-placeholder.svg",
+      "title": "Joel Greenblatt initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "f138980ea5a51fec9561cb23d9f09c1140462a35838edd281e7f36bec627f72b",
+      "attribution": ""
+    },
+    "carl": {
+      "path": "/portraits/carl-placeholder.svg",
+      "title": "Carl Icahn initials placeholder",
+      "creator": "SPX Arena",
+      "source": "/credits/#original-artwork",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Original geometric avatar; not a likeness or photograph.",
+      "verifiedOn": "2026-10-13",
+      "type": "placeholder",
+      "sha256": "9956d1fc2fef4bf97bc7429d43ac9e003769042757aae16c09dc543701e4d09d",
+      "attribution": ""
+    }
+  },
+  "generationTool": "Built-in ImageGen",
+  "generationManifest": "research/portrait-generation-prompts.json"
+}

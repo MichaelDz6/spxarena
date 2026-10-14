@@ -1,4 +1,7 @@
-import dailyDrawdowns from '../data/drawdowns.json' with { type: 'json' };
+import approvedDrawdowns from '../data/drawdowns.json' with { type: 'json' };
+// Only publish daily datasets after recording redistribution permission.
+/** @type {Record<string, any>} */
+const dailyDrawdowns = approvedDrawdowns;
 import { accumulate, benchmarkReturns, fmt } from './performance.js';
 import { maximumDrawdown } from './drawdown.js';
 
@@ -75,7 +78,7 @@ export function investorStatistics(record, years = 10) {
   const daily = record ? dailyDrawdowns[record.key] : null;
   // Match observation frequency on both sides. Never compare a daily investor
   // drawdown with a year-end benchmark drawdown, or substitute another vehicle.
-  const frequency = daily || !record ? 'daily' : 'annual';
+  const frequency = daily && dailyDrawdowns.benchmark ? 'daily' : 'annual';
   const investorDrawdown = daily?.periods[years] ?? investor?.drawdown ?? null;
   const marketDrawdown =
     frequency === 'daily'

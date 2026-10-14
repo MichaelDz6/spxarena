@@ -1,35 +1,28 @@
 import images from '../data/portraits.json';
 import { investorById } from '../lib/performance.js';
+import { portraitPresentation } from '../lib/portrait-presentation.js';
 
-const original = new Set(['warren', 'cathie', 'bill', 'joel', 'peter', 'carl']);
-function sizeOriginalPortrait(element) {
-  element._portraitObserver?.disconnect();
-  if (!original.has(element.dataset.person)) return;
-  const crop = element.querySelector('.portrait-window');
-  const observer = new ResizeObserver((entries) => {
-    const { width, height } = entries[0].contentRect;
-    const side = Math.max(width, height);
-    Object.assign(crop.style, {
-      width: `${side}px`,
-      height: `${side}px`,
-      left: `${(width - side) / 2}px`,
-      top: `${Math.min(0, (height - side) * 0.2)}px`,
-    });
-  });
-  element._portraitObserver = observer;
-  observer.observe(element);
-}
 export function mountPortrait(element) {
   const person = element.dataset.person;
   const crop = document.createElement('span');
   crop.className = 'portrait-window';
   const image = document.createElement('img');
-  image.src = images[person] || images.src;
-  image.alt = investorById[person].name;
+  image.src = images[person];
+  const presentation = portraitPresentation(person, investorById[person].name);
+  image.alt = presentation.alt;
+  image.width = presentation.width;
+  image.height = presentation.height;
+  element.dataset.portraitKind = presentation.kind;
+  element.title = presentation.alt;
   image.decoding = 'async';
   crop.append(image);
   element.replaceChildren(crop);
-  element.classList.toggle('is-photo', !original.has(person));
-  sizeOriginalPortrait(element);
+  if (presentation.label) {
+    const label = document.createElement('span');
+    label.className = 'portrait-kind';
+    label.setAttribute('aria-hidden', 'true');
+    label.textContent = presentation.label;
+    element.append(label);
+  }
+  element.classList.add('is-photo');
 }
-document.querySelectorAll('.portrait').forEach(sizeOriginalPortrait);

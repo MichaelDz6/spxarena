@@ -7,7 +7,7 @@
     {
       "name": "NVIDIA",
       "ticker": "NVDA",
-      "logo": "nvidia.svg",
+      "logo": "nvda-ticker.svg",
       "weight": 8.34,
       "color": "#456750",
       "square": 54
@@ -15,7 +15,7 @@
     {
       "name": "Apple",
       "ticker": "AAPL",
-      "logo": "apple.svg",
+      "logo": "aapl-ticker.svg",
       "weight": 7.43,
       "color": "#638473",
       "square": 116
@@ -23,7 +23,7 @@
     {
       "name": "Microsoft",
       "ticker": "MSFT",
-      "logo": "microsoft.svg",
+      "logo": "msft-ticker.svg",
       "weight": 5.8,
       "color": "#7296a0",
       "square": 182
@@ -31,7 +31,7 @@
     {
       "name": "Alphabet",
       "ticker": "GOOGL + GOOG",
-      "logo": "google.svg",
+      "logo": "googl + goog-ticker.svg",
       "weight": 5.5,
       "color": "#a78b45",
       "square": 223
@@ -39,7 +39,7 @@
     {
       "name": "Amazon",
       "ticker": "AMZN",
-      "logo": "amazon.svg",
+      "logo": "amzn-ticker.svg",
       "weight": 3.73,
       "color": "#c3ac68",
       "square": 287
@@ -47,7 +47,7 @@
     {
       "name": "Broadcom",
       "ticker": "AVGO",
-      "logo": "broadcom.svg",
+      "logo": "avgo-ticker.svg",
       "weight": 2.56,
       "color": "#927d9f",
       "square": 309
@@ -55,7 +55,7 @@
     {
       "name": "Meta",
       "ticker": "META",
-      "logo": "meta.svg",
+      "logo": "meta-ticker.svg",
       "weight": 2.38,
       "color": "#738baa",
       "square": 367
@@ -63,7 +63,7 @@
     {
       "name": "Micron",
       "ticker": "MU",
-      "logo": "micron.png",
+      "logo": "mu-ticker.svg",
       "weight": 1.75,
       "color": "#9ca879",
       "square": 396
@@ -71,7 +71,7 @@
     {
       "name": "Tesla",
       "ticker": "TSLA",
-      "logo": "tesla.svg",
+      "logo": "tsla-ticker.svg",
       "weight": 1.58,
       "color": "#b78683",
       "square": 432
@@ -79,7 +79,7 @@
     {
       "name": "AMD",
       "ticker": "AMD",
-      "logo": "amd.svg",
+      "logo": "amd-ticker.svg",
       "weight": 1.51,
       "color": "#83a9a4",
       "square": 471

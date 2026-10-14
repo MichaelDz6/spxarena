@@ -1,0 +1,44 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import PortraitCredit from '../components/PortraitCredit.astro';
+import { investors } from '../lib/performance.js';
+import images from '../data/portraits.json';
+import { portraitPresentation } from '../lib/portrait-presentation.js';
+---
+<SiteLayout title="Credits, licenses & independence" showSources={false}>
+  <main class="credits-page">
+    <span class="small-label">SPX ARENA · SOURCES & RIGHTS</span>
+    <h1>Credits, licenses &amp; independence</h1>
+    <p>SPX Arena is an independent educational and editorial comparison. The investors, firms and products discussed have not sponsored or endorsed this site. Images identify the people discussed; they do not imply endorsement.</p>
+    <h2>Names and trademarks</h2>
+    <p>S&amp;P 500 and related index names are trademarks of their respective owners, including S&amp;P Global and its affiliates. SPX is used to refer to the index. SPY identifies the SPDR S&amp;P 500 ETF Trust. SPDR and related marks belong to their respective owners. SPX Arena is not affiliated with S&amp;P Dow Jones Indices, S&amp;P Global, State Street, or any investor or firm shown here. Company names, fund names and ticker symbols are used to identify the subjects discussed. The company tiles are original ticker illustrations, not company logos.</p>
+    <h2>Portraits and image licenses</h2>
+    <p>Each retained third-party image links to its source, author and license below. Photographs are shown in grayscale with a layout crop. AI-enhanced photographs are labeled and retain the original source license. Adaptations of ShareAlike images are offered under the same license as their originals; this does not license unrelated site content. Public-domain status is based on the source record and can differ outside the United States.</p>
+    <ul class="credit-list">{investors.map(person => <li>
+      <a class="credit-thumbnail" href={`/investors/${person.key}/`}><img src={images[person.key as keyof typeof images]} width="96" height="120" loading="lazy" decoding="async" alt={portraitPresentation(person.key, person.name).alt} /></a>
+      <div><strong>{person.name}</strong><PortraitCredit person={person.key} /></div>
+    </li>)}</ul>
+    <h2 id="ai-portraits">AI illustrations and enhancements</h2>
+    <p>Portraits labeled “AI illustration” were created from text prompts without a third-party photograph as an input. They are interpretive editorial likenesses, not documentary photographs, and may differ from the person's actual appearance. No named artist style or published photograph was requested. No exclusive copyright is claimed in wholly machine-generated elements.</p>
+    <p>Portraits labeled “AI enhanced” adapt the licensed source linked in their credit. AI enhancement can reconstruct detail rather than recover it exactly. The source photographer remains credited, the changes are disclosed, and the adaptation is distributed under the source license. Neither type of portrait implies approval or endorsement by the person shown.</p>
+    <h2 id="original-artwork">Original ticker tiles</h2>
+    <p>SPX Arena dedicates its original ticker-tile SVG artwork to the public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.</p>
+    <h2>Historical data and calculations</h2>
+    <p>Performance numbers are a dated factual research snapshot. Source links identify published reports and observations; they do not imply an index or market-data license. Charts and calculations are produced by this site. Source reports, photographs and publisher prose are not licensed by this notice. Daily-price-derived drawdown records are withheld pending verification of redistribution rights; displayed drawdowns use year-end observations and miss losses within a year.</p>
+    <p>Information is educational and is not personalized investment advice or a recommendation to buy or sell. Past performance does not guarantee future results. Calculator outcomes are hypothetical and exclude taxes, fees and inflation.</p>
+    <h2>Software acknowledgments</h2>
+    <p>The site uses open-source software. <a href="/third-party-notices.txt">Third-party software license notices</a> accompany the distributed application.</p>
+  </main>
+</SiteLayout>
+<style>
+  .credits-page { max-width: 920px; padding: 64px 24px; margin: auto; color: var(--ink); font-family: var(--sans); }
+  h1 { font-family: var(--serif); font-size: clamp(32px, 5vw, 52px); line-height: 1.15; margin: 16px 0 28px; }
+  h2 { font-family: var(--serif); font-size: 26px; margin-top: 36px; }
+  p { line-height: 1.8; }
+  a { color: inherit; text-decoration: underline; }
+  .credit-list { list-style: none; padding: 0; }
+  .credit-list li { display: flex; align-items: flex-start; gap: 20px; padding: 20px 0; border-bottom: 1px solid #d9d5c9; }
+  .credit-thumbnail { flex-shrink: 0; }
+  .credit-thumbnail img { display: block; width: 96px; height: 120px; object-fit: cover; object-position: 50% 20%; border-radius: 8px; }
+  @media (max-width: 480px) { .credit-list li { gap: 12px; } .credit-thumbnail img { width: 72px; height: 90px; } }
+</style>

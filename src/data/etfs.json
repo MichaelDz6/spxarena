@@ -1,0 +1,219 @@
+{
+  "asOf": "2025-12-31",
+  "periodStart": "2016-01-01",
+  "currency": "USD",
+  "returnBasis": "NAV total return",
+  "precision": 0.005,
+  "selection": {
+    "asOf": "2026-09-03",
+    "metric": "Assets under management",
+    "scope": "20 largest U.S.-listed ETFs in the cited snapshot",
+    "source": "https://etfmoney.com/top-100-global-etfs/",
+    "sourceLabel": "ETFmoney · September 3, 2026 AUM snapshot",
+    "note": "U.S. listings only; overseas listings are excluded. Fund size is used as a proxy for popularity. The leaderboard ranks this roster by historical return, not by assets."
+  },
+  "funds": [
+    {
+      "ticker": "VOO",
+      "name": "Vanguard S&P 500 ETF",
+      "category": "U.S. large cap",
+      "annualizedReturn": 14.78,
+      "aumBillions": 1040,
+      "popularityRank": 1,
+      "source": "https://personal1.vanguard.com/funds/tsr/AR968.pdf",
+      "sourceLabel": "VOO · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "IVV",
+      "name": "iShares Core S&P 500 ETF",
+      "category": "U.S. large cap",
+      "annualizedReturn": 14.78,
+      "aumBillions": 874.64,
+      "popularityRank": 2,
+      "source": "https://www.ifa.com/pdfs/fund-documents/ivv-fact-sheet.pdf",
+      "sourceLabel": "IVV · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "SPY",
+      "name": "State Street SPDR S&P 500 ETF Trust",
+      "category": "U.S. large cap",
+      "annualizedReturn": 14.71,
+      "aumBillions": 804.3,
+      "popularityRank": 3,
+      "source": "https://media.fidelity.com/assets/Fidelity.com_VMS/791/211/031926_ITM_Show-Notes.pdf",
+      "sourceLabel": "Fidelity · SPY standardized performance, December 31, 2025"
+    },
+    {
+      "ticker": "VTI",
+      "name": "Vanguard Total Stock Market ETF",
+      "category": "U.S. total market",
+      "annualizedReturn": 14.25,
+      "aumBillions": 685.14,
+      "popularityRank": 4,
+      "source": "https://personal1.vanguard.com/funds/tsr/AR970.pdf",
+      "sourceLabel": "VTI · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ ETF",
+      "category": "Nasdaq-100",
+      "annualizedReturn": 19.43,
+      "aumBillions": 482.69,
+      "popularityRank": 5,
+      "source": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/commentary/monthly-qqqm-commentary-retail-use-.pdf",
+      "sourceLabel": "QQQ · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "VEA",
+      "name": "Vanguard FTSE Developed Markets ETF",
+      "category": "Developed markets",
+      "annualizedReturn": 8.74,
+      "aumBillions": 235.88,
+      "popularityRank": 6,
+      "source": "https://personal1.vanguard.com/funds/tsr/AR936.pdf",
+      "sourceLabel": "VEA · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "VUG",
+      "name": "Vanguard Growth ETF",
+      "category": "U.S. large-cap growth",
+      "annualizedReturn": 17.45,
+      "aumBillions": 224.79,
+      "popularityRank": 7,
+      "source": "https://personal1.vanguard.com/funds/tsr/AR967.pdf",
+      "sourceLabel": "VUG · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "IEFA",
+      "name": "iShares Core MSCI EAFE ETF",
+      "category": "Developed markets",
+      "annualizedReturn": 8.29,
+      "aumBillions": 193.3,
+      "popularityRank": 8,
+      "source": "https://www.ishares.com/us/literature/fact-sheet/iefa-ishares-core-msci-eafe-etf-fund-fact-sheet-en-us.pdf",
+      "sourceLabel": "IEFA · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "VTV",
+      "name": "Vanguard Value ETF",
+      "category": "U.S. large-cap value",
+      "annualizedReturn": 11.67,
+      "aumBillions": 191.45,
+      "popularityRank": 9,
+      "source": "https://personal1.vanguard.com/funds/tsr/AR966.pdf",
+      "sourceLabel": "VTV · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "SPYM",
+      "name": "State Street SPDR Portfolio S&P 500 ETF",
+      "category": "U.S. large cap",
+      "annualizedReturn": 14.81,
+      "aumBillions": 167.65,
+      "popularityRank": 10,
+      "source": "https://www.ssga.com/us/en/institutional/library-content/products/factsheets/etfs/us/factsheet-us-en-spym.pdf",
+      "sourceLabel": "SPYM · issuer performance for December 31, 2025",
+      "note": "Formerly SPLG. This fund tracked other U.S. large-cap indexes before adopting the S&P 500 in January 2020."
+    },
+    {
+      "ticker": "VXUS",
+      "name": "Vanguard Total International Stock ETF",
+      "category": "International stocks",
+      "annualizedReturn": 8.55,
+      "aumBillions": 164.06,
+      "popularityRank": 11,
+      "source": "https://www.sec.gov/Archives/edgar/data/736054/000119312526077510/f44038d1.htm",
+      "sourceLabel": "VXUS · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "BND",
+      "name": "Vanguard Total Bond Market ETF",
+      "category": "U.S. bonds",
+      "annualizedReturn": 2,
+      "aumBillions": 162.53,
+      "popularityRank": 12,
+      "source": "https://personal1.vanguard.com/funds/tsr/AR928.pdf",
+      "sourceLabel": "BND · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "IEMG",
+      "name": "iShares Core MSCI Emerging Markets ETF",
+      "category": "Emerging markets",
+      "annualizedReturn": 8.35,
+      "aumBillions": 160.63,
+      "popularityRank": 13,
+      "source": "https://www.ifa.com/pdfs/fund-documents/iemg-fact-sheet.pdf",
+      "sourceLabel": "IEMG · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "GLD",
+      "name": "SPDR Gold Shares",
+      "category": "Gold",
+      "annualizedReturn": 14.56,
+      "aumBillions": 147.83,
+      "popularityRank": 14,
+      "source": "https://www.spdrgoldshares.com/media/GLD/file/ETF-GLD__20251231.pdf",
+      "sourceLabel": "GLD · issuer performance for December 31, 2025",
+      "note": "A physically backed gold trust, included in the ETF roster. Its asset class and risk profile differ from U.S. stocks."
+    },
+    {
+      "ticker": "VGT",
+      "name": "Vanguard Information Technology ETF",
+      "category": "U.S. technology",
+      "annualizedReturn": 22.55,
+      "aumBillions": 145.61,
+      "popularityRank": 15,
+      "source": "https://fund-docs.vanguard.com/F0958.pdf",
+      "sourceLabel": "VGT · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "AGG",
+      "name": "iShares Core U.S. Aggregate Bond ETF",
+      "category": "U.S. bonds",
+      "annualizedReturn": 1.97,
+      "aumBillions": 137.92,
+      "popularityRank": 16,
+      "source": "https://www.ishares.com/us/literature/fact-sheet/agg-ishares-core-u-s-aggregate-bond-etf-fund-fact-sheet-en-us.pdf",
+      "sourceLabel": "AGG · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "VWO",
+      "name": "Vanguard FTSE Emerging Markets ETF",
+      "category": "Emerging markets",
+      "annualizedReturn": 8.16,
+      "aumBillions": 127.44,
+      "popularityRank": 17,
+      "source": "https://www.sec.gov/Archives/edgar/data/857489/000119312526077568/f44207d1.htm",
+      "sourceLabel": "VWO · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "IWF",
+      "name": "iShares Russell 1000 Growth ETF",
+      "category": "U.S. large-cap growth",
+      "annualizedReturn": 17.92,
+      "aumBillions": 123.79,
+      "popularityRank": 18,
+      "source": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526327908/d49639d497k.htm",
+      "sourceLabel": "IWF · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "IJH",
+      "name": "iShares Core S&P Mid-Cap ETF",
+      "category": "U.S. mid cap",
+      "annualizedReturn": 10.67,
+      "aumBillions": 123.72,
+      "popularityRank": 19,
+      "source": "https://www.ishares.com/us/literature/fact-sheet/ijh-ishares-core-s-p-mid-cap-etf-fund-fact-sheet-en-us.pdf",
+      "sourceLabel": "IJH · issuer performance for December 31, 2025"
+    },
+    {
+      "ticker": "XLK",
+      "name": "State Street Technology Select Sector SPDR ETF",
+      "category": "U.S. technology",
+      "annualizedReturn": 22.34,
+      "aumBillions": 119.59,
+      "popularityRank": 20,
+      "source": "https://www.sec.gov/Archives/edgar/data/1064641/000119312526027312/d15107d485bpos.htm",
+      "sourceLabel": "XLK · issuer performance for December 31, 2025"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 ---
+import PortraitCredit from '../../components/PortraitCredit.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import Portrait from '../../components/Portrait.astro';
 import RecordDetail from '../../components/RecordDetail.astro';
@@ -20,6 +21,32 @@ export function getStaticPaths() {
 const { profile } = Astro.props;
 const record = rankedById[profile.key];
 const biography = biographies[profile.key as keyof typeof biographies];
+const devastationThreshold = 5;
+const verdict = !Number.isFinite(record?.gap)
+  ? 'unranked'
+  : record.gap > 0
+    ? 'win'
+    : record.gap <= -devastationThreshold
+      ? 'devastated'
+      : record.gap < 0
+        ? 'loss'
+        : 'tie';
+const verdictLabels = {
+  win: 'Beat SPX',
+  loss: 'Defeated by SPX',
+  devastated: 'Devastated by SPX',
+  tie: 'Matched SPX',
+  unranked: 'No verdict yet',
+};
+const shield = 'M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z';
+const verdictIcons = {
+  win: 'M8 21h8m-4-4v4M7 3h10v7a5 5 0 0 1-10 0V3Zm10 2h4v3a4 4 0 0 1-4 4M7 5H3v3a4 4 0 0 0 4 4',
+  loss: `${shield}M9 9l6 6m0-6-6 6`,
+  devastated:
+    'M12 2 4 5v6c0 7 8 11 8 11l-2-7 4-3-4-4 2-6Zm4 1.5L20 5v6c0 3-1.5 5.5-3.5 7.5',
+  tie: `${shield}M9 10h6m-6 4h6`,
+  unranked: `${shield}M9 12h6`,
+};
 ---
 
 <SiteLayout title={profile.name} description={biography.description}>
@@ -43,6 +70,19 @@ const biography = biographies[profile.key as keyof typeof biographies];
               record ? titleCase(record.tier) : 'Unranked'
             }<i aria-hidden="true">◆</i></strong
           >
+          <div class="profile-verdict" data-result={verdict}>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"><path d={verdictIcons[verdict]}></path></svg
+            >
+            <span>{verdictLabels[verdict]}</span>
+          </div>
           <small
             >{
               record ? (
@@ -60,18 +100,7 @@ const biography = biographies[profile.key as keyof typeof biographies];
             }</small
           >
         </figcaption>
-        {
-          profile.photoCredit && (
-            <a
-              class="profile-portrait-source"
-              href={profile.photoCredit}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Portrait source ↗
-            </a>
-          )
-        }
+        <PortraitCredit person={profile.key} />
       </figure>
       <div class="profile-heading">
         <span class="small-label">{profile.category}</span>
@@ -94,8 +123,16 @@ const biography = biographies[profile.key as keyof typeof biographies];
         <p class="profile-rating-explanation">
           {
             record
-              ? 'Rarity reflects this vehicle’s 10-year return versus SPX, measured through SPY. It rates this period, not the investor’s entire career.'
-              : 'No rarity or leaderboard position is assigned until a comparable return record is verified.'
+              ? 'Rarity and verdict reflect this vehicle’s 10-year return versus SPX, measured through SPY. They rate 2016–2025, not the investor’s entire career.'
+              : 'No rarity, verdict or leaderboard position is assigned until a comparable return record is verified.'
+          }
+          {
+            verdict === 'devastated' && (
+              <span class="profile-verdict-rule">
+                “Devastated by SPX” means a 10-year annualized return at least{' '}
+                {devastationThreshold} percentage points below the benchmark.
+              </span>
+            )
           }
         </p>
         <div class="profile-hero-actions">

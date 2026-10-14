@@ -92,7 +92,7 @@ for (const [key, symbol] of Object.entries(symbols)) {
   };
 }
 await writeFile(
-  new URL('../src/data/drawdowns.json', import.meta.url),
+  new URL('../research/sources/drawdowns-candidate.json', import.meta.url),
   JSON.stringify(result, null, 2) + '\n',
 );
 console.log(

@@ -1,5 +1,5 @@
 ---
-import { rankedInvestors, investors } from '../lib/performance.js';
+import { rankedInvestors } from '../lib/performance.js';
 ---
 
 <div class="home-sources">
@@ -110,15 +110,8 @@ import { rankedInvestors, investors } from '../lib/performance.js';
       Fourteen other profiles remain unranked while comparable records are
       reviewed. Fame does not establish performance.
     </p><p>
-      Portrait sources: {
-        investors
-          .filter((d) => d.photoCredit)
-          .map((d) => (
-            <a href={d.photoCredit!} target="_blank" rel="noopener noreferrer">
-              {d.name} ·{' '}
-            </a>
-          ))
-      }
+      <a href="/credits/">Image credits, licenses &amp; independence notice</a>.
+      Portraits combine licensed photographs and clearly labeled original AI illustrations. Credits identify AI enhancements and the applicable image licenses.
     </p>
   </details>
 </div>

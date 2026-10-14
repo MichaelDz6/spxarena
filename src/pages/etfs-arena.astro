@@ -1,0 +1,218 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import {
+  etfSnapshot,
+  etfBenchmark,
+  rankedEtfs,
+} from '../lib/etf-performance.js';
+import { fmt, titleCase } from '../lib/performance.js';
+import '../styles/leaderboard.css';
+import '../styles/etfs-arena.css';
+
+const firstBelowBenchmark = rankedEtfs.find((fund) => fund.gap < 0)?.ticker;
+const maximum =
+  Math.ceil(
+    Math.max(etfBenchmark, ...rankedEtfs.map((fund) => fund.value)) / 5,
+  ) * 5;
+const position = (value: number) => (value / maximum) * 100;
+const ticks = Array.from({ length: maximum / 5 + 1 }, (_, i) => i * 5);
+---
+
+<SiteLayout
+  title="ETFs Arena"
+  description="Twenty popular U.S.-listed ETFs ranked by ten-year annualized total returns, with SPX comparisons and the same rarity badges as the investor leaderboard."
+  showSources={false}
+>
+  <main
+    class="arena-page ranking-page etfs-page"
+    aria-labelledby="etfs-page-title"
+    style={`--ranking-zero:0%;--ranking-spx:${position(etfBenchmark)}%`}
+  >
+    <div class="page-intro">
+      <a href="/" class="back-link">← Back to the arena</a>
+      <span class="small-label">THE FUNDS ENTER THE ARENA · 20 ETFs</span>
+      <h1 id="etfs-page-title">ETFs <em>Arena</em></h1>
+      <p>
+        Twenty popular ETFs. One decade. The same benchmark. See how the biggest
+        funds stack up against SPX, ranked by their annualized returns over
+        2016–2025.
+      </p>
+      <a class="etfs-investor-link" href="/leaderboard/"
+        >Explore the investor leaderboard <span aria-hidden="true">↗</span></a
+      >
+    </div>
+
+    <div class="ranking-key">
+      <span class="small-label">20 RANKED ETFs · JAN 2016 – DEC 2025</span>
+      <span
+        ><i aria-hidden="true"></i>Gold marker = SPX · Bars = 10Y / year</span
+      >
+    </div>
+    <div
+      class="ranking-row ranking-spx benchmark-row"
+      aria-label="SPX benchmark"
+    >
+      <div class="bar-identity">
+        <span class="bar-rank" aria-hidden="true">—</span>
+        <span class="bar-benchmark-icon" aria-hidden="true">◆</span>
+        <div>
+          <strong>SPX · S&amp;P 500</strong>
+          <small>SPY ETF · THE BENCHMARK</small>
+        </div>
+      </div>
+      <div class="ranking-plot" aria-hidden="true">
+        <div class="bar-track">
+          <span class="bar-fill" style={`width:${position(etfBenchmark)}%`}
+          ></span>
+        </div>
+        <div class="ranking-axis">
+          {
+            ticks.map((tick) => (
+              <span style={`left:${position(tick)}%`}>{tick}%</span>
+            ))
+          }
+        </div>
+      </div>
+      <div class="bar-value">
+        <strong>{fmt(etfBenchmark, 2)}%</strong><small>10Y / YEAR</small>
+      </div>
+    </div>
+
+    <ol
+      class="ranking-list"
+      role="list"
+      aria-label="ETFs ranked by ten-year annualized return"
+    >
+      {
+        rankedEtfs.map((fund) => (
+          <li value={fund.rank}>
+            {fund.ticker === firstBelowBenchmark && (
+              <hr
+                class="ranking-loss-divider"
+                aria-label="Below SPX over ten years"
+              />
+            )}
+            <a
+              class="ranking-row ranking-entry"
+              href={fund.source}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tier={fund.tier}
+              data-etf={fund.ticker}
+              title={`${fund.sourceLabel} (opens in a new tab)`}
+            >
+              <div class="bar-identity">
+                <span class="bar-rank" aria-hidden="true">
+                  {String(fund.rank).padStart(2, '0')}
+                </span>
+                <span class="etf-ticker-tile" aria-hidden="true">
+                  {fund.ticker}
+                </span>
+                <div>
+                  <strong>
+                    {fund.ticker}
+                    <span class="ranking-profile-arrow" aria-hidden="true">
+                      ↗
+                    </span>
+                  </strong>
+                  <span class="rarity-badge ranking-tier" data-tier={fund.tier}>
+                    {titleCase(fund.tier)}
+                  </span>
+                  <small>{fund.name}</small>
+                  <small class="etf-category">{fund.category}</small>
+                </div>
+              </div>
+              <div class="ranking-plot" aria-hidden="true">
+                <div class="bar-track">
+                  <span
+                    class="bar-fill"
+                    style={`width:${position(fund.value)}%`}
+                  />
+                </div>
+              </div>
+              <div class="bar-value">
+                <strong>
+                  {fmt(fund.value, 2)}%
+                  <span class="rating-sr"> ten-year annualized return</span>
+                </strong>
+                <small>
+                  <span
+                    class:list={[
+                      'excess-return',
+                      fund.gap >= 0 ? 'up' : 'down',
+                    ]}
+                  >
+                    {fmt(fund.gap, 2)} pp
+                  </span>{' '}
+                  vs SPX / yr
+                </small>
+              </div>
+              <span class="rating-sr">
+                Read the performance source (opens in a new tab).
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+
+    <p class="ranking-explainer">
+      Ranks and rarity badges follow the investor leaderboard’s ten-year return
+      rules. Figures are annualized USD total returns at net asset value (NAV),
+      after fund expenses and with distributions reinvested, before personal
+      taxes and trading costs. Gaps are percentage points (pp) per year. Equal
+      published returns share a rank. Select any ETF to read its source.
+    </p>
+
+    <details class="etf-methodology">
+      <summary
+        >How we choose and rank the 20 ETFs <span aria-hidden="true">+</span
+        ></summary
+      >
+      <div>
+        <p>
+          “Popular” means large by assets under management. This roster is the
+          20 largest U.S.-listed ETFs in the{' '}
+          <a
+            href={etfSnapshot.selection.source}
+            target="_blank"
+            rel="noopener noreferrer">September 3, 2026 fund-size snapshot</a
+          >, excluding overseas listings. Selection is by fund size; leaderboard
+          order is by performance. This is a fixed snapshot, not a live feed.
+        </p>
+        <p>
+          All returns cover January 2016 through December 2025. Each row links
+          to an issuer report, factsheet, prospectus, or reproduced performance
+          disclosure. Linked factsheets may later be updated by their
+          publishers. Fund names reflect the historical records.
+        </p>
+        <p>
+          SPX is represented here by SPY’s published 14.71% annualized NAV
+          return. The investor leaderboard compounds rounded annual SPY market
+          returns, so its benchmark can differ slightly. SPY appears once in the
+          ranked roster and again in the pinned benchmark row for reference.
+        </p>
+        <p>
+          Legendary: at least 3 pp ahead of SPX per year. Epic: at least 1 pp.
+          Rare: at or above SPX. Common: below SPX. A badge is left unrated if
+          source rounding straddles a boundary. Badges describe past returns,
+          not risk or suitability; bond, gold, international, and sector funds
+          have different investment objectives.
+        </p>
+        <p>
+          SPYM was formerly SPLG and tracked other U.S. large-cap indexes before
+          adopting the S&amp;P 500 in January 2020. GLD is a physically backed
+          gold trust. Historical performance does not guarantee future returns.
+        </p>
+      </div>
+    </details>
+    <div class="ranking-links">
+      <a class="arena-action secondary" href="/leaderboard/"
+        >Investor leaderboard <span aria-hidden="true">→</span></a
+      >
+      <a class="arena-action" href="/calculator/"
+        >Investment Calculator <span aria-hidden="true">→</span></a
+      >
+    </div>
+  </main>
+</SiteLayout>

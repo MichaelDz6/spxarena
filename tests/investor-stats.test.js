@@ -92,9 +92,8 @@ test('every profile period uses matched drawdown frequency and handles unavailab
     assert.ok(missing.rows.every((row) => row.investor.value === '—'));
     assert.notEqual(missing.benchmarkDrawdown.value, '—');
   }
-  // Berkshire had no negative calendar years, but substantial intra-year losses.
-  assert.ok(
-    investorStatistics(rankedById.warren).investorDrawdown.magnitude > 20,
-  );
+  // Unlicensed daily data is excluded; year-end sampling cannot reveal intra-year losses.
+  assert.equal(investorStatistics(rankedById.warren).frequency, 'annual');
+  assert.equal(investorStatistics(rankedById.warren).investorDrawdown.magnitude, 0);
   assert.throws(() => investorStatistics(rankedById.warren, 3), RangeError);
 });

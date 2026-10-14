@@ -1,0 +1,89 @@
+#spx-nine-in-ten .etfs-investor-link {
+  display: inline-flex;
+  gap: 12px;
+  margin-top: 18px;
+  color: var(--brand);
+  font-size: 12px;
+}
+
+#spx-nine-in-ten .etf-ticker-tile {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 44px;
+  flex: 0 0 40px;
+  border: 1px solid var(--badge-border);
+  border-radius: 5px;
+  background: var(--badge-background);
+  color: var(--badge-ink);
+  font:
+    600 11px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: -0.5px;
+  box-shadow: inset 0 0 0 3px var(--paper);
+}
+
+#spx-nine-in-ten .etfs-page .etf-category {
+  color: var(--soft);
+  margin-top: 3px;
+  font-size: 9px;
+}
+
+#spx-nine-in-ten .etf-methodology {
+  border-block: 1px solid var(--rule);
+  margin-top: 24px;
+}
+
+#spx-nine-in-ten .etf-methodology summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  color: var(--brand);
+  font-size: 13px;
+  cursor: pointer;
+  list-style: none;
+}
+
+#spx-nine-in-ten .etf-methodology summary::-webkit-details-marker {
+  display: none;
+}
+
+#spx-nine-in-ten .etf-methodology summary > span {
+  font-size: 21px;
+  transition: transform 150ms ease;
+}
+
+#spx-nine-in-ten .etf-methodology[open] summary > span {
+  transform: rotate(45deg);
+}
+
+#spx-nine-in-ten .etf-methodology > div {
+  display: grid;
+  gap: 14px;
+  padding-bottom: 22px;
+  max-width: 80ch;
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--soft);
+}
+
+#spx-nine-in-ten .etf-methodology p a {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  #spx-nine-in-ten .etf-ticker-tile {
+    width: 34px;
+    height: 38px;
+    flex-basis: 34px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  #spx-nine-in-ten .etf-ticker-tile {
+    display: none;
+  }
+}

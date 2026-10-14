@@ -420,3 +420,30 @@ body {
     animation: none !important;
   }
 }
+
+#spx-nine-in-ten .portrait-credit { display: block; font: 11px/1.6 var(--sans); color: var(--soft); margin-top: 12px; overflow-wrap: anywhere; }
+#spx-nine-in-ten .portrait-credit a { color: inherit; text-decoration: underline; }
+#spx-nine-in-ten .home-footer > span:last-child { max-width: 420px; }
+
+#spx-nine-in-ten .portrait-kind {
+  position: absolute;
+  z-index: 2;
+  bottom: 7px;
+  left: 7px;
+  max-width: calc(100% - 14px);
+  padding: 4px 6px;
+  border: 1px solid #ffffff40;
+  border-radius: 3px;
+  background: #183b32df;
+  color: #fffdf4;
+  font: 500 8px/1.2 var(--sans);
+  letter-spacing: .3px;
+  pointer-events: none;
+}
+#spx-nine-in-ten .portrait[data-portrait-kind='generated'] img {
+  filter: grayscale(.25);
+  object-position: 50% 20%;
+}
+
+#spx-nine-in-ten .bar-identity .portrait-kind,
+#spx-nine-in-ten .unranked-entry .portrait-kind { display: none; }

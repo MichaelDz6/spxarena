@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import Portrait from '../components/Portrait.astro';
+import '../styles/leaderboard.css';
 import {
   investors,
   rankedInvestors,
@@ -9,13 +10,33 @@ import {
   fmt,
   titleCase,
 } from '../lib/performance.js';
+
+const benchmark = benchmarkStats[10];
+const firstBelowBenchmark = rankedInvestors.find((d) => d.gap < 0)?.key;
+const minimum =
+  Math.floor(Math.min(0, ...rankedInvestors.map((d) => d.value)) / 5) * 5;
+const maximum =
+  Math.ceil(Math.max(benchmark, ...rankedInvestors.map((d) => d.value)) / 5) *
+  5;
+const position = (value: number) =>
+  ((value - minimum) / (maximum - minimum)) * 100;
+const barStyle = (value: number) =>
+  `left:${position(Math.min(0, value))}%;width:${(Math.abs(value) / (maximum - minimum)) * 100}%`;
+const ticks = Array.from(
+  { length: (maximum - minimum) / 5 + 1 },
+  (_, i) => minimum + i * 5,
+);
 ---
 
 <SiteLayout
   title="Investor Leaderboard"
   description="Twenty fund and company records ranked by ten-year annualized returns versus SPY, plus fourteen unranked famous investor profiles."
 >
-  <main class="arena-page ranking-page" aria-labelledby="ranking-page-title">
+  <main
+    class="arena-page ranking-page"
+    aria-labelledby="ranking-page-title"
+    style={`--ranking-zero:${position(0)}%;--ranking-spx:${position(benchmark)}%`}
+  >
     <div class="page-intro">
       <a href="/" class="back-link">← Back to the arena</a><span
         class="small-label">THE COMPLETE ARENA · 34 INVESTORS</span
@@ -25,69 +46,111 @@ import {
         are reviewed.
       </p>
     </div>
-    <div class="ranking-benchmark">
-      <div class="benchmark-mark">SPX</div><div>
-        <span class="small-label">THE BENCHMARK</span><h2>
-          S&amp;P 500 <span>· SPY ETF</span>
-        </h2>
-      </div><div class="ranking-benchmark-return">
-        <strong>{fmt(benchmarkStats[10])}%</strong><span>10Y ANNUALIZED</span>
-      </div>
+    <div class="ranking-key">
+      <span class="small-label">20 RANKED VEHICLES · JAN 2016 – DEC 2025</span>
+      <span
+        ><i aria-hidden="true"></i>Gold marker = SPX · Bars = 10Y / year</span
+      >
     </div>
-    <div class="ranking-table-wrap">
-      <table class="ranking-table">
-        <caption
-          >20 ranked vehicles · Jan 2016 – Dec 2025 · approximate USD returns</caption
-        ><thead
-          ><tr
-            ><th scope="col">Rank / Contender</th><th scope="col">10Y / year</th
-            ><th scope="col">vs SPX / year</th><th scope="col">5Y / year</th><th
-              scope="col">1Y return</th
-            ><th scope="col">10Y rarity</th></tr
-          ></thead
-        ><tbody>
+    <div
+      class="ranking-row ranking-spx benchmark-row"
+      aria-label="SPX benchmark"
+    >
+      <div class="bar-identity">
+        <span class="bar-rank" aria-hidden="true">—</span>
+        <span class="bar-benchmark-icon" aria-hidden="true">◆</span>
+        <div>
+          <strong>SPX · S&amp;P 500</strong>
+          <small>SPY ETF · THE BENCHMARK</small>
+        </div>
+      </div>
+      <div class="ranking-plot" aria-hidden="true">
+        <div class="bar-track">
+          <span class="bar-fill" style={barStyle(benchmark)}></span>
+        </div>
+        <div class="ranking-axis">
           {
-            rankedInvestors.map((d) => (
-              <tr>
-                <>
-                  <td>
-                    <a class="ranking-person" href={`/investors/${d.key}/`}>
-                      <div class="bar-identity">
-                        <>
-                          <span class="bar-rank">
-                            {String(d.rank).padStart(2, '0')}
-                          </span>
-                          <Portrait person={d.key} />
-                          <div>
-                            <>
-                              <strong>{d.name}</strong>
-                              <small>{d.vehicle}</small>
-                            </>
-                          </div>
-                        </>
-                      </div>
-                    </a>
-                  </td>
-                  <td>{fmt(d.value)}%</td>
-                  <td class={d.gap >= 0 ? 'up' : 'down'}>{fmt(d.gap, 2)} pp</td>
-                  <td>{fmt(d.stats[5].value)}%</td>
-                  <td>{fmt(d.stats[1].value)}%</td>
-                  <td>
-                    <span class="rarity-badge" data-tier={d.tier}>
-                      {titleCase(d.tier)}
-                    </span>
-                  </td>
-                </>
-              </tr>
+            ticks.map((tick) => (
+              <span style={`left:${position(tick)}%`}>{tick}%</span>
             ))
           }
-        </tbody>
-      </table>
+        </div>
+      </div>
+      <div class="bar-value">
+        <strong>{fmt(benchmark)}%</strong>
+        <small>10Y / YEAR</small>
+      </div>
     </div>
+    <ol
+      class="ranking-list"
+      role="list"
+      aria-label="Investors ranked by ten-year annualized return"
+    >
+      {
+        rankedInvestors.map((d) => (
+          <li>
+            {d.key === firstBelowBenchmark && (
+              <hr
+                class="ranking-loss-divider"
+                aria-label="Below SPX over ten years"
+              />
+            )}
+            <a
+              class="ranking-row ranking-entry"
+              href={`/investors/${d.key}/`}
+              data-tier={d.tier}
+            >
+              <div class="bar-identity">
+                <span class="bar-rank" aria-hidden="true">
+                  {String(d.rank).padStart(2, '0')}
+                </span>
+                <Portrait person={d.key} />
+                <div>
+                  <strong>
+                    {d.name}
+                    <span class="ranking-profile-arrow" aria-hidden="true">
+                      ↗
+                    </span>
+                  </strong>
+                  <span class="rarity-badge ranking-tier" data-tier={d.tier}>
+                    {titleCase(d.tier)}
+                  </span>
+                  <small>{d.vehicle}</small>
+                </div>
+              </div>
+              <div class="ranking-plot" aria-hidden="true">
+                <div class="bar-track">
+                  <span
+                    class:list={['bar-fill', { 'is-negative': d.value < 0 }]}
+                    style={barStyle(d.value)}
+                  />
+                </div>
+              </div>
+              <div class="bar-value">
+                <strong>
+                  {fmt(d.value)}%
+                  <span class="rating-sr"> ten-year annualized return</span>
+                </strong>
+                <small>
+                  <span
+                    class:list={['excess-return', d.gap >= 0 ? 'up' : 'down']}
+                  >
+                    {fmt(d.gap, 2)} pp
+                  </span>{' '}
+                  vs SPX / yr
+                </small>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
     <p class="ranking-explainer">
-      The main rank always uses ten years. Shorter periods show recent form. A
-      vehicle’s return is not the investor’s personal return; fund NAV, market
-      value and composite figures are identified below each name.
+      Rankings and rarity badges use ten-year annualized returns. A vehicle’s
+      return is not the investor’s personal return; fund NAV, market value and
+      composite figures are identified below each name. Figures are approximate
+      USD total returns. Bars extend from zero; negative returns extend to the
+      left. Gaps are in percentage points (pp) per year.
     </p>
     <section class="unranked-section" aria-labelledby="unranked-title">
       <span class="small-label">14 MORE FAMILIAR FACES</span><h2
@@ -122,6 +185,9 @@ import {
       </div>
     </section>
     <div class="ranking-links">
+      <a class="arena-action secondary" href="/etfs-arena/"
+        >ETFs Arena <span aria-hidden="true">→</span></a
+      >
       <a class="arena-action secondary" href="/#nine-arena-rules"
         >Read the ranking rules <span aria-hidden="true">→</span></a
       ><a class="arena-action" href="/calculator/"
