@@ -1,7 +1,7 @@
 Original geometric ticker tiles created for SPX Arena, October 13, 2026. CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
 Company names and ticker symbols identify the investments discussed; these tiles are not company logos.
 
-Official company logos used in the market scorecard, company weight chart
-and "The Simpler Route" illustration
+Official company logos used in the market scorecard, company weight chart,
+"The Do-It-Yourself Route" allocation example and "The Simpler Route" illustration
 are documented in src/data/company-logos.json and /credits/#company-logos.
 The CC0 dedication above applies only to the original *-ticker.svg tiles.

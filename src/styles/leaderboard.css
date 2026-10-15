@@ -18,7 +18,8 @@
 #spx-nine-in-ten .ranking-key i {
   width: 2px;
   height: 14px;
-  background: #aa8e41;
+  background: var(--premium-gold-deep);
+  box-shadow: 0 0 0 0.5px #9c762533;
 }
 
 #spx-nine-in-ten .ranking-page .ranking-row {
@@ -165,7 +166,8 @@
 
 #spx-nine-in-ten .ranking-page .bar-track::after {
   left: var(--ranking-spx);
-  background: #aa8e41;
+  background: var(--premium-gold-deep);
+  box-shadow: 0 0 0 0.5px #9c762533;
   width: 2px;
 }
 

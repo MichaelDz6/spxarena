@@ -1,6 +1,7 @@
 ---
 import { rankedById, investorById } from '../lib/performance.js';
 import { investorStatistics } from '../lib/investor-stats.js';
+import { cardDrawdown, drawdownDate } from '../lib/card-drawdowns.js';
 interface Props {
   person: string;
 }
@@ -8,6 +9,7 @@ const { person } = Astro.props;
 const record = rankedById[person];
 const profile = investorById[person];
 const stats = investorStatistics(record);
+const latestDrawdown = cardDrawdown(person);
 ---
 
 <section
@@ -95,10 +97,36 @@ const stats = investorStatistics(record);
     }
   </div>
   <p class="profile-stats-footnote">
-    All statistics use the selected period through December 2025. Annual figures
-    are approximate; rounded returns can affect close comparisons. A positive
-    year can still include a large drawdown.
+    The comparison above uses the selected period through December 2025.
+    Annual figures are approximate; rounded returns can affect close
+    comparisons. A positive year can still include a large drawdown.
   </p>
+  {
+    record && (
+      <details class="profile-stats-method">
+        <summary>Latest card drawdown · {latestDrawdown.value}</summary>
+        <p>{latestDrawdown.description}</p>
+        {latestDrawdown.available && (
+          <>
+            <p>
+              {latestDrawdown.method} This rolling window differs from the fixed
+              return-ranking periods through December 2025 shown above.
+            </p>
+            <p>
+              <a
+                href={latestDrawdown.source}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {latestDrawdown.sourceLabel} ↗
+              </a>{' '}
+              · Retrieved {drawdownDate(latestDrawdown.retrievedOn)}
+            </p>
+          </>
+        )}
+      </details>
+    )
+  }
   <details class="profile-stats-method">
     <summary>How these stats are calculated</summary>
     <p>

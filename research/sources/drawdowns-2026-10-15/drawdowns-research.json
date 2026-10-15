@@ -1,0 +1,2039 @@
+{
+  "retrievedOn": "2026-10-15",
+  "latestPolicy": "Trailing ten years ending at each source’s latest completed daily observation before the retrieval date. Each result includes exact dates.",
+  "historicalPolicy": "Separate 1Y, 5Y and 10Y results through 2025-12-31 preserve the existing ranking snapshot.",
+  "publicationStatus": "Research only. None of these records establishes permission to redistribute vendor data or derived metrics.",
+  "rightsSource": "https://help.yahoo.com/kb/SLN2310.html",
+  "downloadErrors": {},
+  "records": {
+    "benchmark": {
+      "name": "SPY benchmark",
+      "vehicle": "SPY market-price total return",
+      "symbol": "SPY",
+      "source": "https://finance.yahoo.com/quote/SPY/history/",
+      "annualReturnSource": "https://www.ssga.com/us/en/individual/etfs/spdr-sp-500-etf-trust-spy",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/SPY.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -33.71727036119299,
+        "peakDate": "2020-02-19",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-08-10",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 12,
+          "calculated": 11.997889650020287,
+          "difference": -0.0021103499797128222
+        },
+        {
+          "year": 2017,
+          "published": 21.7,
+          "calculated": 21.705432393473046,
+          "difference": 0.005432393473046915
+        },
+        {
+          "year": 2018,
+          "published": -4.57,
+          "calculated": -4.56900691073966,
+          "difference": 0.000993089260340696
+        },
+        {
+          "year": 2019,
+          "published": 31.22,
+          "calculated": 31.223814318356034,
+          "difference": 0.0038143183560350735
+        },
+        {
+          "year": 2020,
+          "published": 18.33,
+          "calculated": 18.33163307389909,
+          "difference": 0.0016330738990930627
+        },
+        {
+          "year": 2021,
+          "published": 28.73,
+          "calculated": 28.728785060960572,
+          "difference": -0.0012149390394284865
+        },
+        {
+          "year": 2022,
+          "published": -18.17,
+          "calculated": -18.175367665431473,
+          "difference": -0.00536766543147138
+        },
+        {
+          "year": 2023,
+          "published": 26.18,
+          "calculated": 26.175807066266586,
+          "difference": -0.004192933733413895
+        },
+        {
+          "year": 2024,
+          "published": 24.89,
+          "calculated": 24.886446384167215,
+          "difference": -0.0035536158327857947
+        },
+        {
+          "year": 2025,
+          "published": 17.72,
+          "calculated": 17.719063776702647,
+          "difference": -0.0009362232973515461
+        }
+      ],
+      "maxAnnualDifference": 0.005432393473046915,
+      "tolerance": 0.08,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -18.755220835437235,
+          "peakDate": "2025-02-19",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-06-26",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -24.496376908509887,
+          "peakDate": "2022-01-03",
+          "troughDate": "2022-10-12",
+          "recoveryDate": "2023-12-13",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -33.71727036119299,
+          "peakDate": "2020-02-19",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2020-08-10",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "warren": {
+      "name": "Warren Buffett",
+      "vehicle": "Berkshire · market value",
+      "symbol": "BRK-A",
+      "source": "https://finance.yahoo.com/quote/BRK-A/history/",
+      "annualReturnSource": "https://www.berkshirehathaway.com/letters/2025ltr.pdf",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/BRK-A.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -30.42873293329855,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-16",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 23.4,
+          "calculated": 23.418099089989887,
+          "difference": 0.01809908998988874
+        },
+        {
+          "year": 2017,
+          "published": 21.9,
+          "calculated": 21.906759352943816,
+          "difference": 0.006759352943817021
+        },
+        {
+          "year": 2018,
+          "published": 2.8,
+          "calculated": 2.822580645161299,
+          "difference": 0.022580645161299095
+        },
+        {
+          "year": 2019,
+          "published": 11,
+          "calculated": 10.977124183006538,
+          "difference": -0.022875816993462195
+        },
+        {
+          "year": 2020,
+          "published": 2.4,
+          "calculated": 2.4220383403515955,
+          "difference": 0.022038340351595576
+        },
+        {
+          "year": 2021,
+          "published": 29.6,
+          "calculated": 29.569455026378975,
+          "difference": -0.030544973621026372
+        },
+        {
+          "year": 2022,
+          "published": 4,
+          "calculated": 4.004997093165175,
+          "difference": 0.004997093165174604
+        },
+        {
+          "year": 2023,
+          "published": 15.8,
+          "calculated": 15.769632033385172,
+          "difference": -0.0303679666148291
+        },
+        {
+          "year": 2024,
+          "published": 25.5,
+          "calculated": 25.48629348076481,
+          "difference": -0.013706519235189063
+        },
+        {
+          "year": 2025,
+          "published": 10.9,
+          "calculated": 10.850026434823468,
+          "difference": -0.04997356517653273
+        }
+      ],
+      "maxAnnualDifference": 0.04997356517653273,
+      "tolerance": 0.052000000000000005,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -14.425155989374193,
+          "peakDate": "2025-05-02",
+          "troughDate": "2025-08-04",
+          "recoveryDate": null,
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -25.974999072665906,
+          "peakDate": "2022-03-28",
+          "troughDate": "2022-09-26",
+          "recoveryDate": "2023-08-03",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -30.42873293329855,
+          "peakDate": "2020-01-17",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2020-11-16",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "danoff": {
+      "name": "Will Danoff",
+      "vehicle": "FCNTX · fund NAV",
+      "symbol": "FCNTX",
+      "source": "https://finance.yahoo.com/quote/FCNTX/history/",
+      "annualReturnSource": "https://fundresearch.fidelity.com/mutual-funds/view-all/316071109",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/FCNTX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -32.59377638403088,
+        "peakDate": "2021-11-19",
+        "troughDate": "2022-09-30",
+        "recoveryDate": "2024-01-19",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 3.333538,
+          "calculated": 3.3335009629389623,
+          "difference": -0.00003703706103763693
+        },
+        {
+          "year": 2017,
+          "published": 32.291076,
+          "calculated": 32.29115052303055,
+          "difference": 0.00007452303055544007
+        },
+        {
+          "year": 2018,
+          "published": -2.325017,
+          "calculated": -2.325023245940583,
+          "difference": -0.000006245940582960685
+        },
+        {
+          "year": 2019,
+          "published": 29.997907,
+          "calculated": 29.99787482147489,
+          "difference": -0.00003217852511028241
+        },
+        {
+          "year": 2020,
+          "published": 32.484904,
+          "calculated": 32.48491839515844,
+          "difference": 0.000014395158437707778
+        },
+        {
+          "year": 2021,
+          "published": 24.518917,
+          "calculated": 24.518916724651273,
+          "difference": -2.7534872515388997e-7
+        },
+        {
+          "year": 2022,
+          "published": -28.309523,
+          "calculated": -28.30952333872081,
+          "difference": -3.387208096228278e-7
+        },
+        {
+          "year": 2023,
+          "published": 39.36532,
+          "calculated": 39.3653199594108,
+          "difference": -4.058919955696183e-8
+        },
+        {
+          "year": 2024,
+          "published": 36.000971,
+          "calculated": 36.00095831118486,
+          "difference": -0.00001268881513993847
+        },
+        {
+          "year": 2025,
+          "published": 21.760907,
+          "calculated": 21.760918860156163,
+          "difference": 0.00001186015616383429
+        }
+      ],
+      "maxAnnualDifference": 0.00007452303055544007,
+      "tolerance": 0.10200000000000001,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -19.751993368606037,
+          "peakDate": "2025-02-14",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-06-24",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -32.59377638403088,
+          "peakDate": "2021-11-19",
+          "troughDate": "2022-09-30",
+          "recoveryDate": "2024-01-19",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -32.59377638403088,
+          "peakDate": "2021-11-19",
+          "troughDate": "2022-09-30",
+          "recoveryDate": "2024-01-19",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "asness": {
+      "name": "Cliff Asness",
+      "vehicle": "QLEIX · co-managed NAV",
+      "symbol": "QLEIX",
+      "source": "https://finance.yahoo.com/quote/QLEIX/history/",
+      "annualReturnSource": "https://funds.aqr.com/funds/aqr-long-short-equity-fund",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/QLEIX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -39.197704300172276,
+        "peakDate": "2018-01-26",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2022-01-14",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 11.096561,
+          "calculated": 11.096561463941445,
+          "difference": 4.639414452611845e-7
+        },
+        {
+          "year": 2017,
+          "published": 15.750189,
+          "calculated": 15.750196160757346,
+          "difference": 0.000007160757345303637
+        },
+        {
+          "year": 2018,
+          "published": -16.32827,
+          "calculated": -16.328269708032906,
+          "difference": 2.9196709405709953e-7
+        },
+        {
+          "year": 2019,
+          "published": 1.187219,
+          "calculated": 1.187219062926248,
+          "difference": 6.292624799009161e-8
+        },
+        {
+          "year": 2020,
+          "published": -13.92783,
+          "calculated": -13.927836848297392,
+          "difference": -0.000006848297392281211
+        },
+        {
+          "year": 2021,
+          "published": 31.096909,
+          "calculated": 31.096918570566558,
+          "difference": 0.000009570566557925986
+        },
+        {
+          "year": 2022,
+          "published": 19.17313,
+          "calculated": 19.173118581467907,
+          "difference": -0.000011418532093188105
+        },
+        {
+          "year": 2023,
+          "published": 23.945157,
+          "calculated": 23.94516884050819,
+          "difference": 0.000011840508193472488
+        },
+        {
+          "year": 2024,
+          "published": 30.499973,
+          "calculated": 30.499973156408622,
+          "difference": 1.5640862116583776e-7
+        },
+        {
+          "year": 2025,
+          "published": 34.433031,
+          "calculated": 34.4330313156666,
+          "difference": 3.1566659686177445e-7
+        }
+      ],
+      "maxAnnualDifference": 0.000011840508193472488,
+      "tolerance": 0.10200000000000001,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -7.070137665614828,
+          "peakDate": "2025-03-25",
+          "troughDate": "2025-04-07",
+          "recoveryDate": "2025-04-30",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -17.071567101798347,
+          "peakDate": "2022-06-07",
+          "troughDate": "2022-09-26",
+          "recoveryDate": "2023-02-09",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -39.197704300172276,
+          "peakDate": "2018-01-26",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2022-01-14",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "berkowitz": {
+      "name": "Bruce Berkowitz",
+      "vehicle": "FAIRX · fund NAV",
+      "symbol": "FAIRX",
+      "source": "https://finance.yahoo.com/quote/FAIRX/history/",
+      "annualReturnSource": "https://www.sec.gov/Archives/edgar/data/1096344/000119312526123095/d19988d485bpos.htm",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/FAIRX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -41.499448347106096,
+        "peakDate": "2022-04-01",
+        "troughDate": "2022-09-26",
+        "recoveryDate": "2023-07-27",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 25.636175,
+          "calculated": 25.63618697823218,
+          "difference": 0.000011978232176801384
+        },
+        {
+          "year": 2017,
+          "published": -5.939939,
+          "calculated": -5.9399480121565045,
+          "difference": -0.000009012156504617508
+        },
+        {
+          "year": 2018,
+          "published": -23.181491,
+          "calculated": -23.181491131831255,
+          "difference": -1.3183125346927227e-7
+        },
+        {
+          "year": 2019,
+          "published": 32.06054,
+          "calculated": 32.06053960810713,
+          "difference": -3.9189287548424545e-7
+        },
+        {
+          "year": 2020,
+          "published": 46.898626,
+          "calculated": 46.89862610172011,
+          "difference": 1.0172011144504722e-7
+        },
+        {
+          "year": 2021,
+          "published": 6.865777,
+          "calculated": 6.865776753502462,
+          "difference": -2.464975379368184e-7
+        },
+        {
+          "year": 2022,
+          "published": -20.494701,
+          "calculated": -20.49470065928315,
+          "difference": 3.407168485125567e-7
+        },
+        {
+          "year": 2023,
+          "published": 46.716709,
+          "calculated": 46.71670866827464,
+          "difference": -3.3172536006986775e-7
+        },
+        {
+          "year": 2024,
+          "published": -17.441392,
+          "calculated": -17.441391963302998,
+          "difference": 3.669700276986987e-8
+        },
+        {
+          "year": 2025,
+          "published": 29.494562,
+          "calculated": 29.494561922355466,
+          "difference": -7.76445325811892e-8
+        }
+      ],
+      "maxAnnualDifference": 0.000011978232176801384,
+      "tolerance": 0.10200000000000001,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -13.946953775854798,
+          "peakDate": "2025-01-27",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-06-26",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -41.499448347106096,
+          "peakDate": "2022-04-01",
+          "troughDate": "2022-09-26",
+          "recoveryDate": "2023-07-27",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -41.499448347106096,
+          "peakDate": "2022-04-01",
+          "troughDate": "2022-09-26",
+          "recoveryDate": "2023-07-27",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "gayner": {
+      "name": "Tom Gayner",
+      "vehicle": "MKL · shareholder return",
+      "symbol": "MKL",
+      "source": "https://finance.yahoo.com/quote/MKL/history/",
+      "annualReturnSource": "https://www.mklgroup.com/who-we-are/shareholder-letters",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/MKL.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -44.65579635116179,
+        "peakDate": "2020-02-20",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2022-03-14",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 2.394297,
+          "calculated": 2.394297277252244,
+          "difference": 2.7725224427399553e-7
+        },
+        {
+          "year": 2017,
+          "published": 25.940299,
+          "calculated": 25.940299047298222,
+          "difference": 4.729822222770963e-8
+        },
+        {
+          "year": 2018,
+          "published": -8.873435,
+          "calculated": -8.87343460548088,
+          "difference": 3.9451912137167255e-7
+        },
+        {
+          "year": 2019,
+          "published": 10.126679,
+          "calculated": 10.126678885652908,
+          "difference": -1.1434709179525271e-7
+        },
+        {
+          "year": 2020,
+          "published": -9.610993,
+          "calculated": -9.610993193803763,
+          "difference": -1.938037623716582e-7
+        },
+        {
+          "year": 2021,
+          "published": 19.423202,
+          "calculated": 19.423201556942793,
+          "difference": -4.430572069225036e-7
+        },
+        {
+          "year": 2022,
+          "published": 6.765801,
+          "calculated": 6.765801477664102,
+          "difference": 4.776641020498573e-7
+        },
+        {
+          "year": 2023,
+          "published": 7.773117,
+          "calculated": 7.7731166793509665,
+          "difference": -3.2064903354722674e-7
+        },
+        {
+          "year": 2024,
+          "published": 21.574051,
+          "calculated": 21.574051044973963,
+          "difference": 4.497396233205109e-8
+        },
+        {
+          "year": 2025,
+          "published": 24.528593,
+          "calculated": 24.528592752167476,
+          "difference": -2.478325242805113e-7
+        }
+      ],
+      "maxAnnualDifference": 4.776641020498573e-7,
+      "tolerance": 0.10200000000000001,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -18.512695885677765,
+          "peakDate": "2025-02-06",
+          "troughDate": "2025-04-07",
+          "recoveryDate": "2025-11-10",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -28.873625196470066,
+          "peakDate": "2022-03-24",
+          "troughDate": "2022-09-26",
+          "recoveryDate": "2023-08-10",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -44.65579635116179,
+          "peakDate": "2020-02-20",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2022-03-14",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "hussman": {
+      "name": "John Hussman",
+      "vehicle": "HSGFX · fund NAV",
+      "symbol": "HSGFX",
+      "source": "https://finance.yahoo.com/quote/HSGFX/history/",
+      "annualReturnSource": "https://www.hussmanfunds.com/strategic-market-cycle-fund/",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/HSGFX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -30.8510791134479,
+        "peakDate": "2016-11-03",
+        "troughDate": "2020-02-10",
+        "recoveryDate": null,
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": -11.491116,
+          "calculated": -11.49110973705152,
+          "difference": 0.000006262948479829333
+        },
+        {
+          "year": 2017,
+          "published": -12.729142,
+          "calculated": -12.72914138059943,
+          "difference": 6.194005699455829e-7
+        },
+        {
+          "year": 2018,
+          "published": 8.784255,
+          "calculated": 8.784245763975274,
+          "difference": -0.000009236024725467473
+        },
+        {
+          "year": 2019,
+          "published": -18.860567,
+          "calculated": -18.860575276113202,
+          "difference": -0.000008276113202754232
+        },
+        {
+          "year": 2020,
+          "published": 14.523635,
+          "calculated": 14.523655561202965,
+          "difference": 0.00002056120296423103
+        },
+        {
+          "year": 2021,
+          "published": -0.227594,
+          "calculated": -0.22760296034669558,
+          "difference": -0.000008960346695591204
+        },
+        {
+          "year": 2022,
+          "published": 17.329126,
+          "calculated": 17.329125670237723,
+          "difference": -3.297622761522234e-7
+        },
+        {
+          "year": 2023,
+          "published": -11.602274,
+          "calculated": -11.602274412623725,
+          "difference": -4.1262372540984416e-7
+        },
+        {
+          "year": 2024,
+          "published": -6.98417,
+          "calculated": -6.984169520501149,
+          "difference": 4.794988504031039e-7
+        },
+        {
+          "year": 2025,
+          "published": 6.237494,
+          "calculated": 6.237493531981486,
+          "difference": -4.680185137218018e-7
+        }
+      ],
+      "maxAnnualDifference": 0.00002056120296423103,
+      "tolerance": 0.10200000000000001,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -17.391310496327506,
+          "peakDate": "2025-04-21",
+          "troughDate": "2025-10-29",
+          "recoveryDate": null,
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -22.419237795465396,
+          "peakDate": "2023-01-05",
+          "troughDate": "2024-11-11",
+          "recoveryDate": "2025-04-10",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -38.35009772974456,
+          "peakDate": "2016-02-11",
+          "troughDate": "2020-02-10",
+          "recoveryDate": null,
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "nygren": {
+      "name": "Bill Nygren",
+      "vehicle": "OAKMX · co-managed NAV",
+      "symbol": "OAKMX",
+      "source": "https://finance.yahoo.com/quote/OAKMX/history/",
+      "annualReturnSource": "https://oakmark.com/news-insights/what-goes-up-u-s-equity-market-commentary-4q-2025/",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/OAKMX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -41.426314088144764,
+        "peakDate": "2020-02-12",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-10",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 18.321325,
+          "calculated": 18.321301064389004,
+          "difference": -0.00002393561099722774
+        },
+        {
+          "year": 2017,
+          "published": 21.117954,
+          "calculated": 21.11795114743311,
+          "difference": -0.000002852566890254593
+        },
+        {
+          "year": 2018,
+          "published": -12.763076,
+          "calculated": -12.763073333831587,
+          "difference": 0.000002666168413156811
+        },
+        {
+          "year": 2019,
+          "published": 27.13868,
+          "calculated": 27.13871776875232,
+          "difference": 0.000037768752317646204
+        },
+        {
+          "year": 2020,
+          "published": 12.89719,
+          "calculated": 12.897168977851315,
+          "difference": -0.000021022148684934905
+        },
+        {
+          "year": 2021,
+          "published": 34.205889,
+          "calculated": 34.205891968865586,
+          "difference": 0.000002968865587149594
+        },
+        {
+          "year": 2022,
+          "published": -13.381,
+          "calculated": -13.38099398953222,
+          "difference": 0.000006010467780370732
+        },
+        {
+          "year": 2023,
+          "published": 30.921604,
+          "calculated": 30.921603523690024,
+          "difference": -4.7630997457304147e-7
+        },
+        {
+          "year": 2024,
+          "published": 16.016452,
+          "calculated": 16.016452397002556,
+          "difference": 3.9700255527463923e-7
+        },
+        {
+          "year": 2025,
+          "published": 14.125242,
+          "calculated": 14.125242068150111,
+          "difference": 6.815011133198823e-8
+        }
+      ],
+      "maxAnnualDifference": 0.000037768752317646204,
+      "tolerance": 0.10200000000000001,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -17.05100497462989,
+          "peakDate": "2025-01-27",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-07-01",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -23.677132278524205,
+          "peakDate": "2022-01-14",
+          "troughDate": "2022-09-30",
+          "recoveryDate": "2023-07-11",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -41.426314088144764,
+          "peakDate": "2020-02-12",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2020-11-10",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "davis": {
+      "name": "Chris Davis",
+      "vehicle": "NYVTX · Class A NAV",
+      "symbol": "NYVTX",
+      "source": "https://finance.yahoo.com/quote/NYVTX/history/",
+      "annualReturnSource": "https://davisfunds.com/funds/nyventure-fund",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/NYVTX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -36.97696777923145,
+        "peakDate": "2020-02-19",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-09",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 12.31,
+          "calculated": 12.309989218318762,
+          "difference": -0.000010781681238469787
+        },
+        {
+          "year": 2017,
+          "published": 22.182307,
+          "calculated": 22.182338593639983,
+          "difference": 0.00003159363998150866
+        },
+        {
+          "year": 2018,
+          "published": -12.992719,
+          "calculated": -12.992724876995753,
+          "difference": -0.00000587699575405054
+        },
+        {
+          "year": 2019,
+          "published": 30.993466,
+          "calculated": 30.99342669686662,
+          "difference": -0.00003930313338074143
+        },
+        {
+          "year": 2020,
+          "published": 11.420954,
+          "calculated": 11.420963350474779,
+          "difference": 0.000009350474778457851
+        },
+        {
+          "year": 2021,
+          "published": 12.463605,
+          "calculated": 12.46361943981853,
+          "difference": 0.000014439818530220805
+        },
+        {
+          "year": 2022,
+          "published": -17.539675,
+          "calculated": -17.539675471124138,
+          "difference": -4.711241388122289e-7
+        },
+        {
+          "year": 2023,
+          "published": 30.142478,
+          "calculated": 30.142464598098307,
+          "difference": -0.000013401901693299578
+        },
+        {
+          "year": 2024,
+          "published": 17.374313,
+          "calculated": 17.37432507421479,
+          "difference": 0.000012074214790658289
+        },
+        {
+          "year": 2025,
+          "published": 26.831432,
+          "calculated": 26.831432473687578,
+          "difference": 4.7368757805088535e-7
+        }
+      ],
+      "maxAnnualDifference": 0.00003930313338074143,
+      "tolerance": 0.10200000000000001,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -16.78597637658733,
+          "peakDate": "2025-02-19",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-06-24",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -32.61645871887878,
+          "peakDate": "2021-06-01",
+          "troughDate": "2022-09-30",
+          "recoveryDate": "2024-01-26",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -36.97696777923145,
+          "peakDate": "2020-02-19",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2020-11-09",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "rogers": {
+      "name": "John Rogers Jr.",
+      "vehicle": "ARGFX · Investor NAV",
+      "symbol": "ARGFX",
+      "source": "https://finance.yahoo.com/quote/ARGFX/history/",
+      "annualReturnSource": "https://www.arielinvestments.com/wp-content/uploads/2026/01/Ariel-Fund-FactSheet_4Q25-2.pdf",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/ARGFX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -45.28783261010789,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-24",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 15.619443,
+          "calculated": 15.619442858700605,
+          "difference": -1.4129939529539115e-7
+        },
+        {
+          "year": 2017,
+          "published": 15.992728,
+          "calculated": 15.992749793652505,
+          "difference": 0.000021793652505763816
+        },
+        {
+          "year": 2018,
+          "published": -13.585481,
+          "calculated": -13.58550706809556,
+          "difference": -0.000026068095559494964
+        },
+        {
+          "year": 2019,
+          "published": 24.637892,
+          "calculated": 24.637906238847496,
+          "difference": 0.000014238847494851825
+        },
+        {
+          "year": 2020,
+          "published": 10.050189,
+          "calculated": 10.050198057675065,
+          "difference": 0.000009057675065093918
+        },
+        {
+          "year": 2021,
+          "published": 30.289374,
+          "calculated": 30.289363969348916,
+          "difference": -0.000010030651083070552
+        },
+        {
+          "year": 2022,
+          "published": -18.681236,
+          "calculated": -18.681229377562413,
+          "difference": 0.000006622437584979934
+        },
+        {
+          "year": 2023,
+          "published": 15.778,
+          "calculated": 15.777998807475546,
+          "difference": -0.0000011925244542965174
+        },
+        {
+          "year": 2024,
+          "published": 11.556437,
+          "calculated": 11.556429569511128,
+          "difference": -0.000007430488873083618
+        },
+        {
+          "year": 2025,
+          "published": 14.078361,
+          "calculated": 14.078360880421691,
+          "difference": -1.1957830814424142e-7
+        }
+      ],
+      "maxAnnualDifference": 0.000026068095559494964,
+      "tolerance": 0.10200000000000001,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -24.776552768138927,
+          "peakDate": "2025-01-30",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-08-13",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -30.54854384802166,
+          "peakDate": "2021-11-09",
+          "troughDate": "2022-09-30",
+          "recoveryDate": "2024-07-26",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -45.28783261010789,
+          "peakDate": "2020-01-17",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2020-11-24",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "herro": {
+      "name": "David Herro",
+      "vehicle": "OAKIX · co-managed NAV",
+      "symbol": "OAKIX",
+      "source": "https://finance.yahoo.com/quote/OAKIX/history/",
+      "annualReturnSource": "https://oakmark.com/wp-content/uploads/sites/3/2026/01/Oakmark-International-Fund-Commentary-12-31-2025.pdf",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/OAKIX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -53.05363058192227,
+        "peakDate": "2018-01-26",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2021-02-24",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 7.900648,
+          "calculated": 7.9006713013090035,
+          "difference": 0.000023301309003187498
+        },
+        {
+          "year": 2017,
+          "published": 29.735023,
+          "calculated": 29.735009044280012,
+          "difference": -0.000013955719989411364
+        },
+        {
+          "year": 2018,
+          "published": -23.410833,
+          "calculated": -23.41084889133691,
+          "difference": -0.000015891336911266762
+        },
+        {
+          "year": 2019,
+          "published": 24.235388,
+          "calculated": 24.235414344404106,
+          "difference": 0.000026344404105316244
+        },
+        {
+          "year": 2020,
+          "published": 4.91587,
+          "calculated": 4.915869703154985,
+          "difference": -2.96845015235192e-7
+        },
+        {
+          "year": 2021,
+          "published": 9.037152,
+          "calculated": 9.037160206503714,
+          "difference": 0.000008206503713026336
+        },
+        {
+          "year": 2022,
+          "published": -15.719183,
+          "calculated": -15.719196378020872,
+          "difference": -0.000013378020872423235
+        },
+        {
+          "year": 2023,
+          "published": 18.858428,
+          "calculated": 18.85844713859852,
+          "difference": 0.000019138598521095673
+        },
+        {
+          "year": 2024,
+          "published": -4.605723,
+          "calculated": -4.605730319722512,
+          "difference": -0.000007319722511667237
+        },
+        {
+          "year": 2025,
+          "published": 32.396474,
+          "calculated": 32.396473956775274,
+          "difference": -4.322472335616112e-8
+        }
+      ],
+      "maxAnnualDifference": 0.000026344404105316244,
+      "tolerance": 0.10200000000000001,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -16.995497346495657,
+          "peakDate": "2025-03-07",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-05-13",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -38.00095076472106,
+          "peakDate": "2021-06-07",
+          "troughDate": "2022-09-29",
+          "recoveryDate": "2025-03-07",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -53.05363058192227,
+          "peakDate": "2018-01-26",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2021-02-24",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "gabelli": {
+      "name": "Mario Gabelli",
+      "vehicle": "GABAX · Class AAA NAV",
+      "symbol": "GABAX",
+      "source": "https://finance.yahoo.com/quote/GABAX/history/",
+      "annualReturnSource": "https://www.sec.gov/Archives/edgar/data/783898/000182912626004254/gaf_485bpos.htm",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/GABAX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -36.647068000893924,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-09",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 11.58,
+          "calculated": 11.466655917093526,
+          "difference": -0.11334408290647424
+        },
+        {
+          "year": 2017,
+          "published": 20.16,
+          "calculated": 20.168549838071257,
+          "difference": 0.008549838071257199
+        },
+        {
+          "year": 2018,
+          "published": -7.69,
+          "calculated": -7.6145521284126545,
+          "difference": 0.0754478715873459
+        },
+        {
+          "year": 2019,
+          "published": 22.43,
+          "calculated": 22.44211451958218,
+          "difference": 0.01211451958218035
+        },
+        {
+          "year": 2020,
+          "published": 11.23,
+          "calculated": 11.22379051725102,
+          "difference": -0.006209482748980477
+        },
+        {
+          "year": 2021,
+          "published": 18.93,
+          "calculated": 18.957015695448032,
+          "difference": 0.027015695448032062
+        },
+        {
+          "year": 2022,
+          "published": -10.63,
+          "calculated": -10.74289716981217,
+          "difference": -0.1128971698121699
+        },
+        {
+          "year": 2023,
+          "published": 10.29,
+          "calculated": 10.614925745170956,
+          "difference": 0.3249257451709564
+        },
+        {
+          "year": 2024,
+          "published": 8.16,
+          "calculated": 7.795153028501001,
+          "difference": -0.3648469714989995
+        },
+        {
+          "year": 2025,
+          "published": 16.74,
+          "calculated": 16.648973348919238,
+          "difference": -0.09102665108076025
+        }
+      ],
+      "maxAnnualDifference": 0.3648469714989995,
+      "tolerance": 0.007,
+      "validationStatus": "annual-return mismatch",
+      "periods": {
+        "1": {
+          "value": -14.360037529480675,
+          "peakDate": "2025-02-19",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-06-12",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -21.89978825413892,
+          "peakDate": "2022-01-04",
+          "troughDate": "2022-09-30",
+          "recoveryDate": "2024-03-01",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -36.647068000893924,
+          "peakDate": "2020-01-17",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2020-11-09",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "joel": {
+      "name": "Joel Greenblatt",
+      "vehicle": "GINDX · co-managed",
+      "symbol": "GINDX",
+      "source": "https://finance.yahoo.com/quote/GINDX/history/",
+      "annualReturnSource": "https://www.gothamfunds.com/Download.aspx?ID=457bfb70-a1f5-4692-858e-35a279efb3a3&Inline=1",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/GINDX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -33.700309287043154,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-08-20",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 17.98,
+          "calculated": 17.974764994399894,
+          "difference": -0.005235005600106035
+        },
+        {
+          "year": 2017,
+          "published": 26.05,
+          "calculated": 26.04966936992237,
+          "difference": -0.00033063007763090013
+        },
+        {
+          "year": 2018,
+          "published": -3.5,
+          "calculated": -3.4935486545873307,
+          "difference": 0.00645134541266934
+        },
+        {
+          "year": 2019,
+          "published": 19.37,
+          "calculated": 19.388817530707602,
+          "difference": 0.018817530707600838
+        },
+        {
+          "year": 2020,
+          "published": 6.8,
+          "calculated": 6.787616623185233,
+          "difference": -0.012383376814766756
+        },
+        {
+          "year": 2021,
+          "published": 32.75,
+          "calculated": 32.75306448773561,
+          "difference": 0.003064487735606747
+        },
+        {
+          "year": 2022,
+          "published": -11.61,
+          "calculated": -11.607145720906741,
+          "difference": 0.002854279093257972
+        },
+        {
+          "year": 2023,
+          "published": 26.42,
+          "calculated": 26.56653946563774,
+          "difference": 0.146539465637737
+        },
+        {
+          "year": 2024,
+          "published": 26.05,
+          "calculated": 25.79464512254035,
+          "difference": -0.25535487745965213
+        },
+        {
+          "year": 2025,
+          "published": 22.29,
+          "calculated": 22.251908647034966,
+          "difference": -0.038091352965032854
+        }
+      ],
+      "maxAnnualDifference": 0.25535487745965213,
+      "tolerance": 0.007,
+      "validationStatus": "annual-return mismatch",
+      "periods": {
+        "1": {
+          "value": -18.747884200801558,
+          "peakDate": "2025-02-19",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-06-26",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -19.76851229583181,
+          "peakDate": "2022-01-04",
+          "troughDate": "2022-09-30",
+          "recoveryDate": "2023-06-30",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -33.700309287043154,
+          "peakDate": "2020-01-17",
+          "troughDate": "2020-03-23",
+          "recoveryDate": "2020-08-20",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "peter": {
+      "name": "Peter Schiff",
+      "vehicle": "EPIVX · affiliated fund",
+      "symbol": "EPIVX",
+      "source": "https://finance.yahoo.com/quote/EPIVX/history/",
+      "annualReturnSource": "https://epcadvisorsgroup.com/wp-content/uploads/2026/02/EPIVX-Fund-Fact-Sheet-12.31.2025.pdf",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/EPIVX.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -32.16584316573271,
+        "peakDate": "2018-01-26",
+        "troughDate": "2020-03-20",
+        "recoveryDate": "2020-06-29",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 17.99,
+          "calculated": 22.814797345896775,
+          "difference": 4.824797345896776
+        },
+        {
+          "year": 2017,
+          "published": 15.09,
+          "calculated": 15.105774624548562,
+          "difference": 0.0157746245485626
+        },
+        {
+          "year": 2018,
+          "published": -14.49,
+          "calculated": -14.478740033209425,
+          "difference": 0.011259966790575504
+        },
+        {
+          "year": 2019,
+          "published": 16.72,
+          "calculated": 16.729379879950066,
+          "difference": 0.009379879950067505
+        },
+        {
+          "year": 2020,
+          "published": 18.37,
+          "calculated": 18.394931140645543,
+          "difference": 0.024931140645541916
+        },
+        {
+          "year": 2021,
+          "published": 7.11,
+          "calculated": 7.1157397810796885,
+          "difference": 0.0057397810796882
+        },
+        {
+          "year": 2022,
+          "published": 0.47,
+          "calculated": 0.46455645367524667,
+          "difference": -0.005443546324753301
+        },
+        {
+          "year": 2023,
+          "published": 9.8,
+          "calculated": 9.80376580852742,
+          "difference": 0.0037658085274188124
+        },
+        {
+          "year": 2024,
+          "published": 5.08,
+          "calculated": 5.07741190399118,
+          "difference": -0.002588096008819818
+        },
+        {
+          "year": 2025,
+          "published": 47.15,
+          "calculated": 47.14603900189562,
+          "difference": -0.003960998104375335
+        }
+      ],
+      "maxAnnualDifference": 4.824797345896776,
+      "tolerance": 0.007,
+      "validationStatus": "annual-return mismatch",
+      "periods": {
+        "1": {
+          "value": -8.709784408374432,
+          "peakDate": "2025-03-19",
+          "troughDate": "2025-04-07",
+          "recoveryDate": "2025-04-14",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -21.752207413608215,
+          "peakDate": "2022-04-20",
+          "troughDate": "2022-09-26",
+          "recoveryDate": "2023-05-05",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -32.16584316573271,
+          "peakDate": "2018-01-26",
+          "troughDate": "2020-03-20",
+          "recoveryDate": "2020-06-29",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "watsa": {
+      "name": "Prem Watsa",
+      "vehicle": "Fairfax · shareholders USD",
+      "symbol": "FFH.TO",
+      "source": "https://finance.yahoo.com/quote/FFH.TO/history/",
+      "annualReturnSource": "https://www.fairfax.ca/wp-content/uploads/2026/03/FFH_Fairfax-Financials-Shareholders-Letter-2025-with-attachments-092704.pdf",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/FFH.TO.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "currencySource": "CADUSD=X",
+      "currencySourceFile": "research/sources/drawdowns-2026-10-15/CADUSD-X.json",
+      "latest": {
+        "value": -59.25134747660709,
+        "peakDate": "2018-06-15",
+        "troughDate": "2020-05-13",
+        "recoveryDate": "2022-03-31",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2509,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses. Converted into USD using the latest available daily exchange rate on or before each observation.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 3.729271,
+          "calculated": 3.7292594307389404,
+          "difference": -0.000011569261059385383
+        },
+        {
+          "year": 2017,
+          "published": 13.113342,
+          "calculated": 13.113355688375394,
+          "difference": 0.000013688375394949048
+        },
+        {
+          "year": 2018,
+          "published": -15.604994,
+          "calculated": -15.604986194383264,
+          "difference": 0.000007805616736078491
+        },
+        {
+          "year": 2019,
+          "published": 8.088454,
+          "calculated": 8.088454196126914,
+          "difference": 1.9612691382064895e-7
+        },
+        {
+          "year": 2020,
+          "published": -25.542782,
+          "calculated": -25.542767324482597,
+          "difference": 0.000014675517402196192
+        },
+        {
+          "year": 2021,
+          "published": 47.362582,
+          "calculated": 47.36257081119846,
+          "difference": -0.000011188801543937643
+        },
+        {
+          "year": 2022,
+          "published": 23.671114,
+          "calculated": 23.67111378827058,
+          "difference": -2.1172941799818545e-7
+        },
+        {
+          "year": 2023,
+          "published": 58.731711,
+          "calculated": 58.731727224022976,
+          "difference": 0.000016224022978406083
+        },
+        {
+          "year": 2024,
+          "published": 53.277674,
+          "calculated": 53.277658118220764,
+          "difference": -0.00001588177923395051
+        },
+        {
+          "year": 2025,
+          "published": 38.546958,
+          "calculated": 38.5469582986429,
+          "difference": 2.986429024076642e-7
+        }
+      ],
+      "maxAnnualDifference": 0.000016224022978406083,
+      "tolerance": 0.052000000000000005,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -14.223522096120655,
+          "peakDate": "2025-06-24",
+          "troughDate": "2025-11-07",
+          "recoveryDate": "2025-12-19",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 252
+        },
+        "5": {
+          "value": -20.326758813141442,
+          "peakDate": "2022-04-19",
+          "troughDate": "2022-10-11",
+          "recoveryDate": "2022-11-21",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1255
+        },
+        "10": {
+          "value": -59.25134747660709,
+          "peakDate": "2018-06-15",
+          "troughDate": "2020-05-13",
+          "recoveryDate": "2022-03-31",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2510
+        }
+      }
+    },
+    "smith": {
+      "name": "Terry Smith",
+      "vehicle": "Fundsmith T Acc · USD",
+      "symbol": "0P0000RU7W.L",
+      "source": "https://finance.yahoo.com/quote/0P0000RU7W.L/history/",
+      "annualReturnSource": "https://www.fundsmith.co.uk/factsheet/",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/0P0000RU7W.L.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "currencySource": "GBPUSD=X",
+      "currencySourceFile": "research/sources/drawdowns-2026-10-15/GBPUSD-X.json",
+      "latest": {
+        "value": -32.778889327826896,
+        "peakDate": "2021-09-02",
+        "troughDate": "2022-10-11",
+        "recoveryDate": "2024-05-16",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2525,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses. Converted into USD using the latest available daily exchange rate on or before each observation.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": 6.269805,
+          "calculated": 6.269007484227185,
+          "difference": -0.0007975157728150606
+        },
+        {
+          "year": 2017,
+          "published": 33.412874,
+          "calculated": 33.40762811301159,
+          "difference": -0.005245886988411996
+        },
+        {
+          "year": 2018,
+          "published": -3.482097,
+          "calculated": -3.4866452246309465,
+          "difference": -0.004548224630946507
+        },
+        {
+          "year": 2019,
+          "published": 29.781421,
+          "calculated": 29.78177154728112,
+          "difference": 0.00035054728111916234
+        },
+        {
+          "year": 2020,
+          "published": 22.959429,
+          "calculated": 22.95829644517886,
+          "difference": -0.0011325548211402747
+        },
+        {
+          "year": 2021,
+          "published": 20.924882,
+          "calculated": 20.922634922357307,
+          "difference": -0.0022470776426928296
+        },
+        {
+          "year": 2022,
+          "published": -23.008842,
+          "calculated": -23.00837629329555,
+          "difference": 0.00046570670444978646
+        },
+        {
+          "year": 2023,
+          "published": 18.68607,
+          "calculated": 18.687513838635404,
+          "difference": 0.001443838635402983
+        },
+        {
+          "year": 2024,
+          "published": 7.289292,
+          "calculated": 7.284719696989628,
+          "difference": -0.004572303010371925
+        },
+        {
+          "year": 2025,
+          "published": 8.16385,
+          "calculated": 8.165692639684918,
+          "difference": 0.001842639684918268
+        }
+      ],
+      "maxAnnualDifference": 0.005245886988411996,
+      "tolerance": 0.052000000000000005,
+      "validationStatus": "matched",
+      "periods": {
+        "1": {
+          "value": -16.580316560506148,
+          "peakDate": "2025-02-06",
+          "troughDate": "2025-04-07",
+          "recoveryDate": "2025-06-05",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 253
+        },
+        "5": {
+          "value": -32.778889327826896,
+          "peakDate": "2021-09-02",
+          "troughDate": "2022-10-11",
+          "recoveryDate": "2024-05-16",
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1261
+        },
+        "10": {
+          "value": -32.778889327826896,
+          "peakDate": "2021-09-02",
+          "troughDate": "2022-10-11",
+          "recoveryDate": "2024-05-16",
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2526
+        }
+      }
+    },
+    "cathie": {
+      "name": "Cathie Wood",
+      "vehicle": "ARKK · NAV",
+      "symbol": "ARKK",
+      "source": "https://finance.yahoo.com/quote/ARKK/history/",
+      "annualReturnSource": "https://www.ark-funds.com/funds/arkk",
+      "sourceFile": "research/sources/drawdowns-2026-10-15/ARKK.json",
+      "retrievedOn": "2026-10-15",
+      "frequency": "daily",
+      "currency": "USD",
+      "publicationStatus": "withheld: provider redistribution permission not verified",
+      "latest": {
+        "value": -80.9141075842511,
+        "peakDate": "2021-02-12",
+        "troughDate": "2022-12-28",
+        "recoveryDate": null,
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "annualReconciliation": [
+        {
+          "year": 2016,
+          "published": -1.97,
+          "calculated": -2.003902719778572,
+          "difference": -0.033902719778571955
+        },
+        {
+          "year": 2017,
+          "published": 87.41,
+          "calculated": 87.32700182133738,
+          "difference": -0.0829981786626206
+        },
+        {
+          "year": 2018,
+          "published": 3.58,
+          "calculated": 3.5191980123804534,
+          "difference": -0.060801987619546694
+        },
+        {
+          "year": 2019,
+          "published": 35.23,
+          "calculated": 35.07754392535807,
+          "difference": -0.15245607464192545
+        },
+        {
+          "year": 2020,
+          "published": 152.51,
+          "calculated": 152.7107913231815,
+          "difference": 0.20079132318150528
+        },
+        {
+          "year": 2021,
+          "published": -23.36,
+          "calculated": -23.39073150219203,
+          "difference": -0.03073150219202958
+        },
+        {
+          "year": 2022,
+          "published": -66.99,
+          "calculated": -66.97325098814149,
+          "difference": 0.016749011858507856
+        },
+        {
+          "year": 2023,
+          "published": 67.82,
+          "calculated": 69.03570834260127,
+          "difference": 1.2157083426012747
+        },
+        {
+          "year": 2024,
+          "published": 8.36,
+          "calculated": 8.401759815962162,
+          "difference": 0.041759815962162605
+        },
+        {
+          "year": 2025,
+          "published": 35.58,
+          "calculated": 35.494094678003464,
+          "difference": -0.08590532199653467
+        }
+      ],
+      "maxAnnualDifference": 1.2157083426012747,
+      "tolerance": 0.007,
+      "validationStatus": "wrong basis: market-price history; card record requires NAV",
+      "periods": {
+        "1": {
+          "value": -39.555356086810264,
+          "peakDate": "2025-02-14",
+          "troughDate": "2025-04-08",
+          "recoveryDate": "2025-06-20",
+          "startDate": "2024-12-31",
+          "endDate": "2025-12-31",
+          "observations": 251
+        },
+        "5": {
+          "value": -80.9141075842511,
+          "peakDate": "2021-02-12",
+          "troughDate": "2022-12-28",
+          "recoveryDate": null,
+          "startDate": "2020-12-31",
+          "endDate": "2025-12-31",
+          "observations": 1256
+        },
+        "10": {
+          "value": -80.9141075842511,
+          "peakDate": "2021-02-12",
+          "troughDate": "2022-12-28",
+          "recoveryDate": null,
+          "startDate": "2015-12-31",
+          "endDate": "2025-12-31",
+          "observations": 2515
+        }
+      }
+    },
+    "loeb": {
+      "name": "Dan Loeb",
+      "vehicle": "Third Point Offshore · net",
+      "source": "https://assets-malibu-life.s3.us-west-2.amazonaws.com/system/uploads/fae/file/asset/1683/Third_Point_Master_Fund_December_2025_Monthly_Report.pdf",
+      "retrievedOn": "2026-10-15",
+      "validationStatus": "daily history unavailable",
+      "reason": "No matched daily total-return series established for this exact vehicle. Do not substitute a listed holding company or a different fund.",
+      "publicationStatus": "withheld: no verified daily figure"
+    },
+    "pabrai": {
+      "name": "Mohnish Pabrai",
+      "vehicle": "Pabrai Fund 3 · net",
+      "source": "https://pabraifunds.com/annual-reports-and-meetings/",
+      "retrievedOn": "2026-10-15",
+      "validationStatus": "daily history unavailable",
+      "reason": "No matched daily total-return series established for this exact vehicle. Do not substitute a listed holding company or a different fund.",
+      "publicationStatus": "withheld: no verified daily figure"
+    },
+    "bill": {
+      "name": "Bill Ackman",
+      "vehicle": "PSH · NAV",
+      "source": "https://assets.pershingsquareholdings.com/wp-content/uploads/2026/02/11144917/2026-Annual-Investor-Presentation.pdf",
+      "retrievedOn": "2026-10-15",
+      "validationStatus": "daily history unavailable",
+      "reason": "No matched daily total-return series established for this exact vehicle. Do not substitute a listed holding company or a different fund.",
+      "publicationStatus": "withheld: no verified daily figure"
+    },
+    "carl": {
+      "name": "Carl Icahn",
+      "vehicle": "Icahn funds · composite",
+      "source": "https://www.ielp.com/static-files/a5d6dde9-3909-48db-bf35-28c21e788151",
+      "retrievedOn": "2026-10-15",
+      "validationStatus": "daily history unavailable",
+      "reason": "No matched daily total-return series established for this exact vehicle. Do not substitute a listed holding company or a different fund.",
+      "publicationStatus": "withheld: no verified daily figure"
+    }
+  }
+}

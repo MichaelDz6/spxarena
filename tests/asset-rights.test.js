@@ -50,7 +50,7 @@ test('only licensed original color photos are published; unresolved rights never
   }
   assert.deepEqual(new Set(readdirSync(publicFile('/portraits/'))), new Set(Object.values(images).filter(Boolean).map(path => path.split('/').at(-1))));
 });
-test('company tiles use original ticker artwork and unlicensed daily data is excluded', () => {
+test('company tiles use original ticker artwork and the legacy daily comparison dataset remains excluded', () => {
   for (const company of companies.companies.filter(company => company.logo)) {
     assert.match(company.logo, /-ticker\.svg$/);
     assert.match(readFileSync(publicFile(`/company-logos/${company.logo}`), 'utf8'), /Original SPX Arena ticker tile; CC0 1.0/);

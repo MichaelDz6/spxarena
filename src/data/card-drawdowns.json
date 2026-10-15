@@ -1,0 +1,672 @@
+{
+  "retrievedOn": "2026-10-15",
+  "window": "Trailing ten years through each source’s latest completed observation; opening observation on or immediately before the anniversary.",
+  "records": {
+    "benchmark": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/SPY/history/",
+      "sourceLabel": "SPY · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -33.71727036119299,
+        "peakDate": "2020-02-19",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-08-10",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.005432393473046915,
+        "originalStatus": "matched"
+      }
+    },
+    "warren": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/BRK-A/history/",
+      "sourceLabel": "BRK-A · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -30.42873293329855,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-16",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.04997356517653273,
+        "originalStatus": "matched"
+      }
+    },
+    "danoff": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/FCNTX/history/",
+      "sourceLabel": "FCNTX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -32.59377638403088,
+        "peakDate": "2021-11-19",
+        "troughDate": "2022-09-30",
+        "recoveryDate": "2024-01-19",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.00007452303055544007,
+        "originalStatus": "matched"
+      }
+    },
+    "asness": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/QLEIX/history/",
+      "sourceLabel": "QLEIX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -39.197704300172276,
+        "peakDate": "2018-01-26",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2022-01-14",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.000011840508193472488,
+        "originalStatus": "matched"
+      }
+    },
+    "berkowitz": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/FAIRX/history/",
+      "sourceLabel": "FAIRX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -41.499448347106096,
+        "peakDate": "2022-04-01",
+        "troughDate": "2022-09-26",
+        "recoveryDate": "2023-07-27",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.000009012156504617508,
+        "originalStatus": "matched"
+      }
+    },
+    "gayner": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/MKL/history/",
+      "sourceLabel": "MKL · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -44.65579635116179,
+        "peakDate": "2020-02-20",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2022-03-14",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 4.776641020498573e-7,
+        "originalStatus": "matched"
+      }
+    },
+    "hussman": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/HSGFX/history/",
+      "sourceLabel": "HSGFX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -30.8510791134479,
+        "peakDate": "2016-11-03",
+        "troughDate": "2020-02-10",
+        "recoveryDate": null,
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.00002056120296423103,
+        "originalStatus": "matched"
+      }
+    },
+    "nygren": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/OAKMX/history/",
+      "sourceLabel": "OAKMX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -41.426314088144764,
+        "peakDate": "2020-02-12",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-10",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.000037768752317646204,
+        "originalStatus": "matched"
+      }
+    },
+    "davis": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/NYVTX/history/",
+      "sourceLabel": "NYVTX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -36.97696777923145,
+        "peakDate": "2020-02-19",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-09",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.00003930313338074143,
+        "originalStatus": "matched"
+      }
+    },
+    "rogers": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/ARGFX/history/",
+      "sourceLabel": "ARGFX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -45.28783261010789,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-24",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.000026068095559494964,
+        "originalStatus": "matched"
+      }
+    },
+    "herro": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/OAKIX/history/",
+      "sourceLabel": "OAKIX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -53.05363058192227,
+        "peakDate": "2018-01-26",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2021-02-24",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.000026344404105316244,
+        "originalStatus": "matched"
+      }
+    },
+    "gabelli": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/GABAX/history/",
+      "sourceLabel": "GABAX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -36.647068000893924,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-11-09",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.3648469714989995,
+        "originalStatus": "annual-return mismatch"
+      }
+    },
+    "joel": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/GINDX/history/",
+      "sourceLabel": "GINDX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -33.700309287043154,
+        "peakDate": "2020-01-17",
+        "troughDate": "2020-03-23",
+        "recoveryDate": "2020-08-20",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.25535487745965213,
+        "originalStatus": "annual-return mismatch"
+      }
+    },
+    "peter": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/EPIVX/history/",
+      "sourceLabel": "EPIVX · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -32.16584316573271,
+        "peakDate": "2018-01-26",
+        "troughDate": "2020-03-20",
+        "recoveryDate": "2020-06-29",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.024931140645541916,
+        "originalStatus": "annual-return mismatch"
+      }
+    },
+    "watsa": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/FFH.TO/history/",
+      "sourceLabel": "FFH.TO · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -59.25134747660709,
+        "peakDate": "2018-06-15",
+        "troughDate": "2020-05-13",
+        "recoveryDate": "2022-03-31",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2509,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses. Converted into USD using the latest available daily exchange rate on or before each observation.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.000016224022978406083,
+        "originalStatus": "matched"
+      }
+    },
+    "smith": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "total return",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/0P0000RU7W.L/history/",
+      "sourceLabel": "0P0000RU7W.L · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -32.778889327826896,
+        "peakDate": "2021-09-02",
+        "troughDate": "2022-10-11",
+        "recoveryDate": "2024-05-16",
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2525,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses. Converted into USD using the latest available daily exchange rate on or before each observation.",
+      "note": "Approximate total-return drawdown. Distribution adjustments, source precision and currency conversion can differ from issuer returns.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0.005245886988411996,
+        "originalStatus": "matched"
+      }
+    },
+    "cathie": {
+      "status": "estimate",
+      "frequency": "daily",
+      "basis": "market-price proxy",
+      "currency": "USD",
+      "source": "https://finance.yahoo.com/quote/ARKK/history/",
+      "sourceLabel": "ARKK · adjusted daily history",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -80.9141075842511,
+        "peakDate": "2021-02-12",
+        "troughDate": "2022-12-28",
+        "recoveryDate": null,
+        "startDate": "2016-10-14",
+        "endDate": "2026-10-14",
+        "observations": 2513,
+        "requestedStartDate": "2016-10-14"
+      },
+      "method": "Estimated from adjusted daily closing values with distributions reinvested. Daily closes omit intraday losses.",
+      "note": "ARKK market-price total-return proxy. The annual-return ranking uses fund NAV, so the two bases differ.",
+      "validation": {
+        "fullYearsChecked": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 1.2157083426012747,
+        "originalStatus": "wrong basis: market-price history; card record requires NAV"
+      }
+    },
+    "bill": {
+      "status": "estimate",
+      "frequency": "weekly",
+      "basis": "NAV total return",
+      "currency": "USD",
+      "source": "https://pershingsquareholdings.com/performance/nav/",
+      "sourceLabel": "Pershing Square Holdings · weekly NAV returns",
+      "retrievedOn": "2026-10-15",
+      "latest": {
+        "value": -26.51439920556107,
+        "peakDate": "2022-04-19",
+        "troughDate": "2022-06-30",
+        "recoveryDate": "2023-07-11",
+        "startDate": "2016-10-11",
+        "endDate": "2026-10-13",
+        "observations": 529,
+        "requestedStartDate": "2016-10-13"
+      },
+      "method": "Published net-of-fees USD YTD returns chained through each calendar year-end. Includes weekly and month-end observations and reinvested distributions.",
+      "note": "Weekly estimate from returns rounded to 0.1%. Peaks and losses between reporting dates are not captured.",
+      "validation": {
+        "fullYearsChecked": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "maxAnnualDifferencePp": 0
+      }
+    },
+    "loeb": {
+      "status": "unavailable",
+      "reason": "Monthly reports are available, but a continuous ten-year history for this exact Offshore Fund record has not yet been assembled.",
+      "source": "https://assets-malibu-life.s3.us-west-2.amazonaws.com/system/uploads/fae/file/asset/1683/Third_Point_Master_Fund_December_2025_Monthly_Report.pdf",
+      "retrievedOn": "2026-10-15"
+    },
+    "pabrai": {
+      "status": "unavailable",
+      "reason": "A continuous daily or weekly NAV history has not been established for Pabrai Investment Fund 3.",
+      "source": "https://pabraifunds.com/annual-reports-and-meetings/",
+      "retrievedOn": "2026-10-15"
+    },
+    "carl": {
+      "status": "unavailable",
+      "reason": "A continuous daily or weekly history has not been established for the Icahn investment-fund composite. IEP share prices measure a different investment.",
+      "source": "https://www.ielp.com/static-files/a5d6dde9-3909-48db-bf35-28c21e788151",
+      "retrievedOn": "2026-10-15"
+    }
+  }
+}

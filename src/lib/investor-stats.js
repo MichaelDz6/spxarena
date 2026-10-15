@@ -164,7 +164,7 @@ export function investorStatistics(record, years = 10) {
     note:
       frequency === 'daily'
         ? 'Largest peak-to-trough drop within the selected period, estimated from adjusted daily closes. Intraday losses may be larger.'
-        : 'Daily maximum drawdown is not available for this record. This measures only the largest drop between year-end values; losses within a year can be much larger.',
+        : 'This comparison measures only the largest drop between year-end values; losses within a year can be much larger. The latest card estimate, where available, is described separately below.',
     investorDrawdown: drawdownDisplay(investorDrawdown, frequency),
     benchmarkDrawdown: drawdownDisplay(marketDrawdown, frequency),
     dailySource: daily,

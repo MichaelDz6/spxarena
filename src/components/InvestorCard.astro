@@ -1,5 +1,6 @@
 ---
 import Portrait from './Portrait.astro';
+import { cardDrawdown } from '../lib/card-drawdowns.js';
 import {
   investorById,
   rankedById,
@@ -14,6 +15,7 @@ interface Props {
 const { person } = Astro.props;
 const profile = investorById[person];
 const record = rankedById[person];
+const drawdown = cardDrawdown(person);
 ---
 
 <a
@@ -24,7 +26,7 @@ const record = rankedById[person];
 >
   <span class="card-crown"
     ><span class="card-gem" aria-hidden="true"></span><span class="rarity-word"
-      >{record ? `10Y · ${record.tier.toUpperCase()}` : 'UNRANKED'}</span
+      >{record ? record.tier.toUpperCase() : 'UNRANKED'}</span
     ><span class="card-gem" aria-hidden="true"></span></span
   >
   <span class="hero-window"><Portrait person={person} /></span>
@@ -49,30 +51,33 @@ const record = rankedById[person];
                 <b class="card-gap" data-delta={delta(record.gap)}>
                   {fmt(record.gap, 2)}
                 </b>
-                <small>PP / YR VS SPY</small>
+                <small>VS SPY</small>
               </>
             </span>
           </>
         </span>
         <span class="period-stats">
-          {[5, 1].map((years) => (
-            <span class="period-stat" data-tier={record.stats[years].tier}>
-              <span class="period-caption">
-                {years}Y {years === 1 ? 'SEASON' : 'FORM'}{' '}
-                <em>{titleCase(record.stats[years].tier)}</em>
-              </span>
-              <span class="period-numbers">
-                <b>{fmt(record.stats[years].value)}%</b>
-                <small data-delta={delta(record.stats[years].gap)}>
-                  {fmt(record.stats[years].gap, 2)} pp{years === 1 ? '' : '/yr'}
-                </small>
-              </span>
+          <span class="period-stat card-drawdown" title={drawdown.description}>
+            <span class="period-caption">MAX DRAWDOWN</span>
+            <span class="period-numbers">
+              <b>{drawdown.value}</b>
+              <small>{drawdown.frequencyLabel}</small>
             </span>
-          ))}
+          </span>
+          <span class="period-stat" data-tier={record.stats[1].tier}>
+            <span class="period-caption">
+              1Y SEASON <em>{titleCase(record.stats[1].tier)}</em>
+            </span>
+            <span class="period-numbers">
+              <b>{fmt(record.stats[1].value)}%</b>
+              <small data-delta={delta(record.stats[1].gap)}>
+                {fmt(record.stats[1].gap, 2)} pp
+              </small>
+            </span>
+          </span>
         </span>
         <span class="card-foot">
-          2016–2025 · RANK {String(record.rank).padStart(2, '0')} /{' '}
-          {rankedInvestors.length}
+          RANK {String(record.rank).padStart(2, '0')} / {rankedInvestors.length}
         </span>
       </>
     ) : (

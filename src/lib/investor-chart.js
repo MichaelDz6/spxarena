@@ -61,12 +61,14 @@ export function createInvestorChart(comparison, width = 900) {
         ? [0, Math.floor(years / 2), years]
         : Array.from({ length: 6 }, (_, i) => (years === 10 ? i * 2 : i));
   const markup = `
+    <defs><linearGradient id="profile-spy-gold" x1="0%" y1="0%" x2="25%" y2="100%"><stop offset="8%" stop-color="var(--premium-gold-light)"/><stop offset="32%" stop-color="var(--premium-gold-soft)"/><stop offset="51%" stop-color="var(--premium-gold-deep)"/><stop offset="69%" stop-color="var(--premium-gold-glint)"/><stop offset="92%" stop-color="var(--premium-gold-mid)"/></linearGradient></defs>
     <text x="${padding.left}" y="12" class="profile-chart-axis">USD</text>
     ${Array.from({ length: Math.round(maximum / step) + 1 }, (_, i) => {
       const value = i * step;
       return `<line x1="${padding.left}" x2="${width - padding.right}" y1="${y(value)}" y2="${y(value)}" class="profile-chart-grid"/><text x="${padding.left - 9}" y="${y(value) + 4}" text-anchor="end" class="profile-chart-axis">$${value / 1000}k</text>`;
     }).join('')}
     <path d="${path(benchmark)} L${x(years)},${y(0)} L${x(0)},${y(0)} Z" class="profile-benchmark-fill"/>
+    <path d="${path(benchmark)}" class="profile-benchmark-edge"/>
     <path d="${path(benchmark)}" class="profile-benchmark-line"/>
     ${investor ? `<path d="${path(investor)}" class="profile-investor-line"/>` : ''}
     ${benchmark.map((value, i) => `<circle cx="${x(i)}" cy="${y(value)}" r="3" class="profile-benchmark-dot"/>`).join('')}

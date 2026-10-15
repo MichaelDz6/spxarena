@@ -242,6 +242,11 @@ body {
   background: currentColor;
   transform: rotate(45deg);
 }
+#spx-nine-in-ten .arena-card .card-drawdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 #spx-nine-in-ten .contender-deck .profile-card .name-scroll strong {
   min-height: 32px;
 }

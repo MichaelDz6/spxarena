@@ -82,7 +82,7 @@ test('every profile period uses matched drawdown frequency and handles unavailab
         );
       } else {
         assert.match(stats.title, /year-end/);
-        assert.match(stats.note, /Daily maximum drawdown is not available/);
+        assert.match(stats.note, /between year-end values/);
       }
     }
   }
