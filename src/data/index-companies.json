@@ -10,7 +10,8 @@
       "logo": "nvda-ticker.svg",
       "weight": 8.34,
       "color": "#456750",
-      "square": 54
+      "square": 54,
+      "officialLogo": "nvidia.svg"
     },
     {
       "name": "Apple",
@@ -18,7 +19,8 @@
       "logo": "aapl-ticker.svg",
       "weight": 7.43,
       "color": "#638473",
-      "square": 116
+      "square": 116,
+      "officialLogo": "apple.svg"
     },
     {
       "name": "Microsoft",
@@ -26,7 +28,8 @@
       "logo": "msft-ticker.svg",
       "weight": 5.8,
       "color": "#7296a0",
-      "square": 182
+      "square": 182,
+      "officialLogo": "microsoft.png"
     },
     {
       "name": "Alphabet",
@@ -34,7 +37,8 @@
       "logo": "googl + goog-ticker.svg",
       "weight": 5.5,
       "color": "#a78b45",
-      "square": 223
+      "square": 223,
+      "officialLogo": "alphabet.png"
     },
     {
       "name": "Amazon",
@@ -42,7 +46,8 @@
       "logo": "amzn-ticker.svg",
       "weight": 3.73,
       "color": "#c3ac68",
-      "square": 287
+      "square": 287,
+      "officialLogo": "amazon.png"
     },
     {
       "name": "Broadcom",
@@ -50,7 +55,8 @@
       "logo": "avgo-ticker.svg",
       "weight": 2.56,
       "color": "#927d9f",
-      "square": 309
+      "square": 309,
+      "officialLogo": "broadcom.png"
     },
     {
       "name": "Meta",
@@ -58,7 +64,8 @@
       "logo": "meta-ticker.svg",
       "weight": 2.38,
       "color": "#738baa",
-      "square": 367
+      "square": 367,
+      "officialLogo": "meta.svg"
     },
     {
       "name": "Micron",
@@ -66,7 +73,8 @@
       "logo": "mu-ticker.svg",
       "weight": 1.75,
       "color": "#9ca879",
-      "square": 396
+      "square": 396,
+      "officialLogo": "micron.png"
     },
     {
       "name": "Tesla",
@@ -74,7 +82,8 @@
       "logo": "tsla-ticker.svg",
       "weight": 1.58,
       "color": "#b78683",
-      "square": 432
+      "square": 432,
+      "officialLogo": "tesla.svg"
     },
     {
       "name": "AMD",
@@ -82,7 +91,8 @@
       "logo": "amd-ticker.svg",
       "weight": 1.51,
       "color": "#83a9a4",
-      "square": 471
+      "square": 471,
+      "officialLogo": "amd.png"
     }
   ]
 }

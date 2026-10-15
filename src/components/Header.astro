@@ -1,21 +1,19 @@
 ---
-const arenaLinks = [
+const links = [
   { href: '/', label: 'The arena' },
   { href: '/leaderboard/', label: 'Leaderboard' },
   { href: '/etfs-arena/', label: 'ETFs Arena' },
   { href: '/calculator/', label: 'Investment Calculator' },
+  { href: '/what-is-spx/', label: 'What is SPX?' },
 ];
-const learnLink = { href: '/what-is-spx/', label: 'What is SPX?' };
 const currentPath = `${Astro.url.pathname.replace(/\/+$/, '')}/`;
-const links = (
-  currentPath === '/' ? [learnLink, ...arenaLinks] : [...arenaLinks, learnLink]
-).filter((link) => link.href !== currentPath);
 ---
 
 <header class="home-nav">
-  <a class="home-logo" href="/#nine-arena-top"
-    ><span class="logo-gem" aria-hidden="true"></span>SPX <em>ARENA</em></a
-  >
+  <a class="home-logo" href="/#nine-arena-top">
+    <span class="logo-gem" aria-hidden="true"></span>
+    <span class="logo-wordmark">SPX <em>ARENA</em></span>
+  </a>
   <button
     class="nav-toggle"
     type="button"
@@ -32,7 +30,12 @@ const links = (
   <nav id="main-navigation" aria-label="Main navigation">
     {
       links.map((link) => (
-        <a href={link.href}>{link.label}</a>
+        <a
+          href={link.href}
+          aria-current={link.href === currentPath ? 'page' : undefined}
+        >
+          {link.label}
+        </a>
       ))
     }
   </nav>

@@ -4,6 +4,8 @@ import PortraitCredit from '../components/PortraitCredit.astro';
 import { investors } from '../lib/performance.js';
 import images from '../data/portraits.json';
 import { portraitPresentation } from '../lib/portrait-presentation.js';
+import etfLogos from '../data/etf-logos.json';
+import companyLogos from '../data/company-logos.json';
 ---
 <SiteLayout title="Credits, licenses & independence" showSources={false}>
   <main class="credits-page">
@@ -11,16 +13,27 @@ import { portraitPresentation } from '../lib/portrait-presentation.js';
     <h1>Credits, licenses &amp; independence</h1>
     <p>SPX Arena is an independent educational and editorial comparison. The investors, firms and products discussed have not sponsored or endorsed this site. Images identify the people discussed; they do not imply endorsement.</p>
     <h2>Names and trademarks</h2>
-    <p>S&amp;P 500 and related index names are trademarks of their respective owners, including S&amp;P Global and its affiliates. SPX is used to refer to the index. SPY identifies the SPDR S&amp;P 500 ETF Trust. SPDR and related marks belong to their respective owners. SPX Arena is not affiliated with S&amp;P Dow Jones Indices, S&amp;P Global, State Street, or any investor or firm shown here. Company names, fund names and ticker symbols are used to identify the subjects discussed. The company tiles are original ticker illustrations, not company logos.</p>
+    <p>S&amp;P 500 and related index names are trademarks of their respective owners, including S&amp;P Global and its affiliates. SPX is used to refer to the index. SPY identifies the SPDR S&amp;P 500 ETF Trust. SPDR and related marks belong to their respective owners. SPX Arena is not affiliated with S&amp;P Dow Jones Indices, S&amp;P Global, State Street, or any investor or firm shown here. Company names, fund names and ticker symbols are used to identify the subjects discussed. Company logos and original ticker illustrations are documented below.</p>
+    <h2 id="company-logos">Company logos</h2>
+    <p>The market scorecard, company weight chart and “The Simpler Route” illustration use company logos for editorial identification. These marks belong to their respective owners and do not imply affiliation or endorsement. Original ticker illustrations are credited separately below.</p>
+    <ul>{Object.values(companyLogos).map(logo => <li>
+      <strong>{logo.name}</strong> — {logo.creator}. <a href={logo.source}>Source</a>. <a href={logo.licenseUrl}>{logo.license}</a>. {logo.modifications}
+    </li>)}</ul>
+    <h2 id="etf-logos">ETF issuer logos</h2>
+    <p>ETF cards use the fund issuer’s logo to identify its fund family, with the individual ticker beneath it. Marks remain the property of their respective owners and do not imply affiliation or endorsement.</p>
+    <ul>{Object.values(etfLogos).map(logo => <li>
+      <strong>{logo.name}</strong> — {logo.creator}. <a href={logo.source}>Source</a>. <a href={logo.licenseUrl}>{logo.license}</a>. {logo.modifications}
+    </li>)}</ul>
     <h2>Portraits and image licenses</h2>
-    <p>Each retained third-party image links to its source, author and license below. Photographs are shown in grayscale with a layout crop. AI-enhanced photographs are labeled and retain the original source license. Adaptations of ShareAlike images are offered under the same license as their originals; this does not license unrelated site content. Public-domain status is based on the source record and can differ outside the United States.</p>
+    <p>Each retained third-party image links to its source, author and license below. Only original color photographs or photographic interview frames with verified reuse licenses are published, with layout crops. AI-enhanced photographs are labeled and retain the original source license. Adaptations of ShareAlike images are offered under the same license as their originals; this does not license unrelated site content. Public-domain status is based on the source record and can differ outside the United States.</p>
     <ul class="credit-list">{investors.map(person => <li>
-      <a class="credit-thumbnail" href={`/investors/${person.key}/`}><img src={images[person.key as keyof typeof images]} width="96" height="120" loading="lazy" decoding="async" alt={portraitPresentation(person.key, person.name).alt} /></a>
+      {images[person.key as keyof typeof images] ? <a class="credit-thumbnail" href={`/investors/${person.key}/`}><img src={images[person.key as keyof typeof images] || undefined} width="96" height="120" loading="lazy" decoding="async" alt={portraitPresentation(person.key, person.name).alt} /></a> : <span class="credit-thumbnail pending-photo">Photo unavailable</span>}
       <div><strong>{person.name}</strong><PortraitCredit person={person.key} /></div>
     </li>)}</ul>
-    <h2 id="ai-portraits">AI illustrations and enhancements</h2>
-    <p>Portraits labeled “AI illustration” were created from text prompts without a third-party photograph as an input. They are interpretive editorial likenesses, not documentary photographs, and may differ from the person's actual appearance. No named artist style or published photograph was requested. No exclusive copyright is claimed in wholly machine-generated elements.</p>
-    <p>Portraits labeled “AI enhanced” adapt the licensed source linked in their credit. AI enhancement can reconstruct detail rather than recover it exactly. The source photographer remains credited, the changes are disclosed, and the adaptation is distributed under the source license. Neither type of portrait implies approval or endorsement by the person shown.</p>
+    <h2 id="photo-clearance">Original photos and reuse permission</h2>
+    <p>Generated likenesses and drawings are not used as profile pictures. Where a suitable original color photo has not been cleared for reuse, the site shows “Photo unavailable” instead. A source website or photo credit alone does not grant permission to reproduce a photo.</p>
+    <h2 id="photo-enhancement">Photo upscaling</h2>
+    <p>Enhanced photos originate from the licensed photographic source linked in their credit. AI is used to improve low-resolution images and make profile crops, not to invent replacement portraits. The source photographer or publisher remains credited, changes are disclosed, and the adaptation retains the source license. Enhanced detail is reconstructed and may differ from the original recording. All photographs remain in color; no grayscale filter or AI colorization is used.</p>
     <h2 id="original-artwork">Original ticker tiles</h2>
     <p>SPX Arena dedicates its original ticker-tile SVG artwork to the public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.</p>
     <h2>Historical data and calculations</h2>
@@ -39,6 +52,7 @@ import { portraitPresentation } from '../lib/portrait-presentation.js';
   .credit-list { list-style: none; padding: 0; }
   .credit-list li { display: flex; align-items: flex-start; gap: 20px; padding: 20px 0; border-bottom: 1px solid #d9d5c9; }
   .credit-thumbnail { flex-shrink: 0; }
+  .pending-photo { display: grid; place-items: center; width: 96px; height: 120px; box-sizing: border-box; padding: 8px; background: #e9eee7; color: #43584d; font-size: 11px; text-align: center; border-radius: 8px; }
   .credit-thumbnail img { display: block; width: 96px; height: 120px; object-fit: cover; object-position: 50% 20%; border-radius: 8px; }
   @media (max-width: 480px) { .credit-list li { gap: 12px; } .credit-thumbnail img { width: 72px; height: 90px; } }
 </style>

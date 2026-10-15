@@ -11,7 +11,7 @@ const allocations = [
     name: `The other ${remainingCompanies} companies`,
     weight: Number((100 - topWeight).toFixed(2)),
     color: '#e1e6dc',
-    logo: '',
+    officialLogo: '',
   },
 ];
 let allocationOffset = 0;
@@ -137,11 +137,11 @@ const slices = allocations.map((company) => {
                 disabled
               >
                 <span class="allocation-key" aria-hidden="true" />
-                {company.logo ? (
+                {company.officialLogo ? (
                   <img
-                    src={`/company-logos/${company.logo}`}
-                    width="16"
-                    height="16"
+                    src={`/company-logos/${company.officialLogo}`}
+                    width="20"
+                    height="20"
                     alt=""
                   />
                 ) : (

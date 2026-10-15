@@ -1,0 +1,122 @@
+{
+  "nvidia": {
+    "name": "NVIDIA",
+    "creator": "NVIDIA Corporation",
+    "path": "/company-logos/nvidia.svg",
+    "source": "https://nvidianews.nvidia.com/multimedia/corporate/nvidia-logos",
+    "downloadUrl": "https://nvidianews.nvidia.com/multimedia/corporate/nvidia-logos",
+    "license": "Copyrighted company mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://nvidianews.nvidia.com/multimedia/corporate/nvidia-logos",
+    "modifications": "Official navigation SVG symbol extracted; wordmark omitted, original path and color retained.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "c60ec6c172ce57ac4102f3da46d985c102553af5b1bdc74e7270c0640e0b2642"
+  },
+  "apple": {
+    "name": "Apple",
+    "creator": "Apple Inc.",
+    "path": "/company-logos/apple.svg",
+    "source": "https://www.apple.com/",
+    "downloadUrl": "https://www.apple.com/",
+    "license": "Copyrighted company mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://www.apple.com/",
+    "modifications": "Official navigation SVG extracted; viewBox trimmed to remove navigation spacing. Original path retained.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "d7f8afccc29a4ce788d0dd586b7a72aa08d2b419525a33e3c6be5f29c4ea4164"
+  },
+  "microsoft": {
+    "name": "Microsoft",
+    "creator": "Microsoft Corporation",
+    "path": "/company-logos/microsoft.png",
+    "source": "https://learn.microsoft.com/",
+    "downloadUrl": "https://learn.microsoft.com/favicon.ico",
+    "license": "Copyrighted company mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://learn.microsoft.com/",
+    "modifications": "Largest frame extracted from the official favicon and saved losslessly as PNG.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "7a6488d9be5cf4f8c0104864d122c88005747d25560f5189b47201fe15922da1"
+  },
+  "alphabet": {
+    "name": "Alphabet",
+    "creator": "Alphabet Inc.",
+    "path": "/company-logos/alphabet.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Abc.xyz_Favicon.png",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Abc.xyz_Favicon.png",
+    "license": "Public domain (PD-textlogo, per source record)",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-textlogo",
+    "modifications": "None; archived official site favicon displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "44f7c6260a62dc9b8c4db02d8d9ef9f7e4ffdd81f7aa8987be667ea5c9efb3ba"
+  },
+  "amazon": {
+    "name": "Amazon",
+    "creator": "Amazon.com, Inc.",
+    "path": "/company-logos/amazon.png",
+    "source": "https://www.aboutamazon.com/",
+    "downloadUrl": "https://www.aboutamazon.com/_next/static/media/apple-touch-icon.706b1b87.png",
+    "license": "Copyrighted company mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://www.aboutamazon.com/",
+    "modifications": "None; official site icon displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "f8184c36ab5439a22007f105d0366f10bbb782ab1d379e38759e452965c18805"
+  },
+  "broadcom": {
+    "name": "Broadcom",
+    "creator": "Broadcom Inc.",
+    "path": "/company-logos/broadcom.png",
+    "source": "https://www.broadcom.com/",
+    "downloadUrl": "https://www.broadcom.com/favicon-96x96.png",
+    "license": "Copyrighted company mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://www.broadcom.com/",
+    "modifications": "None; official site icon displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "f6012416a4857cbb819d4957c169848e24ee040837f323605e3a9038f4911394"
+  },
+  "meta": {
+    "name": "Meta",
+    "creator": "Meta Platforms, Inc.",
+    "path": "/company-logos/meta.svg",
+    "source": "https://about.meta.com/",
+    "downloadUrl": "https://static.xx.fbcdn.net/rsrc.php/yf/r/-7pQO6hUGK_.svg",
+    "license": "Copyrighted company mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://about.meta.com/",
+    "modifications": "None; official site icon displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "9c354dc7d40f7862df2dfb34df05ae08c3e956d55a450379803d6cac6878a63e"
+  },
+  "micron": {
+    "name": "Micron",
+    "creator": "Micron Technology, Inc.",
+    "path": "/company-logos/micron.png",
+    "source": "https://www.micron.com/",
+    "downloadUrl": "https://www.micron.com/content/dam/micron/global/favicon/apple-icon-180x180.png",
+    "license": "Copyrighted company mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://www.micron.com/",
+    "modifications": "None; official site icon displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "eac1f92407d1cdc8b31a3276a6cca38f737680bb07c0536d6a160a78c3233c8a"
+  },
+  "tesla": {
+    "name": "Tesla",
+    "creator": "Tesla, Inc.",
+    "path": "/company-logos/tesla.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tesla_T_symbol.svg",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Tesla_T_symbol.svg",
+    "license": "Copyrighted company mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Tesla_T_symbol.svg",
+    "modifications": "None; company symbol displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "19df638b8c615f3f59909f81c7e962856710a0a774a4d57f117fbeea9e8c5d68"
+  },
+  "amd": {
+    "name": "AMD",
+    "creator": "Advanced Micro Devices, Inc.",
+    "path": "/company-logos/amd.png",
+    "source": "https://www.amd.com/en.html",
+    "downloadUrl": "https://www.amd.com/content/dam/code/images/favicon/favicon.ico",
+    "license": "Copyrighted company mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://www.amd.com/en.html",
+    "modifications": "Official favicon extracted and saved losslessly as PNG.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "19a58689cbaf79327fd5546ab60e83a026b6561e7efe8dc8f35537a822daef35"
+  }
+}

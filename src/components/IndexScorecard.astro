@@ -73,11 +73,12 @@ import { companies } from '../data/index-companies.json';
                 rx="3"
               />
               <image
-                href={`/company-logos/${company.logo}`}
+                href={`/company-logos/${company.officialLogo}`}
                 x="9"
                 y="-27"
                 width="11"
                 height="11"
+                preserveAspectRatio="xMidYMid meet"
               />
               <text x="29" y="-23" class="mosaic-company-name">
                 {company.name}
@@ -115,9 +116,9 @@ import { companies } from '../data/index-companies.json';
             title={company.name}
           >
             <img
-              src={`/company-logos/${company.logo}`}
-              width="16"
-              height="16"
+              src={`/company-logos/${company.officialLogo}`}
+              width="20"
+              height="20"
               alt=""
             />
           </button>

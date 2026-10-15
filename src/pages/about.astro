@@ -1,0 +1,213 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+
+<SiteLayout
+  title="About"
+  description="SPX Arena is an educational website that explores how famous investors, funds, and ETFs actually perform and helps people understand how investing works."
+  showSources={false}
+>
+  <main class="about-page" aria-labelledby="about-title">
+    <header class="about-intro">
+      <span class="small-label">THE PURPOSE BEHIND THE ARENA</span>
+      <h1 id="about-title">About <em>SPX Arena</em></h1>
+      <p class="about-lead">
+        Understand the performance.<br />Learn how investing works.
+      </p>
+      <p class="about-mission">
+        SPX Arena’s main purpose is education. We help people see how famous
+        investors, funds, and ETFs actually perform, then use those real-world
+        records to make investing easier to understand.
+      </p>
+    </header>
+
+    <section class="about-chapter" aria-labelledby="about-records-title">
+      <div class="about-chapter-heading">
+        <span class="about-number" aria-hidden="true">01</span>
+        <h2 id="about-records-title">Look beyond<br />the famous name.</h2>
+      </div>
+      <div class="about-chapter-copy">
+        <p>
+          A familiar face or a popular fund can attract attention. We want to
+          make the record behind that reputation easier to explore: how an
+          investment performed, over what period, and how it compared with the
+          S&amp;P 500, represented here by the SPY ETF.
+        </p>
+        <p>
+          The returns shown belong to the named fund, investment strategy, or
+          company associated with a person—not their personal portfolio. Each
+          comparison identifies what is being measured and links to its sources.
+          Where a comparable record is missing, a profile stays unranked.
+        </p>
+        <div class="about-links">
+          <a href="/leaderboard/"
+            >Explore the leaderboard <span aria-hidden="true">→</span></a
+          >
+          <a href="/etfs-arena/"
+            >Compare ETFs <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="about-chapter" aria-labelledby="about-learning-title">
+      <div class="about-chapter-heading">
+        <span class="about-number" aria-hidden="true">02</span>
+        <h2 id="about-learning-title">Make sense of<br />the numbers.</h2>
+      </div>
+      <div class="about-chapter-copy">
+        <p>
+          The rankings are a starting point for learning. The site introduces
+          benchmarks, index funds, ETFs, diversification, risk, and compounding
+          through explanations and interactive examples.
+        </p>
+        <p>
+          Explore the investing guide to build a foundation, then use the
+          calculator to see how changing time, contributions, and assumed
+          returns changes a hypothetical outcome. The goal is to help you ask
+          better questions and understand what the numbers mean.
+        </p>
+        <div class="about-links">
+          <a href="/what-is-spx/"
+            >Learn the basics <span aria-hidden="true">→</span></a
+          >
+          <a href="/calculator/"
+            >Try the calculator <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <aside class="about-context" aria-labelledby="about-context-title">
+      <span class="small-label">KEEP THE RECORD IN CONTEXT</span>
+      <h2 id="about-context-title">Education comes first.</h2>
+      <p>
+        SPX Arena is an independent educational project. Rankings describe the
+        historical periods shown; they are not recommendations to buy or sell.
+        Past performance does not guarantee future results, and calculator
+        projections are hypothetical. The current performance snapshot runs
+        through December 31, 2025.
+      </p>
+      <a href="/credits/"
+        >Sources, credits &amp; independence <span aria-hidden="true">→</span
+        ></a
+      >
+    </aside>
+  </main>
+</SiteLayout>
+
+<style>
+  :global(#spx-nine-in-ten) .about-page {
+    max-width: 1152px;
+    margin-inline: auto;
+    padding: 64px 36px;
+  }
+  :global(#spx-nine-in-ten) .about-intro {
+    max-width: 780px;
+    padding-bottom: 48px;
+  }
+  :global(#spx-nine-in-ten) .about-intro h1 {
+    margin: 20px 0 28px;
+    font: 300 clamp(38px, 5vw, 62px)/1.1 var(--sans);
+    letter-spacing: -2px;
+  }
+  :global(#spx-nine-in-ten) .about-intro h1 em {
+    color: var(--brand);
+    font-style: normal;
+  }
+  :global(#spx-nine-in-ten) .about-lead {
+    color: var(--brand);
+    font-size: clamp(22px, 3vw, 28px);
+    line-height: 1.5;
+  }
+  :global(#spx-nine-in-ten) .about-mission {
+    max-width: 680px;
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--soft);
+  }
+  :global(#spx-nine-in-ten) .about-chapter {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.65fr);
+    gap: 64px;
+    padding-block: 40px;
+    border-top: 1px solid var(--rule);
+  }
+  :global(#spx-nine-in-ten) .about-number {
+    display: block;
+    margin-bottom: 16px;
+    color: #816b33;
+    font:
+      12px/1.6 'IBM Plex Mono',
+      monospace;
+  }
+  :global(#spx-nine-in-ten) .about-chapter h2 {
+    font: 300 clamp(26px, 3vw, 32px)/1.25 var(--sans);
+    letter-spacing: -0.7px;
+  }
+  :global(#spx-nine-in-ten) .about-chapter-copy p,
+  :global(#spx-nine-in-ten) .about-context p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--soft);
+  }
+  :global(#spx-nine-in-ten) .about-chapter-copy p + p {
+    margin-top: 16px;
+  }
+  :global(#spx-nine-in-ten) .about-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+    margin-top: 20px;
+  }
+  :global(#spx-nine-in-ten) .about-page a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    color: var(--brand);
+    font-size: 13px;
+    text-decoration: underline;
+    text-decoration-color: var(--gold-edge);
+  }
+  :global(#spx-nine-in-ten) .about-context {
+    margin-top: 8px;
+    padding: 32px 36px;
+    background: #edf1e8;
+    border-left: 2px solid var(--gold-edge);
+  }
+  :global(#spx-nine-in-ten) .about-context h2 {
+    margin: 12px 0;
+    color: var(--brand);
+    font: 400 24px/1.3 var(--sans);
+  }
+  :global(#spx-nine-in-ten) .about-context p {
+    max-width: 850px;
+  }
+  :global(#spx-nine-in-ten) .about-context a {
+    margin-top: 12px;
+  }
+  @media (max-width: 700px) {
+    :global(#spx-nine-in-ten) .about-page {
+      padding: 40px 20px;
+    }
+    :global(#spx-nine-in-ten) .about-intro {
+      padding-bottom: 32px;
+    }
+    :global(#spx-nine-in-ten) .about-intro h1 {
+      letter-spacing: -1.2px;
+    }
+    :global(#spx-nine-in-ten) .about-chapter {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding-block: 32px;
+    }
+    :global(#spx-nine-in-ten) .about-number {
+      margin-bottom: 10px;
+    }
+    :global(#spx-nine-in-ten) .about-context {
+      padding: 24px;
+    }
+  }
+</style>

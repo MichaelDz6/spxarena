@@ -15,7 +15,13 @@ test('ETF roster has 20 distinct, sourced records for one common period', () => 
   for (const fund of rankedEtfs) {
     assert.ok(Number.isFinite(fund.value) && fund.value > -100);
     assert.equal(new URL(fund.source).protocol, 'https:');
-    assert.ok(fund.sourceLabel.includes('2025'));
+    // Live issuer pages retain the original report used for the dated snapshot.
+    if (fund.historicalSource) {
+      assert.match(fund.historicalSource, /^https:\/\//);
+      assert.ok(fund.sourceLabel.includes('latest available'));
+    } else {
+      assert.ok(fund.sourceLabel.includes('2025'));
+    }
   }
   const popularity = [...rankedEtfs].sort(
     (a, b) => a.popularityRank - b.popularityRank,

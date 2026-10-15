@@ -90,10 +90,13 @@ const ticks = Array.from(
         rankedInvestors.map((d) => (
           <li>
             {d.key === firstBelowBenchmark && (
-              <hr
-                class="ranking-loss-divider"
-                aria-label="Below SPX over ten years"
-              />
+              <div class="ranking-loss-section">
+                <h2>Defeated Underperformers</h2>
+                <hr
+                  class="ranking-loss-divider"
+                  aria-label="Below SPX over ten years"
+                />
+              </div>
             )}
             <a
               class="ranking-row ranking-entry"

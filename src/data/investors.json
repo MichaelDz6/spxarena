@@ -10,7 +10,7 @@
     "detail": "Known for anticipating the U.S. housing collapse. A complete, comparable 2016–2025 net-return record has not been verified for this arena. Quarterly holdings cannot reconstruct his full strategy, including shorts and derivatives.",
     "source": "https://en.wikipedia.org/wiki/Michael_Burry",
     "sourceLabel": "Biography & career",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "dalio",
@@ -49,7 +49,7 @@
     "detail": "Managed Fidelity Magellan from 1977 to 1990. His comparison belongs to that management period, using the S&P 500 total-return index because SPY launched later. Today’s Magellan returns would measure other managers, so he has no 2016–2025 rank.",
     "source": "https://magazine.wharton.upenn.edu/issues/anniversary-issue/stock-superstar-who-beat-the-street-peter-s-lynch-wg68/",
     "sourceLabel": "Wharton · Peter Lynch’s career",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": "https://www.bridgespan.org/insights/peter-and-carolyn-lynch/stocks-vs-nonprofits-peter-lynch-translates-bus"
   },
   {
     "key": "munger",
@@ -114,7 +114,7 @@
     "detail": "Founded Duquesne Capital and previously managed the Quantum Fund. Duquesne Capital closed to outside investors in 2010. A historical track record needs its own dates; later family-office filings do not establish a full 2016–2025 net return.",
     "source": "https://gspp.berkeley.edu/archived/files/page/Druckenmiller_Bio.pdf",
     "sourceLabel": "Berkeley · career biography",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": "https://www.bridgespan.org/insights/stanley-druckenmiller/a-vehicle-for-structured-giving-stanley-druckenmi"
   },
   {
     "key": "simons",
@@ -166,7 +166,7 @@
     "detail": "Founder of Greenlight Capital. Investor letters provide a starting point, but a consistent 2016–2025 series still needs to be assembled and checked. Greenlight’s hedge-fund return and Greenlight Capital Re’s share-price return are different records.",
     "source": "https://www.greenlightcapital.com/",
     "sourceLabel": "Greenlight Capital · firm",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "baron",
@@ -179,7 +179,7 @@
     "detail": "Founder of Baron Capital and a portfolio manager of Baron Partners alongside Michael Baron. Public fund returns are available; the annual series still needs to be added and checked here. Its concentrated portfolio, leverage and private-company valuations must remain visible in the comparison.",
     "source": "https://www.baroncapitalgroup.com/article/quarterly-letter-baron-partners-fund-q4-2025",
     "sourceLabel": "Baron · 2025 fund letter",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "loeb",
@@ -192,7 +192,7 @@
     "detail": "Founder of Third Point. This record follows the Offshore Fund, including legacy private investments, after reported fund fees and expenses. Its mix of equities, credit and hedges differs from SPY. Reported fee conventions changed in 2020; it is a fund record, not Loeb’s personal return.",
     "source": "https://assets-malibu-life.s3.us-west-2.amazonaws.com/system/uploads/fae/file/asset/1683/Third_Point_Master_Fund_December_2025_Monthly_Report.pdf",
     "sourceLabel": "Third Point · December 2025 performance",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "pabrai",
@@ -205,7 +205,7 @@
     "detail": "The comparison uses Pabrai Investment Fund 3 consistently, not a blend of the best-performing Pabrai funds. Annual net returns in Appendix B are checked against year-end NAVs in Appendix D of the 2025 annual report. The ten-year result is calculated from those observations because the report’s headline summary table is inconsistent with its appendices.",
     "source": "https://pabraifunds.com/annual-reports-and-meetings/",
     "sourceLabel": "Pabrai · annual reports and NAV history",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": "https://commons.wikimedia.org/wiki/File:Guy_Spier_with_Mohnish_Pabrai.jpg"
   },
   {
     "key": "smith",
@@ -218,7 +218,7 @@
     "detail": "Fundsmith Equity T Accumulation total returns, after fund expenses, translated from GBP into USD at each year-end. Currency movements are included. This global-equity strategy has a different investment universe from the S&P 500; SPY measures the alternative of buying the U.S. index.",
     "source": "https://www.fundsmith.co.uk/factsheet/",
     "sourceLabel": "Fundsmith · performance history",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "gabelli",
@@ -231,7 +231,7 @@
     "detail": "Gabelli Asset Fund Class AAA (GABAX) total returns, with distributions reinvested and fund expenses included. Class AAA has no sales load. Gabelli leads a management team; these are the fund’s results rather than his personal portfolio or GAMCO’s share price.",
     "source": "https://www.sec.gov/Archives/edgar/data/783898/000182912626004254/gaf_485bpos.htm",
     "sourceLabel": "Gabelli · 2026 prospectus",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "danoff",
@@ -244,7 +244,7 @@
     "detail": "Fidelity Contrafund (FCNTX) NAV total returns, after fund expenses, with distributions reinvested. Danoff managed the fund throughout this comparison period. Asher Anolic and Jason Weiner joined him as co-managers in April 2025, so the final year includes a shared management team.",
     "source": "https://fundresearch.fidelity.com/mutual-funds/view-all/316071109",
     "sourceLabel": "Fidelity · Contrafund performance",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "asness",
@@ -270,7 +270,7 @@
     "detail": "The Fairholme Fund (FAIRX), led by Bruce Berkowitz, measured at NAV after expenses with distributions reinvested. Its concentrated holdings can produce large differences from the broad S&P 500. The record covers calendar years 2016–2025, rather than the fund’s November fiscal-year endpoints.",
     "source": "https://www.sec.gov/Archives/edgar/data/1096344/000119312526123095/d19988d485bpos.htm",
     "sourceLabel": "Fairholme · 2026 prospectus",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "watsa",
@@ -296,7 +296,7 @@
     "detail": "Markel Group (MKL) shareholder return in USD. Gayner was co-CEO during 2016–2022 and CEO from 2023. The share return includes insurance and operating businesses, investment results, and market valuation; it is not the return of the equity portfolio he manages.",
     "source": "https://www.mklgroup.com/who-we-are/shareholder-letters",
     "sourceLabel": "Markel · shareholder letters",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "hussman",
@@ -309,7 +309,7 @@
     "detail": "Hussman Strategic Market Cycle Fund (HSGFX), formerly Strategic Growth, at NAV with distributions reinvested. Its mandate emphasizes capital protection and varying market exposure. Hedging can cause it to lag a rising equity market; the comparison with SPY measures opportunity cost, not whether it met its risk-management objective.",
     "source": "https://www.hussmanfunds.com/strategic-market-cycle-fund/",
     "sourceLabel": "Hussman · strategy and fund reports",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "nygren",
@@ -322,7 +322,7 @@
     "detail": "Oakmark Fund Investor Class (OAKMX), after fund expenses with distributions reinvested. Bill Nygren was a manager throughout 2016–2025; the fund is co-managed. Its value-oriented portfolio can differ substantially from the S&P 500’s sector and style exposures.",
     "source": "https://oakmark.com/news-insights/what-goes-up-u-s-equity-market-commentary-4q-2025/",
     "sourceLabel": "Oakmark · year-end 2025 performance",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "davis",
@@ -335,7 +335,7 @@
     "detail": "Davis New York Venture Fund Class A (NYVTX), co-managed by Chris Davis and Danton Goei. NAV total returns include operating expenses and reinvested distributions but exclude the maximum 4.75% initial sales charge. An investor paying that charge would receive lower returns.",
     "source": "https://davisfunds.com/funds/nyventure-fund",
     "sourceLabel": "Davis · New York Venture performance",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "rogers",
@@ -361,7 +361,7 @@
     "detail": "Oakmark International Fund Investor Class (OAKIX), co-managed by David Herro, with expenses included and distributions reinvested. USD returns include the currency exposure of its international holdings. Its investment universe differs from U.S.-focused SPY.",
     "source": "https://oakmark.com/wp-content/uploads/sites/3/2026/01/Oakmark-International-Fund-Commentary-12-31-2025.pdf",
     "sourceLabel": "Oakmark International · 2025 report",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "bill",
@@ -385,7 +385,7 @@
     "detail": "Gotham Index Plus is co-managed by Joel Greenblatt and Robert Goldstein. It uses a leveraged long/short overlay. This record follows fund NAV after expenses.",
     "source": "https://www.gothamfunds.com/Download.aspx?ID=457bfb70-a1f5-4692-858e-35a279efb3a3&Inline=1",
     "sourceLabel": "Published performance record",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "cathie",
@@ -421,7 +421,7 @@
     "detail": "These are the published Icahn investment-fund composite returns, net of expenses. They are not IEP shareholder returns or Carl Icahn’s personal returns.",
     "source": "https://www.ielp.com/static-files/a5d6dde9-3909-48db-bf35-28c21e788151",
     "sourceLabel": "Published performance record",
-    "photoCredit": "/credits/#ai-portraits"
+    "photoCredit": null
   },
   {
     "key": "warren",

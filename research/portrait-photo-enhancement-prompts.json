@@ -1,0 +1,134 @@
+[
+  {
+    "key": "bill",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-11cddb2b-bdd7-4b86-b5e7-a6420bb14738.png",
+    "prompt": "Use case: identity-preserve. Asset type: high-quality licensed investor profile photo. Input image: a verified openly licensed photograph of Bill Ackman, an edit target. Request: conservatively enhance resolution and clarity for a sharp high-resolution portrait, suitable for a retina website profile. Preserve the existing portrait pose, three-quarter view, framing, background and suit. Preserve identity, natural age, facial proportions, hair, skin texture, gaze, eyeglasses if present, expression and clothing exactly. Recover photographic detail without smoothing skin into plastic, inventing features, adding sharpness halos, beautifying, de-aging or changing ethnicity. Keep a photograph appearance, natural lighting and color. Produce a high-resolution single portrait. No text, watermark, logos or decorative border. This is an AI-enhanced derivative of the supplied licensed image; preserve all distinguishing identity details.",
+    "referenceInputs": [
+      "research/portrait-inputs/bill-licensed.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-13"
+  },
+  {
+    "key": "griffin",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-03639f03-bd0b-4362-97d8-4d3745a7794e.png",
+    "prompt": "Use case: identity-preserve. Asset type: high-quality licensed investor profile photo. Input image: a verified openly licensed photograph of Ken Griffin, an edit target. Request: conservatively enhance resolution and clarity for a sharp high-resolution portrait, suitable for a retina website profile. Preserve the existing portrait pose, framing, city background and suit. Preserve identity, natural age, facial proportions, hair, skin texture, gaze, eyeglasses if present, expression and clothing exactly. Recover photographic detail without smoothing skin into plastic, inventing features, adding sharpness halos, beautifying, de-aging or changing ethnicity. Keep a photograph appearance, natural lighting and color. Produce a high-resolution single portrait. No text, watermark, logos or decorative border. This is an AI-enhanced derivative of the supplied licensed image; preserve all distinguishing identity details.",
+    "referenceInputs": [
+      "research/portrait-inputs/griffin-licensed.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-13"
+  },
+  {
+    "key": "asness",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-252107ab-62f4-406e-8f18-c0e48beee45f.png",
+    "prompt": "Use case: identity-preserve. Asset type: high-quality licensed investor profile photo. Input image: a verified openly licensed photograph of Cliff Asness, an edit target. Request: conservatively enhance resolution and clarity for a sharp high-resolution portrait, suitable for a retina website profile. Turn the supplied full-body photograph into a centered head-and-shoulders profile crop of THE SAME MAN, retaining his bald head, short beard, expression, dark suit, white shirt and tie, with the same room colors softly behind him. Exclude his lower body, sofa, feet and ceiling. Do not change the age or create a different face. Preserve identity, natural age, facial proportions, hair, skin texture, gaze, eyeglasses if present, expression and clothing exactly. Recover photographic detail without smoothing skin into plastic, inventing features, adding sharpness halos, beautifying, de-aging or changing ethnicity. Keep a photograph appearance, natural lighting and color. Produce a high-resolution single portrait. No text, watermark, logos or decorative border. This is an AI-enhanced derivative of the supplied licensed image; preserve all distinguishing identity details.",
+    "referenceInputs": [
+      "research/portrait-inputs/asness-licensed.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-13"
+  },
+  {
+    "key": "munger",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-ab9da71e-5576-4427-8e7e-07d7dd4f652c.png",
+    "prompt": "Use case: identity-preserve. Asset type: high-quality licensed investor profile photo. Input image: a verified openly licensed photograph of Charlie Munger, an edit target. Request: conservatively enhance resolution and clarity for a sharp high-resolution portrait, suitable for a retina website profile. Preserve the existing three-quarter portrait pose, framing, black background, eyeglasses, facial features, expression and suit. Preserve identity, natural age, facial proportions, hair, skin texture, gaze, eyeglasses if present, expression and clothing exactly. Recover photographic detail without smoothing skin into plastic, inventing features, adding sharpness halos, beautifying, de-aging or changing ethnicity. Keep a photograph appearance, natural lighting and color. Produce a high-resolution single portrait. No text, watermark, logos or decorative border. This is an AI-enhanced derivative of the supplied licensed image; preserve all distinguishing identity details.",
+    "referenceInputs": [
+      "research/portrait-inputs/munger-licensed.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-13"
+  },
+  {
+    "key": "marks",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-ee564310-e10e-4228-b50d-df9304fc21e5.png",
+    "prompt": "Use case: identity-preserve. Asset type: high-quality licensed investor profile photograph. Input image: a verified openly licensed photograph of Howard Marks, an edit target. Conservatively enhance resolution and photographic clarity for a sharp high-resolution website portrait. Retain his original face, eyeglasses, three-quarter pose, light shirt, tie, microphone and room background. Improve grain and color cast conservatively without inventing a different face. Preserve the SAME PERSON'S identity, natural age, facial proportions, hair, skin texture, gaze, expression and clothing. Recover photographic detail without smoothing skin into plastic, inventing features, beautifying, de-aging or changing ethnicity. Keep natural photographic light. No text, watermark, added logos or decorative border. This is an AI-enhanced derivative of the supplied licensed image; preserve all distinguishing identity details.",
+    "referenceInputs": [
+      "research/portrait-inputs/marks-licensed.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-13"
+  },
+  {
+    "key": "simons",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-1846688a-c64a-4e0f-9cf8-02a252cb044b.png",
+    "prompt": "Use case: identity-preserve. Asset type: high-quality licensed investor profile photograph. Input image: a verified openly licensed photograph of Jim Simons, an edit target. Conservatively enhance resolution and photographic clarity for a sharp high-resolution website portrait. Retain his original face, white hair, short white beard, three-quarter pose, blue shirt and dark background. Produce a vertical head-and-shoulders crop with his entire head and some breathing room above the hair; extend only the unobtrusive background if necessary. Do not change his gaze or expression. Preserve the SAME PERSON'S identity, natural age, facial proportions, hair, skin texture, gaze, expression and clothing. Recover photographic detail without smoothing skin into plastic, inventing features, beautifying, de-aging or changing ethnicity. Keep natural photographic light. No text, watermark, added logos or decorative border. This is an AI-enhanced derivative of the supplied licensed image; preserve all distinguishing identity details.",
+    "referenceInputs": [
+      "research/portrait-inputs/simons-licensed.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-13"
+  },
+  {
+    "key": "watsa",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-ac2c9b1e-c397-416e-beca-955242dcec67.png",
+    "prompt": "Use case: identity-preserve. Asset type: high-quality licensed investor profile photograph. Input image: a verified openly licensed photograph of Prem Watsa, an edit target. Conservatively enhance resolution and photographic clarity for a sharp high-resolution website portrait. Retain his original face, silver hair, side-facing pose, expression, pinstriped suit and microphone. Produce a vertical head-and-shoulders crop centered on the same face, with the whole head visible; extend only unobtrusive background if necessary. Do not change his gaze or expression. Preserve the SAME PERSON'S identity, natural age, facial proportions, hair, skin texture, gaze, expression and clothing. Recover photographic detail without smoothing skin into plastic, inventing features, beautifying, de-aging or changing ethnicity. Keep natural photographic light. No text, watermark, added logos or decorative border. This is an AI-enhanced derivative of the supplied licensed image; preserve all distinguishing identity details.",
+    "referenceInputs": [
+      "research/portrait-inputs/watsa-licensed.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-13"
+  },
+  {
+    "key": "cathie",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-f4fc85f9-db8d-4fe1-9c2c-ee08cccf19b2.png",
+    "prompt": "Use case: identity-preserve. Asset type: high-quality licensed investor profile photograph. Input image: a verified openly licensed photograph of Cathie Wood, an edit target. Conservatively enhance resolution and photographic clarity for a sharp high-resolution website portrait. Create a vertical head-and-shoulders crop of the SAME WOMAN. Retain her brown hair, black eyeglasses, gold earrings, smile, three-quarter pose, navy patterned jacket and neutral office colors. Exclude her hands, documents and lower torso. Her full head must be visible with comfortable breathing room above her hair. Keep the office background softly out of focus. Preserve identity and natural facial proportions. Recover detail without smoothing skin into plastic, inventing a different person, beautifying, de-aging or changing ethnicity. Keep natural photographic light. No watermark or decorative border. This is an AI-enhanced derivative of the supplied licensed image; preserve all distinguishing identity details.",
+    "referenceInputs": [
+      "research/portrait-inputs/cathie-licensed.webp"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-13"
+  },
+  {
+    "key": "rogers",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-34fc0757-672d-49e7-b6a2-fa0ae5bd8ecf.png",
+    "prompt": "Use case: identity-preserve. Asset type: high-quality licensed investor profile photograph. Input image: a verified openly licensed photograph of John W. Rogers Jr., an edit target. Conservatively enhance resolution and photographic clarity for a sharp high-resolution website portrait. Create a vertical head-and-shoulders crop of the SAME SMILING MAN standing closest to the camera near the center-left, wearing eyeglasses and a black polo shirt. Preserve his face, age, receding hairline, smile, complexion, eyeglasses and black polo shirt. Exclude his lower body, other people, political posters and signage by using a closer crop and a softly blurred neutral room background. Do not add shirt logos, slogans or text. His full head must be visible with comfortable breathing room above it. Preserve identity and natural facial proportions. Recover detail without smoothing skin into plastic, inventing a different person, beautifying, de-aging or changing ethnicity. Keep natural photographic light. No watermark or decorative border. This is an AI-enhanced derivative of the supplied licensed image; preserve all distinguishing identity details.",
+    "referenceInputs": [
+      "research/portrait-inputs/rogers-licensed.webp"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-13"
+  },
+  {
+    "key": "lynch",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-12a2ae82-451f-4a56-89ac-127ae48ebc81.png",
+    "prompt": "Use case: identity-preserve. Asset type: authentic licensed color investor profile photograph. Input image is an openly licensed ORIGINAL photographic source. Request: crop and conservatively upscale the specified person for a clear high-resolution web profile picture. The target is Peter Lynch, the older man with white hair and eyeglasses ON THE RIGHT. Crop a vertical head-and-shoulders portrait of THAT SAME MAN ONLY. Exclude the woman by cropping. Keep Lynch's real pose, eyeglasses, facial features, age, white hair, dark suit, white shirt, green tie, color and warm room light. Keep the source's actual room background; do not create a new studio scene. Preserve the actual recorded person's identity, facial proportions, expression, natural skin texture, direction of gaze and clothing; do not reinterpret the face, beautify, de-age or substitute a newly invented likeness. Preserve full photographic COLOR, with no grayscale, colorization, painting or illustration. Do not add props, logos, watermarks, text, frames or new objects. Only crop, de-noise and enhance resolution/clarity of the supplied photographic content. Return one high-resolution portrait.",
+    "referenceInputs": [
+      "research/portrait-inputs/lynch-original-color.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-14"
+  },
+  {
+    "key": "druckenmiller",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-0368a5b5-70a1-4157-bae4-ab1d86219265.png",
+    "prompt": "Use case: identity-preserve. Asset type: authentic licensed color investor profile photograph. Input: original photographic poster frame from the publisher's Creative Commons licensed interview with Stanley Druckenmiller. Crop a vertical head-and-shoulders portrait of the SAME MAN shown in this frame. Conservatively upscale and reduce compression artifacts for a clear high-resolution profile picture. Preserve his real face, age, hair, expression, tilt of the head, gaze, white shirt and red tie. Keep the actual room background and original full photographic color. Do not reinterpret his face, beautify, de-age, invent a different likeness, repaint, colorize, use grayscale or create a new scene. Only crop and improve the supplied recorded photographic content. No added objects, logos, text, watermarks or borders.",
+    "referenceInputs": [
+      "research/portrait-inputs/druckenmiller-original-color.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-14"
+  },
+  {
+    "key": "pabrai",
+    "mode": "enhance",
+    "path": "/Users/michael/.codex/generated_images/01a1380c-499d-7f11-9306-2bb97199a615/exec-ec4a9dbf-00a0-40b8-b675-88fb435cc93d.png",
+    "prompt": "Use case: identity-preserve. Asset type: authentic licensed color investor profile photograph. Input image is an openly licensed ORIGINAL photographic source. Request: crop and conservatively upscale the specified person for a clear high-resolution web profile picture. The target is Mohnish Pabrai, the bald man with a mustache and blue sunglasses ON THE LEFT. Crop a vertical head-and-shoulders portrait of THAT SAME MAN ONLY. Exclude the other man by cropping. Keep Pabrai's real pose, blue sunglasses, mustache, facial features, age, dark-blue jacket, white shirt, color and natural outdoor light. Keep the source's actual background; do not create a new studio scene. There is no need to invent uncovered eyes behind the sunglasses. Preserve the actual recorded person's identity, facial proportions, expression, natural skin texture, direction of gaze and clothing; do not reinterpret the face, beautify, de-age or substitute a newly invented likeness. Preserve full photographic COLOR, with no grayscale, colorization, painting or illustration. Do not add props, logos, watermarks, text, frames or new objects. Only crop, de-noise and enhance resolution/clarity of the supplied photographic content. Return one high-resolution portrait.",
+    "referenceInputs": [
+      "research/portrait-inputs/pabrai-original-color.jpg"
+    ],
+    "tool": "Built-in ImageGen",
+    "createdOn": "2026-10-14"
+  }
+]

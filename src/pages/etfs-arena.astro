@@ -6,6 +6,7 @@ import {
   rankedEtfs,
 } from '../lib/etf-performance.js';
 import { fmt, titleCase } from '../lib/performance.js';
+import etfLogos from '../data/etf-logos.json';
 import '../styles/leaderboard.css';
 import '../styles/etfs-arena.css';
 
@@ -37,6 +38,25 @@ const ticks = Array.from({ length: maximum / 5 + 1 }, (_, i) => i * 5);
         funds stack up against SPX, ranked by their annualized returns over
         2016–2025.
       </p>
+      <aside class="etf-risk-note" aria-labelledby="etf-risk-title">
+        <span class="etf-risk-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M4 25h24M6 21l7-9 5 5 7-11"></path>
+            <path d="M19 6h6v6"></path>
+          </svg>
+        </span>
+        <div>
+          <span class="small-label">BEYOND THE SCORE</span>
+          <h2 id="etf-risk-title">A faster climb can mean a steeper fall.</h2>
+          <p>
+            Beating SPX doesn’t automatically make an ETF better. A fund that
+            bets heavily on one sector or a few companies can take much bigger
+            risks, with sharper swings and deeper losses along the way. This
+            leaderboard scores returns; it doesn’t adjust for the risk taken to
+            earn them.
+          </p>
+        </div>
+      </aside>
       <a class="etfs-investor-link" href="/leaderboard/"
         >Explore the investor leaderboard <span aria-hidden="true">↗</span></a
       >
@@ -87,10 +107,13 @@ const ticks = Array.from({ length: maximum / 5 + 1 }, (_, i) => i * 5);
         rankedEtfs.map((fund) => (
           <li value={fund.rank}>
             {fund.ticker === firstBelowBenchmark && (
-              <hr
-                class="ranking-loss-divider"
-                aria-label="Below SPX over ten years"
-              />
+              <div class="ranking-loss-section">
+                <h2>Defeated Underperformers</h2>
+                <hr
+                  class="ranking-loss-divider"
+                  aria-label="Below SPX over ten years"
+                />
+              </div>
             )}
             <a
               class="ranking-row ranking-entry"
@@ -99,22 +122,26 @@ const ticks = Array.from({ length: maximum / 5 + 1 }, (_, i) => i * 5);
               rel="noopener noreferrer"
               data-tier={fund.tier}
               data-etf={fund.ticker}
-              title={`${fund.sourceLabel} (opens in a new tab)`}
+              title={`${fund.name} · ${fund.sourceLabel} (opens in a new tab)`}
             >
               <div class="bar-identity">
                 <span class="bar-rank" aria-hidden="true">
                   {String(fund.rank).padStart(2, '0')}
                 </span>
-                <span class="etf-ticker-tile" aria-hidden="true">
-                  {fund.ticker}
+                <span class="etf-fund-mark">
+                  <span class="etf-logo-tile">
+                    <img
+                      src={etfLogos[fund.issuer as keyof typeof etfLogos].path}
+                      alt={`${etfLogos[fund.issuer as keyof typeof etfLogos].name} logo`}
+                      width="64"
+                      height="30"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </span>
+                  <strong class="etf-ticker">{fund.ticker}</strong>
                 </span>
-                <div>
-                  <strong>
-                    {fund.ticker}
-                    <span class="ranking-profile-arrow" aria-hidden="true">
-                      ↗
-                    </span>
-                  </strong>
+                <div class="etf-fund-description">
                   <span class="rarity-badge ranking-tier" data-tier={fund.tier}>
                     {titleCase(fund.tier)}
                   </span>
@@ -135,7 +162,7 @@ const ticks = Array.from({ length: maximum / 5 + 1 }, (_, i) => i * 5);
                   {fmt(fund.value, 2)}%
                   <span class="rating-sr"> ten-year annualized return</span>
                 </strong>
-                <small>
+                <small class="ranking-delta">
                   <span
                     class:list={[
                       'excess-return',
@@ -144,7 +171,7 @@ const ticks = Array.from({ length: maximum / 5 + 1 }, (_, i) => i * 5);
                   >
                     {fmt(fund.gap, 2)} pp
                   </span>{' '}
-                  vs SPX / yr
+                  vs SPX
                 </small>
               </div>
               <span class="rating-sr">
@@ -162,6 +189,7 @@ const ticks = Array.from({ length: maximum / 5 + 1 }, (_, i) => i * 5);
       after fund expenses and with distributions reinvested, before personal
       taxes and trading costs. Gaps are percentage points (pp) per year. Equal
       published returns share a rank. Select any ETF to read its source.
+      <a href="/credits/#etf-logos">Logo credits</a>.
     </p>
 
     <details class="etf-methodology">
@@ -182,9 +210,10 @@ const ticks = Array.from({ length: maximum / 5 + 1 }, (_, i) => i * 5);
         </p>
         <p>
           All returns cover January 2016 through December 2025. Each row links
-          to an issuer report, factsheet, prospectus, or reproduced performance
-          disclosure. Linked factsheets may later be updated by their
-          publishers. Fund names reflect the historical records.
+          to an issuer performance page, report, factsheet, prospectus, or
+          reproduced performance disclosure. Issuers update these destinations,
+          so their latest figures may cover a different period from this fixed
+          leaderboard. Fund names reflect the historical records.
         </p>
         <p>
           SPX is represented here by SPY’s published 14.71% annualized NAV

@@ -7,7 +7,6 @@ export function mountPortrait(element) {
   const crop = document.createElement('span');
   crop.className = 'portrait-window';
   const image = document.createElement('img');
-  image.src = images[person];
   const presentation = portraitPresentation(person, investorById[person].name);
   image.alt = presentation.alt;
   image.width = presentation.width;
@@ -15,14 +14,15 @@ export function mountPortrait(element) {
   element.dataset.portraitKind = presentation.kind;
   element.title = presentation.alt;
   image.decoding = 'async';
-  crop.append(image);
-  element.replaceChildren(crop);
-  if (presentation.label) {
-    const label = document.createElement('span');
-    label.className = 'portrait-kind';
-    label.setAttribute('aria-hidden', 'true');
-    label.textContent = presentation.label;
-    element.append(label);
+  if (presentation.available) {
+    image.src = images[person];
+    crop.append(image);
+    element.replaceChildren(crop);
+  } else {
+    const missing = document.createElement('span');
+    missing.className = 'portrait-missing';
+    missing.textContent = 'Photo unavailable';
+    element.replaceChildren(missing);
   }
   element.classList.add('is-photo');
 }

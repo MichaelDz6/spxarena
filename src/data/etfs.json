@@ -21,7 +21,8 @@
       "aumBillions": 1040,
       "popularityRank": 1,
       "source": "https://personal1.vanguard.com/funds/tsr/AR968.pdf",
-      "sourceLabel": "VOO · issuer performance for December 31, 2025"
+      "sourceLabel": "VOO · issuer performance for December 31, 2025",
+      "issuer": "vanguard"
     },
     {
       "ticker": "IVV",
@@ -31,7 +32,8 @@
       "aumBillions": 874.64,
       "popularityRank": 2,
       "source": "https://www.ifa.com/pdfs/fund-documents/ivv-fact-sheet.pdf",
-      "sourceLabel": "IVV · issuer performance for December 31, 2025"
+      "sourceLabel": "IVV · issuer performance for December 31, 2025",
+      "issuer": "ishares"
     },
     {
       "ticker": "SPY",
@@ -41,7 +43,8 @@
       "aumBillions": 804.3,
       "popularityRank": 3,
       "source": "https://media.fidelity.com/assets/Fidelity.com_VMS/791/211/031926_ITM_Show-Notes.pdf",
-      "sourceLabel": "Fidelity · SPY standardized performance, December 31, 2025"
+      "sourceLabel": "Fidelity · SPY standardized performance, December 31, 2025",
+      "issuer": "state-street"
     },
     {
       "ticker": "VTI",
@@ -51,7 +54,8 @@
       "aumBillions": 685.14,
       "popularityRank": 4,
       "source": "https://personal1.vanguard.com/funds/tsr/AR970.pdf",
-      "sourceLabel": "VTI · issuer performance for December 31, 2025"
+      "sourceLabel": "VTI · issuer performance for December 31, 2025",
+      "issuer": "vanguard"
     },
     {
       "ticker": "QQQ",
@@ -60,8 +64,10 @@
       "annualizedReturn": 19.43,
       "aumBillions": 482.69,
       "popularityRank": 5,
-      "source": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/commentary/monthly-qqqm-commentary-retail-use-.pdf",
-      "sourceLabel": "QQQ · issuer performance for December 31, 2025"
+      "source": "https://www.invesco.com/qqq-etf/en/about.html",
+      "sourceLabel": "QQQ · issuer fund details and performance (latest available)",
+      "issuer": "invesco",
+      "historicalSource": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/commentary/monthly-qqqm-commentary-retail-use-.pdf"
     },
     {
       "ticker": "VEA",
@@ -71,7 +77,8 @@
       "aumBillions": 235.88,
       "popularityRank": 6,
       "source": "https://personal1.vanguard.com/funds/tsr/AR936.pdf",
-      "sourceLabel": "VEA · issuer performance for December 31, 2025"
+      "sourceLabel": "VEA · issuer performance for December 31, 2025",
+      "issuer": "vanguard"
     },
     {
       "ticker": "VUG",
@@ -81,7 +88,8 @@
       "aumBillions": 224.79,
       "popularityRank": 7,
       "source": "https://personal1.vanguard.com/funds/tsr/AR967.pdf",
-      "sourceLabel": "VUG · issuer performance for December 31, 2025"
+      "sourceLabel": "VUG · issuer performance for December 31, 2025",
+      "issuer": "vanguard"
     },
     {
       "ticker": "IEFA",
@@ -91,7 +99,8 @@
       "aumBillions": 193.3,
       "popularityRank": 8,
       "source": "https://www.ishares.com/us/literature/fact-sheet/iefa-ishares-core-msci-eafe-etf-fund-fact-sheet-en-us.pdf",
-      "sourceLabel": "IEFA · issuer performance for December 31, 2025"
+      "sourceLabel": "IEFA · issuer performance for December 31, 2025",
+      "issuer": "ishares"
     },
     {
       "ticker": "VTV",
@@ -101,7 +110,8 @@
       "aumBillions": 191.45,
       "popularityRank": 9,
       "source": "https://personal1.vanguard.com/funds/tsr/AR966.pdf",
-      "sourceLabel": "VTV · issuer performance for December 31, 2025"
+      "sourceLabel": "VTV · issuer performance for December 31, 2025",
+      "issuer": "vanguard"
     },
     {
       "ticker": "SPYM",
@@ -110,9 +120,10 @@
       "annualizedReturn": 14.81,
       "aumBillions": 167.65,
       "popularityRank": 10,
-      "source": "https://www.ssga.com/us/en/institutional/library-content/products/factsheets/etfs/us/factsheet-us-en-spym.pdf",
+      "source": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-spym.pdf",
       "sourceLabel": "SPYM · issuer performance for December 31, 2025",
-      "note": "Formerly SPLG. This fund tracked other U.S. large-cap indexes before adopting the S&P 500 in January 2020."
+      "note": "Formerly SPLG. This fund tracked other U.S. large-cap indexes before adopting the S&P 500 in January 2020.",
+      "issuer": "state-street"
     },
     {
       "ticker": "VXUS",
@@ -121,8 +132,9 @@
       "annualizedReturn": 8.55,
       "aumBillions": 164.06,
       "popularityRank": 11,
-      "source": "https://www.sec.gov/Archives/edgar/data/736054/000119312526077510/f44038d1.htm",
-      "sourceLabel": "VXUS · issuer performance for December 31, 2025"
+      "source": "https://personal1.vanguard.com/pub/Pdf/sp3369.pdf",
+      "sourceLabel": "VXUS · issuer performance for December 31, 2025",
+      "issuer": "vanguard"
     },
     {
       "ticker": "BND",
@@ -132,7 +144,8 @@
       "aumBillions": 162.53,
       "popularityRank": 12,
       "source": "https://personal1.vanguard.com/funds/tsr/AR928.pdf",
-      "sourceLabel": "BND · issuer performance for December 31, 2025"
+      "sourceLabel": "BND · issuer performance for December 31, 2025",
+      "issuer": "vanguard"
     },
     {
       "ticker": "IEMG",
@@ -142,7 +155,8 @@
       "aumBillions": 160.63,
       "popularityRank": 13,
       "source": "https://www.ifa.com/pdfs/fund-documents/iemg-fact-sheet.pdf",
-      "sourceLabel": "IEMG · issuer performance for December 31, 2025"
+      "sourceLabel": "IEMG · issuer performance for December 31, 2025",
+      "issuer": "ishares"
     },
     {
       "ticker": "GLD",
@@ -151,9 +165,10 @@
       "annualizedReturn": 14.56,
       "aumBillions": 147.83,
       "popularityRank": 14,
-      "source": "https://www.spdrgoldshares.com/media/GLD/file/ETF-GLD__20251231.pdf",
+      "source": "https://files.spdrgoldshares.com/spdr-cms/2026-01/ETF-GLD__20251231.pdf",
       "sourceLabel": "GLD · issuer performance for December 31, 2025",
-      "note": "A physically backed gold trust, included in the ETF roster. Its asset class and risk profile differ from U.S. stocks."
+      "note": "A physically backed gold trust, included in the ETF roster. Its asset class and risk profile differ from U.S. stocks.",
+      "issuer": "state-street"
     },
     {
       "ticker": "VGT",
@@ -163,7 +178,8 @@
       "aumBillions": 145.61,
       "popularityRank": 15,
       "source": "https://fund-docs.vanguard.com/F0958.pdf",
-      "sourceLabel": "VGT · issuer performance for December 31, 2025"
+      "sourceLabel": "VGT · issuer performance for December 31, 2025",
+      "issuer": "vanguard"
     },
     {
       "ticker": "AGG",
@@ -173,7 +189,8 @@
       "aumBillions": 137.92,
       "popularityRank": 16,
       "source": "https://www.ishares.com/us/literature/fact-sheet/agg-ishares-core-u-s-aggregate-bond-etf-fund-fact-sheet-en-us.pdf",
-      "sourceLabel": "AGG · issuer performance for December 31, 2025"
+      "sourceLabel": "AGG · issuer performance for December 31, 2025",
+      "issuer": "ishares"
     },
     {
       "ticker": "VWO",
@@ -182,8 +199,9 @@
       "annualizedReturn": 8.16,
       "aumBillions": 127.44,
       "popularityRank": 17,
-      "source": "https://www.sec.gov/Archives/edgar/data/857489/000119312526077568/f44207d1.htm",
-      "sourceLabel": "VWO · issuer performance for December 31, 2025"
+      "source": "https://personal1.vanguard.com/pub/Pdf/sp964.pdf",
+      "sourceLabel": "VWO · issuer performance for December 31, 2025",
+      "issuer": "vanguard"
     },
     {
       "ticker": "IWF",
@@ -192,8 +210,9 @@
       "annualizedReturn": 17.92,
       "aumBillions": 123.79,
       "popularityRank": 18,
-      "source": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526327908/d49639d497k.htm",
-      "sourceLabel": "IWF · issuer performance for December 31, 2025"
+      "source": "https://www.ishares.com/us/literature/summary-prospectus/sp-ishares-russell-1000-growth-etf-3-31.pdf",
+      "sourceLabel": "IWF · issuer performance for December 31, 2025",
+      "issuer": "ishares"
     },
     {
       "ticker": "IJH",
@@ -203,7 +222,8 @@
       "aumBillions": 123.72,
       "popularityRank": 19,
       "source": "https://www.ishares.com/us/literature/fact-sheet/ijh-ishares-core-s-p-mid-cap-etf-fund-fact-sheet-en-us.pdf",
-      "sourceLabel": "IJH · issuer performance for December 31, 2025"
+      "sourceLabel": "IJH · issuer performance for December 31, 2025",
+      "issuer": "ishares"
     },
     {
       "ticker": "XLK",
@@ -212,8 +232,10 @@
       "annualizedReturn": 22.34,
       "aumBillions": 119.59,
       "popularityRank": 20,
-      "source": "https://www.sec.gov/Archives/edgar/data/1064641/000119312526027312/d15107d485bpos.htm",
-      "sourceLabel": "XLK · issuer performance for December 31, 2025"
+      "source": "https://www.ssga.com/us/en/intermediary/etfs/state-street-technology-select-sector-spdr-etf-xlk",
+      "sourceLabel": "XLK · issuer fund details and performance (latest available)",
+      "issuer": "state-street",
+      "historicalSource": "https://www.sec.gov/Archives/edgar/data/1064641/000119312526027312/d15107d485bpos.htm"
     }
   ]
 }

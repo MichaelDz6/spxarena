@@ -1,0 +1,50 @@
+{
+  "vanguard": {
+    "name": "Vanguard",
+    "creator": "The Vanguard Group",
+    "path": "/etf-logos/vanguard.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Vanguard.svg",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Vanguard.svg",
+    "license": "Public domain (PD-textlogo, per source record)",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-textlogo",
+    "modifications": "None; original SVG displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "a57d967a90170c60454b132814d73231f16fb96319460c6f882800f4ba21211f"
+  },
+  "ishares": {
+    "name": "iShares",
+    "creator": "BlackRock",
+    "path": "/etf-logos/ishares.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo-ishares_2019.svg",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Logo-ishares_2019.svg",
+    "license": "Public domain (PD-textlogo, per source record)",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-textlogo",
+    "modifications": "None; original SVG displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "5b23833a34cd5b7ca33df62c7e29652c5ff3f38ae343739351c1b499d55ad1ab"
+  },
+  "state-street": {
+    "name": "State Street",
+    "creator": "State Street Corporation",
+    "path": "/etf-logos/state-street.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:State-street-logo-final.svg",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/State-street-logo-final.svg",
+    "license": "Public domain (PD-textlogo, per source record)",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-textlogo",
+    "modifications": "None; original SVG displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "535628a4bff400ac559a916e7d057e7023dd471725436ddfdceb17c652ee1f42"
+  },
+  "invesco": {
+    "name": "Invesco QQQ",
+    "creator": "Invesco",
+    "path": "/etf-logos/invesco-qqq.svg",
+    "source": "https://www.invesco.com/qqq-etf/en/home.html",
+    "downloadUrl": "https://www.invesco.com/content/dam/invesco/qqq-etf/en/logo/QQQ.svg",
+    "license": "Copyrighted issuer mark; editorial identification only, no open license asserted",
+    "licenseUrl": "https://www.invesco.com/qqq-etf/en/home.html",
+    "modifications": "None; original SVG displayed proportionally.",
+    "retrievedAt": "2026-10-14",
+    "sha256": "2d2a0ac69fdd54e8b985c32a5578c409e09b39819a9e38416a11a270edd7722b"
+  }
+}

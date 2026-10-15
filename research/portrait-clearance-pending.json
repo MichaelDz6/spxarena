@@ -1,0 +1,111 @@
+{
+  "asOf": "2026-10-14",
+  "publishedColorPhotos": 19,
+  "pending": [
+    {
+      "key": "burry",
+      "name": "Michael Burry",
+      "candidatePage": "https://www.forbes.com/sites/gurufocus/2019/07/31/dr-michael-burry-of-big-short-likes-asian-stocks/",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "einhorn",
+      "name": "David Einhorn",
+      "candidatePage": "https://www.skagenfondene.no/tema/nyttarskonferansen/david-einhorn/",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "baron",
+      "name": "Ron Baron",
+      "candidatePage": "https://www.baroncapitalgroup.com/article/letter-ron-q1-2025",
+      "status": "Permission or licensed color photo required",
+      "reason": "Commons matches show a different Ron Baron; investor photos are not cleared."
+    },
+    {
+      "key": "loeb",
+      "name": "Dan Loeb",
+      "candidatePage": "https://www.standard.co.uk/business/dan-loeb-third-point-asset-value-investors-net-asset-value-share-price-b961931.html",
+      "status": "Permission or licensed color photo required",
+      "reason": "The freely licensed Commons result is a drawing, not a photo; publisher photos are not cleared."
+    },
+    {
+      "key": "smith",
+      "name": "Terry Smith",
+      "candidatePage": "https://www.ii.co.uk/analysis-commentary/terry-smith-blames-these-three-factors-2025s-underperformance-ii537765",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "gabelli",
+      "name": "Mario Gabelli",
+      "candidatePage": "https://business.columbia.edu/columbia-business-school-board/people/mario-j-gabelli-67",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "danoff",
+      "name": "Will Danoff",
+      "candidatePage": "https://www.barrons.com/articles/fidelitys-will-danoff-partners-with-buffett-bezos-and-zuckerberg-1443851292",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "berkowitz",
+      "name": "Bruce Berkowitz",
+      "candidatePage": "https://www.forbes.com/pictures/gg45eejkg/bruce-berkowitz-fairholme-capital-management/",
+      "status": "Permission or licensed color photo required",
+      "reason": "The freely licensed Commons result is a drawing, not a photo; publisher photos are not cleared."
+    },
+    {
+      "key": "gayner",
+      "name": "Tom Gayner",
+      "candidatePage": "https://www.russellreynolds.com/en/insights/podcasts/planting-long-term-investment-seeds-with-markel-group-ceo-tom-gayner",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "hussman",
+      "name": "John Hussman",
+      "candidatePage": "https://x.com/hussmanjp",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "nygren",
+      "name": "Bill Nygren",
+      "candidatePage": "https://oakmark.com/who-we-are/our-team/bill-nygren/",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "davis",
+      "name": "Chris Davis",
+      "candidatePage": "https://www.advisorperspectives.com/articles/2019/10/28/where-the-davis-funds-is-finding-great-opportunities",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "herro",
+      "name": "David Herro",
+      "candidatePage": "https://oakmark.com/who-we-are/our-team/david-herro/",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "joel",
+      "name": "Joel Greenblatt",
+      "candidatePage": "https://www.gothamfunds.com/Download.aspx?ID=457bfb70-a1f5-4692-858e-35a279efb3a3&Inline=1",
+      "status": "Permission or licensed color photo required",
+      "reason": "No verified permission for an authentic color photograph."
+    },
+    {
+      "key": "carl",
+      "name": "Carl Icahn",
+      "candidatePage": "https://www.ielp.com/static-files/a5d6dde9-3909-48db-bf35-28c21e788151",
+      "status": "Permission or licensed color photo required",
+      "reason": "Commons candidate is black-and-white with uncertain original provenance; no cleared original color source."
+    }
+  ]
+}

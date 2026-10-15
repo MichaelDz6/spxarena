@@ -214,6 +214,19 @@
   list-style: none;
 }
 
+#spx-nine-in-ten .ranking-loss-section {
+  padding-top: 20px;
+  background: var(--paper);
+}
+
+#spx-nine-in-ten .ranking-loss-section h2 {
+  margin: 0;
+  padding: 0 18px 10px;
+  color: #9c414c;
+  font: 500 18px/1.3 var(--sans);
+  letter-spacing: -0.2px;
+}
+
 #spx-nine-in-ten .ranking-loss-divider {
   margin: 0;
   border: 0;

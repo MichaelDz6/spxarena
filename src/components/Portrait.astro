@@ -7,7 +7,7 @@ interface Props {
   record?: boolean;
 }
 const { person, record = false } = Astro.props;
-const images = assets as Record<string, string>;
+const images = assets as Record<string, string | null>;
 const presentation = portraitPresentation(person, investorById[person].name);
 ---
 
@@ -18,15 +18,14 @@ const presentation = portraitPresentation(person, investorById[person].name);
   title={presentation.alt}
   data-record-portrait={record || undefined}
 >
-  <span class="portrait-window"
-    ><img
-      src={images[person]}
+  {presentation.available ? (
+    <span class="portrait-window"><img
+      src={images[person] || undefined}
       alt={presentation.alt}
       width={presentation.width}
       height={presentation.height}
       loading="lazy"
       decoding="async"
-    /></span
-  >
-  {presentation.label && <span class="portrait-kind" aria-hidden="true">{presentation.label}</span>}
+    /></span>
+  ) : <span class="portrait-missing">Photo unavailable</span>}
 </span>
