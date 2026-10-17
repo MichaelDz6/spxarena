@@ -100,7 +100,6 @@ const verdictIcons = {
             }</small
           >
         </figcaption>
-        <PortraitCredit person={profile.key} />
       </figure>
       <div class="profile-heading">
         <span class="small-label">{profile.category}</span>
@@ -169,5 +168,9 @@ const verdictIcons = {
         </div>
       )
     }
+    <section class="profile-credits" aria-labelledby="profile-credit-title">
+      <h2 id="profile-credit-title" class="small-label">Portrait credit</h2>
+      <PortraitCredit person={profile.key} />
+    </section>
   </main>
 </SiteLayout>

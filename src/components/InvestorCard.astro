@@ -57,11 +57,10 @@ const drawdown = cardDrawdown(person);
           </>
         </span>
         <span class="period-stats">
-          <span class="period-stat card-drawdown" title={drawdown.description}>
+          <span class="period-stat card-drawdown">
             <span class="period-caption">MAX DRAWDOWN</span>
             <span class="period-numbers">
-              <b>{drawdown.value}</b>
-              <small>{drawdown.frequencyLabel}</small>
+              <b>{drawdown.value.replace(/^≈/, '')}</b>
             </span>
           </span>
           <span class="period-stat" data-tier={record.stats[1].tier}>

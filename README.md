@@ -52,6 +52,7 @@ The previous `prototype/` and `design-backups/` folders have been removed. The c
 - `/` — the arena, 34 investor cards, interactive comparisons and top-five ranking
 - `/leaderboard/` — all 20 ranked records and 14 unranked profiles
 - `/etfs-arena/` — 20 popular U.S.-listed ETFs ranked by 2016–2025 annualized NAV returns, with SPY as the benchmark
+- `/arena-of-ruin/` — six sourced case studies of catastrophic losses and a near-collapse, with each figure’s scope and original reporting
 - `/what-is-spx/` — A visual beginner’s guide to SPX, the S&P 500, ETFs, diversification and compounding
 - `/calculator/` — Investment Calculator: future growth using an adjustable average annual return and monthly contributions
 - `/calculator/?mode=goal` — Goal Calculator: find the monthly contribution needed to reach a target portfolio value
@@ -71,6 +72,8 @@ Both providers should serve the generated page directories directly. Do not add 
 References: [Astro on AWS](https://docs.astro.build/en/guides/deploy/aws/) and [Astro on Render](https://docs.astro.build/en/guides/deploy/render/).
 
 ## Research and data conventions
+
+Arena of Ruin is a separate editorial collection in `src/data/arena-of-ruin.json`, researched October 16, 2026, with events from 2021–2026. Its six cases cover seven people: Leopold Aschenbrenner, David Chau, James Wynn, Sam Bankman-Fried, Su Zhu and Kyle Davies, and Bill Hwang. It distinguishes personal wealth, trading profits, firm assets and creditor debt; these figures are not ranked or added together. Aschenbrenner is explicitly identified as a near-collapse. Each case links to its reporting, and the page uses original decorative artwork and initials rather than unlicensed portraits. It does not change the performance roster or ranking snapshot below.
 
 This is a historical snapshot through **December 31, 2025**, not a live market feed. The roster contains **34 profiles and 20 ranked records** for **2016–2025**. The main ranking and card frame use ten-year annualized outperformance. Five-year and one-year statistics receive separate badges. SPX identifies the index and site branding; benchmark returns use **SPY total returns**. SPIVA’s intro statistics refer to **all active U.S. large-cap funds**, including growth, core and value styles, compared with the index itself: 92.89% underperformed over 20 years (2006–2025), 85.59% over 10 years and 78.78% over one year. All three figures come from [SPIVA U.S. Year-End 2025, Report 1a, page 12](https://www.spglobal.com/spdji/en/documents/spiva/spiva-us-year-end-2025.pdf#page=12). These are fund-category statistics, not a measure of all individual investors or all fund types. The site deliberately retains the year-end 2025 snapshot rather than mixing dates with newer SPIVA releases.
 

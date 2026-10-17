@@ -1,4 +1,8 @@
 ---
+interface Props {
+  snapshotLabel?: string;
+}
+const { snapshotLabel = 'Historical snapshot through 2025' } = Astro.props;
 const linkGroups = [
   {
     title: 'Explore',
@@ -6,6 +10,7 @@ const linkGroups = [
       { href: '/', label: 'The arena' },
       { href: '/leaderboard/', label: 'Leaderboard' },
       { href: '/etfs-arena/', label: 'ETFs Arena' },
+      { href: '/arena-of-ruin/', label: 'Arena of Ruin' },
     ],
   },
   {
@@ -68,7 +73,7 @@ const currentPath = `${Astro.url.pathname.replace(/\/+$/, '')}/`;
       S&amp;P DJI, State Street, or the people and firms shown. Not investment
       advice.
     </p>
-    <p class="footer-snapshot">Historical snapshot through 2025</p>
+    <p class="footer-snapshot">{snapshotLabel}</p>
   </div>
 </footer>
 

@@ -1,8 +1,14 @@
 ---
+interface Props {
+  edition?: { label: string; period: string };
+}
+const { edition = { label: 'THE LONG GAME', period: '2016 — 2025' } } =
+  Astro.props;
 const links = [
   { href: '/', label: 'The arena' },
   { href: '/leaderboard/', label: 'Leaderboard' },
   { href: '/etfs-arena/', label: 'ETFs Arena' },
+  { href: '/arena-of-ruin/', label: 'Arena of Ruin' },
   { href: '/calculator/', label: 'Investment Calculator' },
   { href: '/what-is-spx/', label: 'What is SPX?' },
 ];
@@ -39,8 +45,22 @@ const currentPath = `${Astro.url.pathname.replace(/\/+$/, '')}/`;
       ))
     }
   </nav>
-  <span class="edition-label">THE LONG GAME<br /> <b>2016 — 2025</b></span>
+  <span class="edition-label"
+    >{edition.label}<br /> <b>{edition.period}</b></span
+  >
 </header>
 <script>
   import '../scripts/navigation.js';
 </script>
+
+<style>
+  @media (min-width: 901px) and (max-width: 1150px) {
+    :global(#spx-nine-in-ten) .home-nav .edition-label {
+      display: none;
+    }
+    :global(#spx-nine-in-ten) .home-nav nav {
+      gap: 14px;
+      font-size: 12px;
+    }
+  }
+</style>

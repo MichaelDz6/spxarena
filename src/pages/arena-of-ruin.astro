@@ -1,0 +1,212 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import archive from '../data/arena-of-ruin.json';
+import '../styles/arena-of-ruin.css';
+
+const researchDate = new Date(
+  `${archive.researchedAt}T12:00:00Z`,
+).toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+---
+
+<SiteLayout
+  title="Arena of Ruin"
+  description="The rise and fall of Bill Hwang, Sam Bankman-Fried, Three Arrows Capital, David Chau, James Wynn and Leopold Aschenbrenner. Six sourced case studies of catastrophic losses."
+  showSources={false}
+  edition={{ label: 'THE OTHER SIDE', period: '2021 — 2026' }}
+  snapshotLabel={`Case studies researched ${researchDate}`}
+>
+  <main class="ruin-page" aria-labelledby="ruin-title">
+    <header class="ruin-hero">
+      <div class="ruin-hero-copy">
+        <a href="/" class="ruin-back">← Back to the arena</a>
+        <span class="small-label">THE OTHER SIDE OF THE ARENA</span>
+        <h1 id="ruin-title">Arena of <em>Ruin</em></h1>
+        <p class="ruin-lead">Big reputations. Bigger risks.</p>
+        <p class="ruin-intro">
+          The investors and traders whose winning streaks ended in spectacular
+          losses. Explore the rise, the breaking point, and what was actually
+          lost.
+        </p>
+        <a class="ruin-enter" href="#case-files"
+          >Explore the case files <span aria-hidden="true">↓</span></a
+        >
+      </div>
+      <div class="ruin-emblem" aria-hidden="true">
+        <span class="ruin-emblem-label">SPX ARENA · THE FALLEN</span>
+        <svg viewBox="0 0 320 230" fill="none">
+          <circle cx="160" cy="115" r="102" stroke="currentColor" opacity=".25"
+          ></circle>
+          <circle cx="160" cy="115" r="89" stroke="currentColor" opacity=".15"
+          ></circle>
+          <path
+            d="M50 180h220M65 170h190M78 154V92l34-16 30 9 25-26 20 25 24-5 31 23v52"
+            stroke="currentColor"
+            stroke-width="2"></path>
+          <path
+            d="M78 113c47-21 109-21 164 8M78 135c50-17 111-15 164 7M105 154v-22m31 22v-29m31 29v-29m31 29v-27m27 27v-20"
+            stroke="currentColor"
+            stroke-width="2"></path>
+          <path
+            d="M91 107v-9a7 7 0 0 1 14 0v4m13-5v-7a7 7 0 0 1 14 0v6m57 5v-7a7 7 0 0 1 14 0v11m13 5v-7a7 7 0 0 1 14 0v13"
+            stroke="currentColor"
+            stroke-width="2"></path>
+          <path
+            d="m164 64-10 37 16 11-17 32 10 24m83-10 9 6-7 6m-179-4 8-8 9 9"
+            stroke="#af654c"
+            stroke-width="3"></path>
+          <path
+            d="m42 160-8-20 2-23m242 43 8-20-2-23M36 135l-10-9m10-3 8-11m240 23 10-9m-10-3-8-11"
+            stroke="currentColor"
+            opacity=".5"></path>
+        </svg>
+        <span class="ruin-emblem-motto">Reputation is no armor.</span>
+      </div>
+    </header>
+
+    <aside class="ruin-context" aria-labelledby="ruin-context-title">
+      <span class="ruin-context-mark" aria-hidden="true">!</span>
+      <div>
+        <h2 id="ruin-context-title">Every collapse has a different cost.</h2>
+        <p>
+          Personal wealth, client money, trading profits and creditor debt
+          measure different things. Each case identifies its own figure. A
+          failed fund does not necessarily mean its manager lost everything.
+        </p>
+      </div>
+    </aside>
+
+    <section
+      id="case-files"
+      class="ruin-cases"
+      aria-labelledby="case-files-title"
+    >
+      <div class="ruin-section-head">
+        <div>
+          <span class="small-label">THE CASE FILES</span>
+          <h2 id="case-files-title">How the winning streak ended.</h2>
+        </div>
+        <p>{archive.cases.length} cases · Newest event first</p>
+      </div>
+      <div class="ruin-grid">
+        {
+          archive.cases.map((entry, index) => (
+            <article
+              class:list={[
+                'ruin-card',
+                { 'ruin-near-collapse': entry.type === 'Near-collapse' },
+              ]}
+              id={entry.id}
+              aria-labelledby={`${entry.id}-name`}
+            >
+              <div class="ruin-card-top">
+                <span class="ruin-case-number">
+                  CASE {String(index + 1).padStart(2, '0')}
+                </span>
+                <time datetime={entry.dateTime}>{entry.date}</time>
+              </div>
+              <div class="ruin-identity">
+                <span class="ruin-monogram" aria-hidden="true">
+                  {entry.initials}
+                </span>
+                <div>
+                  <h3 id={`${entry.id}-name`}>
+                    <a href={`#${entry.id}`}>{entry.name}</a>
+                  </h3>
+                  <p>{entry.firm}</p>
+                </div>
+              </div>
+              <span class="ruin-outcome">{entry.type}</span>
+              <div class="ruin-metric">
+                <strong>{entry.metric}</strong>
+                <span>{entry.metricLabel}</span>
+              </div>
+              <dl class="ruin-story">
+                <div>
+                  <>
+                    <dt>The rise</dt>
+                    <dd>{entry.rise}</dd>
+                  </>
+                </div>
+                <div>
+                  <>
+                    <dt>The fall</dt>
+                    <dd>{entry.fall}</dd>
+                  </>
+                </div>
+              </dl>
+              <p class="ruin-loss-context">{entry.context}</p>
+              <details class="ruin-details">
+                <summary>
+                  Lesson &amp; sources{' '}
+                  <>
+                    <span class="ruin-sr-only">for {entry.name}</span>
+                    <span class="ruin-details-plus" aria-hidden="true">
+                      +
+                    </span>
+                  </>
+                </summary>
+                <div class="ruin-details-body">
+                  <p class="ruin-lesson">{entry.lesson}</p>
+                  <ul>
+                    {entry.sources.map((source) => (
+                      <li>
+                        <a
+                          href={source.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <strong>
+                            {source.publisher} <span aria-hidden="true">↗</span>
+                          </strong>
+                          <span>{source.title}</span>
+                          <span class="ruin-sr-only">
+                            {' '}
+                            (opens in a new tab)
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </details>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="ruin-reading-note" aria-labelledby="ruin-reading-title">
+      <div>
+        <span class="small-label">READ BEYOND THE HEADLINE</span>
+        <h2 id="ruin-reading-title">The number needs its story.</h2>
+      </div>
+      <div>
+        <p>
+          This is a collection of historical case studies, not a ranking of
+          losses. Dates refer to the events; the Three Arrows creditor figure
+          comes from later reporting. Estimates retain their source’s scope and
+          are not adjusted for inflation.
+        </p>
+        <p>
+          Leopold Aschenbrenner’s case is included as a near-collapse, not a
+          total wipeout. Fraud findings are identified only where supported by
+          the linked reporting. The lessons are SPX Arena’s interpretation of
+          those events.
+        </p>
+        <p class="ruin-research-date">
+          Research snapshot: <time datetime={archive.researchedAt}
+            >{researchDate}</time
+          >.
+        </p>
+      </div>
+    </section>
+    <a class="ruin-return" href="/leaderboard/"
+      >Back to the performance records <span aria-hidden="true">→</span></a
+    >
+  </main>
+</SiteLayout>

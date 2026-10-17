@@ -463,6 +463,15 @@
   padding: 10px 0;
   cursor: pointer;
 }
+#spx-nine-in-ten .investor-profile-page .profile-credits {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+#spx-nine-in-ten .investor-profile-page .profile-credits h2 {
+  margin: 0;
+  color: var(--soft);
+}
 #spx-nine-in-ten .investor-profile-page .profile-stats {
   margin: 32px 0 26px;
 }

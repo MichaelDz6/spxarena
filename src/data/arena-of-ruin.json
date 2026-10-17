@@ -1,0 +1,157 @@
+{
+  "researchedAt": "2026-10-16",
+  "cases": [
+    {
+      "id": "leopold-aschenbrenner",
+      "name": "Leopold Aschenbrenner",
+      "firm": "Situational Awareness",
+      "initials": "LA",
+      "date": "July 2026",
+      "dateTime": "2026-07",
+      "type": "Near-collapse",
+      "metric": "−67%",
+      "metricLabel": "Reported portfolio decline in July 2026",
+      "rise": "An AI-focused fund manager whose fast-growing portfolio made him a prominent name in the AI investment boom.",
+      "fall": "A sell-off in chip stocks hit concentrated, leveraged positions. Margin calls forced the fund to seek fresh capital or sell holdings, bringing it close to collapse.",
+      "context": "A severe fund drawdown. The reporting does not establish a total fund wipeout or the loss of his entire personal fortune.",
+      "lesson": "Borrowing can force an investor to sell before a long-term thesis has time to play out.",
+      "sources": [
+        {
+          "publisher": "Reuters",
+          "title": "Lending restrictions, margin calls and the reported 67% decline",
+          "url": "https://www.marketscreener.com/news/jpmorgan-curbed-lending-to-situational-awareness-after-ai-losses-source-says-ce785bdfd18af62c"
+        }
+      ]
+    },
+    {
+      "id": "david-chau",
+      "name": "David Chau",
+      "firm": "“Captain Condor” · InsideOptions",
+      "initials": "DC",
+      "date": "December 2025",
+      "dateTime": "2025-12",
+      "type": "Trading-capital wipeout",
+      "metric": "$50M+",
+      "metricLabel": "Estimated group trading losses over Christmas week",
+      "rise": "Built a following of roughly 1,000 traders around an S&P 500 options strategy promoted as a reliable source of income.",
+      "fall": "The group increased its bets after losses using a Martingale approach. The strategy broke down on Christmas Eve, wiping out most or all of participants’ trading capital.",
+      "context": "The estimate covers the group, not Chau alone. Some followers lost their life savings; his full personal net worth is not established.",
+      "lesson": "A long winning streak can conceal the risk of one oversized losing trade.",
+      "sources": [
+        {
+          "publisher": "MarketWatch / Dow Jones",
+          "title": "The Captain Condor wipeout, reported by MarketWatch and republished by Tiger Brokers",
+          "url": "https://www.itiger.com/news/2595109770"
+        }
+      ]
+    },
+    {
+      "id": "james-wynn",
+      "name": "James Wynn",
+      "firm": "Crypto derivatives · Hyperliquid",
+      "initials": "JW",
+      "date": "May 2025",
+      "dateTime": "2025-05",
+      "type": "Trading-account liquidation",
+      "metric": "~$100M",
+      "metricLabel": "Trading profits erased before the account liquidation",
+      "rise": "A speculative trader who attracted an audience with a spectacular winning streak and enormous Bitcoin positions.",
+      "fall": "Highly leveraged trades unraveled even with relatively small Bitcoin price moves. CoinDesk reported a reversal from about $100 million in profit to a $17.5 million net trading loss.",
+      "context": "This was a trading-account liquidation. The net loss figure is not evidence of a personal debt balance or the loss of every asset he owned.",
+      "lesson": "With enough leverage, a small market move can erase an entire trading account.",
+      "sources": [
+        {
+          "publisher": "CoinDesk",
+          "title": "How James Wynn’s $100M implosion became a leverage lesson",
+          "url": "https://www.coindesk.com/markets/2025/06/02/how-james-wynn-s-usd100m-implosion-is-a-leverage-tale-as-old-as-time"
+        }
+      ]
+    },
+    {
+      "id": "sam-bankman-fried",
+      "name": "Sam Bankman-Fried",
+      "firm": "Alameda Research / FTX",
+      "initials": "SB",
+      "date": "November 2022",
+      "dateTime": "2022-11",
+      "type": "Personal paper-fortune wipeout",
+      "metric": "$16B → $0",
+      "metricLabel": "Bloomberg’s estimated personal wealth at the collapse",
+      "rise": "A celebrated crypto entrepreneur and trading-firm founder whose holdings put him among the industry’s wealthiest figures.",
+      "fall": "FTX and Alameda collapsed, and Bloomberg marked his estimated fortune down to effectively zero within days. A subsequent criminal case established the misuse of customer money.",
+      "context": "The wealth estimate reflects the value of his holdings, not $16 billion of cash lost in one trade. This case involved fraud as well as risky investments.",
+      "lesson": "An impressive valuation cannot substitute for trustworthy custody and financial controls.",
+      "sources": [
+        {
+          "publisher": "Bloomberg",
+          "title": "The estimated personal fortune falls from $16 billion to zero",
+          "url": "https://news.bloomberglaw.com/crypto/bankman-frieds-assets-plummet-from-16-billion-to-zero-in-days"
+        },
+        {
+          "publisher": "Associated Press",
+          "title": "The fraud findings and March 2024 sentencing",
+          "url": "https://apnews.com/article/d7bb1a5e94b4c22039d74dfeab1a2ff1"
+        }
+      ]
+    },
+    {
+      "id": "su-zhu-kyle-davies",
+      "name": "Su Zhu & Kyle Davies",
+      "firm": "Three Arrows Capital",
+      "initials": "3AC",
+      "date": "June–July 2022",
+      "dateTime": "2022-06",
+      "type": "Fund collapse",
+      "metric": "$3.3B",
+      "metricLabel": "Reported amount owed to creditors in December 2023",
+      "rise": "Led one of crypto’s most prominent investment firms. Zhu’s market commentary had earned him a guru-like following.",
+      "fall": "Losses in Terra/Luna and other investments, alongside heavy borrowing, ended in liquidation. Liquidators later pursued assets to repay billions owed to creditors.",
+      "context": "The figure is creditor debt, not a measured trading loss. The fund failed; neither founder’s entire personal fortune is established as wiped out.",
+      "lesson": "Correlated bets and borrowed money can turn a market downturn into insolvency.",
+      "sources": [
+        {
+          "publisher": "Axios",
+          "title": "The firm’s rise, reputation and June 2022 collapse",
+          "url": "https://www.axios.com/2022/06/30/three-arrows-capital-cyberpunk-liquidation"
+        },
+        {
+          "publisher": "Reuters",
+          "title": "Liquidators’ claims about leverage and investment losses",
+          "url": "https://tech.yahoo.com/business/articles/bankrupt-three-arrows-liquidators-seek-183244677.html"
+        },
+        {
+          "publisher": "Bloomberg",
+          "title": "The December 2023 report of $3.3 billion owed to creditors",
+          "url": "https://news.bloomberglaw.com/crypto/three-arrows-zhu-quizzed-in-singapore-as-asset-hunt-intensifies"
+        }
+      ]
+    },
+    {
+      "id": "bill-hwang",
+      "name": "Bill Hwang",
+      "firm": "Archegos Capital Management",
+      "initials": "BH",
+      "date": "March 2021",
+      "dateTime": "2021-03",
+      "type": "Family-office collapse",
+      "metric": "$36B",
+      "metricLabel": "Archegos assets at its peak, before the collapse",
+      "rise": "A former Tiger Management investor whose family office built approximately $160 billion of stock exposure on $36 billion of assets.",
+      "fall": "Concentrated bets fell, banks demanded additional collateral, and Archegos could not meet those demands. Banks sold the positions. Hwang was convicted of fraud and market manipulation in 2024.",
+      "context": "Hwang lost the bulk of his personal fortune. The $36 billion figure is peak firm assets, not a precise measure of his personal loss.",
+      "lesson": "Concentration and leverage can overwhelm even decades of investing experience.",
+      "sources": [
+        {
+          "publisher": "Reuters",
+          "title": "The firm’s assets, exposure and July 2024 conviction",
+          "url": "https://www.investing.com/news/economy-news/archegos-founder-bill-hwang-convicted-at-criminal-trial-over-funds-collapse-3514546"
+        },
+        {
+          "publisher": "The Washington Post",
+          "title": "The loss of the bulk of Hwang’s personal fortune",
+          "url": "https://www.washingtonpost.com/business/2024/11/20/archegos-hwang-sentence-prison/"
+        }
+      ]
+    }
+  ]
+}

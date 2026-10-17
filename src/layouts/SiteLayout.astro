@@ -8,9 +8,13 @@ interface Props {
   title?: string;
   description?: string;
   showSources?: boolean;
+  edition?: { label: string; period: string };
+  snapshotLabel?: string;
 }
 const {
   title,
+  edition,
+  snapshotLabel,
   showSources = true,
   description = 'Fame is not a benchmark. Compare 34 famous investors and 20 ten-year records with the S&P 500, measured through SPY.',
 } = Astro.props;
@@ -42,10 +46,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         id="design-nine"
         class="fantasy arena-home gilded palette-pearl palette-light"
       >
-        <Header />
+        <Header edition={edition} />
         <div id="main-content" tabindex="-1"><slot /></div>
         {showSources && <Sources />}
-        <Footer />
+        <Footer snapshotLabel={snapshotLabel} />
       </div>
     </div>
     <script>

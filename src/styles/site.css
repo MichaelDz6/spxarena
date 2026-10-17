@@ -245,7 +245,13 @@ body {
 #spx-nine-in-ten .arena-card .card-drawdown {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+#spx-nine-in-ten .arena-card .card-drawdown .period-caption {
+  align-items: center;
 }
 #spx-nine-in-ten .contender-deck .profile-card .name-scroll strong {
   min-height: 32px;
