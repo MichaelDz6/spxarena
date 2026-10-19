@@ -1,0 +1,556 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+
+<SiteLayout
+  title="Contact"
+  description="Reach out to SPX Arena about collaborations, partnerships, feedback, data corrections, or questions about the site."
+  showSources={false}
+>
+  <main class="contact-page" aria-labelledby="contact-title">
+    <header class="contact-intro">
+      <span class="small-label">◆ &nbsp; THE NEXT CHAPTER STARTS HERE</span>
+      <h1 id="contact-title">Get in <em>touch.</em></h1>
+      <p>
+        Have a question, spotted a mistake, or have feedback about the site? Use
+        this form to get in touch. We also welcome collaboration inquiries,
+        partnership proposals, and ideas for content or research projects.
+      </p>
+      <div class="contact-hero-foot" aria-hidden="true">
+        <span>REAL RECORDS. SHARED AMBITION.</span><span
+          >SPX ARENA / CONTACT</span
+        >
+      </div>
+    </header>
+
+    <div class="contact-grid">
+      <aside class="contact-note" aria-labelledby="contact-note-title">
+        <span class="small-label">OPEN TO POSSIBILITY</span>
+        <h2 id="contact-note-title">
+          Build something<br /><em>worth exploring.</em>
+        </h2>
+        <ol class="contact-invitations">
+          <li>
+            <div>
+              <h3>Join forces.</h3><p>
+                Tell us about your project, audience, and what we could create
+                together.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Bring a fresh perspective.</h3><p>
+                Pitch a story, a research idea, or a better way to make
+                investing understandable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Keep the record sharp.</h3><p>
+                Spotted an error? Include the page, the figure, and a source we
+                can check.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <p>
+          SPX Arena is an educational project. We can help with questions about
+          the site, but we don’t provide personal investment advice.
+        </p>
+      </aside>
+
+      <form
+        id="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        aria-describedby="contact-privacy"
+      >
+        <header class="contact-form-heading">
+          <span class="small-label">A DIRECT LINE TO SPX ARENA</span>
+          <h2>Make your introduction.</h2>
+          <p>Big idea or small detail. Start the conversation.</p>
+        </header>
+        <input
+          type="hidden"
+          name="access_key"
+          value="bccad0e6-f6bd-41b9-a435-3a9322d01b59"
+        />
+        <input
+          type="hidden"
+          name="subject"
+          value="New message from SPX Arena"
+        />
+        <input type="hidden" name="from_name" value="SPX Arena Contact" />
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="botcheck"
+          tabindex="-1"
+          aria-hidden="true"
+        />
+
+        <div class="contact-fields">
+          <label for="contact-name"
+            >Name
+            <input
+              id="contact-name"
+              name="name"
+              autocomplete="name"
+              maxlength="120"
+              required
+            />
+          </label>
+          <label for="contact-email"
+            >Email
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              required
+            />
+          </label>
+        </div>
+        <label for="contact-topic"
+          >Topic
+          <select id="contact-topic" name="topic" required>
+            <option value="" disabled selected>Select a topic</option>
+            <option>Collaboration or partnership</option>
+            <option>Content or research project</option>
+            <option>General question</option>
+            <option>Data correction</option>
+            <option>Feedback or suggestion</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label for="contact-message"
+          >Message
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="7"
+            maxlength="10000"
+            required></textarea>
+        </label>
+        <p class="contact-privacy" id="contact-privacy">
+          Your message is sent through Web3Forms. Please don’t include
+          passwords, account numbers, or sensitive financial information.
+        </p>
+        <div class="h-captcha" data-captcha="true" data-size="compact"></div>
+        <noscript
+          ><p>
+            JavaScript is required for the spam protection. Please enable it to
+            send your message.
+          </p></noscript
+        >
+        <button type="submit"
+          >Send message <span aria-hidden="true">→</span></button
+        >
+        <p
+          id="contact-status"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+        </p>
+      </form>
+      <section
+        id="contact-confirmation"
+        class="contact-confirmation"
+        aria-labelledby="contact-confirmation-title"
+        tabindex="-1"
+        hidden
+      >
+        <span class="contact-success-check" aria-hidden="true">✓</span>
+        <span class="small-label">MESSAGE RECEIVED</span>
+        <h2 id="contact-confirmation-title">Your message has been sent.</h2>
+        <p>
+          Thank you for reaching out to SPX Arena. We appreciate you taking the
+          time to get in touch.
+        </p>
+        <a href="/">Back to the arena <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
+  </main>
+  <script is:inline src="https://web3forms.com/client/script.js" async defer
+  ></script>
+</SiteLayout>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('#contact-form');
+  const status = document.querySelector<HTMLElement>('#contact-status');
+  const confirmation = document.querySelector<HTMLElement>(
+    '#contact-confirmation',
+  );
+  const button = form?.querySelector<HTMLButtonElement>(
+    'button[type="submit"]',
+  );
+
+  if (form && status && button && confirmation) {
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (button.disabled) return;
+      const data = new FormData(form);
+      if (!data.get('h-captcha-response')) {
+        status.dataset.state = 'error';
+        status.textContent =
+          'Please complete the spam check before sending. If it hasn’t loaded, refresh the page or check your content blocker.';
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = 'Sending…';
+      form.setAttribute('aria-busy', 'true');
+      status.dataset.state = 'pending';
+      status.textContent = 'Sending your message…';
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify(Object.fromEntries(data)),
+          signal: AbortSignal.timeout(20000),
+        });
+        const result = await response.json();
+        if (!response.ok || result.success !== true)
+          throw new Error('Submission failed');
+        form.reset();
+        form.hidden = true;
+        confirmation.hidden = false;
+        confirmation.focus();
+      } catch {
+        status.dataset.state = 'error';
+        status.textContent =
+          'We couldn’t confirm your message was sent. Your text is still here. Please complete the spam check again and retry in a moment.';
+      } finally {
+        const captcha = (
+          window as Window & { hcaptcha?: { reset: () => void } }
+        ).hcaptcha;
+        if (!form.hidden) captcha?.reset();
+        button.disabled = false;
+        button.textContent = 'Send message →';
+        form.removeAttribute('aria-busy');
+      }
+    });
+  }
+</script>
+
+<style>
+  #contact-form[hidden],
+  .contact-confirmation[hidden] {
+    display: none;
+  }
+  .contact-confirmation {
+    padding: 48px 32px;
+    background: #fffef9;
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--gold-edge);
+    text-align: center;
+  }
+  .contact-success-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 24px;
+    border: 1px solid #92c6a3;
+    border-radius: 50%;
+    background: #e8f5ec;
+    color: #23713d;
+    font: 400 42px/1 var(--sans);
+  }
+  :global(#spx-nine-in-ten) .contact-confirmation h2 {
+    margin: 16px 0;
+    font: 400 28px/1.25 var(--sans);
+    letter-spacing: -0.7px;
+  }
+  .contact-confirmation p {
+    color: var(--soft);
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  :global(#spx-nine-in-ten) .contact-confirmation a {
+    display: inline-flex;
+    gap: 16px;
+    align-items: center;
+    min-height: 44px;
+    margin-top: 20px;
+    color: var(--brand);
+    font-size: 13px;
+    text-decoration: underline;
+  }
+  .contact-page {
+    max-width: 1224px;
+    margin-inline: auto;
+    padding: 40px 36px 72px;
+  }
+  .contact-intro {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 28px 36px 18px;
+    color: #f7f4e9;
+    background:
+      radial-gradient(ellipse at 100% 0%, #426558 0%, transparent 62%), #193d35;
+    border: 1px solid #b59a57;
+  }
+  .contact-intro::before,
+  .contact-intro::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .contact-intro::before {
+    width: 340px;
+    height: 340px;
+    right: -130px;
+    top: -100px;
+    border: 1px solid #d6bd8040;
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 45px #d6bd8010,
+      0 0 0 90px #d6bd8009;
+  }
+  .contact-intro::after {
+    top: 0;
+    left: 48px;
+    right: 48px;
+    height: 3px;
+    background: linear-gradient(90deg, #b59a57, #eadbb5, #b59a57);
+  }
+  :global(#spx-nine-in-ten) .contact-intro .small-label {
+    color: #d6bd80;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  :global(#spx-nine-in-ten) .contact-intro h1 {
+    margin: 14px 0;
+    font: 300 clamp(40px, 5vw, 58px)/1.05 var(--sans);
+    letter-spacing: -2px;
+  }
+  .contact-intro h1 em {
+    color: #e0cb96;
+    font-family: Georgia, serif;
+    font-weight: 400;
+  }
+  :global(#spx-nine-in-ten) .contact-intro p {
+    max-width: 850px;
+    color: #dae3da;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .contact-hero-foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #d6bd8038;
+    color: #d6bd80;
+    font:
+      9px/1.8 'IBM Plex Mono',
+      monospace;
+    letter-spacing: 1.6px;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: 48px;
+    padding-top: 48px;
+    align-items: start;
+  }
+  .contact-note {
+    padding: 20px 0;
+  }
+  :global(#spx-nine-in-ten) .contact-note h2 {
+    margin: 18px 0 28px;
+    font: 300 clamp(28px, 3vw, 36px)/1.25 var(--sans);
+    letter-spacing: -1px;
+  }
+  .contact-note h2 em {
+    color: var(--brand);
+    font-family: Georgia, serif;
+    font-weight: 400;
+  }
+  :global(#spx-nine-in-ten) .contact-note p {
+    color: var(--soft);
+    font-size: 13px;
+    line-height: 1.85;
+  }
+  .contact-invitations {
+    list-style: none;
+    counter-reset: invitation;
+    margin: 0 0 28px;
+    padding: 0;
+  }
+  .contact-invitations li {
+    counter-increment: invitation;
+    display: flex;
+    gap: 16px;
+    padding: 22px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .contact-invitations li::before {
+    content: '0' counter(invitation);
+    color: #816b33;
+    font:
+      11px/1.9 'IBM Plex Mono',
+      monospace;
+  }
+  :global(#spx-nine-in-ten) .contact-invitations h3 {
+    margin: 0 0 7px;
+    color: var(--brand);
+    font-size: 15px;
+    font-weight: 500;
+  }
+  form {
+    display: grid;
+    gap: 22px;
+    min-width: 0;
+    padding: 32px;
+    background: #fffef9;
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--gold-edge);
+    box-shadow: 0 12px 32px #193d3508;
+  }
+  .contact-form-heading {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule);
+  }
+  :global(#spx-nine-in-ten) .contact-form-heading h2 {
+    margin: 12px 0 8px;
+    font: 400 26px/1.25 var(--sans);
+    letter-spacing: -0.7px;
+  }
+  .contact-form-heading p {
+    color: var(--soft);
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .contact-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  label {
+    display: grid;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 0;
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 13px 14px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: #fbfaf6;
+    color: var(--ink);
+    font: 400 16px/1.5 var(--sans);
+    transition: border-color 0.15s;
+  }
+  input:hover,
+  select:hover,
+  textarea:hover {
+    border-color: var(--gold-edge);
+  }
+  textarea {
+    resize: vertical;
+    min-height: 160px;
+  }
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 3px;
+  }
+  .botcheck {
+    display: none;
+  }
+  .contact-privacy {
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--soft);
+  }
+  form button {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    min-height: 52px;
+    padding: 15px 22px;
+    border: 1px solid var(--brand);
+    border-radius: 2px;
+    background: var(--brand);
+    color: #fffef9;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  form button span {
+    color: #e0cb96;
+    font-size: 20px;
+  }
+  form button:hover {
+    background: #193d35;
+  }
+  form button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+  }
+  #contact-status {
+    min-height: 1.7em;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--brand);
+  }
+  #contact-status[data-state='error'] {
+    color: #9a3328;
+  }
+  @media (max-width: 800px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding-top: 24px;
+    }
+    .contact-note {
+      padding-bottom: 0;
+    }
+  }
+  @media (max-width: 500px) {
+    .contact-page {
+      padding: 24px 16px 40px;
+    }
+    .contact-intro {
+      padding: 24px 20px 16px;
+    }
+    .contact-intro::after {
+      left: 24px;
+      right: 24px;
+    }
+    :global(#spx-nine-in-ten) .contact-intro h1 {
+      letter-spacing: -2px;
+    }
+    .contact-hero-foot {
+      margin-top: 16px;
+    }
+    form {
+      padding: 24px 20px;
+    }
+    .contact-fields {
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+  }
+</style>
