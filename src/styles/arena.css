@@ -3129,6 +3129,16 @@
   width: 20px;
   flex-shrink: 0;
 }
+#spx-nine-in-ten .leaderboard-bars .bar-rank.bar-victory,
+#spx-nine-in-ten .ranking-page .bar-rank.bar-victory {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #b38b27;
+}
+#spx-nine-in-ten .bar-victory svg {
+  flex-shrink: 0;
+}
 #spx-nine-in-ten .bar-identity .portrait {
   width: 37px;
   height: 43px;

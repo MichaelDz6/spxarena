@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import PortraitCredit from '../components/PortraitCredit.astro';
+import RuinPortraitCredits from '../components/RuinPortraitCredits.astro';
 import { investors } from '../lib/performance.js';
 import images from '../data/portraits.json';
 import { portraitPresentation } from '../lib/portrait-presentation.js';
@@ -30,6 +31,8 @@ import companyLogos from '../data/company-logos.json';
       {images[person.key as keyof typeof images] ? <a class="credit-thumbnail" href={`/investors/${person.key}/`}><img src={images[person.key as keyof typeof images] || undefined} width="96" height="120" loading="lazy" decoding="async" alt={portraitPresentation(person.key, person.name).alt} /></a> : <span class="credit-thumbnail pending-photo">Photo unavailable</span>}
       <div><strong>{person.name}</strong><PortraitCredit person={person.key} /></div>
     </li>)}</ul>
+    <h2 id="arena-of-ruin-portraits">Arena of Ruin photographs</h2>
+    <RuinPortraitCredits />
     <h2 id="photo-clearance">Original photos and reuse permission</h2>
     <p>Generated likenesses and drawings are not used as profile pictures. Where a suitable original color photo has not been cleared for reuse, the site shows “Photo unavailable” instead. A source website or photo credit alone does not grant permission to reproduce a photo.</p>
     <h2 id="photo-enhancement">Photo upscaling</h2>

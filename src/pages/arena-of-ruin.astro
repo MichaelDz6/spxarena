@@ -1,7 +1,14 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import RuinPortraitCredits from '../components/RuinPortraitCredits.astro';
 import archive from '../data/arena-of-ruin.json';
+import portraits from '../data/ruin-portraits.json';
 import '../styles/arena-of-ruin.css';
+
+const cases = archive.cases.map(entry => ({
+  ...entry,
+  portrait: portraits.find(photo => photo.person === entry.id && photo.primary),
+}));
 
 const researchDate = new Date(
   `${archive.researchedAt}T12:00:00Z`,
@@ -94,7 +101,7 @@ const researchDate = new Date(
       </div>
       <div class="ruin-grid">
         {
-          archive.cases.map((entry, index) => (
+          cases.map((entry, index) => (
             <article
               class:list={[
                 'ruin-card',
@@ -110,9 +117,15 @@ const researchDate = new Date(
                 <time datetime={entry.dateTime}>{entry.date}</time>
               </div>
               <div class="ruin-identity">
-                <span class="ruin-monogram" aria-hidden="true">
-                  {entry.initials}
-                </span>
+                {entry.portrait ? (
+                  <a class="ruin-portrait" href="/credits/#arena-of-ruin-portraits" aria-label={`Photo credits for ${entry.name}`}>
+                    <img src={entry.portrait.path} width="64" height="80" loading="lazy" decoding="async" alt={entry.name} />
+                  </a>
+                ) : (
+                  <span class="ruin-monogram" aria-hidden="true">
+                    {entry.initials}
+                  </span>
+                )}
                 <div>
                   <h3 id={`${entry.id}-name`}>
                     <a href={`#${entry.id}`}>{entry.name}</a>
@@ -172,6 +185,12 @@ const researchDate = new Date(
                       </li>
                     ))}
                   </ul>
+                  {entry.portrait && (
+                    <section class="ruin-photo-section" aria-labelledby={`${entry.id}-photos`}>
+                      <h4 id={`${entry.id}-photos`}>Photographs &amp; credits</h4>
+                      <RuinPortraitCredits person={entry.id} />
+                    </section>
+                  )}
                 </div>
               </details>
             </article>
@@ -202,6 +221,10 @@ const researchDate = new Date(
           Research snapshot: <time datetime={archive.researchedAt}
             >{researchDate}</time
           >.
+        </p>
+        <p id="arena-of-ruin-portraits">
+          Photographs: Cointelegraph and MIT Bitcoin Club, licensed under CC BY 3.0.
+          {' '}<a href="/credits/#arena-of-ruin-portraits">Photo sources, credits &amp; licenses</a>.
         </p>
       </div>
     </section>

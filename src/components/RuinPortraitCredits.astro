@@ -1,0 +1,37 @@
+---
+import portraits from '../data/ruin-portraits.json';
+
+interface Props {
+  person?: string;
+}
+
+const { person } = Astro.props;
+const photos = portraits.filter(photo => !person || photo.person === person);
+---
+
+<div class="ruin-photo-credits">
+  {photos.map(photo => (
+    <figure>
+      <a class="ruin-photo-file" href={photo.path} aria-label={`View ${photo.name} photo by ${photo.creator}`}>
+        <img src={photo.path} width="64" height="80" loading="lazy" decoding="async" alt={`${photo.name}, ${photo.primary ? 'Cointelegraph interview' : 'MIT Bitcoin Expo video call'}`} />
+      </a>
+      <figcaption>
+        <a href={photo.source} target="_blank" rel="noopener noreferrer">{photo.title}</a>
+        {' — '}{photo.creator}
+        {photo.sourceCropBy && <>; source crop by {photo.sourceCropBy}</>}
+        {', via Wikimedia Commons. '}
+        <a href={photo.licenseUrl} target="_blank" rel="noopener noreferrer">{photo.license}</a>.
+        {' '}{photo.modifications}
+      </figcaption>
+    </figure>
+  ))}
+</div>
+
+<style>
+  .ruin-photo-credits { display: grid; gap: 18px; }
+  figure { display: flex; align-items: flex-start; gap: 14px; margin: 0; }
+  .ruin-photo-file { flex-shrink: 0; }
+  img { display: block; width: 64px; height: 80px; object-fit: cover; object-position: 50% 25%; border-radius: 4px; }
+  figcaption { min-width: 0; color: var(--soft); font: 11px/1.8 var(--sans); overflow-wrap: anywhere; }
+  a { color: var(--brand); text-decoration: underline; text-underline-offset: 2px; }
+</style>

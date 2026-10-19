@@ -1,12 +1,14 @@
 ---
 import {
   compoundExample,
+  compoundChartMax,
   compoundBalance,
   uncompoundedBalance,
   compoundPoint,
   compoundMoney,
 } from '../lib/compound-example.js';
-const { initial, years } = compoundExample;
+const { initial, rate, years } = compoundExample;
+const rateLabel = `${rate * 100}%`;
 const points = Array.from({ length: years * 4 + 1 }, (_, i) =>
   compoundPoint(i / 4),
 );
@@ -17,22 +19,24 @@ const curve = points
   .join(' ');
 const area = `${curve} L524,248 L44,248 Z`;
 const end = compoundPoint(years);
-const simpleEndY = 248 - (uncompoundedBalance(years) / 80000) * 210;
+const simpleEndY = 248 - (uncompoundedBalance(years) / compoundChartMax) * 210;
 ---
 
 <figure class="compound-illustration" data-compound-example>
   <div class="compound-heading">
-    <span class="learn-eyebrow">SAME 7%. A BIGGER AMOUNT TO GROW.</span>
+    <span class="learn-eyebrow">SAME {rateLabel}. A BIGGER AMOUNT TO GROW.</span
+    >
     <span>$10,000 invested once · no extra deposits</span>
   </div>
   <div class="compound-balance">
     <div>
       <span>After <span data-compound-year>30 years</span></span><strong
         data-compound-balance
-        >{compoundMoney.format(compoundBalance(years))}</strong>
+        >{compoundMoney.format(compoundBalance(years))}</strong
+      >
     </div>
     <span class="compound-rate"
-      >7%<small>each year<br />hypothetically</small></span
+      >{rateLabel}<small>each year<br />hypothetically</small></span
     >
   </div>
   <svg
@@ -45,9 +49,11 @@ const simpleEndY = 248 - (uncompoundedBalance(years) / 80000) * 210;
       How compounding grows $10,000 over 30 years
     </title>
     <desc id="compound-chart-description"
-      >At a hypothetical 7% every year, $10,000 grows to $76,123 when all
-      returns stay invested. If gains earn no further return, the investment
-      plus gains total $31,000. No added deposits, fees, taxes or inflation.</desc
+      >At a hypothetical {rateLabel} every year, $10,000 grows to {
+        compoundMoney.format(compoundBalance(years))
+      } when all returns stay invested. If gains earn no further return, the investment
+      plus gains total {compoundMoney.format(uncompoundedBalance(years))}. No
+      added deposits, fees, taxes or inflation.</desc
     >
     <defs>
       <linearGradient id="compound-area-fill" x1="0" y1="0" x2="0" y2="1">
@@ -60,8 +66,9 @@ const simpleEndY = 248 - (uncompoundedBalance(years) / 80000) * 210;
       >
     </defs>
     {
-      [0, 20000, 40000, 60000, 80000].map((value) => {
-        const y = 248 - (value / 80000) * 210;
+      [0, 0.25, 0.5, 0.75, 1].map((fraction) => {
+        const value = fraction * compoundChartMax;
+        const y = 248 - fraction * 210;
         return (
           <g class="compound-grid">
             <>
@@ -125,7 +132,7 @@ const simpleEndY = 248 - (uncompoundedBalance(years) / 80000) * 210;
       max="30"
       value="30"
       step="1"
-      aria-valuetext="30 years: $76,123"
+      aria-valuetext={`${years} years: ${compoundMoney.format(compoundBalance(years))}`}
     />
   </div>
   <div class="compound-breakdown" aria-live="off">
@@ -134,12 +141,13 @@ const simpleEndY = 248 - (uncompoundedBalance(years) / 80000) * 210;
     </div>
     <div>
       <span>Growth on top</span><strong data-compound-gain
-        >+{compoundMoney.format(compoundBalance(years) - initial)}</strong>
+        >+{compoundMoney.format(compoundBalance(years) - initial)}</strong
+      >
     </div>
   </div>
   <figcaption>
-    A steady 7% is an illustration, not a forecast. The dashed line assumes
-    gains are kept as cash earning no return. Before fees, taxes and inflation.
-    Real returns vary and can be negative.
+    A steady {rateLabel} is an illustration, not a forecast. The dashed line assumes
+    gains are kept as cash earning no return. Before fees, taxes and inflation. Real
+    returns vary and can be negative.
   </figcaption>
 </figure>

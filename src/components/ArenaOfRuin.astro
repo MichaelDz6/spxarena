@@ -1,0 +1,199 @@
+---
+import archive from '../data/arena-of-ruin.json';
+
+const featuredCases = ['sam-bankman-fried', 'james-wynn'].flatMap((id) =>
+  archive.cases.filter((entry) => entry.id === id),
+);
+---
+
+<section
+  class="ruin-preview"
+  id="nine-arena-ruin"
+  aria-labelledby="nine-ruin-title"
+>
+  <div class="ruin-preview-inner">
+    <div class="ruin-preview-copy">
+      <span class="small-label">THE OTHER SIDE OF THE ARENA</span>
+      <h2 id="nine-ruin-title">Arena of <em>Ruin</em></h2>
+      <p class="ruin-preview-lead">Big reputations. Bigger risks.</p>
+      <p class="ruin-preview-description">
+        The investors and traders whose winning streaks ended in spectacular
+        losses. Explore the rise, the breaking point, and what was actually
+        lost.
+      </p>
+      <a class="arena-action ruin-preview-action" href="/arena-of-ruin/">
+        Enter the Arena of Ruin <span aria-hidden="true">→</span>
+      </a>
+    </div>
+    <div class="ruin-preview-examples">
+      {
+        featuredCases.map((entry) => (
+          <article
+            class="ruin-preview-case"
+            aria-labelledby={`preview-${entry.id}`}
+          >
+            <time datetime={entry.dateTime}>{entry.date}</time>
+            <h3 id={`preview-${entry.id}`}>{entry.name}</h3>
+            <p class="ruin-preview-firm">{entry.firm}</p>
+            <strong class="ruin-preview-metric">{entry.metric}</strong>
+            <p class="ruin-preview-metric-label">{entry.metricLabel}</p>
+            <a
+              class="ruin-preview-case-link"
+              href={`/arena-of-ruin/#${entry.id}`}
+            >
+              Read the case
+              <span class="ruin-preview-sr-only"> for {entry.name}</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .ruin-preview {
+    --ruin-ink: #874633;
+    padding: 44px 36px;
+    background: linear-gradient(115deg, #faf7f1, #f4eae2);
+  }
+
+  .ruin-preview-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+    align-items: center;
+    gap: 40px;
+    max-width: var(--content-width);
+    margin-inline: auto;
+  }
+
+  :global(#spx-nine-in-ten) .ruin-preview .small-label {
+    color: var(--ruin-ink);
+  }
+
+  :global(#spx-nine-in-ten) .ruin-preview h2 {
+    margin: 10px 0 16px;
+    font: 300 clamp(32px, 4vw, 44px)/1.15 var(--sans);
+    letter-spacing: -1.4px;
+  }
+
+  .ruin-preview h2 em {
+    color: var(--ruin-ink);
+    font-style: normal;
+  }
+
+  .ruin-preview-lead {
+    font-size: 19px;
+  }
+
+  :global(#spx-nine-in-ten) .ruin-preview-description {
+    max-width: 520px;
+    margin-top: 10px;
+    color: var(--soft);
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  :global(#spx-nine-in-ten) .ruin-preview-action {
+    margin-top: 24px;
+    background: var(--ruin-ink);
+    border-color: var(--ruin-ink);
+  }
+
+  :global(#spx-nine-in-ten) .ruin-preview-action:hover {
+    background: #6f3828;
+    border-color: #6f3828;
+  }
+
+  .ruin-preview-examples {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .ruin-preview-case {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 22px 20px;
+    border: 1px solid #dccabd;
+    border-top: 3px solid #a96a51;
+    background: #fffdf9;
+  }
+
+  .ruin-preview-case time {
+    color: #74675c;
+    font:
+      10px/1.5 'IBM Plex Mono',
+      monospace;
+  }
+
+  :global(#spx-nine-in-ten) .ruin-preview-case h3 {
+    margin-top: 12px;
+    font: 500 16px/1.4 var(--sans);
+  }
+
+  :global(#spx-nine-in-ten) .ruin-preview-firm {
+    margin-top: 4px;
+    color: var(--soft);
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .ruin-preview-metric {
+    display: block;
+    margin-top: 24px;
+    color: var(--ruin-ink);
+    font: 400 30px/1.2 var(--sans);
+    letter-spacing: -1px;
+  }
+
+  :global(#spx-nine-in-ten) .ruin-preview-metric-label {
+    margin-block: 8px 20px;
+    color: var(--soft);
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  :global(#spx-nine-in-ten) .ruin-preview-case-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 44px;
+    margin-top: auto;
+    border-top: 1px solid #e8ddd3;
+    color: var(--ruin-ink);
+    font-size: 12px;
+  }
+
+  .ruin-preview-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1000px) {
+    .ruin-preview-inner {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 28px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .ruin-preview {
+      padding: 32px 20px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .ruin-preview-examples {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

@@ -1,5 +1,6 @@
 ---
 import Portrait from './Portrait.astro';
+import ArenaVictory from './ArenaVictory.astro';
 import { rankedInvestors, benchmarkStats, fmt } from '../lib/performance.js';
 const top = rankedInvestors.slice(0, 5);
 const benchmark = benchmarkStats[10];
@@ -21,7 +22,8 @@ const position = (benchmark / maximum) * 100;
         The arena, <em>ranked.</em>
       </h2>
     </div><span class="ranking-stamp"
-      >10-YEAR ANNUALIZED RETURN<br /><b>JAN 2016 – DEC 2025</b></span>
+      >10-YEAR ANNUALIZED RETURN<br /><b>JAN 2016 – DEC 2025</b></span
+    >
   </div>
   <p class="section-intro">
     One decade. The same benchmark. See who finished ahead.
@@ -33,12 +35,12 @@ const position = (benchmark / maximum) * 100;
   >
     <div class="bar-row benchmark-row">
       <div class="bar-identity">
-        <span class="bar-rank">—</span><span
-          class="bar-benchmark-icon"
-          aria-hidden="true">◆</span
+        <ArenaVictory /><span class="bar-benchmark-icon" aria-hidden="true"
+          >◆</span
         ><div>
           <strong>SPX · S&amp;P 500</strong><small
-            >SPY ETF · THE BENCHMARK</small>
+            >SPY ETF · THE BENCHMARK</small
+          >
         </div>
       </div><div class="bar-track">
         <span class="bar-fill" style={`width:${position}%`}></span>
@@ -97,8 +99,10 @@ const position = (benchmark / maximum) * 100;
   <div class="leaderboard-bottom">
     <p>
       The gold line shows SPX, measured using SPY total returns.<br /><span
-        >Top five of 20 ranked vehicles. Figures are approximate.</span>
+        >Top five of 20 ranked vehicles. Figures are approximate.</span
+      >
     </p><a class="arena-action" href="/leaderboard/"
-      >View full leaderboard <span aria-hidden="true">↗</span></a>
+      >View full leaderboard <span aria-hidden="true">↗</span></a
+    >
   </div>
 </section>

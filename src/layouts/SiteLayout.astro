@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Sources from '../components/Sources.astro';
+import { languageBootstrap } from '../i18n/locale.js';
 import '../styles/arena.css';
 import '../styles/site.css';
 interface Props {
@@ -25,8 +26,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
+    <script is:inline set:html={languageBootstrap} />
+    <style is:inline>
+      html[lang='pl']:not([data-i18n-ready]) body {
+        visibility: hidden;
+      }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
@@ -53,6 +60,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       </div>
     </div>
     <script>
+      import '../scripts/language.js';
       import '../scripts/portraits.js';
     </script>
   </body>

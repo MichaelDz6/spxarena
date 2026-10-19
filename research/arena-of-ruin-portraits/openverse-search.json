@@ -1,0 +1,222 @@
+{
+  "checkedOn": "2026-10-19",
+  "searches": [
+    {
+      "name": "Leopold Aschenbrenner",
+      "url": "https://api.openverse.org/v1/images/?q=Leopold+Aschenbrenner&page_size=20&license_type=commercial%2Cmodification",
+      "resultCount": 0,
+      "results": []
+    },
+    {
+      "name": "David Chau InsideOptions",
+      "url": "https://api.openverse.org/v1/images/?q=David+Chau+InsideOptions&page_size=20&license_type=commercial%2Cmodification",
+      "resultCount": 0,
+      "results": []
+    },
+    {
+      "name": "James Wynn crypto",
+      "url": "https://api.openverse.org/v1/images/?q=James+Wynn+crypto&page_size=20&license_type=commercial%2Cmodification",
+      "resultCount": 0,
+      "results": []
+    },
+    {
+      "name": "Su Zhu Three Arrows",
+      "url": "https://api.openverse.org/v1/images/?q=Su+Zhu+Three+Arrows&page_size=20&license_type=commercial%2Cmodification",
+      "resultCount": 0,
+      "results": []
+    },
+    {
+      "name": "Kyle Davies Three Arrows",
+      "url": "https://api.openverse.org/v1/images/?q=Kyle+Davies+Three+Arrows&page_size=20&license_type=commercial%2Cmodification",
+      "resultCount": 0,
+      "results": []
+    },
+    {
+      "name": "Bill Hwang",
+      "url": "https://api.openverse.org/v1/images/?q=Bill+Hwang&page_size=20&license_type=commercial%2Cmodification",
+      "resultCount": 24,
+      "results": [
+        {
+          "id": "5c518c5d-15ad-4bda-99f0-4c4da89b39ab",
+          "title": "Korea-Andong-Dosan Seowon 3015-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745109",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Korea-Andong-Dosan_Seowon_3015-06.JPG"
+        },
+        {
+          "id": "ebeaa23b-0fd2-4352-891c-1f0cc739dc16",
+          "title": "Conference on RACIP2 Group Photo",
+          "creator": "Credit Line: AIP Emilio Segr\u00e8 Visual Archives",
+          "license": "by-sa",
+          "license_version": "4.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=123860998",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Conference_on_RACIP2_Group_Photo.jpg"
+        },
+        {
+          "id": "90fae776-419c-4bc6-943b-e0f56b2dd99b",
+          "title": "Korea-Andong-Dosan Seowon 3025-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745145",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Korea-Andong-Dosan_Seowon_3025-06.JPG"
+        },
+        {
+          "id": "e883c25d-9937-4bb4-94f0-964d32af995f",
+          "title": "Korea-Andong-Dosan Seowan 3013-06 museum",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5807498",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Korea-Andong-Dosan_Seowan_3013-06_museum.JPG"
+        },
+        {
+          "id": "6703f142-e672-4a49-b7c3-dc21ab677be0",
+          "title": "File:Korea-Andong-Dosan Seowon 3016-06.JPG",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745165",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Korea-Andong-Dosan_Seowon_3016-06.JPG"
+        },
+        {
+          "id": "de12e1d0-be6b-43ab-9a3d-2787d8c21b9d",
+          "title": "Korea-Andong-Dosan Seowon 3018-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745124",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Korea-Andong-Dosan_Seowon_3018-06.JPG"
+        },
+        {
+          "id": "e64c3b0d-dad7-4390-95b2-2302a028eeef",
+          "title": "Korea-Andong-Dosan Seowon 3005-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745090",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Korea-Andong-Dosan_Seowon_3005-06.JPG"
+        },
+        {
+          "id": "6852f128-5789-4f2c-bceb-6b8c370ebb30",
+          "title": "Korea-Andong-Dosan Seowon 2993-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745038",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Korea-Andong-Dosan_Seowon_2993-06.JPG"
+        },
+        {
+          "id": "cb20b88d-4351-47f7-91df-ceb68d950b87",
+          "title": "Rajesh Rao 01",
+          "creator": "Joe Mabel",
+          "license": "by-sa",
+          "license_version": "4.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=77173672",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Rajesh_Rao_01.jpg"
+        },
+        {
+          "id": "3645e4a7-a672-4407-a065-c80f0b859cd1",
+          "title": "Korea-Andong-Dosan Seowon 2991&2-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745028",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Korea-Andong-Dosan_Seowon_2991%262-06.jpg"
+        },
+        {
+          "id": "fd04df39-5600-4bdb-a35f-bda2a14586dc",
+          "title": "Korea-andong-Dosan Seowon 2988-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745022",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Korea-andong-Dosan_Seowon_2988-06.JPG"
+        },
+        {
+          "id": "daacc12d-d062-4efc-82d1-b2303223ef36",
+          "title": "Korea-Andong-Dosan Seowon 3026-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745136",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Korea-Andong-Dosan_Seowon_3026-06.JPG"
+        },
+        {
+          "id": "f2e33aac-e2be-49af-a949-a3a600b1d334",
+          "title": "Korea-Andong-Dosan Seowon 3010-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745099",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Korea-Andong-Dosan_Seowon_3010-06.JPG"
+        },
+        {
+          "id": "76fcafd5-4b8d-4214-9659-849fbb161163",
+          "title": "Korea-Andong-Dosan Seowon 3017-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745116",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Korea-Andong-Dosan_Seowon_3017-06.JPG"
+        },
+        {
+          "id": "27a2b2de-b8fd-4bbe-a2a1-c944eec47f4a",
+          "title": "Korea-Andong-Dosan Seowon 3004-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745086",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Korea-Andong-Dosan_Seowon_3004-06.JPG"
+        },
+        {
+          "id": "87c2e6bb-ec87-4ff8-81c9-9b1bf9f55d11",
+          "title": "Korea-Andong-Dosan Seowon 3001&00&01-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745064",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Korea-Andong-Dosan_Seowon_3001%2600%2601-06.jpg"
+        },
+        {
+          "id": "d06be56c-ed27-4fdb-8de7-119b438ad687",
+          "title": "Korea-Andong-Dosan Seowon 3002-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745072",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Korea-Andong-Dosan_Seowon_3002-06.JPG"
+        },
+        {
+          "id": "85c634ac-73c2-46b9-9cdd-52455bc36305",
+          "title": "Korea-Andong-Dosan Seowon 3014-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745103",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Korea-Andong-Dosan_Seowon_3014-06.JPG"
+        },
+        {
+          "id": "329e30b3-e7dd-4432-a334-c57e84ee4cdc",
+          "title": "Korea-Andong-Dosan Seowon 2998-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745052",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Korea-Andong-Dosan_Seowon_2998-06.JPG"
+        },
+        {
+          "id": "7e85bdc7-6987-4e1c-994c-25bff00c0cee",
+          "title": "Korea-Andog-Dosan Seowon 2987-06",
+          "creator": "Steve46814",
+          "license": "by-sa",
+          "license_version": "3.0",
+          "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=5745014",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Korea-Andog-Dosan_Seowon_2987-06.JPG"
+        }
+      ]
+    }
+  ]
+}

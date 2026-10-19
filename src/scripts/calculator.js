@@ -5,6 +5,7 @@ import {
   formatMoney,
   formatDuration,
 } from '../lib/calculator.js';
+import { t } from '../i18n/translate.js';
 import {
   createProjectionChart,
   projectionPaths,
@@ -322,7 +323,7 @@ export function initializeCalculator(root) {
             Number.isFinite(value) &&
             value >= (control.minimum ?? 0) &&
             value <= control.maximum;
-          input.setCustomValidity(valid ? '' : control.error);
+          input.setCustomValidity(valid ? '' : t(control.error));
           if (valid) {
             input.setAttribute('aria-valuenow', value);
             input.setAttribute('aria-valuetext', `${input.value} US dollars`);
@@ -466,7 +467,7 @@ export function initializeCalculator(root) {
     $('[data-goal-method]').hidden = !goalMode;
     $('[data-goal-status]').hidden = !goalMode;
     $('#calculator-page-title').innerHTML = goalMode
-      ? 'Goal <br /><em>Calculator.</em>'
+      ? t('Goal <br /><em>Calculator.</em>')
       : originalCopy.title;
     $('[data-calc-intro]').innerHTML = goalMode
       ? 'Start with a goal. See how much you would need to invest each month, using your time horizon and an <strong>average annual return</strong>.'

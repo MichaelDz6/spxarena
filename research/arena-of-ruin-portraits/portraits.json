@@ -1,0 +1,84 @@
+{
+  "checkedOn": "2026-10-19",
+  "page": "/arena-of-ruin/",
+  "assets": [
+    {
+      "person": "sam-bankman-fried",
+      "status": "source-license-verified",
+      "recommended": true,
+      "file": "research/arena-of-ruin-portraits/sam-bankman-fried-cointelegraph.png",
+      "title": "Sam Bankman-Fried (cropped).png",
+      "creator": "Cointelegraph",
+      "source": "https://commons.wikimedia.org/wiki/File:Sam_Bankman-Fried_(cropped).png",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sam_Bankman-Fried_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "sourceCropBy": "TarkusAB",
+      "modifications": "None; downloaded unchanged from the Commons file.",
+      "sourceRevisionId": 1140597354,
+      "verifiedOn": "2026-10-19",
+      "width": 1080,
+      "height": 1439,
+      "bytes": 1770120,
+      "sha256": "000f653d7bc39d0c1d39c034fe44d1284eb5d2dc81a62eb48318093704794569"
+    },
+    {
+      "person": "sam-bankman-fried",
+      "status": "source-license-verified",
+      "recommended": false,
+      "file": "research/arena-of-ruin-portraits/sam-bankman-fried-mit.png",
+      "title": "MIT Bitcoin Expo 2022 - Sam Bankman.png",
+      "creator": "MIT Bitcoin Club",
+      "source": "https://commons.wikimedia.org/wiki/File:MIT_Bitcoin_Expo_2022_-_Sam_Bankman.png",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/MIT_Bitcoin_Expo_2022_-_Sam_Bankman.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "sourceCropBy": null,
+      "modifications": "None; downloaded unchanged from the Commons file.",
+      "sourceRevisionId": 1000039253,
+      "verifiedOn": "2026-10-19",
+      "width": 1053,
+      "height": 1023,
+      "bytes": 1088354,
+      "sha256": "7aa30e33debf8c259be9c9861ffc06b915bbe78dfdc4f85e680d27c258ecc08f"
+    }
+  ],
+  "pending": [
+    {
+      "person": "leopold-aschenbrenner",
+      "name": "Leopold Aschenbrenner",
+      "status": "no-verified-photo-found",
+      "publishedPath": null
+    },
+    {
+      "person": "david-chau",
+      "name": "David Chau",
+      "status": "no-verified-photo-found",
+      "publishedPath": null
+    },
+    {
+      "person": "james-wynn",
+      "name": "James Wynn",
+      "status": "no-verified-photo-found",
+      "publishedPath": null
+    },
+    {
+      "person": "su-zhu",
+      "name": "Su Zhu",
+      "status": "no-verified-photo-found",
+      "publishedPath": null
+    },
+    {
+      "person": "kyle-davies",
+      "name": "Kyle Davies",
+      "status": "no-verified-photo-found",
+      "publishedPath": null
+    },
+    {
+      "person": "bill-hwang",
+      "name": "Bill Hwang",
+      "status": "no-verified-photo-found",
+      "publishedPath": null
+    }
+  ]
+}

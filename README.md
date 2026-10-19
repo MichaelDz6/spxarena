@@ -73,7 +73,7 @@ References: [Astro on AWS](https://docs.astro.build/en/guides/deploy/aws/) and [
 
 ## Research and data conventions
 
-Arena of Ruin is a separate editorial collection in `src/data/arena-of-ruin.json`, researched October 16, 2026, with events from 2021–2026. Its six cases cover seven people: Leopold Aschenbrenner, David Chau, James Wynn, Sam Bankman-Fried, Su Zhu and Kyle Davies, and Bill Hwang. It distinguishes personal wealth, trading profits, firm assets and creditor debt; these figures are not ranked or added together. Aschenbrenner is explicitly identified as a near-collapse. Each case links to its reporting, and the page uses original decorative artwork and initials rather than unlicensed portraits. It does not change the performance roster or ranking snapshot below.
+Arena of Ruin is a separate editorial collection in `src/data/arena-of-ruin.json`, researched October 16, 2026, with events from 2021–2026. Its six cases cover seven people: Leopold Aschenbrenner, David Chau, James Wynn, Sam Bankman-Fried, Su Zhu and Kyle Davies, and Bill Hwang. It distinguishes personal wealth, trading profits, firm assets and creditor debt; these figures are not ranked or added together. Aschenbrenner is explicitly identified as a near-collapse. Each case links to its reporting, and the page uses original decorative artwork, two licensed Sam Bankman-Fried photographs, and initials where photo permission remains unresolved. The card portrait and alternate interview frame are credited in the case details and on `/credits/#arena-of-ruin-portraits`; source evidence is under `research/arena-of-ruin-portraits/`. It does not change the performance roster or ranking snapshot below.
 
 This is a historical snapshot through **December 31, 2025**, not a live market feed. The roster contains **34 profiles and 20 ranked records** for **2016–2025**. The main ranking and card frame use ten-year annualized outperformance. Five-year and one-year statistics receive separate badges. SPX identifies the index and site branding; benchmark returns use **SPY total returns**. SPIVA’s intro statistics refer to **all active U.S. large-cap funds**, including growth, core and value styles, compared with the index itself: 92.89% underperformed over 20 years (2006–2025), 85.59% over 10 years and 78.78% over one year. All three figures come from [SPIVA U.S. Year-End 2025, Report 1a, page 12](https://www.spglobal.com/spdji/en/documents/spiva/spiva-us-year-end-2025.pdf#page=12). These are fund-category statistics, not a measure of all individual investors or all fund types. The site deliberately retains the year-end 2025 snapshot rather than mixing dates with newer SPIVA releases.
 
@@ -92,3 +92,27 @@ Update `src/data/returns.json` and the corresponding profile in `src/data/invest
 The Investment Calculator projects future growth rather than replaying historical prices. Its editable 10% annual return default is a rounded long-run S&P 500 total-return reference, sourced on the page to Schwab Asset Management. It uses an effective monthly rate `(1 + annualRate / 100) ** (1 / 12) - 1`, with deposits at each month's end. Duration is entered in years and additional months. Every input change smoothly animates the totals and chart from their currently displayed values; reduced-motion preferences disable these transitions. The default chart is also rendered into the static HTML. Both dollar inputs use comma formatting and adaptive step buttons. Projections assume a constant average and reinvested dividends, exclude taxes, fees and inflation, and are not guaranteed outcomes.
 
 The calculator’s **Plan a goal** button switches to a target-based calculation while preserving the starting investment, duration, average return and the original monthly contribution. Goal mode solves the month-end annuity formula, rounds the required deposit up to a whole dollar, and charts that funded projection. It also handles zero or negative average returns and goals already covered by starting capital.
+
+## Languages
+
+English (US) is the source language and fallback. On first visit, the shared
+layout selects the first supported language in `navigator.languages`: Polish
+(`pl`, including regional variants) or English (`en-US`, including other English
+variants). Unsupported browser languages fall back to English.
+
+The footer language selector saves an explicit choice in local storage under
+`spx-arena-language`. A `?lang=pl` or `?lang=en-US` URL overrides that preference;
+internal navigation preserves an explicit URL choice, including calculator query
+parameters and anchors, so it also works with storage disabled.
+
+Copy lives in `src/i18n/pl*.js`, keyed by normalized English source text. Add a
+Polish entry when changing English copy. `translate.js` handles parameterized
+labels, durations, chart descriptions, and announcements. The shared client
+module translates text nodes and accessible metadata without replacing elements
+or their listeners, and observes newly generated interactive content. Proper
+names, fund names, tickers, source titles, dollar amounts, and input conventions
+remain as published; monetary figures continue to represent USD.
+
+JavaScript is required for language detection and Polish rendering. The static
+HTML remains English for no-JavaScript visits and search crawlers. If translation
+loading fails, the page reveals the English fallback after a short timeout.

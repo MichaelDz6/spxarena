@@ -190,6 +190,18 @@
     500 17px/1 'IBM Plex Mono',
     monospace;
 }
+#spx-nine-in-ten .ruin-portrait {
+  display: block;
+  flex-shrink: 0;
+}
+#spx-nine-in-ten .ruin-portrait img {
+  display: block;
+  width: 64px;
+  height: 80px;
+  object-fit: cover;
+  object-position: 50% 25%;
+  border-radius: 4px;
+}
 #spx-nine-in-ten .ruin-identity h3 {
   font: 500 23px/1.2 var(--sans);
   letter-spacing: -0.6px;
@@ -295,19 +307,34 @@
   margin: 18px 0 0;
   list-style: none;
 }
-#spx-nine-in-ten .ruin-details a {
+#spx-nine-in-ten .ruin-details ul a {
   display: block;
   padding-block: 4px;
   color: var(--soft);
   font-size: 11px;
   line-height: 1.7;
 }
-#spx-nine-in-ten .ruin-details a strong {
+#spx-nine-in-ten .ruin-details ul a strong {
   display: block;
   color: var(--brand);
   font-size: 12px;
   text-decoration: underline;
   text-decoration-color: var(--gold-edge);
+}
+#spx-nine-in-ten .ruin-photo-section {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #e7ded4;
+}
+#spx-nine-in-ten .ruin-photo-section h4 {
+  margin: 0 0 14px;
+  color: var(--ruin-ink);
+  font: 500 12px/1.6 var(--sans);
+}
+#spx-nine-in-ten .ruin-reading-note a {
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 #spx-nine-in-ten .ruin-reading-note {
   display: grid;

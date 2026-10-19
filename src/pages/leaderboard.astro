@@ -1,4 +1,5 @@
 ---
+import ArenaVictory from '../components/ArenaVictory.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import Portrait from '../components/Portrait.astro';
 import '../styles/leaderboard.css';
@@ -57,7 +58,7 @@ const ticks = Array.from(
       aria-label="SPX benchmark"
     >
       <div class="bar-identity">
-        <span class="bar-rank" aria-hidden="true">—</span>
+        <ArenaVictory />
         <span class="bar-benchmark-icon" aria-hidden="true">◆</span>
         <div>
           <strong>SPX · S&amp;P 500</strong>

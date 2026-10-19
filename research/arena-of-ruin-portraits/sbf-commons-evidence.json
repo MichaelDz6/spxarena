@@ -1,0 +1,231 @@
+{
+  "checkedOn": "2026-10-19",
+  "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3ASam+Bankman-Fried+%28cropped%29.png%7CFile%3AMIT+Bitcoin+Expo+2022+-+Sam+Bankman.png",
+  "response": {
+    "batchcomplete": "",
+    "query": {
+      "pages": {
+        "125376936": {
+          "pageid": 125376936,
+          "ns": 6,
+          "title": "File:MIT Bitcoin Expo 2022 - Sam Bankman.png",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 1088354,
+              "width": 1053,
+              "height": 1023,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/MIT_Bitcoin_Expo_2022_-_Sam_Bankman.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:MIT_Bitcoin_Expo_2022_-_Sam_Bankman.png",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=125376936",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2022-11-13 11:32:58",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "MIT Bitcoin Expo 2022 - Sam Bankman",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Media from YouTube|Sam Bankman-Fried",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Screenshot of a video-call of <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Sam%20Bankman-Fried\" title=\"w:Sam Bankman-Fried\" class=\"extiw\">Sam Bankman-Fried</a> during the MIT Bitcoin Expo 2022. The channel <i>MIT Bitcoin Club</i> has the right to release the video of the video-call under given licence per <a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/Commons:ZOOM\" title=\"Commons:ZOOM\">Commons:ZOOM</a>.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2022-07-08",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<bdi lang=\"en\" dir=\"ltr\"><a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/Commons:YouTube_files\" title=\"Commons:YouTube files\">YouTube</a>:<span typeof=\"mw:Entity\"> </span><a rel=\"mw:ExtLink nofollow\" href=\"https://www.youtube.com/watch?v=d-WSPR-SbXQ\" class=\"external text\"><bdi lang=\"\">https://www.youtube.com/watch?v=d-WSPR-SbXQ?t=125</bdi></a><span typeof=\"mw:Entity\"> </span>\u2013 View/save archived versions on <a rel=\"mw:ExtLink nofollow\" href=\"https://web.archive.org/web/*/https://www.youtube.com/watch?v=d-WSPR-SbXQ\" class=\"external text\">archive.org</a></bdi><link rel=\"mw:PageProp/Category\" href=\"./Category:Images_from_YouTube\">",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.youtube.com/c/MITBitcoinClub\" class=\"external text\">MIT Bitcoin Club</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY 3.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution 3.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Attribution": {
+                  "value": "MIT Bitcoin Club",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by/3.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-3.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ],
+          "revisions": [
+            {
+              "revid": 1000039253,
+              "parentid": 825167082,
+              "timestamp": "2025-02-19T01:28:32Z",
+              "slots": {
+                "main": {
+                  "contentmodel": "wikitext",
+                  "contentformat": "text/x-wiki",
+                  "*": "=={{int:filedesc}}==\n{{Information\n|description={{en|1=Screenshot of a video-call of [[w:Sam Bankman-Fried|Sam Bankman-Fried]] during the MIT Bitcoin Expo 2022. The channel ''MIT Bitcoin Club'' has the right to release the video of the video-call under given licence per [[Commons:ZOOM]].}}\n|date=2022-07-08\n|source={{From YouTube|1=d-WSPR-SbXQ|2=https://www.youtube.com/watch?v=d-WSPR-SbXQ?t=125}}\n|author=[https://www.youtube.com/c/MITBitcoinClub MIT Bitcoin Club]\n|permission=\n|other versions=\n}}\n\n=={{int:license-header}}==\n{{YouTube CC-BY|1=MIT Bitcoin Club}}\n\n[[Category:Sam Bankman-Fried]]"
+                }
+              }
+            }
+          ]
+        },
+        "146870877": {
+          "pageid": 146870877,
+          "ns": 6,
+          "title": "File:Sam Bankman-Fried (cropped).png",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 1770120,
+              "width": 1080,
+              "height": 1439,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sam_Bankman-Fried_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sam_Bankman-Fried_(cropped).png",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=146870877",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2024-03-28 23:32:55",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Sam Bankman-Fried (cropped)",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Media from YouTube|Files from external sources with reviewed licenses|Sam Bankman-Fried|Extracted images",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "<a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Sam%20Bankman-Fried\" title=\"w:Sam Bankman-Fried\" class=\"extiw\">Sam Bankman-Fried</a> in an interview during the Bitcoin 2021 conference",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2021-06-16",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.youtube.com/watch?v=EsmhjNtlT_Y\" class=\"external text\">\"Institutions are \u2018DESPERATE\u2019 for crypto! <span typeof=\"mw:Entity\">|</span> Exclusive interview with Sam Bankman-Fried\"</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "Cointelegraph",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY 3.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution 3.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Attribution": {
+                  "value": "Cointelegraph",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by/3.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-3.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ],
+          "revisions": [
+            {
+              "revid": 1140597354,
+              "parentid": 1047761319,
+              "timestamp": "2026-01-02T15:18:06Z",
+              "slots": {
+                "main": {
+                  "contentmodel": "wikitext",
+                  "contentformat": "text/x-wiki",
+                  "*": "=={{int:filedesc}}==\n{{Information\n|description={{en|1={{w|Sam Bankman-Fried}} in an interview during the Bitcoin 2021 conference}}\n|date=2021-06-16\n|source=[https://www.youtube.com/watch?v=EsmhjNtlT_Y \"Institutions are \u2018DESPERATE\u2019 for crypto! &#124; Exclusive interview with Sam Bankman-Fried\"]\n|author=Cointelegraph\n|permission=\n|other versions={{Extracted from|1=Sam Bankman-Fried.png}}\n}}\n\n=={{int:license-header}}==\n{{YouTube CC-BY|1=Cointelegraph}}\n{{YouTubeReview|id=EsmhjNtlT_Y \"Institutions are \u2018DESPERATE\u2019 for crypto! &#124; Exclusive interview with Sam Bankman-Fried\"]desc|date=2022-09-19|reviewer=Minorax}}\n\n[[Category:Sam Bankman-Fried]]"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

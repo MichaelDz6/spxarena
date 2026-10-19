@@ -1,0 +1,42 @@
+[
+  {
+    "person": "sam-bankman-fried",
+    "name": "Sam Bankman-Fried",
+    "primary": true,
+    "path": "/ruin-portraits/sam-bankman-fried-cointelegraph.webp",
+    "title": "Sam Bankman-Fried (cropped).png",
+    "creator": "Cointelegraph",
+    "source": "https://commons.wikimedia.org/wiki/File:Sam_Bankman-Fried_(cropped).png",
+    "sourceCropBy": "TarkusAB",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modifications": "Resized and converted to WebP; displayed in original color with a layout crop.",
+    "verifiedOn": "2026-10-19",
+    "originalPath": "research/arena-of-ruin-portraits/sam-bankman-fried-cointelegraph.png",
+    "originalSha256": "000f653d7bc39d0c1d39c034fe44d1284eb5d2dc81a62eb48318093704794569",
+    "width": 800,
+    "height": 1066,
+    "bytes": 43070,
+    "sha256": "bf6e057ebbf79ac6fb2f06d0f51806736484ed63354383c2e0655205917345a3"
+  },
+  {
+    "person": "sam-bankman-fried",
+    "name": "Sam Bankman-Fried",
+    "primary": false,
+    "path": "/ruin-portraits/sam-bankman-fried-mit.webp",
+    "title": "MIT Bitcoin Expo 2022 - Sam Bankman.png",
+    "creator": "MIT Bitcoin Club",
+    "source": "https://commons.wikimedia.org/wiki/File:MIT_Bitcoin_Expo_2022_-_Sam_Bankman.png",
+    "sourceCropBy": null,
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modifications": "Resized and converted to WebP; displayed in original color with a layout crop.",
+    "verifiedOn": "2026-10-19",
+    "originalPath": "research/arena-of-ruin-portraits/sam-bankman-fried-mit.png",
+    "originalSha256": "7aa30e33debf8c259be9c9861ffc06b915bbe78dfdc4f85e680d27c258ecc08f",
+    "width": 800,
+    "height": 777,
+    "bytes": 40500,
+    "sha256": "81be997c54a494fe224440b6ebcc7f76975c9c39e40cda3bce379fe74821c92b"
+  }
+]
