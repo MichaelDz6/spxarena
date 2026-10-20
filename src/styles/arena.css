@@ -317,7 +317,7 @@
 }
 #spx-nine-in-ten .market-main-stat strong {
   display: block;
-  color: var(--accent);
+  color: var(--positive);
   font:
     500 41px/1 'Barlow Condensed',
     sans-serif;
@@ -347,6 +347,7 @@
 }
 #spx-nine-in-ten .market-secondary b {
   display: block;
+  color: var(--positive);
   font:
     500 22px 'Barlow Condensed',
     sans-serif;
@@ -378,7 +379,7 @@
   font:
     500 46px/1.1 'Barlow Condensed',
     sans-serif;
-  color: var(--accent);
+  color: var(--positive);
   margin-block: 6px;
 }
 #spx-nine-in-ten .benchmark-growth > span,
@@ -1921,9 +1922,6 @@
 #spx-nine-in-ten .market-card .card-foot {
   font-size: 11px !important;
 }
-#spx-nine-in-ten .market-main-stat strong {
-  color: var(--ink);
-}
 #spx-nine-in-ten .market-card .name-scroll small {
   font-size: 11px;
 }
@@ -2801,6 +2799,9 @@
   --frame-light: #f5e6b7;
   --frame-foil: #c2a765;
   --frame-liner: #fff5d9;
+  --benchmark-frame-shadow:
+    inset 0 0 0 1px #fff6dd, inset 0 0 0 2px #bda363, inset 0 0 0 3px #f0e2b9,
+    0 0 0 1px #bca76c, 0 3px 0 #b5a269;
   padding: 10px 9px 9px;
   background:
     linear-gradient(
@@ -2825,13 +2826,9 @@
       )
       border-box;
   box-shadow:
-    inset 0 0 0 1px #fff6dd,
-    inset 0 0 0 2px #bda363,
-    inset 0 0 0 3px #f0e2b9,
-    0 0 0 1px #bca76c,
-    0 3px 0 #b5a269,
-    0 10px 24px #9e76222b,
-    0 0 26px #e6ba4a17;
+    var(--benchmark-frame-shadow),
+    0 10px 24px #9e762238,
+    0 0 28px #e6ba4a30;
 }
 #spx-nine-in-ten .gilded .market-card[data-tier='legendary']::before {
   content: '';
@@ -2843,18 +2840,23 @@
   opacity: 0;
   background: linear-gradient(
     115deg,
-    transparent 38%,
-    #ffedaa14 44%,
-    #fff8da80 50%,
-    #ffedaa14 56%,
-    transparent 62%
+    transparent 32%,
+    #efc45624 41%,
+    #fff3c478 47%,
+    #fffef5cc 50%,
+    #fff3c478 53%,
+    #efc45624 59%,
+    transparent 68%
   );
   background-size: 300% 100%;
   background-position: 100% 0;
 }
 @media (prefers-reduced-motion: no-preference) {
+  #spx-nine-in-ten .gilded .market-card[data-tier='legendary'] {
+    animation: benchmark-glow 4.8s ease-in-out infinite;
+  }
   #spx-nine-in-ten .gilded .market-card[data-tier='legendary']::before {
-    animation: benchmark-shine 9s ease-in-out infinite;
+    animation: benchmark-shine 4.8s ease-in-out infinite;
   }
 }
 @keyframes benchmark-shine {
@@ -2862,17 +2864,32 @@
     background-position: 100% 0;
     opacity: 0;
   }
-  5% {
+  12% {
     opacity: 1;
   }
-  30% {
+  64% {
     background-position: 0% 0;
     opacity: 1;
   }
-  35%,
+  76%,
   100% {
     background-position: 0% 0;
     opacity: 0;
+  }
+}
+@keyframes benchmark-glow {
+  0%,
+  100% {
+    box-shadow:
+      var(--benchmark-frame-shadow),
+      0 10px 24px #9e762238,
+      0 0 28px #e6ba4a30;
+  }
+  42% {
+    box-shadow:
+      var(--benchmark-frame-shadow),
+      0 12px 30px #9e76224d,
+      0 0 40px #e6ba4a66;
   }
 }
 #spx-nine-in-ten .gilded .market-card[data-tier='legendary'] .rarity-word,

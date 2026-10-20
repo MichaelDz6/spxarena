@@ -1,0 +1,98 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import EtfFeeExplainer from '../components/EtfFeeExplainer.astro';
+import EtfBrokerLogos from '../components/EtfBrokerLogos.astro';
+import { loadEtfQuotes } from '../lib/etf-quotes.js';
+import { etfGuide } from '../data/sp500-etfs.js';
+import '../styles/learn.css';
+import '../styles/brokers.css';
+import '../styles/sp500-etfs.css';
+const quotes = await loadEtfQuotes();
+---
+<SiteLayout title="S&P 500 ETFs compared" description="Compare S&P 500 ETFs: fees, dividends, US-listed funds and UCITS options for investors in Poland." showSources={false}>
+  <main class="learn-page broker-page etf-guide">
+    {Object.entries(etfGuide).map(([locale, copy]) => (
+      <div data-broker-locale={locale} lang={locale} translate="no">
+        <header class="broker-hero">
+          <a class="back-link" href="/brokers/">{copy.back}</a>
+          <span class="learn-eyebrow">{copy.eyebrow}</span>
+          <h1>{copy.title}</h1>
+          <p class="broker-lead">{copy.intro}</p>
+          <div class="broker-market"><strong>{copy.market}</strong><p>{copy.region}</p></div>
+        </header>
+        <section class="etf-fee-explainer" aria-labelledby={`fee-question-${locale}`}>
+          <h2 id={`fee-question-${locale}`}>{copy.feeQuestion}</h2>
+          <EtfFeeExplainer locale={locale} />
+        </section>
+        <section aria-labelledby={`comparison-${locale}`}>
+          <h2 id={`comparison-${locale}`}>{copy.tableTitle}</h2>
+          <div class="etf-table-scroll" tabindex="0" role="region" aria-labelledby={`comparison-${locale}`}>
+            <table class="etf-comparison">
+              <thead><tr>{copy.headers.map(label => <th scope="col">{label}</th>)}<th scope="col">{locale === 'pl' ? 'Dostępne u brokerów' : 'Available through'}</th></tr></thead>
+              <tbody>{copy.funds.map((fund, i) => <tr>
+                <th scope="row"><a href={`#fund-${locale}-${i}`}>{fund.ticker}</a></th>
+                <td class="etf-price">
+                  <strong>{quotes[fund.ticker].quote
+                    ? new Intl.NumberFormat(locale, { style: 'currency', currency: quotes[fund.ticker].currency }).format(quotes[fund.ticker].quote.price)
+                    : copy.priceUnavailable}</strong>
+                  <small>{quotes[fund.ticker].listing} · {quotes[fund.ticker].currency}</small>
+                  {quotes[fund.ticker].quote && <time datetime={quotes[fund.ticker].quote.asOf}>{new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeStyle: 'short', timeZone: 'UTC' }).format(new Date(quotes[fund.ticker].quote.asOf))} UTC</time>}
+                  <a href={quotes[fund.ticker].url} target="_blank" rel="noopener noreferrer">{copy.priceSource}</a>
+                </td>
+                <td>{fund.fee}</td><td>{fund.cost}</td><td>{fund.income}</td>
+                <td><EtfBrokerLogos locale={locale} ticker={fund.ticker} /></td>
+              </tr>)}</tbody>
+            </table>
+          </div>
+          <p class="etf-cost-note">{copy.priceNote}</p>
+          <p class="etf-cost-note">{copy.costNote}</p>
+          <p class="etf-cost-note">{locale === 'pl'
+            ? 'Kliknij logo, aby sprawdzić ofertę brokera. Wybrane, udokumentowane przykłady — brak logo nie oznacza braku dostępności. Potwierdź ISIN, giełdę, walutę i dostępność na swoim rachunku; notowanie może różnić się od pokazanego powyżej.'
+            : 'Click a logo to check the broker’s ETF offering. Selected brokers, not an exhaustive list. US-listed ETF access depends on account eligibility; confirm the ticker and trading permissions before buying.'}</p>
+          <p class="etf-takeaway">{copy.takeaway}</p>
+        </section>
+        {'accumulation' in copy && <section class="broker-steps" aria-labelledby={`accumulation-${locale}`}>
+          <h2 id={`accumulation-${locale}`}>{copy.accumulation.title}</h2>
+          {copy.accumulation.paragraphs.map(paragraph => <p>{paragraph}</p>)}
+          <div class="broker-links">{copy.accumulation.sources.map(([label, url]) => (
+            <a href={url} target="_blank" rel="noopener noreferrer">{label} ↗</a>
+          ))}</div>
+        </section>}
+        <section>
+          <h2>{copy.detailsTitle}</h2>
+          <div class="broker-grid">{copy.funds.map((fund, i) => (
+            <article class="broker-card" id={`fund-${locale}-${i}`}>
+              <div class="broker-logo"><img src={fund.logo} alt="" width="180" height="64" loading="lazy" /></div>
+              <span class="learn-eyebrow">{fund.ticker}</span><h3>{fund.name}</h3>
+              <dl>
+                <div><dt>{copy.feeLabel}</dt><dd>{fund.fee}</dd></div>
+                <div><dt>{copy.incomeLabel}</dt><dd>{fund.income}</dd></div>
+                {fund.isin && <div><dt>ISIN</dt><dd>{fund.isin}</dd></div>}
+              </dl>
+              <p>{copy.notes[i]}</p>
+              <div class="etf-card-brokers">
+                <h4>{locale === 'pl' ? 'Dostępne u brokerów' : 'Available through'}</h4>
+                <EtfBrokerLogos locale={locale} ticker={fund.ticker} />
+              </div>
+              <div class="broker-links"><a href={fund.url} target="_blank" rel="noopener noreferrer">{copy.source}</a></div>
+            </article>
+          ))}</div>
+        </section>
+        <section class="broker-steps">
+          <h2>{copy.chooseTitle}</h2>
+          <ol>{copy.points.map(([title, body]) => <li><h3>{title}</h3><p>{body}</p></li>)}</ol>
+          <div class="etf-guide-actions">
+            <a class="arena-action" href="/brokers/">{copy.broker} →</a>
+            <a class="arena-action secondary" href="/investment-risk/">{copy.risk} →</a>
+          </div>
+        </section>
+        <footer class="broker-end">
+          <p>{copy.footer}</p>
+          <a class="arena-action checklist-return" href={`/brokers/#checklist-${locale}`}>
+            {locale === 'pl' ? 'Wróć do listy kroków' : 'Go back to the checklist'} →
+          </a>
+        </footer>
+      </div>
+    ))}
+  </main>
+</SiteLayout>

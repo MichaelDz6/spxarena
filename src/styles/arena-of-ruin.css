@@ -1,7 +1,7 @@
+@import './ruin-palette.css';
+
 #spx-nine-in-ten .ruin-page {
-  --ruin-ink: #874633;
-  --ruin-edge: #dccabd;
-  --ruin-wash: #f4eae2;
+  background: var(--paper);
   max-width: 1152px;
   padding: 48px 36px 64px;
   margin-inline: auto;
@@ -27,6 +27,7 @@
   letter-spacing: 1.5px;
 }
 #spx-nine-in-ten .ruin-hero h1 {
+  color: var(--brand);
   margin: 14px 0 18px;
   font: 300 clamp(44px, 5.6vw, 68px)/1.08 var(--sans);
   letter-spacing: -2.5px;
@@ -53,9 +54,9 @@
   min-height: 46px;
   margin-top: 24px;
   padding: 10px 20px;
-  border: 1px solid var(--ruin-ink);
-  background: var(--ruin-ink);
-  color: #fffaf5;
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: var(--ruin-on-accent);
   font-size: 13px;
 }
 #spx-nine-in-ten .ruin-emblem {
@@ -64,8 +65,8 @@
   align-items: center;
   padding: 28px 20px;
   border: 1px solid var(--ruin-edge);
-  background: radial-gradient(ellipse at center, #f0e2cf, #f8f3eb 75%);
-  color: #806b48;
+  background: linear-gradient(145deg, var(--surface), #f5f0e2);
+  color: var(--brand);
   text-align: center;
 }
 #spx-nine-in-ten .ruin-emblem-label,
@@ -83,7 +84,7 @@
   margin-block: 12px;
 }
 #spx-nine-in-ten .ruin-emblem-motto {
-  color: #67573e;
+  color: var(--ruin-amber);
   font-size: 15px;
 }
 #spx-nine-in-ten .ruin-context {
@@ -92,16 +93,16 @@
   gap: 16px;
   padding: 22px 26px;
   border-block: 1px solid var(--ruin-edge);
-  background: #f5f1e8;
+  background: var(--surface);
 }
 #spx-nine-in-ten .ruin-context-mark {
   display: grid;
   place-items: center;
   flex: 0 0 26px;
   height: 26px;
-  border: 1px solid #a78a56;
+  border: 1px solid var(--ruin-amber);
   border-radius: 50%;
-  color: #78602f;
+  color: var(--ruin-amber);
 }
 #spx-nine-in-ten .ruin-context h2 {
   font: 500 15px/1.5 var(--sans);
@@ -144,9 +145,9 @@
   min-width: 0;
   padding: 24px 28px 0;
   border: 1px solid var(--ruin-edge);
-  border-top: 3px solid #a96a51;
-  background: #fffdf9;
-  box-shadow: 0 4px 16px #50321d05;
+  border-top: 3px solid var(--ruin-ink);
+  background: var(--ruin-surface);
+  box-shadow: 0 4px 16px #30564f08;
   scroll-margin-top: 24px;
 }
 #spx-nine-in-ten .ruin-card:target {
@@ -154,9 +155,9 @@
   outline-offset: 4px;
 }
 #spx-nine-in-ten .ruin-near-collapse {
-  --ruin-ink: #766023;
-  --ruin-wash: #f4efdf;
-  border-top-color: #a78b46;
+  --ruin-ink: var(--ruin-amber);
+  --ruin-wash: #f3ecd7;
+  border-top-color: var(--ruin-amber);
 }
 #spx-nine-in-ten .ruin-card-top {
   display: flex;
@@ -165,7 +166,7 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 22px;
-  color: #74675c;
+  color: var(--soft);
 }
 #spx-nine-in-ten .ruin-case-number {
   color: var(--ruin-ink);
@@ -227,7 +228,7 @@
   gap: 6px;
   margin-block: 22px 24px;
   padding-bottom: 22px;
-  border-bottom: 1px solid #e7ded4;
+  border-bottom: 1px solid var(--ruin-edge);
 }
 #spx-nine-in-ten .ruin-metric strong {
   color: var(--ruin-ink);
@@ -262,14 +263,14 @@
   margin-top: 22px;
   padding: 12px 14px;
   border-left: 2px solid var(--gold-edge);
-  background: #f7f4ed;
+  background: var(--surface);
   font-size: 11px;
   line-height: 1.8;
-  color: #60584c;
+  color: var(--soft);
 }
 #spx-nine-in-ten .ruin-details {
   margin-top: 20px;
-  border-top: 1px solid #e7ded4;
+  border-top: 1px solid var(--ruin-edge);
 }
 #spx-nine-in-ten .ruin-details summary {
   display: flex;
@@ -324,7 +325,7 @@
 #spx-nine-in-ten .ruin-photo-section {
   margin-top: 20px;
   padding-top: 18px;
-  border-top: 1px solid #e7ded4;
+  border-top: 1px solid var(--ruin-edge);
 }
 #spx-nine-in-ten .ruin-photo-section h4 {
   margin: 0 0 14px;

@@ -1,0 +1,244 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { brokerGuide } from '../data/broker-guide.js';
+import { brokerComparison } from '../data/broker-comparison.js';
+import '../styles/learn.css';
+import '../styles/brokers.css';
+---
+
+<SiteLayout
+  title="Where to buy S&P 500 ETFs"
+  description="Learn how to buy S&P 500 ETFs through a broker, compare US and Polish brokerage options, and understand trading costs."
+  showSources={false}
+>
+  <main class="learn-page broker-page">
+    {
+      Object.entries(brokerGuide).map(([locale, copy]) => (
+        <div data-broker-locale={locale} lang={locale} translate="no">
+          <header class="broker-hero">
+            <a class="back-link" href="/what-is-spx/#where-to-buy">
+              {copy.back}
+            </a>
+            <span class="learn-eyebrow">{copy.eyebrow}</span>
+            <h1>{copy.title}</h1>
+            <p class="broker-lead">{copy.intro}</p>
+            <nav id={`checklist-${locale}`} class="broker-start" aria-labelledby={`start-title-${locale}`}>
+              <h2 id={`start-title-${locale}`}>{copy.gettingStarted.title}</h2>
+              <p>{copy.gettingStarted.hint}</p>
+              <ol role="list">
+                {copy.gettingStarted.steps.map(([title, body, action], index) => (
+                  <li data-checklist-step={index}>
+                    <input
+                      type="checkbox"
+                      aria-label={`${copy.gettingStarted.markDone}: ${title}`}
+                    />
+                    <a href={[
+                      '/investment-risk/',
+                      '/sp500-etfs/',
+                      `#brokers-title-${locale}`,
+                    ][index]}>
+                      <span class="broker-task-copy">
+                        <span class="broker-task-title">{index + 1}. {title}</span>
+                        <span class="broker-task-body">{body}</span>
+                      </span>
+                      <span class="broker-task-action">{action}<span aria-hidden="true">→</span></span>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+              <p>{copy.gettingStarted.note}</p>
+            </nav>
+            <div class="broker-market">
+              <>
+                <strong>{copy.market}</strong>
+                <p>{copy.region}</p>
+              </>
+            </div>
+          </header>
+          <section class="broker-choosing" aria-labelledby={`choosing-title-${locale}`}>
+            <h2 id={`choosing-title-${locale}`}>{copy.choosing.title}</h2>
+            <p>{copy.choosing.intro}</p>
+            <ol class="broker-criteria" role="list">
+              {copy.choosing.items.map((item, index) => (
+                <li>
+                  <span class="broker-criterion-number" aria-hidden="true">0{index + 1}</span>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.body}</p>
+                    <p class="broker-criterion-takeaway">{item.takeaway}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </section>
+          <section class="broker-comparison">
+            <>
+              <h2 id={`brokers-title-${locale}`}>{copy.comparisonTitle}</h2>
+              <p>{copy.comparisonNote}</p>
+            </>
+            <p class="broker-compare-hint" id={`compare-hint-${locale}`}>{brokerComparison[locale].hint}</p>
+            <div class="broker-table-scroll" tabindex="0" role="region" aria-labelledby={`brokers-title-${locale}`} aria-describedby={`compare-hint-${locale}`}>
+              <table class="broker-compare-table">
+                <caption>{brokerComparison[locale].note}</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">{brokerComparison[locale].feature}</th>
+                    {copy.brokers.map(broker => (
+                      <th scope="col">
+                        <img src={broker.logo} alt="" width="120" height="40" loading="lazy" />
+                        <span>{broker.name}</span>
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {brokerComparison[locale].rows.map(([label, cells]) => (
+                    <tr>
+                      <th scope="row">{label}</th>
+                      {cells.map(([value, detail, source]) => (
+                        <td>
+                          <strong>{value}</strong>
+                          <p>{detail}</p>
+                          {source && <a href={source} target="_blank" rel="noopener noreferrer">{locale === 'pl' ? 'Warunki' : 'Terms'} ↗</a>}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                  <tr>
+                    <th scope="row">{brokerComparison[locale].sources}</th>
+                    {copy.brokers.map(broker => <td><a href={broker.url} target="_blank" rel="noopener noreferrer">{broker.link}</a></td>)}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <details class="broker-full-details">
+              <summary>{brokerComparison[locale].details}</summary>
+              <div class="broker-grid">
+              {copy.brokers.map((broker) => (
+                <article class="broker-card">
+                  <div class="broker-logo">
+                    <img
+                      src={broker.logo}
+                      alt=""
+                      width="180"
+                      height="64"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <span class="learn-eyebrow">{broker.subtitle}</span>
+                  <h3>{broker.name}</h3>
+                  <dl>
+                    {broker.facts.map((fact, i) => (
+                      <div>
+                        <dt>{copy.labels[i]}</dt>
+                        <dd>{fact}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                  <div class="broker-links">
+                    <a
+                      href={broker.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {broker.link}
+                    </a>
+                    <a
+                      href={broker.more}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {broker.moreLabel}
+                    </a>
+                  </div>
+                </article>
+              ))}
+              </div>
+            </details>
+          </section>
+          <section class="broker-costs">
+            <>
+              <h2>{copy.costTitle}</h2>
+              <ul>
+                {copy.costs.map((cost) => (
+                  <li>{cost}</li>
+                ))}
+              </ul>
+            </>
+            <a
+              class="learn-source"
+              href={copy.costUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {copy.costLink}
+            </a>
+          </section>
+          <section class="broker-steps">
+            <h2>{copy.stepsTitle}</h2>
+            <ol>
+              {copy.steps.map(([title, body]) => (
+                <li>
+                  <h3>{title}</h3>
+                  <p>{body}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+          <footer class="broker-end">
+            <>
+              <p>{copy.note}</p>
+              <p>{copy.reviewed}</p>
+              <a class="learn-text-link" href="/calculator/">
+                {copy.next} →
+              </a>
+            </>
+          </footer>
+        </div>
+      ))
+    }
+  </main>
+</SiteLayout>
+
+<script>
+  const storageKey = 'spxarena-broker-checklist';
+  const steps = document.querySelectorAll<HTMLElement>('[data-checklist-step]');
+  let completed: boolean[] = [];
+
+  function renderChecks() {
+    steps.forEach((step) => {
+      const checkbox = step.querySelector<HTMLInputElement>('input');
+      if (checkbox) checkbox.checked = completed[Number(step.dataset.checklistStep)] === true;
+    });
+  }
+
+  function restoreChecks() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+      if (Array.isArray(saved)) completed = saved.map((value) => value === true);
+    } catch {
+      // The checklist still works when browser storage is unavailable.
+    }
+    renderChecks();
+  }
+
+  function setCompleted(index: number, checked: boolean) {
+    completed[index] = checked;
+    renderChecks();
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(completed));
+    } catch {
+      // Do not block navigation when browser storage is unavailable.
+    }
+  }
+
+  steps.forEach((step) => {
+    const index = Number(step.dataset.checklistStep);
+    const checkbox = step.querySelector<HTMLInputElement>('input');
+    checkbox?.addEventListener('change', () => setCompleted(index, checkbox.checked));
+    step.querySelector('a')?.addEventListener('click', () => setCompleted(index, true));
+  });
+  restoreChecks();
+  window.addEventListener('pageshow', restoreChecks);
+</script>

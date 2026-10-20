@@ -1,0 +1,64 @@
+[
+  {
+    "file": "schwab.png",
+    "source": "https://www.schwab.com/themes/custom/sch_beacon_retail/favicons/apple-icon.png",
+    "retrievedAt": "2026-10-19",
+    "sha256": "f530c01ea7001a17c000b7a69840b5895d7620335524faf32019d3d2262fbd3b",
+    "usage": "Company trademark; editorial identification, no open license asserted. Unmodified.",
+    "name": "Charles Schwab"
+  },
+  {
+    "file": "ibkr.png",
+    "source": "https://www.interactivebrokers.com/images/web/favicons/home-screen-icon-192x192.png",
+    "retrievedAt": "2026-10-19",
+    "sha256": "5c658db5247eccd8ecda0e8fe17434b9cb4e999a501677e35910504fd0419261",
+    "usage": "Company trademark; editorial identification, no open license asserted. Unmodified.",
+    "name": "Interactive Brokers"
+  },
+  {
+    "file": "xtb.svg",
+    "source": "https://xas-cdn.xtb.com/build/twigImages/svg-icons/logo/logo_xtb.svg",
+    "retrievedAt": "2026-10-19",
+    "sha256": "a097270c4d789cb5102dbfbf11cd95cfa304f093c5ebc07eff939986fd207223",
+    "usage": "Company trademark; editorial identification, no open license asserted. Unmodified.",
+    "name": "XTB"
+  },
+  {
+    "file": "bossa.svg",
+    "source": "https://bossa.pl/themes/custom/b30_theme/logo.svg",
+    "retrievedAt": "2026-10-19",
+    "sha256": "511e71b4efab6504f43ddee0c5053d08e68172dd1547f2dd4edb5d06babb0444",
+    "usage": "Company trademark; editorial identification, no open license asserted. Unmodified.",
+    "name": "bossa · DM BOŚ"
+  },
+  {
+    "file": "fidelity.svg",
+    "source": "https://logotyp.us/file/fidelity-investments.svg",
+    "retrievedAt": "2026-10-19",
+    "sha256": "13138e79e786c92eeabe4551b0be00273bd0d8555811b00164958d9009a10614",
+    "usage": "Company trademark; editorial identification, no open license asserted. SVG viewBox trimmed to remove surrounding whitespace; artwork unchanged.",
+    "name": "Fidelity Investments"
+  },
+  {
+    "file": "trading212.png",
+    "source": "https://europe1.discourse-cdn.com/flex013/uploads/trading212/optimized/3X/d/7/d73630ca379f978114da94d44732a84f0cd1da9b_2_180x180.png",
+    "retrievedAt": "2026-10-19",
+    "sha256": "25e83e1fff7c11f76bbb7b67b28299263e3a75abe1ffe2839fc9cf0772afb5e0",
+    "usage": "Company trademark; editorial identification, no open license asserted. Unmodified.",
+    "name": "Trading 212"
+  },
+  {
+    "name": "Vanguard",
+    "file": "../etf-logos/vanguard.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Vanguard.svg",
+    "usage": "See ETF issuer logo credits; unchanged existing asset."
+  },
+  {
+    "name": "mBank",
+    "file": "mbank.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mbank_logo.svg",
+    "retrievedAt": "2026-10-19",
+    "sha256": "ed7937beab87098a5ef533a72c66cd9253d5ea010104fe2b46fb950dbc7c0501",
+    "usage": "Company trademark; editorial identification. Wikimedia Commons marks the simple geometric logo public domain. Unmodified."
+  }
+]

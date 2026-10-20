@@ -1,0 +1,28 @@
+/* Keep the site's Pearl & Gold foundation, with rust reserved for loss accents. */
+#spx-nine-in-ten .ruin-preview,
+#spx-nine-in-ten .ruin-page {
+  --ruin-ink: #a43d30;
+  --ruin-hover: #26453f;
+  --ruin-on-accent: #ffffff;
+  --ruin-amber: #806323;
+  --ruin-edge: var(--rule);
+  --ruin-wash: #f7e8e1;
+  --ruin-surface: #fffefa;
+  --ruin-background: linear-gradient(115deg, var(--surface), var(--paper));
+  color: var(--ink);
+  color-scheme: light;
+}
+
+#spx-nine-in-ten .ruin-page .small-label {
+  color: var(--brand);
+}
+
+#spx-nine-in-ten .ruin-page .ruin-enter:hover {
+  background: var(--ruin-hover);
+  border-color: var(--ruin-hover);
+}
+
+#spx-nine-in-ten :is(.ruin-preview, .ruin-page) :focus-visible {
+  outline: 2px solid var(--ruin-amber);
+  outline-offset: 4px;
+}

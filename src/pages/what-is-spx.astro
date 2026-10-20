@@ -4,6 +4,7 @@ import LearnIcon from '../components/LearnIcon.astro';
 import IndexScorecard from '../components/IndexScorecard.astro';
 import IndexAllocation from '../components/IndexAllocation.astro';
 import HowToBuyIndex from '../components/HowToBuyIndex.astro';
+import WhereToBuy from '../components/WhereToBuy.astro';
 import RiskLab from '../components/RiskLab.astro';
 import CompoundGrowth from '../components/CompoundGrowth.astro';
 import '../styles/learn.css';
@@ -59,6 +60,9 @@ const businesses = [
           <a href="#how-to-buy-spx"
             ><span>02</span> How to buy SPX <span aria-hidden="true">↓</span></a
           >
+          <a href="#where-to-buy"
+            >Where to buy ETFs <span aria-hidden="true">↓</span></a
+          >
         </nav>
       </div>
       <IndexScorecard />
@@ -66,6 +70,7 @@ const businesses = [
 
     <IndexAllocation />
     <HowToBuyIndex />
+    <WhereToBuy />
 
     <div
       class="index-fund-bridge"

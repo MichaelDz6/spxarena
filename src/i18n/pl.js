@@ -56,7 +56,7 @@ BENCHMARK · SPY ETF TOTAL RETURN	WZORZEC · CAŁKOWITA STOPA ZWROTU ETF SPY
 1Y season	Sezon roczny
 1Y season return	Stopa zwrotu za sezon roczny
 SPY · 1Y season	SPY · sezon roczny
-A legendary benchmark. A common opponent.	Legendarny wzorzec. Wspólny przeciwnik.
+A legendary benchmark. A gold standard.	Legendarny wzorzec. Złoty standard.
 TEN YEARS. ONE STARTING LINE.	DZIESIĘĆ LAT. JEDNA LINIA STARTU.
 INVESTED AT THE START OF 2016	ZAINWESTOWANE NA POCZĄTKU 2016
 at the end of 2025, dividends reinvested.	na koniec 2025, z reinwestycją dywidend.

@@ -1,0 +1,24 @@
+---
+import { brokerGuide } from '../data/broker-guide.js';
+import '../styles/brokers.css';
+---
+
+<section
+  class="buy-bridge"
+  id="where-to-buy"
+  aria-label="Where to buy S&P 500 ETFs"
+>
+  {
+    Object.entries(brokerGuide).map(([locale, copy]) => (
+      <div data-broker-locale={locale} lang={locale} translate="no">
+        <span class="learn-eyebrow">{copy.eyebrow}</span>
+        <h2>{copy.title}</h2>
+        <p>{copy.intro}</p>
+        <p>{copy.teaser}</p>
+        <a class="arena-action" href="/brokers/">
+          {copy.cta} <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    ))
+  }
+</section>

@@ -1,0 +1,17 @@
+---
+import { etfBrokers } from '../data/etf-brokers.js';
+interface Props { locale: string; ticker: string; }
+const { locale, ticker } = Astro.props;
+const brokers = etfBrokers[locale]?.[ticker] ?? [];
+const label = locale === 'pl' ? 'Oferta brokera' : 'Broker availability';
+---
+<ul class="etf-broker-logos" aria-label={`${ticker}: ${label}`} role="list">
+  {brokers.map(broker => (
+    <li>
+      <a href={broker.url} target="_blank" rel="noopener noreferrer" title={`${broker.name} · ${broker.listing ?? ticker}`} aria-label={`${broker.name}: ${broker.listing ?? ticker} — ${label}`}>
+        <img src={broker.logo} alt={broker.name} width="84" height="30" loading="lazy" decoding="async" />
+        {broker.listing && <span class="etf-broker-listing">{broker.listing}</span>}
+      </a>
+    </li>
+  ))}
+</ul>

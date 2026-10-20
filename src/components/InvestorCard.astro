@@ -42,7 +42,9 @@ const drawdown = cardDrawdown(person);
           <>
             <span>
               <>
-                <b class="card-value">{fmt(record.value)}%</b>
+                <b class="card-value" data-delta={delta(record.value)}>
+                  {fmt(record.value)}%
+                </b>
                 <small>10Y ANNUALIZED</small>
               </>
             </span>
@@ -68,7 +70,9 @@ const drawdown = cardDrawdown(person);
               1Y SEASON <em>{titleCase(record.stats[1].tier)}</em>
             </span>
             <span class="period-numbers">
-              <b>{fmt(record.stats[1].value)}%</b>
+              <b data-delta={delta(record.stats[1].value)}>
+                {fmt(record.stats[1].value)}%
+              </b>
               <small data-delta={delta(record.stats[1].gap)}>
                 {fmt(record.stats[1].gap, 2)} pp
               </small>

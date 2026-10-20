@@ -6,6 +6,7 @@ import { investors } from '../lib/performance.js';
 import images from '../data/portraits.json';
 import { portraitPresentation } from '../lib/portrait-presentation.js';
 import etfLogos from '../data/etf-logos.json';
+import brokerLogos from '../data/broker-logos.json';
 import companyLogos from '../data/company-logos.json';
 ---
 <SiteLayout title="Credits, licenses & independence" showSources={false}>
@@ -25,6 +26,9 @@ import companyLogos from '../data/company-logos.json';
     <ul>{Object.values(etfLogos).map(logo => <li>
       <strong>{logo.name}</strong> — {logo.creator}. <a href={logo.source}>Source</a>. <a href={logo.licenseUrl}>{logo.license}</a>. {logo.modifications}
     </li>)}</ul>
+    <h2 id="broker-logos">Broker logos</h2>
+    <p>Broker logos identify the companies compared in the buying guide. Trademarks belong to their respective owners; no affiliation or endorsement is implied. Logo artwork is unchanged; surrounding whitespace may be trimmed. No open license is asserted except where separately documented.</p>
+    <ul>{brokerLogos.map(logo => <li><strong>{logo.name}</strong> — <a href={logo.source}>Source</a></li>)}</ul>
     <h2>Portraits and image licenses</h2>
     <p>Each retained third-party image links to its source, author and license below. Only original color photographs or photographic interview frames with verified reuse licenses are published, with layout crops. AI-enhanced photographs are labeled and retain the original source license. Adaptations of ShareAlike images are offered under the same license as their originals; this does not license unrelated site content. Public-domain status is based on the source record and can differ outside the United States.</p>
     <ul class="credit-list">{investors.map(person => <li>

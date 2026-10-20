@@ -1,4 +1,17 @@
 const entries = `
+S&P 500 ETFs compared | SPX Arena	Porównanie ETF-ów na S&P 500 | SPX Arena
+Compare S&P 500 ETFs: fees, dividends, US-listed funds and UCITS options for investors in Poland.	Porównaj ETF-y na S&P 500: koszty, dywidendy, fundusze z USA i opcje UCITS dla inwestorów z Polski.
+Investment risk and time horizon | SPX Arena	Ryzyko i horyzont inwestycji | SPX Arena
+Understand S&P 500 ETF risks and what historical data and academic research say about how long to invest.	Poznaj ryzyka ETF-ów na S&P 500 i dowiedz się, co dane historyczne oraz badania naukowe mówią o horyzoncie inwestycji.
+
+Broker logos	Logotypy brokerów
+Broker logos identify the companies compared in the buying guide. Trademarks belong to their respective owners; no affiliation or endorsement is implied. Logo artwork is unchanged; surrounding whitespace may be trimmed. No open license is asserted except where separately documented.	Logotypy identyfikują firmy porównywane w poradniku zakupu. Znaki towarowe należą do ich właścicieli; nie oznaczają współpracy ani poparcia. Grafika logotypów pozostaje bez zmian; puste marginesy mogą być przycięte. Nie deklarujemy otwartej licencji, chyba że wskazano ją w osobnej dokumentacji.
+
+Where to buy ETFs	Gdzie kupić ETF-y
+Where to buy S&P 500 ETFs	Gdzie kupić ETF-y na S&P 500
+Where to buy S&P 500 ETFs | SPX Arena	Gdzie kupić ETF-y na S&P 500 | SPX Arena
+Learn how to buy S&P 500 ETFs through a broker, compare US and Polish brokerage options, and understand trading costs.	Dowiedz się, jak kupić ETF-y na S&P 500 przez brokera, porównaj opcje w USA i Polsce oraz poznaj koszty transakcji.
+
 THE MARKET, EXPLAINED SIMPLY	RYNEK WYJAŚNIONY PROSTO
 What is	Czym jest
 Think of it as a scorecard for	To karta wyników dla

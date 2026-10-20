@@ -1,0 +1,142 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { investmentRisk } from '../data/investment-risk.js';
+import '../styles/learn.css';
+import '../styles/brokers.css';
+import '../styles/investment-risk.css';
+---
+
+<SiteLayout
+  title="Investment risk and time horizon"
+  description="Understand S&P 500 ETF risks and what historical data and academic research say about how long to invest."
+  showSources={false}
+>
+  <main class="learn-page broker-page risk-guide">
+    {
+      Object.entries(investmentRisk).map(([locale, copy]) => (
+        <div data-broker-locale={locale} lang={locale} translate="no">
+          <header class="broker-hero">
+            <a class="back-link" href="/brokers/">
+              {copy.back}
+            </a>
+            <span class="learn-eyebrow">{copy.eyebrow}</span>
+            <>
+              <h1>{copy.title}</h1>
+              <p class="broker-lead">{copy.lead}</p>
+            </>
+          </header>
+          <section class="risk-answer">
+            <>
+              <h2>{copy.answerTitle}</h2>
+              <p>{copy.answer}</p>
+            </>
+          </section>
+          <section>
+            <>
+              <h2>{copy.horizonTitle}</h2>
+              <p>{copy.horizonNote}</p>
+            </>
+            <div class="horizon-grid">
+              {copy.horizons.map(([period, title, text]) => (
+                <article>
+                  <span class="horizon-period">{period}</span>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </article>
+              ))}
+            </div>
+            <a
+              class="learn-source"
+              href={copy.sources.horizon}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {copy.horizonSource}
+            </a>
+          </section>
+          <section>
+            <h2>{copy.evidenceTitle}</h2>
+            <div class="evidence-grid">
+              {copy.evidence.map((study) => (
+                <article>
+                  <span class="learn-eyebrow">{study.tag}</span>
+                  <h3>{study.title}</h3>
+                  <p>{study.text}</p>
+                  <p class="evidence-caveat">{study.caveat}</p>
+                  <a
+                    class="learn-source"
+                    href={study.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {study.link}
+                  </a>
+                </article>
+              ))}
+            </div>
+          </section>
+          <section>
+            <>
+              <h2>{copy.risksTitle}</h2>
+              <dl class="risk-facts">
+                {copy.risks.map(([title, text]) => (
+                  <div>
+                    <dt>{title}</dt>
+                    <dd>{text}</dd>
+                  </div>
+                ))}
+              </dl>
+            </>
+            <a
+              class="learn-source"
+              href={copy.sources.etf}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {copy.risksSource}
+            </a>
+          </section>
+          <section>
+            <>
+              <h2>{copy.planTitle}</h2>
+              <ol class="risk-plan">
+                {copy.plan.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ol>
+            </>
+            <div class="risk-source-links">
+              <>
+                <a
+                  class="learn-source"
+                  href={copy.sources.allocation}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {copy.planSource}
+                </a>
+                <a
+                  class="learn-source"
+                  href={copy.sources.savings}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {copy.savingsSource}
+                </a>
+              </>
+            </div>
+          </section>
+          <footer class="broker-end">
+            <>
+              <p>{copy.conclusion}</p>
+              <p>{copy.reviewed}</p>
+              <a class="arena-action checklist-return" href={`/brokers/#checklist-${locale}`}>
+                {locale === 'pl' ? 'Wróć do listy kroków' : 'Go back to the checklist'} →
+              </a>
+            </>
+          </footer>
+        </div>
+      ))
+    }
+  </main>
+</SiteLayout>

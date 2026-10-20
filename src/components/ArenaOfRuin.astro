@@ -1,5 +1,6 @@
 ---
 import archive from '../data/arena-of-ruin.json';
+import '../styles/ruin-palette.css';
 
 const featuredCases = ['sam-bankman-fried', 'james-wynn'].flatMap((id) =>
   archive.cases.filter((entry) => entry.id === id),
@@ -54,9 +55,8 @@ const featuredCases = ['sam-bankman-fried', 'james-wynn'].flatMap((id) =>
 
 <style>
   .ruin-preview {
-    --ruin-ink: #874633;
     padding: 44px 36px;
-    background: linear-gradient(115deg, #faf7f1, #f4eae2);
+    background: var(--ruin-background);
   }
 
   .ruin-preview-inner {
@@ -69,10 +69,11 @@ const featuredCases = ['sam-bankman-fried', 'james-wynn'].flatMap((id) =>
   }
 
   :global(#spx-nine-in-ten) .ruin-preview .small-label {
-    color: var(--ruin-ink);
+    color: var(--brand);
   }
 
   :global(#spx-nine-in-ten) .ruin-preview h2 {
+    color: var(--brand);
     margin: 10px 0 16px;
     font: 300 clamp(32px, 4vw, 44px)/1.15 var(--sans);
     letter-spacing: -1.4px;
@@ -97,13 +98,14 @@ const featuredCases = ['sam-bankman-fried', 'james-wynn'].flatMap((id) =>
 
   :global(#spx-nine-in-ten) .ruin-preview-action {
     margin-top: 24px;
-    background: var(--ruin-ink);
-    border-color: var(--ruin-ink);
+    background: var(--brand);
+    border-color: var(--brand);
+    color: var(--ruin-on-accent) !important;
   }
 
   :global(#spx-nine-in-ten) .ruin-preview-action:hover {
-    background: #6f3828;
-    border-color: #6f3828;
+    background: var(--ruin-hover);
+    border-color: var(--ruin-hover);
   }
 
   .ruin-preview-examples {
@@ -117,13 +119,13 @@ const featuredCases = ['sam-bankman-fried', 'james-wynn'].flatMap((id) =>
     flex-direction: column;
     min-width: 0;
     padding: 22px 20px;
-    border: 1px solid #dccabd;
-    border-top: 3px solid #a96a51;
-    background: #fffdf9;
+    border: 1px solid var(--ruin-edge);
+    border-top: 3px solid var(--ruin-ink);
+    background: var(--ruin-surface);
   }
 
   .ruin-preview-case time {
-    color: #74675c;
+    color: var(--soft);
     font:
       10px/1.5 'IBM Plex Mono',
       monospace;
@@ -163,7 +165,7 @@ const featuredCases = ['sam-bankman-fried', 'james-wynn'].flatMap((id) =>
     gap: 12px;
     min-height: 44px;
     margin-top: auto;
-    border-top: 1px solid #e8ddd3;
+    border-top: 1px solid var(--ruin-edge);
     color: var(--ruin-ink);
     font-size: 12px;
   }

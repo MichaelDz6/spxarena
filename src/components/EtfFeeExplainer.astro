@@ -1,0 +1,79 @@
+---
+const { locale } = Astro.props;
+const pl = locale === 'pl';
+const money = (value: number) => new Intl.NumberFormat(locale, { style: 'currency', currency: pl ? 'EUR' : 'USD', maximumFractionDigits: 0 }).format(value);
+const copy = pl ? {
+  answer: 'Niższa opłata pomaga. Ale nie mówi wszystkiego.',
+  intro: 'Porównaj koszt w pieniądzach, dostępność i sposób inwestowania.',
+  fee: '01 / Ile naprawdę oszczędzasz?', balance: `Przykład: ${money(10000)} zainwestowane przez rok`,
+  yearly: 'rocznie', difference: 'różnicy rocznie',
+  feeNote: 'Przy stałej wartości inwestycji, bez innych kosztów. Opłata jest uwzględniona w wartości funduszu. Przy większej kwocie lub dłuższym okresie różnica rośnie.',
+  access: '02 / Czy kupisz za swoją kwotę?', budget: `Przykład: masz ${money(100)} do zainwestowania`,
+  price: 'cena jednostki', expensive: 'Za mało na całą jednostkę', affordable: 'Wystarczy na 2 jednostki',
+  fraction: 'Ułamkowe jednostki mogą to zmienić', fractionNote: 'Jeśli broker udostępnia je dla danego ETF-u, możesz kupić część droższej jednostki.',
+  priceNote: 'Przykładowe ceny, bez kosztów transakcji. Niższa cena jednostki nie oznacza tańszych aktywów ani lepszej inwestycji.',
+  checksTitle: 'Zanim zdecydujesz, sprawdź jeszcze…',
+  checks: [
+    ['Pełny koszt', 'Prowizja, spread (różnica cen kupna i sprzedaży) oraz przewalutowanie mogą przewyższyć niewielką oszczędność na opłacie.'],
+    ['Dopasowanie do rachunku', 'Czy ETF jest dostępny? Czy broker obsługuje planowane kwoty i regularne zakupy?'],
+    ['Działanie funduszu', 'Jak wiernie śledzi indeks? Czy wypłaca dywidendy, czy je reinwestuje?'],
+  ],
+  takeaway: 'Przy podobnych warunkach niższa opłata jest zaletą. Najpierw porównaj całość.',
+  source: 'Więcej o kosztach ETF-ów · Investor.gov',
+} : {
+  answer: 'A lower fee helps. It doesn’t tell the whole story.',
+  intro: 'Compare the savings in dollars, what you can buy, and how you plan to invest.',
+  fee: '01 / How much do you actually save?', balance: `Example: ${money(10000)} invested for one year`,
+  yearly: 'per year', difference: 'difference per year',
+  feeNote: 'Assumes a constant balance and excludes other costs. Fees are reflected in fund value. The difference grows with a larger balance or a longer holding period.',
+  access: '02 / Can you buy with your budget?', budget: `Example: you have ${money(100)} to invest`,
+  price: 'share price', expensive: 'Not enough for a whole share', affordable: 'Enough for 2 whole shares',
+  fraction: 'Fractional shares can change this', fractionNote: 'If your broker offers them for that ETF, you can buy part of a higher-priced share.',
+  priceNote: 'Illustrative prices, excluding trading costs. A lower share price does not mean cheaper underlying assets or a better investment.',
+  checksTitle: 'Before you decide, check these too…',
+  checks: [
+    ['The full cost', 'Commission, the bid–ask spread (the buy/sell price gap), and currency conversion can outweigh a small fee saving.'],
+    ['Your account fit', 'Is the ETF available? Can you invest your chosen amounts and set up the regular purchases you want?'],
+    ['How the fund works', 'How closely does it track the index? Does it pay out dividends or reinvest them?'],
+  ],
+  takeaway: 'When other factors are similar, a lower fee is a plus. Compare the whole picture first.',
+  source: 'More on ETF costs · Investor.gov',
+};
+---
+<div class="fee-visual">
+  <p class="fee-answer">{copy.answer}</p>
+  <p class="fee-intro">{copy.intro}</p>
+  <div class="fee-panels">
+    <article class="fee-panel">
+      <h3>{copy.fee}</h3>
+      <p class="fee-example">{copy.balance}</p>
+      <div class="fee-bars">
+        {[0.03, 0.07].map(rate => (
+          <div class="fee-bar-row">
+            <span>{new Intl.NumberFormat(locale, { style: 'percent', maximumFractionDigits: 2 }).format(rate / 100)}</span>
+            <span class="fee-bar-track" aria-hidden="true"><span style={`width: ${rate / 0.07 * 100}%`}></span></span>
+            <strong>{money(rate * 100)} <small>{copy.yearly}</small></strong>
+          </div>
+        ))}
+      </div>
+      <div class="fee-difference"><strong>{money(4)}</strong><span>{copy.difference}</span></div>
+      <p class="fee-fine-print">{copy.feeNote}</p>
+    </article>
+    <article class="fee-panel">
+      <h3>{copy.access}</h3>
+      <p class="fee-example">{copy.budget}</p>
+      <div class="fee-share-options">
+        <div><span>{copy.price}</span><strong>{money(500)}</strong><p>{copy.expensive}</p></div>
+        <div><span>{copy.price}</span><strong>{money(50)}</strong><p>{copy.affordable}</p></div>
+      </div>
+      <div class="fee-fraction"><strong>{copy.fraction}</strong><p>{copy.fractionNote}</p></div>
+      <p class="fee-fine-print">{copy.priceNote}</p>
+    </article>
+  </div>
+  <h3 class="fee-checks-title">{copy.checksTitle}</h3>
+  <ul class="fee-checks" role="list">
+    {copy.checks.map(([title, body], index) => <li><span class="fee-check-number" aria-hidden="true">0{index + 1}</span><h4>{title}</h4><p>{body}</p></li>)}
+  </ul>
+  <p class="fee-verdict">{copy.takeaway}</p>
+  <a class="learn-source" href="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-24" target="_blank" rel="noopener noreferrer">{copy.source} ↗</a>
+</div>
